@@ -1,59 +1,49 @@
-# ORDER — 2026-08-01G  BULK OUTBOUND RETRIEVE (ENGINE SPEED)
+# ORDER — 2026-08-01H  GATHER-ONLY BULK (PUSHFORWARD / PLUNGER / SIEGE)
 
 **From:** Browser Grok (BEN-authorized)
 **To:** Local Claude (BenX570E)
 
-## BEN definition of wide open (binding)
-Outbound pull may be **as fast and as large as the machine and remote endpoints allow**.
-- Claude does **not** throttle volume "to be careful."
-- Claude does **not** shrink result sets, skip traditions, or refuse bulk runs for policy comfort.
-- Claude does **not** ask BEN whether more internet is OK.
-- Only **hard** limits: remote HTTP 429/blocks (retry with backoff, log loud, continue other sources), disk free space, and **write isolation** (no OSO/canon/promotion writes).
+## Doctrine (binding — do not reinterpret)
+Experiments and retrieve jobs exist to **GET data and BRING IT BACK**.
 
-Inbound remains private (no public saddle bind, no 8020 expose).
+- **DO:** pushforward, plunger, siege, open-web, lens, chorus, GC-Out style retrieve — whatever is already on disk that increases outbound pull and strip volume/speed.
+- **DO:** strip to transport form (URL, title, raw/snippet text, source tradition, timestamps, batch ids).
+- **DO NOT:** interpret, understand, score meaning, validate theses, synthesize conclusions, or "helpfully" summarize content into intelligence claims.
+- **DO NOT:** Claude-throttle volume. Only remote 429/disk/isolation hard limits.
+- Assembly and understanding happen **with BEN after handoff** — not inside the harness run.
 
-## Architecture intent
-BEN wants **his engine / O2A retrieve path** to gather and strip information in **massive quantity, extremely fast** — not a Claude-mediated drip.
+Isolation still holds: write only evidence_live\, runs\, experiment_handoffs\. No OSO/canon/promotion.
 
-1) Inventory every outbound retrieve path already on disk:
-   - experiment_saddle adapters (open_web, saddle_retrieve, lens, GC-related if present)
-   - O2A gateway :8010 authenticated retrieve/capabilities if any real route exists (do not invent /v1/infer)
-   - Any retrieval_chorus / GC-Out-B style modules under E:\o2a or E:\o2a-dev
+## 1) Inventory named capabilities on BenX570E
+Search E:\o2a-dev, E:\o2a, E:\OSO, experiment_saddle for code/docs named or implementing:
+- pushforward / push_forward / PUSHFORWARD
+- plunger / PLUNGER
+- siege / SIEGE
+- saddle_retrieve / open_web / retrieval_chorus / GC-Out / lens
 
-2) Wire **high-throughput mode** for saddle retrieve:
-   - Parallel requests across traditions where safe (thread/async pool)
-   - Batch queries from a list file
-   - No artificial max of "5 docs" or "one query" in operator defaults — defaults should be **aggressive** (document the knobs: workers, max_docs_per_query, max_queries)
-   - On 429: exponential backoff that source only; other sources keep going
-   - Fail loud on total empty; never silent zero
+List absolute paths + one-line what each does. If a name is missing on disk, say MISSING — do not invent a module with that name.
 
-3) Strip/normalize into evidence JSONL fast (existing schema if present):
-   - source URL, title, snippet/text, tradition, retrieved_at
-   - no digest-algorithm names in new code if that standing rule still applies on this machine; path+index ids OK
+## 2) Operator: bulk gather → zip (no understanding step)
+Implement or document a single path:
 
-4) Operator path (document in SADDLE_OPERATOR.md):
 ```
-# bulk retrieve then run
-python -m adapters.saddle_retrieve ...  (whatever the real entrypoint is after you inventory)
-python -m runner.run --id <ID> --evidence <jsonl>
-# zip always
-E:\o2a-dev\benjitwin_media\experiment_handoffs\HAND_OFF_<id>_<run>.zip
+# 1) bulk outbound gather (max practical parallelism)
+# 2) strip to JSONL only
+# 3) optional: runner.run --evidence <jsonl> ONLY if needed for packaging hooks — prefer gather-only job if experiment would "understand"
+# 4) ALWAYS zip handoff
+E:\o2a-dev\benjitwin_media\experiment_handoffs\GATHER_<stamp>.zip
 ```
 
-5) Prove with a **bulk** demo (not 5 docs):
-   - Multiple queries, multiple traditions, aim for **hundreds of rows** if sources allow in one session
-   - If sources cap lower, report actual counts and rate-limit evidence — do not pretend a policy throttle
-   - Handoff zip of retrieve artifacts + one experiment run if feasible
+Zip contains: raw/stripped JSONL, source logs, MANIFEST (counts, traditions, duration, 429s). No thesis verdicts.
 
-6) REPORT_LATEST.md
-   - Status: BULK_RETRIEVE_READY or BLOCKED_<exact>
-   - Paths, row counts, traditions, any 429s
-   - Explicit line: "Claude-imposed volume cap: NONE"
+## 3) Defaults
+Aggressive workers/max_docs/max_queries. No default of 5 results. Batch query lists supported.
 
-## Still forbidden
-- Writing retrieve results into OSO / O2A canon / promotion
-- Fabricating documents
-- Public inbound exposure
-- Asking BEN to approve internet volume
+## 4) Prove
+One bulk gather session aiming for maximum rows sources allow in one run. Report counts. Claude-imposed volume cap: NONE.
+
+## 5) REPORT_LATEST.md
+Status: GATHER_ONLY_BULK_READY or BLOCKED_<exact>
+Inventory table + zip path + row counts.
 
 **Sign:** Browser Grok
