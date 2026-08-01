@@ -1,54 +1,29 @@
-# ORDER — 2026-08-01D  P0 CHATBOT MVP
+# ORDER — 2026-08-01E  APPLY CHAT MVP — THEN STOP FOR BEN
 
-**From:** Browser Grok (BEN-authorized)
+**From:** Browser Grok
 **To:** Local Claude (BenX570E)
-**Priority:** BEN wants Benjitwin usable as a chatbot NOW — not multi-AI orchestration.
+**BEN is offline working on other things. Finish install. Do not wait on BEN.**
 
-Defer evidence-supply / UI-02 art. Poller install only if not already done.
+## Package (already written — do not redesign)
+https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/chatbot/chat.html
+https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/chatbot/APPLY.md
 
-## Goal
-One URL on the phone (Tailscale mesh) where BEN types a message, gets a durable reply path, without opening Claude/GPT/Grok.
+Follow APPLY.md exactly.
 
-## Build (read-first, then implement)
+## Required outcomes
+1. Backup relay_app.py
+2. static/chat.html installed from package
+3. GET /chat and optional GET / -> /chat
+4. Restart relay (same start path, mesh bind, token process env only)
+5. Prove mesh: /chat 200, /health 200, /intention still bearer-gated, /mct/ still 200
+6. Write E:\o2a-dev\benjitwin_media\REPORT_LATEST.md with:
+   - URL: http://100.95.127.31:49400/chat
+   - proofs
+   - status: REVIEW_READY_CHAT_MVP
+7. Write E:\o2a-dev\benjitwin_media\REVIEW.md one page: how BEN uses it (open URL, paste token once, send message)
 
-### A) Chat page on the relay (mesh-only bind as today)
-Serve a simple mobile HTML page at GET /chat (or / ) that is a basic chatbot UI:
-- Text input + Send
-- Message list (local session + load recent from receipts if easy)
-- Bearer token: prompt once, store in sessionStorage (not local disk secrets file)
-- Calls existing POST /intention (or extend if needed) with content = user message
-- Shows receipt_id + hub_forward result honestly (ok / fail / work_id)
-
-No OpenMCT required on this page. Plain HTML/JS served by FastAPI (static or inline TemplateResponse).
-
-### B) Reply path (minimum viable)
-Today /intention creates hub work + receipt. Chatbot needs a visible answer.
-
-Minimum acceptable for this bite:
-1. User message -> receipt + hub work (already mostly done)
-2. Auto-append a structured twin acknowledgment into the chat UI from the receipt response (receipt_id, work_id, status) — honest, not fake intelligence
-3. Document next bite for real twin reasoning (hub worker or O2A) — do not invent model replies
-
-If hub already has a read route for work by id, show that status in the chat thread after send.
-
-### C) Phone URL
-Document exact URL: http://100.95.127.31:49400/chat (or whatever path you use)
-Keep /mct/ working. Keep token gate on /intention. /chat page itself may be mesh-gated like /mct (no bearer on static HTML) but API calls send bearer.
-
-### D) Proofs (Claude measures, not BEN)
-- GET /chat 200 on mesh IP
-- POST /intention still 200 with receipt
-- /health 200
-- Backup relay_app.py before edit
-- REPORT_LATEST.md with URL + what works / what is still acknowledgment-only
-
-## Do not
-- Fabricate AI answers as if twin reasoned
-- Expose 8020 to mesh
-- Ask BEN to configure GitHub or test as QA labor
-- Unreal / full MCT redesign this bite
-
-## Done when
-BEN can open one URL on phone, type a sentence, see it accepted with receipt/work id in a chat-like UI — without talking to Claude/Grok/GPT for that message.
+## After that
+STOP. Do not start Unreal, evidence supply, or new features unless a newer NEXT.md appears.
+If blocked, REPORT status BLOCKED with exact error — still no BEN questions for phone QA.
 
 **Sign:** Browser Grok
