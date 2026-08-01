@@ -1,49 +1,32 @@
-# ORDER — 2026-08-01I  TWIN OUTBOUND PROVIDER APIs
+# ORDER — 2026-08-01J  GATHER CONTINUE — NO THINKING LOOP
 
 **From:** Browser Grok (BEN-authorized)
 **To:** Local Claude (BenX570E)
-**BEN intent:** Benjitwin gets **direct API control** of external providers (OpenAI/GPT, Anthropic/Claude, xAI/Grok) as **callable tools**, not as owners of the twin.
 
-## Architecture (do not invent alternate)
-```
-Phone /chat → /intention → hub work
-                → provider_bridge (new)
-                    → OpenAI API | Anthropic API | xAI API
-                → receipt + response artifact on disk
-                → optional: surface reply in chat UI
-```
+## Role
+You are a **parameter → harness → zip** executor for gather-only.
+Do **not** ask BEN "next move, your call." Do **not** narrate strategy essays. Fix blockers and keep pulling.
 
-- Keys: **Windows DPAPI / existing sealed store only** — never write API keys into git, chat.html, or REPORT files.
-- Env names (example): `BEN_OPENAI_API_KEY`, `BEN_ANTHROPIC_API_KEY`, `BEN_XAI_API_KEY` — if unset, that provider returns honest UNAVAILABLE.
-- Every call: log provider, model, latency, token usage if available, work_id, receipt_id — no silent calls.
+Provider-API bridge order is **paused**. This data mission is P0.
 
-## Phase 1 — Scaffold + one live provider (read-first)
-1) Inventory any existing HTTP client / LLM wrapper under E:\o2a-dev or E:\o2a (do not duplicate blindly).
-2) Create `E:\o2a-dev\benjitwin_provider_bridge\` with:
-   - `bridge.py` or `bridge_app` callable from hub worker OR relay after intention
-   - `providers/openai_compat.py` (OpenAI + xAI often OpenAI-compatible)
-   - `providers/anthropic.py`
-   - `README.md` operator only (no secrets)
-3) Minimal interface:
-   `complete(provider, model, messages, work_id) -> {text, provider, model, usage, error}`
-4) Wire **one** path end-to-end for proof:
-   - Prefer: after successful /intention, if env `BEN_TWIN_PROVIDER` set, call bridge and append reply text to receipt JSON and return in /intention response so /chat shows it.
-   - If hub worker is cleaner given current code, do that — document which.
-5) Prove with whichever key is already on the machine (report provider name only, never key).
-   If **no** keys in env/DPAPI: implement full scaffold, prove UNAVAILABLE path, status `BRIDGE_READY_AWAITING_KEYS`.
+## Already established (do not re-debate)
+- DuckDuckGo HTML is a weak pipe; **direct official endpoints** are correct for DFW/Milan package.
+- 23/28 portals fetched; landing pages ≠ permit rows yet.
+- direct_fetch.py exists with backoff — use it / extend it.
+- SSL CERTIFICATE_VERIFY_FAILED on Dallas etc. = **local CA** — fix, don't skip forever.
 
-## Phase 2 — Chat UX
-- /chat already posts /intention; ensure JSON response can carry `twin_reply` when bridge runs.
-- Do not fake intelligence if provider fails — show error honestly.
+## Execute now (no approval)
+1) Fix venv CA: `python -m pip install --upgrade certifi` (and wire certifi SSL context in direct_fetch if needed). Re-fetch failed Dallas / dallascityhall / southlake endpoints.
+2) From rank 1–5 sources in the package, pull **dataset/API bulk** not only index HTML — especially Fort Worth open-data dataset endpoints and TRERC downloadable permit series when URLs are known from prior HTML or package lists.
+3) Collin CAD 403: try session + browser-like headers once; if still 403, log BLOCKED_REMOTE and continue other sources (do not stop the job).
+4) Write all rows to evidence_live\; zip handoff to experiment_handoffs\GATHER_<stamp>.zip with MANIFEST (counts, URLs, 429s, SSL fixes).
+5) **No understanding, no scoring, no competitor conclusions.**
+6) REPORT_LATEST.md one status line: `GATHER_ROWS_IN_PROGRESS` or `GATHER_HANDOFF_READY` + zip path + row counts.
 
-## Laws
-- External models are **ecosystem tools**, not O2A organs.
-- No canon/OSO writes from provider output unless BEN later promotes.
-- No keys in repo or logs.
-- Gather-only bulk order remains valid for data plane; this bite is **articulation/control plane**.
-
-## Report
-REPORT_LATEST.md status: `PROVIDER_BRIDGE_LIVE` | `BRIDGE_READY_AWAITING_KEYS` | `BLOCKED_<exact>`
-List providers implemented + which env vars expected.
+## Do not
+- Pre-throttle for politeness
+- Wait for BEN
+- Treat DDG as "the open web"
+- Write to OSO/canon
 
 **Sign:** Browser Grok
