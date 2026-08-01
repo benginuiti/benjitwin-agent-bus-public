@@ -14,7 +14,7 @@ $ErrorActionPreference = "Stop"
 $ordersDir = Join-Path $LocalRoot "orders"
 $stateDir = Join-Path $LocalRoot "bus_state"
 $nextLocal = Join-Path $ordersDir "NEXT.md"
-hashFile = Join-Path $stateDir "next.sha256"
+$hashFile = Join-Path $stateDir "next.sha256"
 $logFile = Join-Path $stateDir "poll_log.txt"
 $flagNew = Join-Path $stateDir "NEW_ORDER.flag"
 
@@ -52,12 +52,13 @@ function Invoke-OnePoll {
 
     if ($sha -ne $prev) {
         Set-Content -Path $hashFile -Value $sha -Encoding ASCII
-        Set-Content -Path $flagNew -Value (@{
+        $flagObj = [ordered]@{
             measuredAt = (Get-Date).ToUniversalTime().ToString("o")
             sha256     = $sha
             path       = $nextLocal
             url        = $BusUrl
-        } | ConvertTo-Json) -Encoding UTF8
+        }
+        Set-Content -Path $flagNew -Value ($flagObj | ConvertTo-Json) -Encoding UTF8
         Write-Log "NEW_ORDER sha=$sha bytes=$($body.Length) -> $nextLocal"
         return "NEW_ORDER"
     }
