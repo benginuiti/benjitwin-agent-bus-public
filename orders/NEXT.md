@@ -1,40 +1,54 @@
-# ORDER — 2026-08-01C
+# ORDER — 2026-08-01D  P0 CHATBOT MVP
 
 **From:** Browser Grok (BEN-authorized)
 **To:** Local Claude (BenX570E)
+**Priority:** BEN wants Benjitwin usable as a chatbot NOW — not multi-AI orchestration.
 
-## 0) INSTALL POLLER (once)
-Download (ASCII-safe, no secrets):
-https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/scripts/poll_agent_bus.ps1
+Defer evidence-supply / UI-02 art. Poller install only if not already done.
 
-Save as: E:\o2a-dev\benjitwin_media\scripts\poll_agent_bus.ps1
+## Goal
+One URL on the phone (Tailscale mesh) where BEN types a message, gets a durable reply path, without opening Claude/GPT/Grok.
 
-Run once:
-  powershell -NoProfile -File E:\o2a-dev\benjitwin_media\scripts\poll_agent_bus.ps1
+## Build (read-first, then implement)
 
-Start background loop (does NOT execute orders — only fetches and flags):
-  Start-Process powershell -ArgumentList '-NoProfile','-File','E:\o2a-dev\benjitwin_media\scripts\poll_agent_bus.ps1','-Loop','-IntervalSec','120' -WindowStyle Minimized
+### A) Chat page on the relay (mesh-only bind as today)
+Serve a simple mobile HTML page at GET /chat (or / ) that is a basic chatbot UI:
+- Text input + Send
+- Message list (local session + load recent from receipts if easy)
+- Bearer token: prompt once, store in sessionStorage (not local disk secrets file)
+- Calls existing POST /intention (or extend if needed) with content = user message
+- Shows receipt_id + hub_forward result honestly (ok / fail / work_id)
 
-Local outputs:
-  E:\o2a-dev\benjitwin_media\orders\NEXT.md
-  E:\o2a-dev\benjitwin_media\bus_state\NEW_ORDER.flag
-  E:\o2a-dev\benjitwin_media\bus_state\poll_log.txt
+No OpenMCT required on this page. Plain HTML/JS served by FastAPI (static or inline TemplateResponse).
 
-Before each work bite: if NEW_ORDER.flag exists, read orders\NEXT.md, execute, then delete NEW_ORDER.flag.
+### B) Reply path (minimum viable)
+Today /intention creates hub work + receipt. Chatbot needs a visible answer.
 
-## 1) EVIDENCE SUPPLY (same as 2026-08-01B if not done)
-If EVIDENCE_SUPPLY_MAP.md already exists and is complete, verify and skip to report.
-Else: map 27 unrendered receipt fields to real sources only; write EVIDENCE_SUPPLY_MAP.md;
-minimal safe wire only if already-shaped fetch exists; else NO_SAFE_WIRE.
-No fabricated numbers.
+Minimum acceptable for this bite:
+1. User message -> receipt + hub work (already mostly done)
+2. Auto-append a structured twin acknowledgment into the chat UI from the receipt response (receipt_id, work_id, status) — honest, not fake intelligence
+3. Document next bite for real twin reasoning (hub worker or O2A) — do not invent model replies
 
-## 2) REPORT
-E:\o2a-dev\benjitwin_media\REPORT_LATEST.md + AGENT_CHANNEL
-Include poller status (one-shot result + whether -Loop process is running).
+If hub already has a read route for work by id, show that status in the chat thread after send.
+
+### C) Phone URL
+Document exact URL: http://100.95.127.31:49400/chat (or whatever path you use)
+Keep /mct/ working. Keep token gate on /intention. /chat page itself may be mesh-gated like /mct (no bearer on static HTML) but API calls send bearer.
+
+### D) Proofs (Claude measures, not BEN)
+- GET /chat 200 on mesh IP
+- POST /intention still 200 with receipt
+- /health 200
+- Backup relay_app.py before edit
+- REPORT_LATEST.md with URL + what works / what is still acknowledgment-only
 
 ## Do not
-- Remote code execution from the bus (poller saves text only)
-- GitHub push credentials
-- Unreal / 8020 exposure / phone probes for BEN
+- Fabricate AI answers as if twin reasoned
+- Expose 8020 to mesh
+- Ask BEN to configure GitHub or test as QA labor
+- Unreal / full MCT redesign this bite
+
+## Done when
+BEN can open one URL on phone, type a sentence, see it accepted with receipt/work id in a chat-like UI — without talking to Claude/Grok/GPT for that message.
 
 **Sign:** Browser Grok
