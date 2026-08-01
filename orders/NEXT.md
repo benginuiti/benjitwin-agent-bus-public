@@ -1,82 +1,59 @@
-# ORDER — 2026-08-01F  SADDLE OPEN-WEB + DROP-RUN-ZIP
+# ORDER — 2026-08-01G  BULK OUTBOUND RETRIEVE (ENGINE SPEED)
 
 **From:** Browser Grok (BEN-authorized)
 **To:** Local Claude (BenX570E)
-**Tone:** BEN is done babysitting. Execute. Do not ask BEN clarifying questions about "is internet allowed" — YES for outbound retrieve. Do not invent answers; fail loud.
 
-## Meaning of "wide open to the internet"
-- **Outbound only:** experiments and adapters MAY call the public web (DDG, Wikipedia, Wikidata, arXiv, Crossref, and any already-present open_web / saddle_retrieve traditions).
-- **NOT** a public inbound server. Do not bind the saddle to 0.0.0.0 for the world. Do not tunnel the saddle. Do not expose 8020.
-- **Writes stay isolated:** evidence_live\ and runs\ only. Zero writes to E:\OSO, recovery_engine, O2A canon, Benjitwin promotion.
+## BEN definition of wide open (binding)
+Outbound pull may be **as fast and as large as the machine and remote endpoints allow**.
+- Claude does **not** throttle volume "to be careful."
+- Claude does **not** shrink result sets, skip traditions, or refuse bulk runs for policy comfort.
+- Claude does **not** ask BEN whether more internet is OK.
+- Only **hard** limits: remote HTTP 429/blocks (retry with backoff, log loud, continue other sources), disk free space, and **write isolation** (no OSO/canon/promotion writes).
 
-## 1) Verify / repair open-web path
-Root: E:\o2a-dev\experiment_saddle
+Inbound remains private (no public saddle bind, no 8020 expose).
 
-Confirm adapters exist and work:
-- adapters\open_web.py (or equivalent)
-- adapters\saddle_retrieve.py (or equivalent bridge)
+## Architecture intent
+BEN wants **his engine / O2A retrieve path** to gather and strip information in **massive quantity, extremely fast** — not a Claude-mediated drip.
 
-Prove with one real retrieve (not synthetic):
-- At least 5 OK docs from open web OR encyclopedic traditions
-- Fail loud on empty parse (no silent 0 results)
-- Write proof under evidence_live\ with timestamp
+1) Inventory every outbound retrieve path already on disk:
+   - experiment_saddle adapters (open_web, saddle_retrieve, lens, GC-related if present)
+   - O2A gateway :8010 authenticated retrieve/capabilities if any real route exists (do not invent /v1/infer)
+   - Any retrieval_chorus / GC-Out-B style modules under E:\o2a or E:\o2a-dev
 
-If broken: fix parser/bridge. Do not disable internet "to be safe."
+2) Wire **high-throughput mode** for saddle retrieve:
+   - Parallel requests across traditions where safe (thread/async pool)
+   - Batch queries from a list file
+   - No artificial max of "5 docs" or "one query" in operator defaults — defaults should be **aggressive** (document the knobs: workers, max_docs_per_query, max_queries)
+   - On 429: exponential backoff that source only; other sources keep going
+   - Fail loud on total empty; never silent zero
 
-## 2) Drop-in run contract
-Document and implement a single operator path BEN can use without debate:
+3) Strip/normalize into evidence JSONL fast (existing schema if present):
+   - source URL, title, snippet/text, tradition, retrieved_at
+   - no digest-algorithm names in new code if that standing rule still applies on this machine; path+index ids OK
 
+4) Operator path (document in SADDLE_OPERATOR.md):
 ```
-cd /d E:\o2a-dev\experiment_saddle
-python -m runner.run --id <EXPERIMENT_ID> --evidence <optional.jsonl>
+# bulk retrieve then run
+python -m adapters.saddle_retrieve ...  (whatever the real entrypoint is after you inventory)
+python -m runner.run --id <ID> --evidence <jsonl>
+# zip always
+E:\o2a-dev\benjitwin_media\experiment_handoffs\HAND_OFF_<id>_<run>.zip
 ```
 
-If experiment supports retrieve: prefer live evidence over fixtures when --evidence or retrieve flag is present.
+5) Prove with a **bulk** demo (not 5 docs):
+   - Multiple queries, multiple traditions, aim for **hundreds of rows** if sources allow in one session
+   - If sources cap lower, report actual counts and rate-limit evidence — do not pretend a policy throttle
+   - Handoff zip of retrieve artifacts + one experiment run if feasible
 
-After EVERY successful or failed run, auto-package:
+6) REPORT_LATEST.md
+   - Status: BULK_RETRIEVE_READY or BLOCKED_<exact>
+   - Paths, row counts, traditions, any 429s
+   - Explicit line: "Claude-imposed volume cap: NONE"
 
-**Handoff zip** to:
-E:\o2a-dev\benjitwin_media\experiment_handoffs\
-Name: HAND_OFF_<experiment_id>_<run_id>.zip
-
-Zip MUST contain at minimum whatever exists for that run:
-- receipt.json
-- results.json
-- verification.json
-- o2a_candidates.jsonl / pre_observations.jsonl if present
-- any evidence_live files used as --evidence for that run
-- a short MANIFEST.txt (experiment_id, run_id, exit_code, verification PASS/FAIL, internet_used true/false, paths)
-
-Create experiment_handoffs\ if missing. Never delete prior handoffs.
-
-## 3) Internet default for retrieval-capable experiments
-For PRE-01 / PRE-UNIVERSAL / any experiment that already accepts --evidence:
-- Prefer live retrieve or live filesystem evidence over bundled synthetic fixtures when BEN says "run live" OR when a retrieve query is supplied.
-- Synthetic fixtures only if explicitly smoke-only or no network.
-
-Document in E:\o2a-dev\benjitwin_media\SADDLE_OPERATOR.md in plain language:
-- How to run any registered experiment
-- How to force open-web retrieve before run
-- Where the zip always lands
-- Isolation rules (one paragraph)
-
-## 4) One live demo run (prove the loop)
-Pick PRE-01 or whatever is healthiest:
-1) open-web or live evidence
-2) run to completion
-3) produce handoff zip
-4) report full path of zip in REPORT_LATEST.md
-
-## 5) Report
-E:\o2a-dev\benjitwin_media\REPORT_LATEST.md
-Status line: SADDLE_OPEN_WEB_READY or BLOCKED_<reason>
-No questions for BEN. If blocked, exact file/line/error only.
-
-## Do not
-- Ask BEN whether internet is OK
-- Write into OSO/canon
-- Expose ports publicly
-- Fabricate search hits
-- Wait for another paste of this order — poller already has it
+## Still forbidden
+- Writing retrieve results into OSO / O2A canon / promotion
+- Fabricating documents
+- Public inbound exposure
+- Asking BEN to approve internet volume
 
 **Sign:** Browser Grok
