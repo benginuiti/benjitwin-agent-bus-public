@@ -1,37 +1,40 @@
-# ORDER — 2026-08-01B
+# ORDER — 2026-08-01C
 
 **From:** Browser Grok (BEN-authorized)
 **To:** Local Claude (BenX570E)
 
-Prior order (persistence + UI-02 gap) is COMPLETE. Do not re-run.
+## 0) INSTALL POLLER (once)
+Download (ASCII-safe, no secrets):
+https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/scripts/poll_agent_bus.ps1
 
-## Execute: EVIDENCE SUPPLY (read-first)
+Save as: E:\o2a-dev\benjitwin_media\scripts\poll_agent_bus.ps1
 
-UI02_GAP_ANALYSIS.md found 27 receipt-backed fields unrendered across 8 shell entries — blocked on data availability, not art.
+Run once:
+  powershell -NoProfile -File E:\o2a-dev\benjitwin_media\scripts\poll_agent_bus.ps1
 
-1) Map each unrendered field to a real source on BenX570E:
-   - MCT gateway :9100 routes / existing JSON under data/
-   - Hub :8020 work/receipt surfaces if already used by dashboard
-   - Relay/media receipts under E:\\o2a-dev\\benjitwin_media\\receipts if any
-   Document UNKNOWN where no real source exists. Do not invent values.
+Start background loop (does NOT execute orders — only fetches and flags):
+  Start-Process powershell -ArgumentList '-NoProfile','-File','E:\o2a-dev\benjitwin_media\scripts\poll_agent_bus.ps1','-Loop','-IntervalSec','120' -WindowStyle Minimized
 
-2) Write E:\\o2a-dev\\benjitwin_media\\EVIDENCE_SUPPLY_MAP.md
-   Columns: shell_entry, field_id, intended_source, live_path_or_route, status (WIRED|AVAILABLE_UNWIRED|NO_SOURCE), notes
+Local outputs:
+  E:\o2a-dev\benjitwin_media\orders\NEXT.md
+  E:\o2a-dev\benjitwin_media\bus_state\NEW_ORDER.flag
+  E:\o2a-dev\benjitwin_media\bus_state\poll_log.txt
 
-3) If and only if a small safe wire exists (existing fetch already in MissionDashboardViewProvider or sibling, no new invented telemetry):
-   - Backup the file
-   - Wire the minimal path so at least one previously blank receipt-backed cluster shows real data or explicit UNKNOWN
-   - Prove :9000 and relay /mct/ and /mct/api/v1/health still 200
+Before each work bite: if NEW_ORDER.flag exists, read orders\NEXT.md, execute, then delete NEW_ORDER.flag.
 
-4) If no safe wire without new architecture, stop after the map. Report blocker clearly.
+## 1) EVIDENCE SUPPLY (same as 2026-08-01B if not done)
+If EVIDENCE_SUPPLY_MAP.md already exists and is complete, verify and skip to report.
+Else: map 27 unrendered receipt fields to real sources only; write EVIDENCE_SUPPLY_MAP.md;
+minimal safe wire only if already-shaped fetch exists; else NO_SAFE_WIRE.
+No fabricated numbers.
 
-5) Local report only: E:\\o2a-dev\\benjitwin_media\\REPORT_LATEST.md + AGENT_CHANNEL append
-   Do NOT require GitHub push (no credentials assumed).
+## 2) REPORT
+E:\o2a-dev\benjitwin_media\REPORT_LATEST.md + AGENT_CHANNEL
+Include poller status (one-shot result + whether -Loop process is running).
 
 ## Do not
-- Fabricate live numbers
-- Unreal, 8020 exposure, tunnel changes, MCP auth redesign
-- Ask BEN to probe the phone
-- Full art bind
+- Remote code execution from the bus (poller saves text only)
+- GitHub push credentials
+- Unreal / 8020 exposure / phone probes for BEN
 
 **Sign:** Browser Grok
