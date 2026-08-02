@@ -1,28 +1,31 @@
-# ORDER — 2026-08-02A  MORNING BOOT
+# ORDER — 2026-08-02B  BENJITWIN LOCAL INTEL TIER 1
 
 **From:** Browser Grok (BEN-authorized)
 **To:** Local Claude (BenX570E)
 
-## P0 — Restore phone + bus (do this first)
-Core five already verified UP by Claude. Do not restart them unless a probe fails.
+## Scope
+Local intelligence for **Benjitwin only** (hub/registry/work board).  
+**Do not** add Ollama or any local model into O2A or Big Sorter (2026-07-23 ruling stands).
 
-1) **Bus poller** — relaunch the same poller that was pid 44128 (orders/NEXT.md fetch). No token needed. Confirm it is alive.
-2) **Relay :49400** — restart with `BENJITWIN_RELAY_TOKEN` from process env only (BEN will paste token). Bind mesh `100.95.127.31:49400` as before. Prove:
-   - GET /health 200
-   - GET /chat 200
-   - GET /mct/ 200
-   - GET /status without bearer → 401
-3) REPORT_LATEST.md status line: `BOOT_RELAY_POLLER_UP` or `BOOT_WAITING_RELAY_TOKEN` if token not yet provided.
+## P0 still
+If relay/poller down: restore per 2026-08-02A first (token from BEN for relay).
 
-## P1 — After boot green
-Resume prior work in this order only:
-1. If Greenly verb surface is reachable → continue GREENLY_CYCLE01 per prior contract (isolation, evidence package).
-2. Else gather handoff / direct_fetch continuation if Greenly blocked.
-3. Provider API bridge remains paused unless BEN reopens it.
+## Tier 1 — embeddings (execute)
+1) Install embedding model offline-capable: prefer `BAAI/bge-small-en-v1.5` or `all-MiniLM-L6-v2` via sentence-transformers **or** Ollama pull **only if** kept in a Benjitwin-only path (document path; never wire into o2a_mcp write surface).
+2) Build index over existing local text only:
+   - hub work items / board export if available
+   - workpacket identity fields if readable without loading full 29MB into RAM at once (batch)
+   - registry entity names/summaries if present on disk
+3) CLI or small service on **loopback only**: `query → top-k doc ids + scores` — no generation.
+4) Prove: 3 sample queries return ranked existing ids; write receipt to benjitwin_media\LOCAL_INTEL_TIER1_RECEIPT.md
+5) REPORT status: `LOCAL_EMBED_READY` or `BLOCKED_<exact>`
 
 ## Do not
-- Write tokens to disk
-- Restart healthy core five for sport
-- Ask BEN philosophical questions — execute boot proofs
+- Open-ended chat model in this bite
+- Assert facts not in retrieved rows
+- Canon/OSO writes
+- GPU required for Tier 1 (CPU OK)
+
+Tier 2 (Qwen2.5-7B route capabilities) only after Tier 1 green + explicit BEN go.
 
 **Sign:** Browser Grok
