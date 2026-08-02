@@ -1,44 +1,35 @@
-# ORDER — 2026-08-02D  SLACK OPS CHANNEL
+# ORDER — 2026-08-02E  HUB WORKER V0
 
 **From:** Browser Grok (BEN-authorized)
 **To:** Local Claude (BenX570E)
-**BEN:** go slack
+**BEN:** Go hub worker
 
 ## Goal
-Private Slack ops channel that mirrors machine status and accepts **allowlisted** commands only. Not a replacement for hub receipts. No secrets in Slack messages.
+Replace routine paste/Claude execution for OPEN hub items. v0 is ack + status + Slack thread reply. No cloud LLM keys required. No arbitrary shell.
 
-## BEN does first (Claude cannot)
-1. Create Slack app at api.slack.com → Socket Mode ON
-2. Bot scopes minimum: `chat:write`, `channels:history`, `channels:read`, `app_mentions:read` (add `commands` if slash commands used)
-3. Install to workspace; create private channel e.g. `#benjitwin-ops`; invite bot
-4. Put tokens in **DPAPI / process env only** — never disk in git:
-   - `BEN_SLACK_BOT_TOKEN` (xoxb-…)
-   - `BEN_SLACK_APP_TOKEN` (xapp-… for Socket Mode)
-5. Tell Claude when env is set (do not paste full tokens into chat if avoidable)
+## Location
+`E:\o2a-dev\benjitwin_hub_worker\` (new)
+Share 3.12 venv patterns with relay/slack if practical.
 
-## Claude executes when tokens available
-1. Scaffold `E:\o2a-dev\benjitwin_slack\`:
-   - `worker.py` — Socket Mode listener OR short-poll if simpler and documented
-   - Allowlist only:
-     - `status` → core ports + relay probe summary
-     - `report` → last 30 lines REPORT_LATEST.md or path
-     - `next` → fetch public NEXT.md raw (no secrets) and post summary
-     - `channel` → append note to AGENT_CHANNEL.md that Slack received command
-   - Reject everything else with fixed message
-2. On startup post one line to channel: `benjitwin-slack-worker up`
-3. Mirror: when REPORT_LATEST.md status line changes, optional post (debounce 60s)
-4. Loopback / local process only; no exposure of 8020 to Slack network
-5. README operator steps; **no tokens in README**
-6. If tokens **not** in env: write scaffold + `SLACK_WAITING_TOKENS` in REPORT_LATEST.md — do not block other work forever
+## Behavior
+1. Poll `http://127.0.0.1:8020` for OPEN work (use real hub API from source — do not invent routes; read hub code first).
+2. Claim one eligible item if hub supports claim; else process with explicit "worker touch" note without violating self-verify bans.
+3. Allowlist actions only:
+   - **ack** — mark handled path with receipt under `benjitwin_media\receipts\`
+   - **status** — same port summary style as Slack heartbeat (loopback probes)
+   - **echo** — return title/description truncated in result
+4. If work description/meta contains Slack channel+thread (from Slack intake), post result back to that thread via existing Slack bot tokens (env/DPAPI). If no Slack context, write receipt only.
+5. Never: OSO writes, promote, delete, arbitrary shell from title text, provider API calls in v0.
+6. start script: `start_hub_worker.ps1` — restart-safe, logs to benjitwin_media\hub_worker.log
+7. Heartbeat optional line to #runtime every N minutes: `hub-worker v0 alive`
 
-## Laws
-- Never post O2A_GATEWAY_TOKEN, relay token, API keys, or file contents from E:\OSO
-- Never run arbitrary shell from Slack text
-- Hub/receipts remain source of truth for work
+## Hub auth
+8020 currently may have no auth — do not expose; worker is loopback only. Document exact routes used in HUB_WORKER_V0.md
 
 ## Report
-Status: `SLACK_WORKER_UP` | `SLACK_WAITING_TOKENS` | `BLOCKED_<exact>`
+`HUB_WORKER_V0_UP` with: poll interval, routes used, one test work_id processed, Slack reply yes/no.
+Or `BLOCKED_<exact>` if hub API cannot claim/list OPEN.
 
-Parallel OK: if LOCAL INTEL Bite 0–1 was in progress, finish or note paused.
+Slack worker stays running; do not break it.
 
 **Sign:** Browser Grok
