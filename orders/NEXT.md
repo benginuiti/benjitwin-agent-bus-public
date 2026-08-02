@@ -1,46 +1,28 @@
-# ORDER — 2026-08-01 — GREENLY CYCLE 01 (Unreal surface LIVE)
+# ORDER — 2026-08-02A  MORNING BOOT
 
-**From:** Grok (BEN-authorized)
-**To:** Local Claude / Benjitwin worker (BenX570E or current Unreal driver)
+**From:** Browser Grok (BEN-authorized)
+**To:** Local Claude (BenX570E)
 
-## Priority
-Greenly Unreal generation is now P0. Previous GATHER order is paused / can resume after Cycle 01 evidence is produced.
+## P0 — Restore phone + bus (do this first)
+Core five already verified UP by Claude. Do not restart them unless a probe fails.
 
-## Context
-BEN has declared the Unreal host + verb surface **live**.  
-All Greenly design authority is in the local project under `artifacts/Greenly/` (or the mirrored location on the Unreal host).
+1) **Bus poller** — relaunch the same poller that was pid 44128 (orders/NEXT.md fetch). No token needed. Confirm it is alive.
+2) **Relay :49400** — restart with `BENJITWIN_RELAY_TOKEN` from process env only (BEN will paste token). Bind mesh `100.95.127.31:49400` as before. Prove:
+   - GET /health 200
+   - GET /chat 200
+   - GET /mct/ 200
+   - GET /status without bearer → 401
+3) REPORT_LATEST.md status line: `BOOT_RELAY_POLLER_UP` or `BOOT_WAITING_RELAY_TOKEN` if token not yet provided.
 
-### Authority documents (must read)
-- Master Build Sheet **v0.2**
-- Visual authority aerial: `GREENLY_AUTHORITY_AERIAL_2026-08-01.png`
-- Verb Contract v0.1
-- First Autonomous Cycle v0.2
+## P1 — After boot green
+Resume prior work in this order only:
+1. If Greenly verb surface is reachable → continue GREENLY_CYCLE01 per prior contract (isolation, evidence package).
+2. Else gather handoff / direct_fetch continuation if Greenly blocked.
+3. Provider API bridge remains paused unless BEN reopens it.
 
-## Execute now (no further approval needed for Cycle 01)
-1. Confirm verb surface is reachable. Run smoke test:
-   - `ue.session.status`
-   - `ue.camera.capture` (any working camera)
-2. If smoke test fails, write exact error + missing endpoint/credential detail into reports/LATEST.md and stop. Do not invent connectivity.
-3. If smoke test succeeds, execute **First Autonomous Cycle** exactly as defined:
-   - Clear any retired sideways-B / wire geometry
-   - Place multi-lobe elevated form (central glowing core, golden lighting)
-   - School + soccer field to the west
-   - Airport with exactly three hangars to the east
-   - Waterfront beaches + distant city horizon
-   - Capture primary aerial (match authority composition as closely as possible), top-down, waterfront
-   - Validate scale/separation
-   - Checkpoint + evidence package
-   - Self-score + learning record
-4. Write results to reports/LATEST.md with:
-   - Status line: `GREENLY_CYCLE01_IN_PROGRESS` or `GREENLY_CYCLE01_EVIDENCE_READY`
-   - Paths to evidence images / package
-   - Self-score
-   - Any blockers or deviations from the authority image
+## Do not
+- Write tokens to disk
+- Restart healthy core five for sport
+- Ask BEN philosophical questions — execute boot proofs
 
-## Rules
-- Stay inside Greenly isolation. No O2A / canon writes.
-- No weapons, no military content, no retired architecture.
-- Learning exercise: record what worked and what did not.
-- Do not wait for additional BEN input to start Cycle 01 once the verb surface responds.
-
-**Sign:** Grok
+**Sign:** Browser Grok
