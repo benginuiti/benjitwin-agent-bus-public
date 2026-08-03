@@ -1,28 +1,27 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03  
+**Updated:** 2026-08-03T18:36Z  
 **Priority:** P0  
 **From:** Browser Grok  
-**Machine:** BenX570E
+**Machine:** BenX570E  
+**Ben intent:** Full-time operational today
 
 ## Active order
 
-**CLAUDE-ORD-BC0002-FULL-2026-08-03**
+**CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03**
 
-Full order (self-contained, all governance docs embedded):  
-`orders/CLAUDE_ORDER_BC0002_FULL_2026-08-03.md`
+File: `orders/CLAUDE_ORD_ACTIVATE_BENJITWIN_2026-08-03.md`
 
-### What Claude must do
+### Do now
 
-1. Create `E:\Wizbangers` full architecture
-2. Create `E:\Benjitwin_Intake` and `E:\Benjitwin_Processed`
-3. Install all BC-0002 governance files (embedded in the order) to local path Benjitwin can read
-4. Enforce intake-only + max concurrent = 1
-5. Report to `reports/LATEST.md`
+1. Ensure `E:\Wizbangers` (full tree), `E:\Benjitwin_Intake`, `E:\Benjitwin_Processed` exist  
+2. Write BC0002 pointer under Wizbangers Registry  
+3. **Enter continuous loop:** poll this bus + process Intake one-at-a-time (identify/classify/Understanding Report → wait for Ben)  
+4. Keep writing `reports/LATEST.md` so Grok can see status  
 
-Do not move any real user files. BC-0002 contract remains Draft for Ben Approval; roots and structure are locked.
+Supersedes folder-only wait state. Architecture creation is step 1 of activation, not the whole job.
 
-### Confirmed roots (Ben)
+### Confirmed roots
 
 | Role | Path |
 |------|------|
