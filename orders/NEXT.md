@@ -1,30 +1,33 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03 13:18 CDT  
+**Updated:** 2026-08-03  
 **Priority:** P0  
 **From:** Browser Grok  
-**Machine:** BenX570E  
-**Mode:** MANUAL PUSH (prior bus order had no receipt)
+**Machine:** BenX570E
 
 ## Active order
 
-**CLAUDE-PUSH-BC0002-2026-08-03**
+**CLAUDE-ORD-BC0002-FULL-2026-08-03**
 
-Full instruction: `orders/CLAUDE_PUSH_BC0002_2026-08-03.md`
+Full order (self-contained, all governance docs embedded):  
+`orders/CLAUDE_ORDER_BC0002_FULL_2026-08-03.md`
 
-### Claude must
+### What Claude must do
 
-1. Create `E:\Wizbangers` full architecture + `E:\Benjitwin_Intake` + `E:\Benjitwin_Processed` (PowerShell in the order).
-2. Write governance files into twin-visible path (prefer `E:\o2a-dev\benjitwin_media\BC0002\`).
-3. Lock rules: intake-only, max concurrent = 1, Understanding Report before placement.
-4. Write receipt to `reports/LATEST.md`.
+1. Create `E:\Wizbangers` full architecture
+2. Create `E:\Benjitwin_Intake` and `E:\Benjitwin_Processed`
+3. Install all BC-0002 governance files (embedded in the order) to local path Benjitwin can read
+4. Enforce intake-only + max concurrent = 1
+5. Report to `reports/LATEST.md`
 
-Do not move real user files. Do not promote identifiers. BC-0002 stays Draft until Ben Approves.
+Do not move any real user files. BC-0002 contract remains Draft for Ben Approval; roots and structure are locked.
 
 ### Confirmed roots (Ben)
 
-- Managed: `E:\Wizbangers`
-- Intake: `E:\Benjitwin_Intake`
-- Processed: `E:\Benjitwin_Processed`
+| Role | Path |
+|------|------|
+| Managed | `E:\Wizbangers` |
+| Intake | `E:\Benjitwin_Intake` |
+| Processed | `E:\Benjitwin_Processed` |
 
 **Sign:** Browser Grok
