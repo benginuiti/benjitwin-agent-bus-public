@@ -1,53 +1,58 @@
 # LATEST REPORT
-**Order:** CLAUDE-ORD-FIRST-UNDERSTANDING-2026-08-03
-**Timestamp:** 2026-08-03T19:10Z (approx)
-**Status:** REPORT_READY
+**Order:** CLAUDE-ORD-PLACE-AUR-001-2026-08-03
+**Timestamp:** 2026-08-03T19:45Z (approx)
+**Status:** COMPLETE
 **From:** Local Claude (machine) + Browser Grok (bus write)
 
-## Roots (resolved by evidence)
+## Placement result — AUR-001
+
+| Field | Value |
+|-------|--------|
+| artifact_id | AUR-001 |
+| family_id | FAM-SFT-2026-07 |
+| classifiers | primary=research; secondary=product,output |
+| managed_path | E:\\Wizbangers\\40_RESEARCH\\Structured_Forensic_Teardown\\ |
+| processed_path | E:\\W_BENJITWIN_PROCESSED\\Structured Forensic Teardown\\ |
+| registry_entry | BC0002\\REGISTRY\\ENTRIES\\AUR-001.yaml (5,620 B) |
+| intake remaining | 0 |
+| files deleted | 0 |
+| identifiers promoted | 0 |
+| classifiers promoted | 0 |
+
+## Verification
+
+Integrity verified **twice**:
+1. After managed copy (byte length + content digest)
+2. After original moved to Processed (re-read from disk against final resting place)
+
+Both matched both times.
+
+## Deviation (corrected)
+
+`Copy-Item -Recurse` nested one level too deep (`...\\Structured_Forensic_Teardown\\Structured Forensic Teardown\\`). Corrected by moving the two files up into the approved destination and removing the empty nested directory created by that same operation. Re-verified after fix. Recorded as `COPY_DEPTH_CORRECTED`.
+
+## Authority notes in Registry
+
+- Classifier collision resolved **by Ben authority**, not by executor first-match.
+- AMAZINGCHORUS remains UNKNOWN / unlinked.
+- Inspector/Investigator lineage remains MEDIUM / HYPOTHESIS.
+
+## Roots (final)
 
 | Role | Path | Status |
 |------|------|--------|
-| Managed | E:\\Wizbangers | Present — full architecture |
-| Intake | E:\\W_BENJITWIN_INTAKE | Present (created/renamed 12:21:36) — holds artifact |
-| Processed | E:\\W_BENJITWIN_PROCESSED | Present — empty |
+| Managed | E:\\Wizbangers | Present |
+| Intake | E:\\W_BENJITWIN_INTAKE | Empty |
+| Processed | E:\\W_BENJITWIN_PROCESSED | Holds original of AUR-001 |
 
-No W: volume exists. Bare `W_BENJITWIN_*` paths were correctly rejected (would have landed in System32). Old E:\\Benjitwin_* names are gone (renamed).
+## Hard limits held
 
-## Governance
+max concurrent = 1 · nothing else selected · stopped per order
 
-- DOC-G / DOC-H: installed
-- DOC-A: installed as published (8,977 B / 360 lines; §1–11 full; §12–22 collapsed note pointing at portfolio). Gap recorded. Not the 643-line portfolio original.
+## Persistent blocker
 
-## Artifact Understanding Report
+Local Claude still has no push credential → bus write requires Grok ferry (now four orders deep). Recommend solving with scoped token or formal ferry rule before next cycle.
 
-**ID:** AUR-001  
-**Local path:** BC0002\\UNDERSTANDING_REPORTS\\AUR-001_Structured_Forensic_Teardown_2026-08-03.md (10,546 B)  
-**Selected unit:** Structured Forensic Teardown (750-line transcript + 62-entry zip package) treated as **one artifact**  
-**Moved / copied / placed / deleted:** 0 / 0 / 0 / 0  
-**Identifiers / classifiers promoted or applied:** 0
-
-### Summary of understanding
-
-- Origin-to-product record of the Grawinholding assessment.
-- Transcript is the session where a suspicious-company claim was dismantled and nine formal methods were named (ACH/Heuer, TMS, description logics, Allen Interval Algebra, make-the-error-unrepresentable, double-entry redundancy, Fellegi–Sunter, Admiralty Code, Dung argumentation).
-- Zip is the product that session became (skill, case study, approved deliverables, provenance, marketing).
-- Lines 13–25: four failures in one AI-authored sentence ending in unknown→suspicious — same failure class the honesty spine exists to prevent.
-- Lineage to Inspector/Investigator: MEDIUM confidence (method correspondence + date alignment; no explicit naming inside this artifact).
-
-### Blockers requiring Ben ruling
-
-1. **Classifier collision** — product / research / output all pass cleanly. CANDIDATE_SET conflict_rule forbids first-match. Claude proposed no destination.
-2. **Unit vs family** — ten independently shippable sections. DOC-G has `family_id`. Is this one artifact or a family needing a family_id?
-
-### Unresolved
-
-- **AMAZINGCHORUS** appears in the package and nowhere else in the recovered corpus. Third Chorus-named thing, or lens of an existing one — not assumed.
-
-## Hard limits still held
-
-intake unchanged · processed empty · max concurrent = 1 · nothing placed
-
-**Next:** Ben rules on classifier collision + unit/family. Then placement decision.
+**Next:** Intake empty. Awaiting next drop into E:\\W_BENJITWIN_INTAKE or new bus order.
 
 **Sign:** Browser Grok (bus) + Local Claude (machine)
