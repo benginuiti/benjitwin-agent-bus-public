@@ -1,58 +1,40 @@
 # LATEST REPORT
-**Order:** CLAUDE-ORD-PLACE-AUR-001-2026-08-03
-**Timestamp:** 2026-08-03T19:45Z (approx)
-**Status:** COMPLETE
-**From:** Local Claude (machine) + Browser Grok (bus write)
+**Timestamp:** 2026-08-03T22:00Z (approx)
+**Status:** LIBRARY_PARTIAL + FOUNDER_MEMORY_DRAFT
+**From:** Local Claude (GCS/GRE install) + Browser Grok (Founder Memory draft + bus)
 
-## Placement result — AUR-001
+## Machine (Claude)
 
-| Field | Value |
-|-------|--------|
-| artifact_id | AUR-001 |
-| family_id | FAM-SFT-2026-07 |
-| classifiers | primary=research; secondary=product,output |
-| managed_path | E:\\Wizbangers\\40_RESEARCH\\Structured_Forensic_Teardown\\ |
-| processed_path | E:\\W_BENJITWIN_PROCESSED\\Structured Forensic Teardown\\ |
-| registry_entry | BC0002\\REGISTRY\\ENTRIES\\AUR-001.yaml (5,620 B) |
-| intake remaining | 0 |
-| files deleted | 0 |
-| identifiers promoted | 0 |
-| classifiers promoted | 0 |
+- GCS / GRE definition install under `E:\\Wizbangers\\00_CONSTITUTION` — COMPLETE (18 files / 15 folders reported)
+- Superseded roots NOT created (`E:\\Benjitwin_*` left absent)
+- Live roots: `E:\\Wizbangers` | `E:\\W_BENJITWIN_INTAKE` | `E:\\W_BENJITWIN_PROCESSED`
+- Policy DRAFTs: `governs=false`, approval=0 — correct
+- GRE definition present; **runtime does not exist** — honest
+- Intake processed: 0 · deleted: 0 · promoted: 0
+- Local report: `E:\\o2a-dev\\benjitwin_media\\REPORT_GCS_GRE_INSTALL.md`
 
-## Verification
+## Critical gap (Claude) — partially addressed in portfolio
 
-Integrity verified **twice**:
-1. After managed copy (byte length + content digest)
-2. After original moved to Processed (re-read from disk against final resting place)
+Founder Memory was highest in GRE resolution order but missing from Library.
 
-Both matched both times.
+**Grok created Draft (portfolio only, not auto-installed to E:):**
 
-## Deviation (corrected)
+```
+03_PORTFOLIO/BENJITWIN/00_CONSTITUTION/Founder_Memory/
+  FOUNDER_MEMORY_v0.1.md
+  README.md
+  known_identities/WZ-ID-PROD-001_Structured_Forensic_Teardown.yaml
+```
 
-`Copy-Item -Recurse` nested one level too deep (`...\\Structured_Forensic_Teardown\\Structured Forensic Teardown\\`). Corrected by moving the two files up into the approved destination and removing the empty nested directory created by that same operation. Re-verified after fix. Recorded as `COPY_DEPTH_CORRECTED`.
+- Status: **Draft for Ben Approval** — does not govern until Ben approves
+- Seed identity: Structured Forensic Teardown = **Product** (Wizbangers), preferred_top_level 30_PRODUCTS
+- Assembled only from prior Ben declarations + session correction (AUR-001 inversion)
 
-## Authority notes in Registry
+## Still open
 
-- Classifier collision resolved **by Ben authority**, not by executor first-match.
-- AMAZINGCHORUS remains UNKNOWN / unlinked.
-- Inspector/Investigator lineage remains MEDIUM / HYPOTHESIS.
+- Ben approve / amend Founder Memory v0.1
+- Optional: install approved Founder Memory onto `E:\\Wizbangers\\00_CONSTITUTION\\Founder_Memory\\`
+- GRE runtime: does not exist
+- Claude bus push credential: still missing (structural)
 
-## Roots (final)
-
-| Role | Path | Status |
-|------|------|--------|
-| Managed | E:\\Wizbangers | Present |
-| Intake | E:\\W_BENJITWIN_INTAKE | Empty |
-| Processed | E:\\W_BENJITWIN_PROCESSED | Holds original of AUR-001 |
-
-## Hard limits held
-
-max concurrent = 1 · nothing else selected · stopped per order
-
-## Persistent blocker
-
-Local Claude still has no push credential → bus write requires Grok ferry (now four orders deep). Recommend solving with scoped token or formal ferry rule before next cycle.
-
-**Next:** Intake empty. Awaiting next drop into E:\\W_BENJITWIN_INTAKE or new bus order.
-
-**Sign:** Browser Grok (bus) + Local Claude (machine)
+**Sign:** Browser Grok
