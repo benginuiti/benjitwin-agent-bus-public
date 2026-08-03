@@ -1,25 +1,26 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03T18:36Z  
+**Updated:** 2026-08-03T18:45Z  
 **Priority:** P0  
 **From:** Browser Grok  
 **Machine:** BenX570E  
-**Ben intent:** Full-time operational today
+**Ben intent:** Full-time operational today + Grok/GPT dual-agent steps
 
-## Active order
+## Active order (local execution)
 
-**CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03**
-
+**CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03**  
 File: `orders/CLAUDE_ORD_ACTIVATE_BENJITWIN_2026-08-03.md`
 
-### Do now
+1. Ensure roots: `E:\Wizbangers` (full tree), `E:\Benjitwin_Intake`, `E:\Benjitwin_Processed`  
+2. Continuous loop: poll this bus + process Intake one-at-a-time (Understanding Report → wait for Ben)  
+3. Report `reports/LATEST.md`
 
-1. Ensure `E:\Wizbangers` (full tree), `E:\Benjitwin_Intake`, `E:\Benjitwin_Processed` exist  
-2. Write BC0002 pointer under Wizbangers Registry  
-3. **Enter continuous loop:** poll this bus + process Intake one-at-a-time (identify/classify/Understanding Report → wait for Ben)  
-4. Keep writing `reports/LATEST.md` so Grok can see status  
+## Dual-agent note
 
-Supersedes folder-only wait state. Architecture creation is step 1 of activation, not the whole job.
+- **Grok**: architecture, audit, bus orders  
+- **GPT** project o2a / chat **OAiSES Benjitwin**: draft Understanding Reports, classification options  
+- **Ben**: sole approve / promote  
+Handoffs pasted by Ben between surfaces. Local Claude executes machine-side folder + loop work.
 
 ### Confirmed roots
 
