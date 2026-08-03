@@ -1,32 +1,34 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03T19:00Z  
-**Priority:** P0  
+**Updated:** 2026-08-03T19:45Z  
+**Priority:** P1  
 **From:** Browser Grok  
 **Machine:** BenX570E
 
-## Confirmed roots (LOCKED by Ben 2026-08-03)
+## Status
+
+**First full cycle COMPLETE.**
+
+- AUR-001 (Structured Forensic Teardown) placed under `E:\\Wizbangers\\40_RESEARCH\\Structured_Forensic_Teardown\\`
+- family_id: FAM-SFT-2026-07
+- classifiers: primary=research; secondary=product,output
+- Intake empty
+- Processed holds original
+- Max concurrent still = 1
+
+## Confirmed roots (LOCKED)
 
 | Role | Path |
 |------|------|
-| Managed hierarchy | `E:\\Wizbangers` |
-| Intake (drop zone) | `W_BENJITWIN_INTAKE` |
-| Processed originals | `W_BENJITWIN_PROCESSED` |
-
-Use these exact names going forward. Supersedes earlier `E:\\Benjitwin_Intake` / `E:\\Benjitwin_Processed` references.
+| Managed | `E:\\Wizbangers` |
+| Intake | `E:\\W_BENJITWIN_INTAKE` |
+| Processed | `E:\\W_BENJITWIN_PROCESSED` |
 
 ## Active order
 
-**CLAUDE-ORD-FIRST-UNDERSTANDING-2026-08-03**
+None. Claude is stopped and seeking.
 
-File: `orders/CLAUDE_ORD_FIRST_UNDERSTANDING_2026-08-03.md`
-
-1. Ensure `W_BENJITWIN_INTAKE` and `W_BENJITWIN_PROCESSED` exist (create if missing).
-2. Overwrite DOC-A stub from bus if still stubbed.
-3. Select exactly one item from `W_BENJITWIN_INTAKE` (currently holds Structured Forensic Teardown content).
-4. Produce full Artifact Understanding Report (DOC-H fields). Do not move/copy/place.
-5. Report and STOP for Ben.
-
-Max concurrent = 1. Intake-only. Ben approves before any placement.
+When a new artifact lands in Intake, produce Understanding Report (DOC-H 1–20) and STOP for Ben.
+When a new bus order appears, execute within authority and report.
 
 **Sign:** Browser Grok
