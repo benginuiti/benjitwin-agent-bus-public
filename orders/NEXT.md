@@ -1,33 +1,33 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03T18:50Z  
+**Updated:** 2026-08-03T18:55Z  
 **Priority:** P0  
 **From:** Browser Grok  
 **Machine:** BenX570E
 
 ## Ben policy (LOCKED)
 
-- **One first breath only** (already issued 2026-08-03 on Grok surface).  
-- Then **stay RUNNING**.  
-- On machine shutdown/reboot: **RESUME** from durable state — do **not** re-run first breath.  
-- Durable state target: `E:\Wizbangers\00_CONSTITUTION\Registry\LAST_STATE.yaml`  
-- Max concurrent artifacts = 1; Intake-only; Understanding Report → Ben approves before place.
+- **One first breath only** (done 2026-08-03). Then **RUNNING**.  
+- Reboot → **RESUME** from `LAST_STATE.yaml` — never re-birth.  
+- Max concurrent = 1; Intake-only; Ben approves before place.
 
-## Active order (local)
+## LAST_STATE mechanism (IMPLEMENTED)
 
-**CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03** still applies for roots + continuous loop.
+Install to:
+`E:\Wizbangers\00_CONSTITUTION\Registry\LAST_STATE.yaml`
 
-On start:
-1. If no LAST_STATE → treat identity as established by Grok first breath; create LAST_STATE with `identity_established: true`, `mode: RUNNING`  
-2. If LAST_STATE exists → RESUME sequence (re-verify roots, short resume brief, continue loop)  
-3. Never emit a second first-birth narrative
+Local helpers (from Grok portfolio `BENJITWIN/runtime/`):
+- `LastState.ps1` → `Invoke-BenjitwinResume` / `Stop-BenjitwinClean`
+- `last_state.py` → `python last_state.py resume|stop|init`
 
-### Roots
+On every machine start:
+1. Ensure three roots exist
+2. `Invoke-BenjitwinResume` (or `python last_state.py resume`)
+3. Continue Intake + bus loop
+4. Before planned shutdown: `Stop-BenjitwinClean`
 
-| Role | Path |
-|------|------|
-| Managed | `E:\Wizbangers` |
-| Intake | `E:\Benjitwin_Intake` |
-| Processed | `E:\Benjitwin_Processed` |
+## Still active
+
+**CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03** for roots + continuous loop if not done.
 
 **Sign:** Browser Grok
