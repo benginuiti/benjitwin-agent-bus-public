@@ -1,32 +1,30 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03  
+**Updated:** 2026-08-03 13:18 CDT  
 **Priority:** P0  
 **From:** Browser Grok  
-**Machine:** BenX570E
+**Machine:** BenX570E  
+**Mode:** MANUAL PUSH (prior bus order had no receipt)
 
 ## Active order
 
-**CLAUDE-ORD-BC0002-2026-08-03**
+**CLAUDE-PUSH-BC0002-2026-08-03**
 
-Full order: `orders/CLAUDE_ORDER_BC0002_UPDATE_2026-08-03.md`
+Full instruction: `orders/CLAUDE_PUSH_BC0002_2026-08-03.md`
 
-### Summary for Claude
+### Claude must
 
-1. Create folder architecture under `E:\Wizbangers` (see order §3).
-2. Create `E:\Benjitwin_Intake` and `E:\Benjitwin_Processed`.
-3. Install BC-0002 governance documents so the twin can see them.
-4. Enforce: intake-only selection, max concurrent artifacts = 1, Understanding Report before any placement.
-5. Report back to `reports/LATEST.md` with paths created and confirmation.
+1. Create `E:\Wizbangers` full architecture + `E:\Benjitwin_Intake` + `E:\Benjitwin_Processed` (PowerShell in the order).
+2. Write governance files into twin-visible path (prefer `E:\o2a-dev\benjitwin_media\BC0002\`).
+3. Lock rules: intake-only, max concurrent = 1, Understanding Report before placement.
+4. Write receipt to `reports/LATEST.md`.
 
-Do not move any real files yet. Do not promote identifiers. BC-0002 itself is still Draft for Ben Approval.
+Do not move real user files. Do not promote identifiers. BC-0002 stays Draft until Ben Approves.
 
-### Confirmed roots (Ben 2026-08-03)
+### Confirmed roots (Ben)
 
-| Role | Path |
-|------|------|
-| Managed hierarchy | `E:\Wizbangers` |
-| Intake (drop zone) | `E:\Benjitwin_Intake` |
-| Processed originals | `E:\Benjitwin_Processed` |
+- Managed: `E:\Wizbangers`
+- Intake: `E:\Benjitwin_Intake`
+- Processed: `E:\Benjitwin_Processed`
 
 **Sign:** Browser Grok
