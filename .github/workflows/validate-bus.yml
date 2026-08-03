@@ -1,0 +1,85 @@
+name: Validate Bus
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Required files exist
+        run: |
+          set -e
+          echo "Checking required protocol files..."
+          test -f PROTOCOL.md || { echo "MISSING: PROTOCOL.md"; exit 1; }
+          test -f DISCOVERY.md || { echo "MISSING: DISCOVERY.md"; exit 1; }
+          test -f orders/NEXT.md || { echo "MISSING: orders/NEXT.md"; exit 1; }
+          test -f reports/LATEST.md || { echo "MISSING: reports/LATEST.md"; exit 1; }
+          echo "Required files present."
+
+      - name: NEXT.md is non-empty and has markers
+        run: |
+          set -e
+          if [ ! -s orders/NEXT.md ]; then
+            echo "FAIL: orders/NEXT.md is empty"
+            exit 1
+          fi
+          if ! grep -qiE "Priority|Updated|Active order|Sign" orders/NEXT.md; then
+            echo "WARN: orders/NEXT.md may be missing expected headers"
+          fi
+          echo "NEXT.md size: $(wc -c < orders/NEXT.md) bytes"
+
+      - name: LATEST.md is non-empty
+        run: |
+          set -e
+          if [ ! -s reports/LATEST.md ]; then
+            echo "FAIL: reports/LATEST.md is empty"
+            exit 1
+          fi
+          echo "LATEST.md size: $(wc -c < reports/LATEST.md) bytes"
+
+      - name: No-secrets scan (basic)
+        run: |
+          set -e
+          echo "Scanning for common secret patterns..."
+          # Fail on high-confidence secret patterns (not perfect, but catches accidents)
+          if grep -RInE --exclude-dir=.git --exclude-dir=.github \
+            -e 'ghp_[A-Za-z0-9]{20,}' \
+            -e 'github_pat_[A-Za-z0-9_]{20,}' \
+            -e 'sk-[A-Za-z0-9]{20,}' \
+            -e 'xox[baprs]-[A-Za-z0-9-]{10,}' \
+            -e '-----BEGIN (RSA |OPENSSH |EC )?PRIVATE KEY-----' \
+            -e 'AKIA[0-9A-Z]{16}' \
+            -e 'password\s*=\s*["'\''][^"'\'']{8,}' \
+            . ; then
+            echo "FAIL: Possible secret material detected. Remove before merge."
+            exit 1
+          fi
+          echo "No high-confidence secret patterns found."
+
+      - name: Order files have basic structure
+        run: |
+          set -e
+          for f in orders/CLAUDE_*.md orders/BC-*.md; do
+            [ -f "$f" ] || continue
+            echo "Checking $f"
+            if ! grep -qiE "Order ID|order_id|Priority|From:" "$f"; then
+              echo "WARN: $f may be missing Order ID / Priority / From"
+            fi
+          done
+          echo "Order structure check complete."
+
+      - name: Summary
+        run: |
+          echo "### Bus Validation" >> $GITHUB_STEP_SUMMARY
+          echo "- Required files: present" >> $GITHUB_STEP_SUMMARY
+          echo "- NEXT.md: $(wc -c < orders/NEXT.md) bytes" >> $GITHUB_STEP_SUMMARY
+          echo "- LATEST.md: $(wc -c < reports/LATEST.md) bytes" >> $GITHUB_STEP_SUMMARY
+          echo "- Secrets scan: clean" >> $GITHUB_STEP_SUMMARY

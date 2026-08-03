@@ -1,0 +1,28 @@
+name: Protocol Note on Push
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'orders/**'
+      - 'reports/**'
+      - 'PROTOCOL.md'
+  workflow_dispatch:
+
+jobs:
+  note:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Emit protocol reminder
+        run: |
+          echo "### Protocol reminder" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Grok** writes \`orders/NEXT.md\` and order files" >> $GITHUB_STEP_SUMMARY
+          echo "- **Claude** writes \`reports/LATEST.md\` after machine work" >> $GITHUB_STEP_SUMMARY
+          echo "- **No secrets** in this repo" >> $GITHUB_STEP_SUMMARY
+          echo "- **BEN** is sole authority" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Green law: SIGNED_RECEIPT && INDEPENDENT_READBACK_MATCH" >> $GITHUB_STEP_SUMMARY
