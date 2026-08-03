@@ -1,28 +1,28 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03T18:45Z  
+**Updated:** 2026-08-03T18:50Z  
 **Priority:** P0  
 **From:** Browser Grok  
-**Machine:** BenX570E  
-**Ben intent:** Full-time operational today + Grok/GPT dual-agent steps
+**Machine:** BenX570E
 
-## Active order (local execution)
+## Ben policy (LOCKED)
 
-**CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03**  
-File: `orders/CLAUDE_ORD_ACTIVATE_BENJITWIN_2026-08-03.md`
+- **One first breath only** (already issued 2026-08-03 on Grok surface).  
+- Then **stay RUNNING**.  
+- On machine shutdown/reboot: **RESUME** from durable state — do **not** re-run first breath.  
+- Durable state target: `E:\Wizbangers\00_CONSTITUTION\Registry\LAST_STATE.yaml`  
+- Max concurrent artifacts = 1; Intake-only; Understanding Report → Ben approves before place.
 
-1. Ensure roots: `E:\Wizbangers` (full tree), `E:\Benjitwin_Intake`, `E:\Benjitwin_Processed`  
-2. Continuous loop: poll this bus + process Intake one-at-a-time (Understanding Report → wait for Ben)  
-3. Report `reports/LATEST.md`
+## Active order (local)
 
-## Dual-agent note
+**CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03** still applies for roots + continuous loop.
 
-- **Grok**: architecture, audit, bus orders  
-- **GPT** project o2a / chat **OAiSES Benjitwin**: draft Understanding Reports, classification options  
-- **Ben**: sole approve / promote  
-Handoffs pasted by Ben between surfaces. Local Claude executes machine-side folder + loop work.
+On start:
+1. If no LAST_STATE → treat identity as established by Grok first breath; create LAST_STATE with `identity_established: true`, `mode: RUNNING`  
+2. If LAST_STATE exists → RESUME sequence (re-verify roots, short resume brief, continue loop)  
+3. Never emit a second first-birth narrative
 
-### Confirmed roots
+### Roots
 
 | Role | Path |
 |------|------|
