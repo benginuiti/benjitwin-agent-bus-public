@@ -14,6 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
       - name: Required files exist
         run: |
           set -e
@@ -22,34 +27,13 @@ jobs:
           test -f DISCOVERY.md || { echo "MISSING: DISCOVERY.md"; exit 1; }
           test -f orders/NEXT.md || { echo "MISSING: orders/NEXT.md"; exit 1; }
           test -f reports/LATEST.md || { echo "MISSING: reports/LATEST.md"; exit 1; }
+          test -f orders/ORDER_SCHEMA.md || { echo "MISSING: orders/ORDER_SCHEMA.md"; exit 1; }
           echo "Required files present."
-
-      - name: NEXT.md is non-empty and has markers
-        run: |
-          set -e
-          if [ ! -s orders/NEXT.md ]; then
-            echo "FAIL: orders/NEXT.md is empty"
-            exit 1
-          fi
-          if ! grep -qiE "Priority|Updated|Active order|Sign" orders/NEXT.md; then
-            echo "WARN: orders/NEXT.md may be missing expected headers"
-          fi
-          echo "NEXT.md size: $(wc -c < orders/NEXT.md) bytes"
-
-      - name: LATEST.md is non-empty
-        run: |
-          set -e
-          if [ ! -s reports/LATEST.md ]; then
-            echo "FAIL: reports/LATEST.md is empty"
-            exit 1
-          fi
-          echo "LATEST.md size: $(wc -c < reports/LATEST.md) bytes"
 
       - name: No-secrets scan (basic)
         run: |
           set -e
           echo "Scanning for common secret patterns..."
-          # Fail on high-confidence secret patterns (not perfect, but catches accidents)
           if grep -RInE --exclude-dir=.git --exclude-dir=.github \
             -e 'ghp_[A-Za-z0-9]{20,}' \
             -e 'github_pat_[A-Za-z0-9_]{20,}' \
@@ -64,22 +48,123 @@ jobs:
           fi
           echo "No high-confidence secret patterns found."
 
-      - name: Order files have basic structure
+      - name: Strict order schema validation
         run: |
-          set -e
-          for f in orders/CLAUDE_*.md orders/BC-*.md; do
-            [ -f "$f" ] || continue
-            echo "Checking $f"
-            if ! grep -qiE "Order ID|order_id|Priority|From:" "$f"; then
-              echo "WARN: $f may be missing Order ID / Priority / From"
-            fi
-          done
-          echo "Order structure check complete."
+          python3 << 'PY'
+          import re, sys, pathlib
+
+          root = pathlib.Path(".")
+          orders_dir = root / "orders"
+          fail = []
+          warn = []
+
+          def read(p):
+              return p.read_text(encoding="utf-8", errors="replace")
+
+          # --- NEXT.md (lighter schema) ---
+          next_path = orders_dir / "NEXT.md"
+          next_text = read(next_path)
+          if not next_text.strip():
+              fail.append("orders/NEXT.md is empty")
+          else:
+              if not re.search(r"Updated\s*:", next_text, re.I):
+                  fail.append("orders/NEXT.md missing 'Updated:'")
+              if not re.search(r"Priority\s*:", next_text, re.I):
+                  fail.append("orders/NEXT.md missing 'Priority:'")
+              if not re.search(r"From\s*:", next_text, re.I):
+                  fail.append("orders/NEXT.md missing 'From:'")
+              if not re.search(r"Sign\s*:", next_text, re.I):
+                  fail.append("orders/NEXT.md missing 'Sign:'")
+              if not re.search(r"(Active order|CLAUDE-ORD|ORD-|orders/[\w.-]+\.md)", next_text, re.I):
+                  fail.append("orders/NEXT.md does not clearly reference an active order")
+
+          # --- Executable orders ---
+          # Strict set: CLAUDE_*.md and ORD_*.md. BC-* governance docs are exempt.
+          exec_patterns = ["CLAUDE_*.md", "ORD_*.md"]
+          exec_files = []
+          for pat in exec_patterns:
+              exec_files.extend(sorted(orders_dir.glob(pat)))
+
+          # Also include any file explicitly named in NEXT.md under orders/
+          for m in re.finditer(r"orders/([\w.-]+\.md)", next_text, re.I):
+              p = orders_dir / m.group(1)
+              if p.exists() and p not in exec_files and not p.name.startswith("BC-"):
+                  exec_files.append(p)
+
+          order_id_re = re.compile(
+              r"\*\*Order ID:\*\*\s*([A-Z0-9][A-Z0-9_-]+)|Order ID:\s*([A-Z0-9][A-Z0-9_-]+)",
+              re.I,
+          )
+          priority_re = re.compile(
+              r"\*\*Priority:\*\*\s*(P[0-3])|Priority:\s*(P[0-3])", re.I
+          )
+          from_re = re.compile(r"\*\*From:\*\*\s*(\S.+)|From:\s*(\S.+)", re.I)
+          to_re = re.compile(r"\*\*To:\*\*\s*(\S.+)|To:\s*(\S.+)", re.I)
+          sign_re = re.compile(r"\*\*Sign:\*\*\s*(\S.+)|Sign:\s*(\S.+)", re.I)
+
+          for f in exec_files:
+              text = read(f)
+              rel = f.as_posix()
+              print(f"Validating executable order: {rel}")
+
+              oid = order_id_re.search(text)
+              if not oid:
+                  fail.append(f"{rel}: missing or invalid Order ID")
+              else:
+                  val = oid.group(1) or oid.group(2)
+                  if not re.match(r"^[A-Z0-9][A-Z0-9_-]+$", val, re.I):
+                      fail.append(f"{rel}: Order ID '{val}' has invalid characters")
+
+              pr = priority_re.search(text)
+              if not pr:
+                  fail.append(f"{rel}: missing Priority (must be P0|P1|P2|P3)")
+
+              fr = from_re.search(text)
+              if not fr:
+                  fail.append(f"{rel}: missing From")
+
+              to = to_re.search(text)
+              if not to:
+                  fail.append(f"{rel}: missing To")
+
+              sg = sign_re.search(text)
+              if not sg:
+                  fail.append(f"{rel}: missing Sign")
+
+              # Warnings (non-blocking)
+              if not re.search(r"Hard limits|Constraints|do not break", text, re.I):
+                  warn.append(f"{rel}: no Hard limits / constraints section")
+              if not re.search(r"Success|Success criteria", text, re.I):
+                  warn.append(f"{rel}: no Success section")
+              if not re.search(r"Receipt|receipt format|order_id:", text, re.I):
+                  warn.append(f"{rel}: no Receipt format")
+
+          # --- LATEST.md non-empty ---
+          latest = root / "reports" / "LATEST.md"
+          if not latest.exists() or not latest.read_text(encoding="utf-8", errors="replace").strip():
+              fail.append("reports/LATEST.md is missing or empty")
+
+          print("\n--- Validation results ---")
+          for w in warn:
+              print(f"WARN: {w}")
+          for e in fail:
+              print(f"FAIL: {e}")
+
+          if fail:
+              print(f"\n{len(fail)} failure(s). Strict schema not satisfied.")
+              sys.exit(1)
+
+          print(f"OK: {len(exec_files)} executable order(s) validated; NEXT.md + LATEST.md OK")
+          if warn:
+              print(f"({len(warn)} warning(s) — non-blocking)")
+          PY
 
       - name: Summary
+        if: always()
         run: |
-          echo "### Bus Validation" >> $GITHUB_STEP_SUMMARY
-          echo "- Required files: present" >> $GITHUB_STEP_SUMMARY
-          echo "- NEXT.md: $(wc -c < orders/NEXT.md) bytes" >> $GITHUB_STEP_SUMMARY
-          echo "- LATEST.md: $(wc -c < reports/LATEST.md) bytes" >> $GITHUB_STEP_SUMMARY
-          echo "- Secrets scan: clean" >> $GITHUB_STEP_SUMMARY
+          echo "### Bus Validation (strict schema)" >> $GITHUB_STEP_SUMMARY
+          echo "- Required files + ORDER_SCHEMA.md: checked" >> $GITHUB_STEP_SUMMARY
+          echo "- Secrets scan: clean (if reached)" >> $GITHUB_STEP_SUMMARY
+          echo "- Executable orders: CLAUDE_*.md / ORD_*.md + NEXT-referenced files" >> $GITHUB_STEP_SUMMARY
+          echo "- Required fields: Order ID, Priority (P0–P3), From, To, Sign" >> $GITHUB_STEP_SUMMARY
+          echo "- See orders/ORDER_SCHEMA.md for full rules" >> $GITHUB_STEP_SUMMARY
