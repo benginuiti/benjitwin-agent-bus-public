@@ -1,20 +1,32 @@
-# STATUS — 2026-08-02F  CONSOLE + BOOT WORKERS
+# NEXT — Benjitwin
 
-**From:** Browser Grok
+**Updated:** 2026-08-03  
+**Priority:** P0  
+**From:** Browser Grok  
 **Machine:** BenX570E
 
-## Complete
-- Slack #command intake + #runtime heartbeat
-- Hub worker v0 (claim, status/echo/ack, body matcher, dual receipts, thread)
-- ACTION_MATCH_BODY_UP proved
-- BOOT_WORKERS_REGISTERED — Slack + hub in E:\\o2a\\start_all.ps1 (idempotent, DPAPI, no token literals)
+## Active order
 
-## Open (BEN decides)
-- RELAY_DOWN :49400 (phone)
-- BUS_ACCESS_BLOCKED (private push)
-- Bite 0 local intel — needs new order
+**CLAUDE-ORD-BC0002-2026-08-03**
 
-## Use
-Operate from #command. Workers restart with stack logon task.
+Full order: `orders/CLAUDE_ORDER_BC0002_UPDATE_2026-08-03.md`
+
+### Summary for Claude
+
+1. Create folder architecture under `E:\Wizbangers` (see order §3).
+2. Create `E:\Benjitwin_Intake` and `E:\Benjitwin_Processed`.
+3. Install BC-0002 governance documents so the twin can see them.
+4. Enforce: intake-only selection, max concurrent artifacts = 1, Understanding Report before any placement.
+5. Report back to `reports/LATEST.md` with paths created and confirmation.
+
+Do not move any real files yet. Do not promote identifiers. BC-0002 itself is still Draft for Ben Approval.
+
+### Confirmed roots (Ben 2026-08-03)
+
+| Role | Path |
+|------|------|
+| Managed hierarchy | `E:\Wizbangers` |
+| Intake (drop zone) | `E:\Benjitwin_Intake` |
+| Processed originals | `E:\Benjitwin_Processed` |
 
 **Sign:** Browser Grok
