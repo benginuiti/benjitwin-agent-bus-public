@@ -1,48 +1,53 @@
 # LATEST REPORT
-**Order:** CLAUDE-ORD-ACTIVATE-BENJITWIN-2026-08-03 + BC-0002 governance install
-**Timestamp:** 2026-08-03T18:55Z (approx)
-**Status:** PARTIAL → RUNNING_READY
-**From:** Local Claude (via Ben relay) + Browser Grok bus write
+**Order:** CLAUDE-ORD-FIRST-UNDERSTANDING-2026-08-03
+**Timestamp:** 2026-08-03T19:10Z (approx)
+**Status:** REPORT_READY
+**From:** Local Claude (machine) + Browser Grok (bus write)
 
-## Roots
+## Roots (resolved by evidence)
 
 | Role | Path | Status |
 |------|------|--------|
-| Managed | E:\\Wizbangers | Present — full architecture (00_CONSTITUTION … 90_ARCHIVE) |
-| Intake | E:\\Benjitwin_Intake | Present — contains Structured Forensic Teardown\\ (untouched) |
-| Processed | E:\\Benjitwin_Processed | Present — empty |
+| Managed | E:\\Wizbangers | Present — full architecture |
+| Intake | E:\\W_BENJITWIN_INTAKE | Present (created/renamed 12:21:36) — holds artifact |
+| Processed | E:\\W_BENJITWIN_PROCESSED | Present — empty |
 
-## Governance files
+No W: volume exists. Bare `W_BENJITWIN_*` paths were correctly rejected (would have landed in System32). Old E:\\Benjitwin_* names are gone (renamed).
 
-- BC-0002_STATUS.md — real
-- FILESYSTEM_ROOTS_CONFIRMED.md — real
-- WIZBANGERS_STRUCTURE_v0.1.md — real
-- SEED_SET_v0.1.yaml — real (promoted: false)
-- CANDIDATE_SET_v0.1.yaml — real (promoted: false)
-- ARTIFACT_REGISTRY_SCHEMA.md (DOC-G) — real, installed
-- PROCESSING_SEQUENCE.md (DOC-H) — real, installed
-- BC-0002_Recursive_Knowledge_Recovery_Living_WIZBANGERS.md (DOC-A) — **STUB** (body never transferred)
+## Governance
 
-Pointer updated under E:\\Wizbangers\\00_CONSTITUTION\\Registry\\
+- DOC-G / DOC-H: installed
+- DOC-A: installed as published (8,977 B / 360 lines; §1–11 full; §12–22 collapsed note pointing at portfolio). Gap recorded. Not the 643-line portfolio original.
 
-## Rules in force
+## Artifact Understanding Report
 
-- Intake-only selection
-- Max concurrent artifacts = 1
-- Understanding Report required before any placement
-- No deletes, no silent merges, no promotions without Ben
+**ID:** AUR-001  
+**Local path:** BC0002\\UNDERSTANDING_REPORTS\\AUR-001_Structured_Forensic_Teardown_2026-08-03.md (10,546 B)  
+**Selected unit:** Structured Forensic Teardown (750-line transcript + 62-entry zip package) treated as **one artifact**  
+**Moved / copied / placed / deleted:** 0 / 0 / 0 / 0  
+**Identifiers / classifiers promoted or applied:** 0
 
-## Files moved / deleted / promoted
+### Summary of understanding
 
-0 / 0 / 0
+- Origin-to-product record of the Grawinholding assessment.
+- Transcript is the session where a suspicious-company claim was dismantled and nine formal methods were named (ACH/Heuer, TMS, description logics, Allen Interval Algebra, make-the-error-unrepresentable, double-entry redundancy, Fellegi–Sunter, Admiralty Code, Dung argumentation).
+- Zip is the product that session became (skill, case study, approved deliverables, provenance, marketing).
+- Lines 13–25: four failures in one AI-authored sentence ending in unknown→suspicious — same failure class the honesty spine exists to prevent.
+- Lineage to Inspector/Investigator: MEDIUM confidence (method correspondence + date alignment; no explicit naming inside this artifact).
 
-## Blockers
+### Blockers requiring Ben ruling
 
-1. DOC_A_NOT_TRANSFERRED — closes when full contract body is pasted or published to bus
-2. (Cleared this cycle) BUS_WRITE_UNAVAILABLE — Grok wrote this report directly
+1. **Classifier collision** — product / research / output all pass cleanly. CANDIDATE_SET conflict_rule forbids first-match. Claude proposed no destination.
+2. **Unit vs family** — ten independently shippable sections. DOC-G has `family_id`. Is this one artifact or a family needing a family_id?
 
-## Next recommended
+### Unresolved
 
-Produce first Artifact Understanding Report on the existing Intake content (Structured Forensic Teardown). Do not move or classify until Ben approves the report.
+- **AMAZINGCHORUS** appears in the package and nowhere else in the recovered corpus. Third Chorus-named thing, or lens of an existing one — not assumed.
 
-**Sign:** Browser Grok (bus write) + Local Claude (machine state)
+## Hard limits still held
+
+intake unchanged · processed empty · max concurrent = 1 · nothing placed
+
+**Next:** Ben rules on classifier collision + unit/family. Then placement decision.
+
+**Sign:** Browser Grok (bus) + Local Claude (machine)
