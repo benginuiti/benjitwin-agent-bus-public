@@ -1,17 +1,28 @@
 order_id: ORD-INTAKE-UT-001
 created_at: "2026-08-04T13:30:00Z"
+updated_at: "2026-08-04T13:35:00Z"
 created_by: Browser Grok
 authority: BEN AUTHORIZATION — CONTROLLED INTAKE UNIT TEST 001
 target_worker: worker-intake
 capabilities_required:
   - intake_select
-  - ingest
+  - complete_read
+  - read_coverage
+  - recovery_package
 priority: P0
 requested_action: |
-  Controlled unit test ONLY on:
+  CONTROLLED UNIT TEST ONLY — one artifact:
   E:\W_BENJITWIN_INTAKE\Benjitwin_Intake_Test_Artifact_v0.1.md
-  Full trail through WAIT FOR BEN. No place, no move, no Registry commit.
-  Does not reopen ordinary Intake.
+
+  YOU are the canonical reader (not Browser Grok).
+  1. Open the local file
+  2. Read completely and literally
+  3. Produce Read Coverage Record (bytes/lines expected vs read, complete: true|false)
+  4. Produce Recovery Package (source observations only — no interpretation)
+  5. Publish both to bus under reports/orders/ or E:\o2a-dev\benjitwin_media\ and report paths
+  6. Do NOT place, move, Registry-commit, or process a second artifact
+
+  Browser Grok will review packages and continue Understanding/Classify/Integrity trail.
 allowed_roots:
   - "E:\\W_BENJITWIN_INTAKE"
 prohibited_actions:
@@ -19,9 +30,11 @@ prohibited_actions:
   - original_move
   - registry_commit
   - second_artifact
+  - require_chat_paste
 ben_approval_required: true
 integrity_check_required: true
 status: claimed
 claimed_by: worker-intake
 claimed_at: "2026-08-04T13:30:00Z"
 artifact: "E:\\W_BENJITWIN_INTAKE\\Benjitwin_Intake_Test_Artifact_v0.1.md"
+execution_surface: local_worker_intake_is_reader

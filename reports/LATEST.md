@@ -1,17 +1,17 @@
 # LATEST REPORT
-**Timestamp:** 2026-08-04T13:30Z  
-**Status:** INTAKE_UT_001_INGEST_BLOCKED_AWAITING_SOURCE  
+**Timestamp:** 2026-08-04T13:35Z  
+**Status:** ARCHITECTURE_BOUNDARY_LOCKED + UT001_AWAITING_LOCAL_READ  
 **Order:** ORD-INTAKE-UT-001
 
-## Completed
-1. Active Work Memory bound (portfolio ACTIVE_WORK/TASK-INTAKE-UT-001.yaml)
-2. Single claim on named artifact
-3. Integrity pre-task ALLOW
+## Correction applied
 
-## Blocked
-INGEST / Read Coverage — source body not available to Browser Grok.
+Browser Grok is not the reader.  
+worker-intake is the canonical reader of local Intake artifacts.  
+No chat-paste required for normal Intake operation.
 
-## Hard stops held
-No place, move, Registry commit, Proof 2, extra workers, second artifact.
+## UT-001
+
+Claim held. Integrity pre-task ALLOW.  
+Next: local complete read → Read Coverage + Recovery Package on bus.
 
 **Sign:** Browser Grok

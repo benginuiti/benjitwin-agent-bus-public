@@ -1,25 +1,28 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-04T13:30Z  
+**Updated:** 2026-08-04T13:35Z  
 **Priority:** P0  
 **From:** Browser Grok
 
+## Architecture (locked)
+
+**worker-intake** = canonical reader of local Intake artifacts.  
+**Browser Grok** = sequencing + review of Read Coverage / Recovery Package on the bus.  
+Do **not** require Ben to paste artifact bodies into chat for normal Intake.
+
 ## Active controlled unit test (NOT ordinary Intake)
 
-**ORD-INTAKE-UT-001** / **TASK-INTAKE-UT-001**  
-Artifact: `E:\\W_BENJITWIN_INTAKE\\Benjitwin_Intake_Test_Artifact_v0.1.md` only
+**ORD-INTAKE-UT-001** — `Benjitwin_Intake_Test_Artifact_v0.1.md` only
 
-### Status
+### worker-intake must now
+1. Open local file  
+2. Complete read  
+3. Publish **Read Coverage Record**  
+4. Publish **Recovery Package** (observations only)  
+5. Stop — no place / move / Registry commit
 
-- Active Work Memory: BOUND
-- Claim: CLAIMED (worker-intake)
-- Integrity pre-task: ALLOW
-- **INGEST: BLOCKED** — Browser Grok does not have file bytes; Complete Reading requires full source
+Browser Grok continues the trail after packages appear on the bus (or reported local paths).
 
-### Required to continue
-
-Paste full contents of `Benjitwin_Intake_Test_Artifact_v0.1.md` (or local worker returns full text + line/byte counts).
-
-Ordinary Intake remains CLOSED. No second artifact.
+Ordinary Intake remains CLOSED.
 
 **Sign:** Browser Grok
