@@ -1,0 +1,17 @@
+receipt_id: RCPT_ORD-INTAKE-UT-001_integrity_pre
+order_id: ORD-INTAKE-UT-001
+worker_id: worker-intake
+machine: Browser Grok + BenX570E path
+action: integrity_pre_task
+started_at: "2026-08-04T13:30:00Z"
+completed_at: "2026-08-04T13:30:05Z"
+integrity_result: ALLOW
+status: SUCCESS
+checks:
+  - ben_authorization_present: true
+  single_named_artifact: true
+  ordinary_intake_not_reopened: true
+  proof_2_not_requested: true
+  place_prohibited_until_ben: true
+blocker: null
+notes: Pre-task ALLOW for authorized unit test binding and claim only.

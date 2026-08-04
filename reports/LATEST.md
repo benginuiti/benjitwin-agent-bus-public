@@ -1,34 +1,17 @@
 # LATEST REPORT
-**Timestamp:** 2026-08-04T13:24Z  
-**Status:** PROOF1_SUCCESS  
-**Order:** ORD-PROOF1-RO-READ-001  
-**Worker:** worker-fs
+**Timestamp:** 2026-08-04T13:30Z  
+**Status:** INTAKE_UT_001_INGEST_BLOCKED_AWAITING_SOURCE  
+**Order:** ORD-INTAKE-UT-001
 
-## Proof 1 result
+## Completed
+1. Active Work Memory bound (portfolio ACTIVE_WORK/TASK-INTAKE-UT-001.yaml)
+2. Single claim on named artifact
+3. Integrity pre-task ALLOW
 
-```yaml
-order_id: ORD-PROOF1-RO-READ-001
-worker_id: worker-fs
-claim_created: true
-duplicate_claim_attempted: false
-duplicate_claim_blocked: true
-command_executed: true
-read_only_verified: true
-paths_observed:
-  - E:\\Wizbangers (exists, item_count=11)
-  - E:\\W_BENJITWIN_INTAKE (exists, item_count=1)
-  - E:\\W_BENJITWIN_PROCESSED (exists, item_count=1)
-  - E:\\Wizbangers\\00_CONSTITUTION (exists, item_count=11)
-paths_modified: []
-receipt_path: reports/receipts/RCPT_ORD-PROOF1-RO-READ-001_worker-fs_02.yaml
-completion_state: SUCCESS
-heartbeat_verified: true
-integrity_result: ALLOW
-blocker: null
-```
+## Blocked
+INGEST / Read Coverage — source body not available to Browser Grok.
 
-## Note
-
-Intake shows item_count=1 — observed only. No Intake processing performed.
+## Hard stops held
+No place, move, Registry commit, Proof 2, extra workers, second artifact.
 
 **Sign:** Browser Grok

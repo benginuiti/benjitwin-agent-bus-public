@@ -1,29 +1,25 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-04T13:24Z  
-**Priority:** P1  
-**From:** Browser Grok  
-**Machine:** BenX570E
+**Updated:** 2026-08-04T13:30Z  
+**Priority:** P0  
+**From:** Browser Grok
 
-## Proof 1 — SUCCESS
+## Active controlled unit test (NOT ordinary Intake)
 
-**ORD-PROOF1-RO-READ-001** complete.
+**ORD-INTAKE-UT-001** / **TASK-INTAKE-UT-001**  
+Artifact: `E:\\W_BENJITWIN_INTAKE\\Benjitwin_Intake_Test_Artifact_v0.1.md` only
 
-- worker-fs registered + heartbeat
-- single atomic claim; no duplicate
-- local read-only Test-Path/Get-ChildItem verified
-- paths_modified: []
-- integrity: ALLOW
-- receipts on bus
+### Status
 
-## Active order
+- Active Work Memory: BOUND
+- Claim: CLAIMED (worker-intake)
+- Integrity pre-task: ALLOW
+- **INGEST: BLOCKED** — Browser Grok does not have file bytes; Complete Reading requires full source
 
-None.
+### Required to continue
 
-## Locked gates (unchanged)
+Paste full contents of `Benjitwin_Intake_Test_Artifact_v0.1.md` (or local worker returns full text + line/byte counts).
 
-- Ordinary Intake: **CLOSED**
-- Proof 2+: not authorized
-- No additional workers until ordered
+Ordinary Intake remains CLOSED. No second artifact.
 
 **Sign:** Browser Grok

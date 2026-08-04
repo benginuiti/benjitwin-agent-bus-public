@@ -1,0 +1,11 @@
+order_id: ORD-INTAKE-UT-001
+worker_id: worker-intake
+claimed_at: "2026-08-04T13:30:00Z"
+lease_expires_at: "2026-08-04T14:00:00Z"
+resource_locks:
+  - lock_type: intake_artifact_id
+    lock_key: Benjitwin_Intake_Test_Artifact_v0.1.md
+    mode: WRITE
+status: CLAIMED
+atomic: true
+notes: Single controlled unit-test artifact only.
