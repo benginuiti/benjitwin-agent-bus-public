@@ -1,40 +1,65 @@
 order_id: ORD-INTAKE-UT-001
 created_at: "2026-08-04T13:30:00Z"
-updated_at: "2026-08-04T13:35:00Z"
+updated_at: "2026-08-04T13:37:00Z"
 created_by: Browser Grok
 authority: BEN AUTHORIZATION — CONTROLLED INTAKE UNIT TEST 001
 target_worker: worker-intake
-capabilities_required:
-  - intake_select
-  - complete_read
-  - read_coverage
-  - recovery_package
 priority: P0
-requested_action: |
-  CONTROLLED UNIT TEST ONLY — one artifact:
-  E:\W_BENJITWIN_INTAKE\Benjitwin_Intake_Test_Artifact_v0.1.md
-
-  YOU are the canonical reader (not Browser Grok).
-  1. Open the local file
-  2. Read completely and literally
-  3. Produce Read Coverage Record (bytes/lines expected vs read, complete: true|false)
-  4. Produce Recovery Package (source observations only — no interpretation)
-  5. Publish both to bus under reports/orders/ or E:\o2a-dev\benjitwin_media\ and report paths
-  6. Do NOT place, move, Registry-commit, or process a second artifact
-
-  Browser Grok will review packages and continue Understanding/Classify/Integrity trail.
-allowed_roots:
-  - "E:\\W_BENJITWIN_INTAKE"
-prohibited_actions:
-  - managed_copy
-  - original_move
-  - registry_commit
-  - second_artifact
-  - require_chat_paste
-ben_approval_required: true
-integrity_check_required: true
 status: claimed
 claimed_by: worker-intake
-claimed_at: "2026-08-04T13:30:00Z"
 artifact: "E:\\W_BENJITWIN_INTAKE\\Benjitwin_Intake_Test_Artifact_v0.1.md"
 execution_surface: local_worker_intake_is_reader
+
+requested_action: |
+  LOCAL WORKER-INTAKE ORDER — UT-001
+
+  1. Open the exact local artifact only.
+  2. Record: full path, filename, size_bytes, timestamps, hash, total line count.
+  3. Read the file completely, line by line.
+  4. Produce Read Coverage Record.
+  5. Produce Recovery Package (observations only — source-grounded).
+  6. Publish both to the bus (or E:\\o2a-dev\\benjitwin_media\\ + report paths).
+  7. Write worker-tagged receipts.
+  8. STOP.
+
+  Read Coverage must include:
+    artifact, path, size_bytes, hash, lines_expected, lines_read,
+    bytes_expected, bytes_read, fully_read, unreadable_sections,
+    complete, reader_worker, receipt
+
+  Recovery Package observations only:
+    observation_id, source_line_start, source_line_end,
+    exact_text_or_precise_source_fact, named_things, claims,
+    relationships, dates, methods, candidate_markers,
+    unknown_markers, provenance_signals
+
+prohibited_actions:
+  - understanding
+  - classification
+  - founder_memory_ruling
+  - placement_proposal
+  - registry_draft
+  - managed_copy
+  - original_move
+  - identifier_promotion
+  - classifier_promotion
+  - governance_invention
+  - summary_as_observation
+  - second_artifact
+
+success_criteria:
+  read_coverage.complete: true
+  lines_read_equals_lines_expected: true
+  bytes_read_equals_bytes_expected: true
+  recovery_package.source_grounded: true
+  paths_modified_outside_bus_records: []
+  original_remains_in_intake: true
+
+return_to_browser_grok:
+  - read_coverage_record_path
+  - recovery_package_path
+  - receipt_path
+  - hash
+  - line_count
+  - completion_state
+  - blocker_if_any
