@@ -28,5 +28,7 @@ ben_approval_required: false
 integrity_check_required: true
 governance_manifest_required: false
 lease_seconds: 900
-status: pending
+status: claimed
+claimed_by: worker-fs
+claimed_at: "2026-08-04T13:20:00Z"
 proof: Proof_1_worker_control_claim_receipt

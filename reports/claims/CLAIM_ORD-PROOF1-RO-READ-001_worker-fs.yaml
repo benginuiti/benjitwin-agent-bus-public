@@ -1,0 +1,9 @@
+order_id: ORD-PROOF1-RO-READ-001
+worker_id: worker-fs
+claimed_at: "2026-08-04T13:20:00Z"
+lease_expires_at: "2026-08-04T13:35:00Z"
+resource_locks: []
+status: CLAIMED
+claim_path: reports/claims/CLAIM_ORD-PROOF1-RO-READ-001_worker-fs.yaml
+atomic: true
+notes: "Single active claim for Proof 1. Second claim for same order_id must not be created."

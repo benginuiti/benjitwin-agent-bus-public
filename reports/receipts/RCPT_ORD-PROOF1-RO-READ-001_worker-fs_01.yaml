@@ -1,0 +1,33 @@
+receipt_id: RCPT_ORD-PROOF1-RO-READ-001_worker-fs_01
+order_id: ORD-PROOF1-RO-READ-001
+worker_id: worker-fs
+machine: BenX570E
+action: proof1_claim_and_control_plane
+command: null
+started_at: "2026-08-04T13:20:00Z"
+completed_at: "2026-08-04T13:20:30Z"
+inputs:
+  - orders/pending/ORD-PROOF1-RO-READ-001.yaml
+outputs:
+  - reports/claims/CLAIM_ORD-PROOF1-RO-READ-001_worker-fs.yaml
+  - workers/registry/worker-fs.yaml
+  - workers/heartbeats/worker-fs.json
+paths_touched:
+  - reports/claims/CLAIM_ORD-PROOF1-RO-READ-001_worker-fs.yaml
+  - workers/registry/worker-fs.yaml
+  - workers/heartbeats/worker-fs.json
+  - orders/pending/ORD-PROOF1-RO-READ-001.yaml
+  - reports/receipts/RCPT_ORD-PROOF1-RO-READ-001_worker-fs_01.yaml
+hashes_before: []
+hashes_after: []
+integrity_result: HOLD
+governance_resolution: PARTIAL
+policy_versions:
+  - DEC-2026-08-04-BEN-PROMOTE-FULL-DESIGN
+status: PARTIAL
+blocker: |
+  Browser Grok cannot execute Test-Path / Get-ChildItem on E:\ from this surface.
+  Control-plane steps (register, heartbeat, single claim) completed on bus.
+  Local machine must run the four read-only checks and append paths_observed
+  with a follow-on receipt or the same receipt updated by local worker.
+  No E:\ filesystem mutation performed by Grok.
