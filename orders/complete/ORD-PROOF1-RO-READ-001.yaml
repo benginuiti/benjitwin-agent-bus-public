@@ -1,0 +1,17 @@
+order_id: ORD-PROOF1-RO-READ-001
+created_at: "2026-08-04T13:05:00Z"
+created_by: Browser Grok
+authority: Ben approval Phase 3 2026-08-04
+target_worker: worker-fs
+priority: P1
+status: complete
+claimed_by: worker-fs
+claimed_at: "2026-08-04T13:20:00Z"
+completed_at: "2026-08-04T13:23:30Z"
+proof: Proof_1_SUCCESS
+receipts:
+  - reports/receipts/RCPT_ORD-PROOF1-RO-READ-001_worker-fs_01.yaml
+  - reports/receipts/RCPT_ORD-PROOF1-RO-READ-001_worker-fs_02.yaml
+claim: reports/claims/CLAIM_ORD-PROOF1-RO-READ-001_worker-fs.yaml
+duplicate_claim: false
+paths_modified: []

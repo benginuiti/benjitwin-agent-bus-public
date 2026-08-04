@@ -2,7 +2,8 @@
   "worker_id": "worker-fs",
   "machine": "BenX570E",
   "status": "REGISTERED",
-  "heartbeat_at": "2026-08-04T13:20:00Z",
+  "heartbeat_at": "2026-08-04T13:23:30Z",
   "version": "0.1.0",
-  "current_order": "ORD-PROOF1-RO-READ-001"
+  "current_order": null,
+  "last_proof": "ORD-PROOF1-RO-READ-001 SUCCESS"
 }

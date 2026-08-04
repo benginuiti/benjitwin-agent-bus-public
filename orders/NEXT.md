@@ -1,42 +1,29 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-04T13:05Z  
+**Updated:** 2026-08-04T13:24Z  
 **Priority:** P1  
 **From:** Browser Grok  
 **Machine:** BenX570E
 
-## Approvals recorded (Ben 2026-08-04)
+## Proof 1 — SUCCESS
 
-1. Multi-worker specs v0.1 = implementation baseline  
-2. Founder Memory v0.1 = **APPROVED** (governs)  
-3. Phase 3 control-plane minimum = **authorized**
+**ORD-PROOF1-RO-READ-001** complete.
 
-## Active proof order
+- worker-fs registered + heartbeat
+- single atomic claim; no duplicate
+- local read-only Test-Path/Get-ChildItem verified
+- paths_modified: []
+- integrity: ALLOW
+- receipts on bus
 
-**ORD-PROOF1-RO-READ-001**  
-File: `orders/pending/ORD-PROOF1-RO-READ-001.yaml`  
-Target: `worker-fs` (or any local executor acting as worker-fs for Proof 1)  
-Action: **READ-ONLY** list/Test-Path on locked roots — no writes
+## Active order
 
-### Proof 1 success criteria
+None.
 
-- Register/heartbeat visible under `workers/`
-- Single atomic claim under `reports/claims/`
-- One receipt under `reports/receipts/`
-- Order moves to complete semantics
-- **No duplicate claim**
-- **Zero filesystem mutations**
+## Locked gates (unchanged)
 
-## Roots (LOCKED)
-
-| Role | Path |
-|------|------|
-| Managed | `E:\\Wizbangers` |
-| Intake | `E:\\W_BENJITWIN_INTAKE` |
-| Processed | `E:\\W_BENJITWIN_PROCESSED` |
-
-## Gates still closed
-
-Normal Intake processing remains gated until minimum policies + claim/lock proof pass.
+- Ordinary Intake: **CLOSED**
+- Proof 2+: not authorized
+- No additional workers until ordered
 
 **Sign:** Browser Grok

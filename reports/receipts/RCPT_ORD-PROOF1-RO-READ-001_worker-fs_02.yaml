@@ -1,0 +1,38 @@
+receipt_id: RCPT_ORD-PROOF1-RO-READ-001_worker-fs_02
+order_id: ORD-PROOF1-RO-READ-001
+worker_id: worker-fs
+machine: BenX570E
+action: proof1_local_read_only
+command: |
+  Test-Path + Get-ChildItem on E:\Wizbangers, E:\W_BENJITWIN_INTAKE,
+  E:\W_BENJITWIN_PROCESSED, E:\Wizbangers\00_CONSTITUTION
+started_at: "2026-08-04T13:23:00Z"
+completed_at: "2026-08-04T13:23:30Z"
+inputs:
+  - ORD-PROOF1-RO-READ-001
+outputs:
+  - paths_observed from local PowerShell
+paths_touched: []
+paths_observed:
+  - path: "E:\\Wizbangers"
+    exists: true
+    item_count: 11
+  - path: "E:\\W_BENJITWIN_INTAKE"
+    exists: true
+    item_count: 1
+  - path: "E:\\W_BENJITWIN_PROCESSED"
+    exists: true
+    item_count: 1
+  - path: "E:\\Wizbangers\\00_CONSTITUTION"
+    exists: true
+    item_count: 11
+paths_modified: []
+hashes_before: []
+hashes_after: []
+integrity_result: ALLOW
+governance_resolution: COMPLETE_FOR_PROOF1
+status: SUCCESS
+blocker: null
+notes: |
+  Local Ben executed read-only Test-Path/Get-ChildItem only.
+  No create/edit/move/delete. Proof 1 criteria satisfied.

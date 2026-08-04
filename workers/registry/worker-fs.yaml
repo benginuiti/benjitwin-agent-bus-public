@@ -14,10 +14,8 @@ worker:
   prohibited_roots:
     - "E:\\W_BENJITWIN_INTAKE"
   may_process_artifacts: false
-  governance_manifest: null
-  current_order: ORD-PROOF1-RO-READ-001
-  last_heartbeat: "2026-08-04T13:20:00Z"
+  current_order: null
+  last_heartbeat: "2026-08-04T13:23:30Z"
   version: "0.1.0"
   registered_at: "2026-08-04T13:20:00Z"
-  registered_by: Browser Grok
-  notes: "Registered for Proof 1. Full PowerShell authorized by Ben with mandatory logging."
+  notes: "Proof 1 SUCCESS. Idle."
