@@ -1,0 +1,21 @@
+worker:
+  worker_id: worker-fs
+  role: filesystem
+  machine: BenX570E
+  status: PLANNED
+  capabilities:
+    - folder_create
+    - copy
+    - hash
+    - path_correct
+    - powershell
+  allowed_roots:
+    - "E:\\Wizbangers"
+  prohibited_roots:
+    - "E:\\W_BENJITWIN_INTAKE"
+  may_process_artifacts: false
+  governance_manifest: null
+  current_order: null
+  last_heartbeat: null
+  version: "0.1.0"
+  notes: "PLANNED until Proof 1 claimed by a live local process. Full PowerShell authorized by Ben 2026-08-04 with mandatory command logging."

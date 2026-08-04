@@ -1,40 +1,39 @@
 # LATEST REPORT
-**Timestamp:** 2026-08-03T22:00Z (approx)
-**Status:** LIBRARY_PARTIAL + FOUNDER_MEMORY_DRAFT
-**From:** Local Claude (GCS/GRE install) + Browser Grok (Founder Memory draft + bus)
+**Timestamp:** 2026-08-04T13:05Z  
+**Status:** PHASE3_CONTROL_PLANE_PUBLISHED  
+**From:** Browser Grok
 
-## Machine (Claude)
+## Ben approvals (2026-08-04)
 
-- GCS / GRE definition install under `E:\\Wizbangers\\00_CONSTITUTION` — COMPLETE (18 files / 15 folders reported)
-- Superseded roots NOT created (`E:\\Benjitwin_*` left absent)
-- Live roots: `E:\\Wizbangers` | `E:\\W_BENJITWIN_INTAKE` | `E:\\W_BENJITWIN_PROCESSED`
-- Policy DRAFTs: `governs=false`, approval=0 — correct
-- GRE definition present; **runtime does not exist** — honest
-- Intake processed: 0 · deleted: 0 · promoted: 0
-- Local report: `E:\\o2a-dev\\benjitwin_media\\REPORT_GCS_GRE_INSTALL.md`
+1. Multi-worker specs v0.1 baseline — APPROVED  
+2. Founder Memory v0.1 — APPROVED (governs)  
+3. Phase 3 control plane — AUTHORIZED  
 
-## Critical gap (Claude) — partially addressed in portfolio
-
-Founder Memory was highest in GRE resolution order but missing from Library.
-
-**Grok created Draft (portfolio only, not auto-installed to E:):**
+## Control plane on bus (additive)
 
 ```
-03_PORTFOLIO/BENJITWIN/00_CONSTITUTION/Founder_Memory/
-  FOUNDER_MEMORY_v0.1.md
-  README.md
-  known_identities/WZ-ID-PROD-001_Structured_Forensic_Teardown.yaml
+workers/registry/worker-control.yaml   REGISTERED
+workers/registry/worker-fs.yaml        PLANNED (awaiting live claim)
+workers/heartbeats/worker-control.json
+orders/pending/ORD-PROOF1-RO-READ-001.yaml
 ```
 
-- Status: **Draft for Ben Approval** — does not govern until Ben approves
-- Seed identity: Structured Forensic Teardown = **Product** (Wizbangers), preferred_top_level 30_PRODUCTS
-- Assembled only from prior Ben declarations + session correction (AUR-001 inversion)
+## Proof 1 order
 
-## Still open
+- ID: ORD-PROOF1-RO-READ-001
+- Type: READ-ONLY Test-Path + list Wizbangers top-level
+- Prohibited: all mutations
+- Awaiting local worker-fs (or designated executor) claim + receipt
 
-- Ben approve / amend Founder Memory v0.1
-- Optional: install approved Founder Memory onto `E:\\Wizbangers\\00_CONSTITUTION\\Founder_Memory\\`
-- GRE runtime: does not exist
-- Claude bus push credential: still missing (structural)
+## Founder Memory
+
+Portfolio status set to APPROVED. Machine install of Founder Memory files onto `E:\\Wizbangers\\00_CONSTITUTION\\Founder_Memory\\` is a separate follow-on order (not part of Proof 1).
+
+## Not done
+
+- Live Windows worker process
+- Atomic claim from machine
+- Proof 1 completion receipt from machine
+- Intake resume (still gated)
 
 **Sign:** Browser Grok

@@ -1,0 +1,21 @@
+worker:
+  worker_id: worker-control
+  role: control
+  machine: BenX570E
+  status: REGISTERED
+  capabilities:
+    - order_create
+    - assign
+    - claim_arbitrate
+    - lock_manage
+    - audit
+  allowed_roots: []
+  prohibited_roots: []
+  may_process_artifacts: false
+  governance_manifest: null
+  current_order: null
+  last_heartbeat: "2026-08-04T13:05:00Z"
+  version: "0.1.0"
+  registered_at: "2026-08-04T13:05:00Z"
+  registered_by: Browser Grok
+  notes: "Control plane only. Does not process artifacts."

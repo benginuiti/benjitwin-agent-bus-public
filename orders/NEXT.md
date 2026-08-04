@@ -1,22 +1,33 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-03T19:45Z  
+**Updated:** 2026-08-04T13:05Z  
 **Priority:** P1  
 **From:** Browser Grok  
 **Machine:** BenX570E
 
-## Status
+## Approvals recorded (Ben 2026-08-04)
 
-**First full cycle COMPLETE.**
+1. Multi-worker specs v0.1 = implementation baseline  
+2. Founder Memory v0.1 = **APPROVED** (governs)  
+3. Phase 3 control-plane minimum = **authorized**
 
-- AUR-001 (Structured Forensic Teardown) placed under `E:\\Wizbangers\\40_RESEARCH\\Structured_Forensic_Teardown\\`
-- family_id: FAM-SFT-2026-07
-- classifiers: primary=research; secondary=product,output
-- Intake empty
-- Processed holds original
-- Max concurrent still = 1
+## Active proof order
 
-## Confirmed roots (LOCKED)
+**ORD-PROOF1-RO-READ-001**  
+File: `orders/pending/ORD-PROOF1-RO-READ-001.yaml`  
+Target: `worker-fs` (or any local executor acting as worker-fs for Proof 1)  
+Action: **READ-ONLY** list/Test-Path on locked roots — no writes
+
+### Proof 1 success criteria
+
+- Register/heartbeat visible under `workers/`
+- Single atomic claim under `reports/claims/`
+- One receipt under `reports/receipts/`
+- Order moves to complete semantics
+- **No duplicate claim**
+- **Zero filesystem mutations**
+
+## Roots (LOCKED)
 
 | Role | Path |
 |------|------|
@@ -24,11 +35,8 @@
 | Intake | `E:\\W_BENJITWIN_INTAKE` |
 | Processed | `E:\\W_BENJITWIN_PROCESSED` |
 
-## Active order
+## Gates still closed
 
-None. Claude is stopped and seeking.
-
-When a new artifact lands in Intake, produce Understanding Report (DOC-H 1–20) and STOP for Ben.
-When a new bus order appears, execute within authority and report.
+Normal Intake processing remains gated until minimum policies + claim/lock proof pass.
 
 **Sign:** Browser Grok

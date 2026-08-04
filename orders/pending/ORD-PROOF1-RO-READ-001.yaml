@@ -1,0 +1,32 @@
+order_id: ORD-PROOF1-RO-READ-001
+created_at: "2026-08-04T13:05:00Z"
+created_by: Browser Grok
+authority: Ben approval Phase 3 2026-08-04
+target_worker: worker-fs
+capabilities_required:
+  - powershell
+priority: P1
+dependencies: []
+resource_locks: []
+requested_action: |
+  READ-ONLY proof order. Do not create, modify, move, or delete any file.
+  1) Confirm Test-Path E:\Wizbangers is True
+  2) List top-level child names of E:\Wizbangers (names only)
+  3) Confirm Test-Path E:\W_BENJITWIN_INTAKE and E:\W_BENJITWIN_PROCESSED
+  4) Write receipt; do not change filesystem
+allowed_roots:
+  - "E:\\Wizbangers"
+  - "E:\\W_BENJITWIN_INTAKE"
+  - "E:\\W_BENJITWIN_PROCESSED"
+prohibited_actions:
+  - delete
+  - move
+  - write
+  - copy
+  - mkdir
+ben_approval_required: false
+integrity_check_required: true
+governance_manifest_required: false
+lease_seconds: 900
+status: pending
+proof: Proof_1_worker_control_claim_receipt

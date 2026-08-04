@@ -1,0 +1,8 @@
+{
+  "worker_id": "worker-control",
+  "machine": "BenX570E",
+  "status": "REGISTERED",
+  "heartbeat_at": "2026-08-04T13:05:00Z",
+  "version": "0.1.0",
+  "current_order": null
+}
