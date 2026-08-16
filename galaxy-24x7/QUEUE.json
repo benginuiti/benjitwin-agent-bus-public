@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-08-16T14:04:40.000000+00:00",
+  "items": [
+    {"id": "Q-001", "status": "DONE", "bite": "Universe Enumeration Pass 4"},
+    {"id": "Q-002", "status": "DONE", "bite": "Validator Mode FX-001"},
+    {"id": "Q-003", "status": "DONE", "bite": "P13-02 cost ranking"},
+    {"id": "Q-004", "status": "DONE", "bite": "Harvester bind"},
+    {"id": "Q-005", "status": "DONE", "bite": "Push cycle receipts to GitHub continuity"},
+    {"id": "Q-006", "status": "DONE", "bite": "F-AUTH-1 scaffold"},
+    {"id": "Q-007", "status": "HOST", "bite": "Host soak/watchdog"},
+    {"id": "Q-008", "status": "BEN_GATE", "bite": "F-AUTH-1 live deploy"},
+    {"id": "Q-009", "status": "EXTERNAL", "bite": "Testing Framework bytes"},
+    {"id": "Q-010", "status": "BEN_GATE", "bite": "Stage-0 ratification"}
+  ]
+}
