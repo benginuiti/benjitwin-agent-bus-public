@@ -1,15 +1,19 @@
 {
-  "generated_utc": "2026-08-16T14:04:40.000000+00:00",
+  "generated_utc": "2026-08-16T16:05:00Z",
+  "source": "cycle_0005",
   "items": [
-    {"id": "Q-001", "status": "DONE", "bite": "Universe Enumeration Pass 4"},
-    {"id": "Q-002", "status": "DONE", "bite": "Validator Mode FX-001"},
-    {"id": "Q-003", "status": "DONE", "bite": "P13-02 cost ranking"},
-    {"id": "Q-004", "status": "DONE", "bite": "Harvester bind"},
-    {"id": "Q-005", "status": "DONE", "bite": "Push cycle receipts to GitHub continuity"},
-    {"id": "Q-006", "status": "DONE", "bite": "F-AUTH-1 scaffold"},
-    {"id": "Q-007", "status": "HOST", "bite": "Host soak/watchdog"},
-    {"id": "Q-008", "status": "BEN_GATE", "bite": "F-AUTH-1 live deploy"},
-    {"id": "Q-009", "status": "EXTERNAL", "bite": "Testing Framework bytes"},
-    {"id": "Q-010", "status": "BEN_GATE", "bite": "Stage-0 ratification"}
+    {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
+    {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
+    {"id": "Q-003", "status": "DONE", "owner": "Grok", "bite": "P13-02 cost ranking"},
+    {"id": "Q-004", "status": "DONE", "owner": "Grok", "bite": "Harvester bind"},
+    {"id": "Q-005", "status": "DONE", "owner": "Grok", "bite": "Push cycle receipts to GitHub continuity"},
+    {"id": "Q-006", "status": "DONE", "owner": "Grok", "bite": "F-AUTH-1 scaffold"},
+    {"id": "Q-007", "status": "HOST", "owner": "Claude", "bite": "Host soak/watchdog"},
+    {"id": "Q-008", "status": "BEN_GATE", "owner": "Ben", "bite": "F-AUTH-1 live deploy"},
+    {"id": "Q-009", "status": "EXTERNAL", "owner": "External", "bite": "Testing Framework bytes"},
+    {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
+    {"id": "Q-011", "status": "DONE", "owner": "Grok", "bite": "Residual board refresh + self-loop integrity check"},
+    {"id": "Q-012", "status": "READY", "owner": "Grok", "bite": "Offline measurement of public-data residuals (universe identity)"},
+    {"id": "Q-013", "status": "READY", "owner": "Grok", "bite": "Documentation of residuals + control plane honesty"}
   ]
 }
