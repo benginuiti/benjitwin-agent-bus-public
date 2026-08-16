@@ -1,0 +1,10 @@
+{
+  "cycle_id": "GALAXY-CYCLE-0002",
+  "status": "COMPLETE",
+  "bites": [
+    {"bite": "Q-001", "status": "DONE", "nasdaq_Y": 13143, "not_in_master": 33, "sec": "BLOCKED_403"},
+    {"bite": "Q-011", "status": "DONE"}
+  ],
+  "ben_satisfied": false,
+  "next_ready": ["Q-012"]
+}
