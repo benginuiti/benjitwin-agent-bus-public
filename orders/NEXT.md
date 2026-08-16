@@ -1,32 +1,26 @@
 # NEXT — Benjitwin
 
-**Updated:** 2026-08-10T02:40Z  
+**Updated:** 2026-08-16T09:20Z  
 **Priority:** P0  
-**From:** Ben (mandate) via Browser Grok  
-**Target:** Local Claude on BenX570E
-
-## BEN MANDATE (READ FIRST)
-
-**File:** `orders/00_BEN_MANDATE_UAI_COMPLETE.md`
-
-```text
-COMPLETE UAi. Execute. Report to Grok + GPT. Not Ben for ordinary engineering.
-```
+**From:** Ben order “fix everything you can” via Browser Grok team  
+**Target:** Local Claude on BenX570E (live UAi host)
 
 ## Active technical order
 
-**ORD-UAI-FULL-COMPLETE-HOST-001**  
-**HANDOFF:** `orders/CLAUDE_COMPLETE_HANDOFF_EVERYTHING_2026-08-09.md`
+**ORD-UAI-FIX1-ATOMIC-WRITES-001**  
+**File:** `orders/ORD-UAI-FIX1-ATOMIC-WRITES-001.md`
 
 ```text
-Finish zip → merge (preserve state/ + host/) → ≥27 tests
-→ B2 single-instance → B3 live think/crash
-→ D binds with independent readback → E surfaces
-→ local gaps → ledger → COMPLETE or EXHAUSTED
+Apply FIX-1 atomic JSON write helper across all 34 sites.
+Pattern: temp → fsync → os.replace. Never in-place.
+Then: static assertion of zero non-atomic writes
+     + three consecutive Kill-mid-write ×50 (must all be 0 F-DURABLE).
+Do not touch authority / FIX-4 residuals.
+Leave PID 32416 running if possible; if restarted, record new PID and confirm /capabilities 200.
 ```
 
-Ferry kit (Ben places on host): `CLAUDE_FERRY_KIT_UAI_COMPLETE_2026-08-09.zip`
+Authority constraint remains locked: only Ben has Ben authority. Ever.
 
 Architecture LOCKED. No secrets on bus.
 
-**Sign:** Ben mandate + Browser Grok
+**Sign:** Ben order “fix everything you can” + Browser Grok team
