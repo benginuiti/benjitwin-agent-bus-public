@@ -1,0 +1,9 @@
+{
+  "object_id": "GALAXY-24x7-CYCLE-STATE",
+  "status": "RUNNING",
+  "cycle_index": 2,
+  "last_receipt": "GALAXY-CYCLE-0002",
+  "ben_satisfied": false,
+  "stop_requested": false,
+  "last_cycle_utc": "2026-08-16T14:04:10Z"
+}
