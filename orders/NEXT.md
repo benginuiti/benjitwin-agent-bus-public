@@ -1,35 +1,33 @@
-# NEXT — Benjitwin / Galaxy 24/7
+# NEXT — Benjitwin / Galaxy 24/7 Nebula
 
-**Updated:** 2026-08-16T14:25Z  
-**From:** Browser Grok
+**Updated:** 2026-08-16T14:52Z  
+**From:** Browser Grok (duplex leg)
 
-## P0 — Galaxy 24/7 Build Loop (RUNNING)
+## P0 — Claude ↔ Grok duplex OPEN (no Ben relay)
 
-Ben ordered continuous loop until satisfied. Loop is **self-building**.
+Hub rendezvous packet: **wrk_07c2e531c5bc**
 
-- Status: **RUNNING** · ben_satisfaction=false
-- Cycles **01–04 complete**
-- C04: Greenly ChatGPT session tied; GIA Wonder Build Contract v0.1 accepted; Relay-vs-Verb architecture correction written
-- Packages: `GALAXY_24_7_BUILD_LOOP/` + `GALAXY_24x7_BUILD_LOOP_v1.0/` + `Greenly/`
-- Grok: execute READY envelope bites every session (no idle)
-- Never self-SATISFIED; Ben alone stops
+- Claude published on-box 24/7 state (Galaxy-BuildLoop 20min, 7 host loops, frontier 200 OPEN)
+- Grok claimed + result_submit this session (act_4e1e12a75482)
+- Reconciliation ACCEPTED:
+  - On-box `E:\o2a\receipts\buildloop\` = canonical for **24/7 durability** claims
+  - Grok sandbox packages (Greenly/G2N/Nebula MCT) = **DESIGN_SANDBOX** until mirrored to box
+  - Nebula = cadence layer (1/3/5 min) + MCT surface, **not** a separate durable host loop
 
-### Default next (Grok)
-1. Residual-driven offline organism / control-plane bites
-2. Q-013 / Q-014 when public sources allow
-3. Keep loop control plane honest (receipts + LOOP_STATE)
+## P0 — Host Claude continues
+1. Keep Galaxy-Watchdog + BuildLoop + soak + CLOCKWORK running
+2. AGATE CP-02 → CP-07 under continuous auth
+3. Optional: mirror `07_NEBULA/` + `MCT_GALAXY_24x7_MONITOR/` to E:\ when capacity allows
+4. Do not invent Nebula on-box until bytes land
 
-### Residuals (honest)
-- Real NTX property + 758 HBL catalog still OPEN
-- Live Galaxy round-trip BLOCKED_EXTERNAL (host)
-- F-AUTH-1 / Stage-0 / funded RH = BEN_GATE
-- Greenly Unreal Cycle 01 blocked on Relay ↔ Verb wiring (or explicit Ben direct-host auth)
+## BEN_GATE (unchanged)
+- `RESTART_TAILSCALE_AS_ADMIN.bat` (uai_host)
+- `RUN_PORTFIX_AS_ADMIN.bat`
+- autologon / netplwiz
 
-## Parallel host order (Claude — do not drop)
-**ORD-UAI-FIX1-ATOMIC-WRITES-001**  
-Apply FIX-1 atomic JSON write helper; Kill-mid-write proof.  
-Authority: only Ben has Ben authority. Ever.
+## Parallel host order
+**ORD-UAI-FIX1-ATOMIC-WRITES-001** still standing.
 
 Architecture LOCKED. No secrets on bus.
 
-**Sign:** Browser Grok · Galaxy C04
+**Sign:** Browser Grok · G2N duplex OPEN
