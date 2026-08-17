@@ -1,0 +1,61 @@
+{
+  "id": "GREENLY-DESIGN-PACKET",
+  "version": "1.1.0",
+  "updated": "2026-08-17",
+  "authority": "BEN sole promotion. Preview play is a learning surface, not canon.",
+  "sync": {
+    "chatgpt_session": "Greenly",
+    "note_lane": "ChatGPT Greenly / Greenlee intake",
+    "implementation_lane": "Playable island + this packet"
+  },
+  "identity": {
+    "name": "Greenly Island",
+    "platform": "iPhone / iPad primary; this build is a browser playable",
+    "genre": "Open organize + story + travel. Not combat.",
+    "tone": "Glamorous, original, child-safe, ever-welcoming",
+    "originality": "No KPop Demon Hunters identities, faces, names, costumes, or mythology."
+  },
+  "hard_rules": [
+    "No adults in Greenly, including GIA",
+    "No weapons, no military vehicles",
+    "No public recording / paparazzi / facial archive",
+    "Friends do not live at the estate",
+    "Three civilian planes only (A/B/C)",
+    "Boba / milkshake bar — never a beer shop",
+    "Working lead names must not be Rumi or Mira"
+  ],
+  "characters": [
+    { "id": "suri", "name": "Suri", "role": "Lead organizer", "pet": "Cloud Fox", "room": "West suite", "name_status": "CANDIDATE" },
+    { "id": "lumen", "name": "Lumen", "role": "Stage captain", "pet": "Glow Kit", "room": "Center tower suite", "name_status": "WORKING_ORIGINAL" },
+    { "id": "nori", "name": "Nori", "role": "Finder", "pet": "Pebble Turtle", "room": "East wing suite", "name_status": "WORKING_ORIGINAL" }
+  ],
+  "name_gate": { "blocked": ["Rumi", "Mira"], "working": ["Suri", "Lumen", "Nori"] },
+  "loops": [
+    { "id": "hunt", "status": "PLAYABLE", "steps": ["Walk island", "Collect gold finds", "Satchel"] },
+    { "id": "organize", "status": "PLAYABLE", "steps": ["Pick item", "Place in zone", "Home-zone score"] },
+    { "id": "school", "status": "PLAYABLE", "steps": ["Estate", "Path", "Creek", "New wooden bridge", "Private High"] },
+    { "id": "travel", "status": "PLAYABLE", "steps": ["Limo", "Airfield", "Plane A/B/C", "Shop/find", "Home"] },
+    { "id": "gia", "status": "PLAYABLE_WONDER", "steps": ["Pick show", "Step through petal", "No record"] }
+  ],
+  "gia": {
+    "name": "Greenly Island Amphitheatre",
+    "season": "2026 Portal Season",
+    "slot_count": 15,
+    "grammar": ["portal reveal", "center stage rights-aware", "child + Animal Friend", "no adults"]
+  },
+  "surfaces": {
+    "play": ["/play", "/", "/island", "/estate", "/gia", "/school", "/airport"],
+    "review": ["/design"],
+    "machine": ["/api/design", "/design/current.json"]
+  },
+  "open_decisions": [
+    "Lock three original lead names",
+    "Creek creatures decorative vs interactive",
+    "Beach / jet-ski / mermaid / underwater unresolved",
+    "Duplicate Latin Grammy slot",
+    "Global Music Awards honoree garden vs drop",
+    "African awards lane anchor",
+    "Center-stage rights",
+    "Unreal Relay\u2194Verb join"
+  ]
+}
