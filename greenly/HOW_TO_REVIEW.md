@@ -24,8 +24,8 @@ If a live host is reachable, prefer `/api/cockpit` then `/api/design`.
 | Lane | What it is | Where |
 |------|------------|--------|
 | **Lived world** | Freely traversable Home Island | Preview **World** (`/world`) |
-| **Operator** | LAN / Tailscale / Relay deck | `/cockpit` · `/api/cockpit` |
-| **Design** | Machine + human check | `/design` · `/api/design` · this bus folder |
+| **Operator** | LAN / Tailscale / Relay deck | `/cockpit` \u00b7 `/api/cockpit` |
+| **Design** | Machine + human check | `/design` \u00b7 `/api/design` \u00b7 this bus folder |
 
 ChatGPT cannot see the Grok preview tab. Fetch the bus files or the live machine endpoints.
 
@@ -36,7 +36,7 @@ ChatGPT cannot see the Grok preview tab. Fetch the bus files or the live machine
 3. Do not invent locked names, rights, or beach/underwater features.
 4. FAIL if Rumi/Mira, adults on GIA, weapons, beer shop, or military vehicles appear as locked.
 5. Write findings back to the Greenly chat only. No silent promotion.
-6. Keep RECOVERED / WONDER / ACCEPTED / APPLIED / VERIFIED separate. Cite GDR / GRC / GBA / GWN IDs. UX v0.1 Day 1–10 is not canon until BEN accepts.
+6. Keep RECOVERED / WONDER / ACCEPTED / APPLIED / VERIFIED separate. Cite GDR / GRC / GBA / GWN IDs. UX v0.1 is the design baseline (Ben execute). Day 3–10 are not yet built.
 
 ## Play
 

@@ -1,8 +1,8 @@
 {
   "id": "GREENLY-DESIGN-PACKET",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "updated": "2026-08-17",
-  "authority": "BEN sole promotion. Preview play is a learning surface, not canon.",
+  "authority": "BEN sole promotion. Ben execute 2026-08-17: build continues. Child safety stays locked.",
   "sync": {
     "chatgpt_session": "Greenly",
     "note_lane": "ChatGPT Greenly / Greenlee intake",
@@ -16,7 +16,7 @@
     "genre": "Real-time freely traversable world. Not combat. Not a dollhouse menu.",
     "tone": "Glamorous, original, child-safe, ever-welcoming",
     "originality": "No KPop Demon Hunters identities, faces, names, costumes, or mythology.",
-    "experience": "Embodied continuous movement. Environmental affordance. Animal Friend as co-inhabitant. Frozen visual baseline unchanged. Quiet zone and private exit always reachable."
+    "experience": "Embodied continuous movement. Environmental affordance. Animal Friend as co-inhabitant. Frozen visual baseline unchanged."
   },
   "hard_rules": [
     "No adults in Greenly, including GIA",
@@ -38,20 +38,15 @@
     "note": "Suri remains a candidate until BEN locks the trio."
   },
   "loops": [
-    {"id": "embody", "name": "Lived Home Island", "steps": ["Walk", "Run", "Sprint", "Discover affordances by movement"], "status": "PLAYABLE"},
-    {"id": "quiet-home", "name": "Quiet and private exit", "steps": ["Tap Quiet or walk to calm cove", "World calms", "Tap Home — courtyard, no questions"], "status": "PLAYABLE"},
-    {"id": "hunt", "name": "Hunt and gather", "steps": ["Walk island", "Collect gold finds", "Satchel keeps them"], "status": "PLAYABLE"},
-    {"id": "organize", "name": "Closet organize", "steps": ["Pick item", "Place in zone", "Score home-zone matches"], "status": "PLAYABLE"},
-    {"id": "school", "name": "Daily local loop", "steps": ["Estate door", "Path", "Creek", "New wooden bridge", "Private High"], "status": "PLAYABLE"},
-    {"id": "travel", "name": "Destination loop", "steps": ["Estate", "Chauffeur / limo", "East airfield", "Plane A/B/C", "Shop/find", "Home"], "status": "PLAYABLE"},
-    {"id": "gia", "name": "Portal night", "steps": ["Pick show", "Step through petal", "Garden floor", "No record"], "status": "PLAYABLE_WONDER"}
+    {"id": "embody", "name": "Lived Home Island", "status": "PLAYABLE"},
+    {"id": "first-day", "name": "First Day Together", "steps": ["Follow sparkle", "Sky slide", "Restore color bridge", "Leave a garden color", "Find calm"], "status": "PLAYABLE"},
+    {"id": "quiet-home", "name": "Quiet and private exit", "status": "PLAYABLE"},
+    {"id": "hunt", "name": "Hunt and gather", "status": "PLAYABLE"},
+    {"id": "organize", "name": "Closet organize", "status": "PLAYABLE"},
+    {"id": "school", "name": "Daily local loop", "status": "PLAYABLE"},
+    {"id": "travel", "name": "Destination loop", "status": "PLAYABLE"},
+    {"id": "gia", "name": "Portal night", "status": "PLAYABLE_WONDER"}
   ],
-  "gia": {
-    "name": "Greenly Island Amphitheatre",
-    "season": "2026 Portal Season",
-    "slot_count": 15,
-    "grammar": ["portal reveal", "center stage rights-aware", "child + Animal Friend", "no adults"]
-  },
   "surfaces": {
     "play": ["/world", "/play", "/", "/island", "/estate", "/gia", "/school", "/airport"],
     "review": ["/design"],
@@ -59,23 +54,11 @@
     "machine": ["/api/cockpit", "/api/cockpit/probe", "/api/health", "/api/design", "/design/current.json"]
   },
   "alignment": {
-    "packet_id": "GREENLY_GROK_GAMEPLAY_ALIGNMENT_PACKET_v1.0",
-    "states": {
-      "island_look": "FROZEN",
-      "ux_v0_1": "RECOVERED · BEN_ACCEPTANCE_PENDING · NOT APPLIED",
-      "day_1_to_10": "NOT APPLIED",
-      "quiet_private_exit": "APPLIED as frozen safety (UX promise #5, GDR-007). Not Day 1 training. Awaiting BEN ACCEPT.",
-      "gdr": "RECOVERED prior Ben decisions — 71 ACCEPT / 10 HOLD",
-      "grc_gba_gwn": "RECOVERED or WONDER · NOT APPLIED",
-      "runtime": "UNVERIFIED"
-    }
-  },
-  "public_bus": {
-    "json": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/DESIGN.json",
-    "how_to": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/HOW_TO_REVIEW.md",
-    "play": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/PLAY.md",
-    "cockpit": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/COCKPIT.md",
-    "sync": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/SYNC_TO_CHATGPT_GREENLY.md"
+    "ux_v0_1": "ACCEPTED as design baseline (Ben execute 2026-08-17)",
+    "day_1": "APPLIED as lived journey",
+    "bite_2": "APPLIED",
+    "family_envelope": "APPLIED on cockpit only",
+    "day_3_to_10": "NOT YET BUILT"
   },
   "open_decisions": [
     "Lock three original lead names",
@@ -85,13 +68,10 @@
     "Global Music Awards as honoree garden vs drop",
     "African awards lane anchor (AFRIMA proposed)",
     "Any live 360 stitch requires licenses",
-    "Unreal Cycle 01 needs Relay↔Verb join",
-    "ACCEPT UX v0.1 as design baseline — Day 1–10 stay NOT APPLIED until BEN promotes",
-    "Calm cove + private exit now on /world as frozen safety — awaiting BEN ACCEPT",
-    "Next bite: compile the lived-world affordance map (Bite 2)"
+    "Unreal Cycle 01 needs Relay\u2194Verb join"
   ],
   "checks": {
-    "version": "1.3.1",
+    "version": "1.4.0",
     "pass": true,
     "passed": 12,
     "failed": 0
