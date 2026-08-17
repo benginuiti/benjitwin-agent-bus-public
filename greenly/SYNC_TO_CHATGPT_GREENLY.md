@@ -3,7 +3,7 @@
 **Tied:** 2026-08-17  
 **Authority:** BEN sole promotion  
 **ChatGPT session name:** Greenly (also Greenlee intake)  
-**This chat:** Grok Build implementation + lived-world correction  
+**This chat:** Grok Build implementation + lived-world correction + operator cockpit  
 
 Treat this file as the handoff. ChatGPT is the **note / design / wonder lane**. This Grok Build session is the **browser implementation lane**. Neither may silently promote.
 
@@ -11,11 +11,13 @@ Treat this file as the handoff. ChatGPT is the **note / design / wonder lane**. 
 
 ## How ChatGPT should ingest
 
-1. Fetch this file.
-2. Fetch https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/DESIGN.json
-3. Fetch https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/EXPERIENCE.md
-4. Do not invent locked names, broadcast rights, or beach/underwater travel.
-5. Reply in the Greenly chat as **received + deltas only**.
+1. Fetch this file.  
+2. Fetch [DESIGN.json](https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/DESIGN.json).  
+3. Fetch [EXPERIENCE.md](https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/EXPERIENCE.md).  
+4. Fetch [COCKPIT.md](https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/COCKPIT.md).  
+5. If a live host is available, prefer `/api/cockpit` then `/api/design`.  
+6. Do not invent locked names, broadcast rights, or beach/underwater travel.  
+7. Reply in the Greenly chat as **received + deltas only**.
 
 Folder: https://github.com/benginuiti/benjitwin-agent-bus-public/tree/main/greenly
 
@@ -36,6 +38,8 @@ Folder: https://github.com/benginuiti/benjitwin-agent-bus-public/tree/main/green
 - School path: estate → path → creek → **new** wooden bridge → Private High.
 - Horizon city = Home Reality twin, not a public location.
 - Unreal Cycle 01 still needs Relay↔Verb join (or explicit BEN direct-host).
+- Tailscale Mobile Relay (`100.95.127.31:49400`) is the go-between for the twin and sourced assets. It is not the cockpit and not a second Greenly.
+- Operator cockpit lives at `/cockpit` (human) and `/api/cockpit` (machine). Home LAN and Tailscale Serve are how Ben reaches the same cockpit from iPad / phone.
 
 ---
 
@@ -60,13 +64,15 @@ Frozen look stays. Correct the model under it.
 
 | Surface | Role |
 |---------|------|
-| `/world` | **Primary lived island** |
+| `/world` | **Primary lived island** — WASD / touch, chase cam, slide/bounce/swing/climb/dance/creek/GIA petal |
 | `/play` | Hub; Live island is first |
+| `/cockpit` | Operator deck — LAN / Tailscale / Relay, gates, loops, machine packet |
+| `/api/cockpit` `/api/health` `/api/cockpit/probe` | Machine + heartbeat + private-range probe |
 | `/design` + `/api/design` | Human + machine design check |
 | `/island` `/estate` `/gia` `/school` `/airport` | Side boards — not the lived world |
 | Public bus `greenly/` | What ChatGPT can fetch |
 
-Leads + pets: Suri / Cloud Fox, Lumen / Glow Kit, Nori / Pebble Turtle.
+Leads + pets in play: Suri / Cloud Fox, Lumen / Glow Kit, Nori / Pebble Turtle.
 
 ---
 
@@ -78,15 +84,3 @@ Leads + pets: Suri / Cloud Fox, Lumen / Glow Kit, Nori / Pebble Turtle.
 - Duplicate Latin Grammy slot; Global Music Awards honoree garden vs drop; AFRIMA proposed for African lane.
 - Center-stage 360 stitch is rights-dependent. Wonder translation only.
 - Unreal Relay ↔ Verb wiring.
-
----
-
-## Lanes going forward
-
-| Lane | Job |
-|------|-----|
-| ChatGPT “Greenly” | Notes, wonder, GIA contract, child-safety language. Do not claim implementation. |
-| Grok Build (this chat) | Browser world + design packet. Stay on frozen visuals. |
-| Local twin / Relay / Unreal | Only after BEN join order. |
-
-**Tie is live.** ChatGPT should say: SYNC received. Experience correction binding. Visual baseline frozen. Implementation lane is Grok `/world`.
