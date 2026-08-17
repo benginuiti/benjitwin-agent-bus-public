@@ -1,19 +1,22 @@
 {
   "id": "GREENLY-DESIGN-PACKET",
-  "version": "1.1.0",
+  "version": "1.3.0",
   "updated": "2026-08-17",
   "authority": "BEN sole promotion. Preview play is a learning surface, not canon.",
   "sync": {
     "chatgpt_session": "Greenly",
     "note_lane": "ChatGPT Greenly / Greenlee intake",
-    "implementation_lane": "Playable island + this packet"
+    "implementation_lane": "Grok Build /world + /cockpit + this packet",
+    "tie_file": "greenly/SYNC_TO_CHATGPT_GREENLY.md",
+    "tied_at": "2026-08-17"
   },
   "identity": {
     "name": "Greenly Island",
-    "platform": "iPhone / iPad primary; this build is a browser playable",
-    "genre": "Open organize + story + travel. Not combat.",
+    "platform": "One persistent world: phone, tablet, PC, controller, VR/AR later",
+    "genre": "Real-time freely traversable world. Not combat. Not a dollhouse menu.",
     "tone": "Glamorous, original, child-safe, ever-welcoming",
-    "originality": "No KPop Demon Hunters identities, faces, names, costumes, or mythology."
+    "originality": "No KPop Demon Hunters identities, faces, names, costumes, or mythology.",
+    "experience": "Embodied continuous movement. Environmental affordance. Animal Friend as co-inhabitant. Frozen visual baseline unchanged."
   },
   "hard_rules": [
     "No adults in Greenly, including GIA",
@@ -25,17 +28,22 @@
     "Working lead names must not be Rumi or Mira"
   ],
   "characters": [
-    { "id": "suri", "name": "Suri", "role": "Lead organizer", "pet": "Cloud Fox", "room": "West suite", "name_status": "CANDIDATE" },
-    { "id": "lumen", "name": "Lumen", "role": "Stage captain", "pet": "Glow Kit", "room": "Center tower suite", "name_status": "WORKING_ORIGINAL" },
-    { "id": "nori", "name": "Nori", "role": "Finder", "pet": "Pebble Turtle", "room": "East wing suite", "name_status": "WORKING_ORIGINAL" }
+    {"id": "suri", "name": "Suri", "role": "Lead organizer", "pet": "Cloud Fox", "room": "West suite", "name_status": "CANDIDATE"},
+    {"id": "lumen", "name": "Lumen", "role": "Stage captain", "pet": "Glow Kit", "room": "Center tower suite", "name_status": "WORKING_ORIGINAL"},
+    {"id": "nori", "name": "Nori", "role": "Finder", "pet": "Pebble Turtle", "room": "East wing suite", "name_status": "WORKING_ORIGINAL"}
   ],
-  "name_gate": { "blocked": ["Rumi", "Mira"], "working": ["Suri", "Lumen", "Nori"] },
+  "name_gate": {
+    "blocked": ["Rumi", "Mira"],
+    "working": ["Suri", "Lumen", "Nori"],
+    "note": "Suri remains a candidate until BEN locks the trio."
+  },
   "loops": [
-    { "id": "hunt", "status": "PLAYABLE", "steps": ["Walk island", "Collect gold finds", "Satchel"] },
-    { "id": "organize", "status": "PLAYABLE", "steps": ["Pick item", "Place in zone", "Home-zone score"] },
-    { "id": "school", "status": "PLAYABLE", "steps": ["Estate", "Path", "Creek", "New wooden bridge", "Private High"] },
-    { "id": "travel", "status": "PLAYABLE", "steps": ["Limo", "Airfield", "Plane A/B/C", "Shop/find", "Home"] },
-    { "id": "gia", "status": "PLAYABLE_WONDER", "steps": ["Pick show", "Step through petal", "No record"] }
+    {"id": "embody", "name": "Lived Home Island", "steps": ["Walk", "Run", "Sprint", "Discover affordances by movement"], "status": "PLAYABLE"},
+    {"id": "hunt", "name": "Hunt and gather", "steps": ["Walk island", "Collect gold finds", "Satchel keeps them"], "status": "PLAYABLE"},
+    {"id": "organize", "name": "Closet organize", "steps": ["Pick item", "Place in zone", "Score home-zone matches"], "status": "PLAYABLE"},
+    {"id": "school", "name": "Daily local loop", "steps": ["Estate door", "Path", "Creek", "New wooden bridge", "Private High"], "status": "PLAYABLE"},
+    {"id": "travel", "name": "Destination loop", "steps": ["Estate", "Chauffeur / limo", "East airfield", "Plane A/B/C", "Shop/find", "Home"], "status": "PLAYABLE"},
+    {"id": "gia", "name": "Portal night", "steps": ["Pick show", "Step through petal", "Garden floor", "No record"], "status": "PLAYABLE_WONDER"}
   ],
   "gia": {
     "name": "Greenly Island Amphitheatre",
@@ -44,18 +52,32 @@
     "grammar": ["portal reveal", "center stage rights-aware", "child + Animal Friend", "no adults"]
   },
   "surfaces": {
-    "play": ["/play", "/", "/island", "/estate", "/gia", "/school", "/airport"],
+    "play": ["/world", "/play", "/", "/island", "/estate", "/gia", "/school", "/airport"],
     "review": ["/design"],
-    "machine": ["/api/design", "/design/current.json"]
+    "operator": ["/cockpit"],
+    "machine": ["/api/cockpit", "/api/cockpit/probe", "/api/health", "/api/design", "/design/current.json"]
+  },
+  "public_bus": {
+    "json": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/DESIGN.json",
+    "how_to": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/HOW_TO_REVIEW.md",
+    "play": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/PLAY.md",
+    "cockpit": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/COCKPIT.md",
+    "sync": "https://raw.githubusercontent.com/benginuiti/benjitwin-agent-bus-public/main/greenly/SYNC_TO_CHATGPT_GREENLY.md"
   },
   "open_decisions": [
     "Lock three original lead names",
-    "Creek creatures decorative vs interactive",
-    "Beach / jet-ski / mermaid / underwater unresolved",
-    "Duplicate Latin Grammy slot",
-    "Global Music Awards honoree garden vs drop",
-    "African awards lane anchor",
-    "Center-stage rights",
-    "Unreal Relay\u2194Verb join"
-  ]
+    "Koi / water-dragons decorative vs interactive",
+    "Beach / jet-ski / mermaid / underwater",
+    "Duplicate Latin Grammy slot in GIA lineup",
+    "Global Music Awards as honoree garden vs drop",
+    "African awards lane anchor (AFRIMA proposed)",
+    "Any live 360 stitch requires licenses",
+    "Unreal Cycle 01 needs Relay↔Verb join"
+  ],
+  "checks": {
+    "version": "1.3.0",
+    "pass": true,
+    "passed": 12,
+    "failed": 0
+  }
 }
