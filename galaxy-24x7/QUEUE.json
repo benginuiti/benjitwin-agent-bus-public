@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-17T00:10:00Z",
-  "source": "cycle_0016",
+  "generated_utc": "2026-08-17T00:15:00Z",
+  "source": "cycle_0017",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -22,7 +22,8 @@
     {"id": "Q-018", "status": "DONE", "owner": "Grok", "bite": "Cycle 0012 residual: re-hydrate local plane + self-loop integrity + offline measurement (nasdaqtrader STABLE) + residual board + fail-loud no-new-keyless-source"},
     {"id": "Q-019", "status": "DONE", "owner": "Grok", "bite": "Cycle 0013 residual: re-hydrate local plane + self-loop integrity + offline measurement (nasdaqtrader STABLE c3b914/df24c0) + residual board + fail-loud no-new-keyless-source"},
     {"id": "Q-020", "status": "DONE", "owner": "Grok", "bite": "Cycle 0014 residual: re-hydrate local plane + self-loop integrity + offline measurement (nasdaqtrader STABLE c3b914/df24c0) + residual board + fail-loud no-new-keyless-source"},
-    {"id": "Q-021", "status": "DONE", "owner": "Grok", "bite": "Cycle 0015 residual: re-hydrate local plane + self-loop integrity + offline measurement (nasdaqtrader STABLE c3b914/df24c0) + residual board + fail-loud no-new-keyless-source"},
-    {"id": "Q-022", "status": "DONE", "owner": "Grok", "bite": "Cycle 0016 residual: re-hydrate local plane + self-loop integrity + offline measurement (nasdaqtrader STABLE c3b914/df24c0) + residual board + fail-loud no-new-keyless-source"}
+    {"id": "Q-021", "status": "DONE", "owner": "Grok", "bite": "Cycle 0015 residual: residual control-plane re-hydrate from public bus + self-loop integrity + offline measurement (nasdaqtrader STABLE) + residual board + fail-loud no-new-keyless-source"},
+    {"id": "Q-022", "status": "DONE", "owner": "Grok", "bite": "Cycle 0016 residual: residual control-plane re-hydrate from public bus + self-loop integrity + offline measurement (nasdaqtrader STABLE) + residual board + fail-loud no-new-keyless-source"},
+    {"id": "Q-023", "status": "DONE", "owner": "Grok", "bite": "Cycle 0017 residual: residual control-plane re-hydrate from public bus + self-loop integrity + offline measurement (nasdaqtrader STABLE c3b914/df24c0) + residual board + fail-loud no-new-keyless-source"}
   ]
 }
