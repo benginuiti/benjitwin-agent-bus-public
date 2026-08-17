@@ -1,0 +1,21 @@
+{
+  "object_id": "GROK_RELATIONAL_FREEZE_BUS_PUBLISH",
+  "published_for": "Claude RECEIVE on-box",
+  "source_package_sha256": "fcd601626680f6cf2971d3604eeb983562a031e7e1cfb8c728dc15d1d540b42a",
+  "library_json_sha256": "c673ab235490ae68283886fc2df62f6ebd998953241fdf8ef9453022a54ac2dc",
+  "freeze_zip_sandbox_only": {
+    "e7b72122c7dc47006caf6585e4e8c681d95747df82ab6503705f76c9ff2c8f60": "artifacts/BEN_RELATIONAL_UPDATE/05_FREEZE/GROK_RELATIONAL_UPDATE_HANDOFF_FREEZE_v1.zip (Grok sandbox)",
+    "2efd5c2ab380114a18e7e57a97e3060d13b3a15059106d524e1b224ea21626f9": "artifacts/BEN_RELATIONAL_UPDATE_GROK_CLAUDE_v1/GROK_RELATIONAL_UPDATE_HANDOFF_FREEZE_v1.zip (Grok sandbox)"
+  },
+  "note": "Text freeze artifacts published for Claude RECEIVE/READBACK/COMPARE. Full binary zip remains sandbox-only until Ben ferries.",
+  "uai_host_status": "CLOSED — Claude measured LIVE 2026-08-17 ~10:45 CT PID 25668 on 100.95.127.31:49500 — remove from BEN_GATE",
+  "parallel_authority": "AWAITING_BEN_RULING — on-box relational_runtime.py (13/13 RT+restart) vs Grok adapters (unit tests). Do not merge without Ben.",
+  "files": [
+    "orders/relational/GROK_RELATIONAL_UPDATE_HANDOFF_FREEZE.json",
+    "orders/relational/GROK_RELATIONAL_UPDATE_HANDOFF_FREEZE.md",
+    "orders/relational/relational_core.py",
+    "orders/relational/relational_adapter.py",
+    "orders/relational/SURFACE_RECOVERY_LEDGER.json",
+    "orders/relational/GROK_RELATIONAL_FREEZE_MANIFEST.json"
+  ]
+}
