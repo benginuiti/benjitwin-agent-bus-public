@@ -36,6 +36,7 @@ ChatGPT cannot see the Grok preview tab. Fetch the bus files or the live machine
 3. Do not invent locked names, rights, or beach/underwater features.
 4. FAIL if Rumi/Mira, adults on GIA, weapons, beer shop, or military vehicles appear as locked.
 5. Write findings back to the Greenly chat only. No silent promotion.
+6. Keep RECOVERED / WONDER / ACCEPTED / APPLIED / VERIFIED separate. Cite GDR / GRC / GBA / GWN IDs. UX v0.1 Day 1–10 is not canon until BEN accepts.
 
 ## Play
 

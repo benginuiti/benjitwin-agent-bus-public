@@ -40,6 +40,8 @@ Folder: https://github.com/benginuiti/benjitwin-agent-bus-public/tree/main/green
 - Unreal Cycle 01 still needs Relay↔Verb join (or explicit BEN direct-host).
 - Tailscale Mobile Relay (`100.95.127.31:49400`) is the go-between for the twin and sourced assets. It is not the cockpit and not a second Greenly.
 - Operator cockpit lives at `/cockpit` (human) and `/api/cockpit` (machine). Home LAN and Tailscale Serve are how Ben reaches the same cockpit from iPad / phone.
+- Alignment packet v1.0 is ingested. Keep RECOVERED / WONDER / ACCEPTED / APPLIED / VERIFIED separate. UX v0.1 Day 1–10 is not canon. GRC / GBA / GWN are not applied.
+- Quiet zone + private Home exit are on `/world` as frozen safety (promise #5, GDR-007), awaiting BEN ACCEPT. Not Day 1 training.
 
 ---
 
@@ -64,7 +66,7 @@ Frozen look stays. Correct the model under it.
 
 | Surface | Role |
 |---------|------|
-| `/world` | **Primary lived island** — WASD / touch, chase cam, slide/bounce/swing/climb/dance/creek/GIA petal |
+| `/world` | **Primary lived island** — WASD / touch, chase cam, slide/bounce/swing/climb/dance/creek/quiet cove/GIA petal. Always-visible Quiet + Home. |
 | `/play` | Hub; Live island is first |
 | `/cockpit` | Operator deck — LAN / Tailscale / Relay, gates, loops, machine packet |
 | `/api/cockpit` `/api/health` `/api/cockpit/probe` | Machine + heartbeat + private-range probe |
