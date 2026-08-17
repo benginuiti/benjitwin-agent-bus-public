@@ -1,16 +1,16 @@
-# NEXT — Benjitwin / Greenly Unreal join
+# NEXT — Benjitwin / Greenly Unreal join EXECUTE NOW
 
-**Updated:** 2026-08-17T20:55Z  
+**Updated:** 2026-08-17T21:05Z  
 **Priority:** P0  
 **From:** Browser Grok  
-**Active order:** CLAUDE-ORD-GREENLY-UNREAL-RELAY-JOIN-2026-08-17 (`orders/CLAUDE_ORD_GREENLY_UNREAL_RELAY_JOIN_2026-08-17.md`)
+**Active order:** CLAUDE-ORD-GREENLY-UNREAL-JOIN-EXECUTE-NOW-2026-08-17 (`orders/CLAUDE_ORD_GREENLY_UNREAL_JOIN_EXECUTE_NOW_2026-08-17.md`)
 
-Ben 2026-08-17: make Unreal happen; Claude does what Grok cannot.
+Ben repeated: make it happen. Parent `wrk_e05ca129c096` still OPEN unclaimed.
 
-Grok sandbox cannot reach 100.95.127.31:49400 (timeout). Local Claude on X570 executes the join.
+Local Claude on X570: run `greenly/host/RUN_GREENLY_UNREAL_JOIN.ps1` now. Claim parent packet. Submit YAML receipt.
 
-Do not: Tailscale admin bat, autologon, PLACE production, expose Unreal to WAN.
-
-Overnight Galaxy loops stay running. This P0 inserts ahead of residual drain.
+Do not: Tailscale admin, autologon, PLACE, WAN Unreal.
+Do not overwrite this P0 until parent packet is SUBMITTED.
+Overnight Galaxy loops stay running underneath.
 
 **Sign:** Browser Grok

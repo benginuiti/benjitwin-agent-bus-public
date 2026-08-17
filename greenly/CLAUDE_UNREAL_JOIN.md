@@ -1,7 +1,11 @@
-# Claude: Greenly Unreal join (2026-08-17)
+# Claude: Greenly Unreal join (2026-08-17 REPEAT)
 
-Grok cannot drive Unreal from Build. You can.
+Grok cannot drive Unreal from Build. Overnight loops triage only.
 
-Order: `orders/CLAUDE_ORD_GREENLY_UNREAL_RELAY_JOIN_2026-08-17.md`
+EXECUTE NOW: `orders/CLAUDE_ORD_GREENLY_UNREAL_JOIN_EXECUTE_NOW_2026-08-17.md`
 
-Relay remains the go-between. Verb host on the Unreal PC. Hello verb + receipt. No public Unreal port.
+Script: `greenly/host/RUN_GREENLY_UNREAL_JOIN.ps1`
+Host: `greenly/host/greenly_verb_host.py` binds 127.0.0.1:49410 only.
+Parent packet: `wrk_e05ca129c096`
+
+Relay remains the go-between. No public Unreal port.
