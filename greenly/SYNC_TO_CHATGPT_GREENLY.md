@@ -1,6 +1,6 @@
 # SYNC — this Grok Build chat ↔ ChatGPT session “Greenly”
 
-**Tied:** 2026-08-17  
+**Tied:** 2026-08-18  
 **Authority:** BEN sole promotion  
 **ChatGPT session name:** Greenly (also Greenlee intake)  
 **This chat:** Grok Build implementation + lived-world correction + operator cockpit  
@@ -40,7 +40,7 @@ Folder: https://github.com/benginuiti/benjitwin-agent-bus-public/tree/main/green
 - Unreal Cycle 01 still needs Relay↔Verb join (or explicit BEN direct-host).
 - Tailscale Mobile Relay (`100.95.127.31:49400`) is the go-between for the twin and sourced assets. It is not the cockpit and not a second Greenly.
 - Operator cockpit lives at `/cockpit` (human) and `/api/cockpit` (machine). Home LAN and Tailscale Serve are how Ben reaches the same cockpit from iPad / phone.
-- Alignment packet v1.0 is ingested. Ben execute 2026-08-17: build continues; child safety stays locked. UX v0.1 is the design baseline. Day 1 is lived on `/world`. Day 3–10 not yet built. GRC / GBA / GWN are not silently merged.
+- Alignment packet v1.0 is ingested. Ben execute 2026-08-17: build continues; child safety stays locked. UX v0.1 is the design baseline. Day 1, Day 3 Studio, and Day 5 Conservatory are lived on `/world`. Day 10 Our Place is not yet built. GRC / GBA / GWN are not silently merged.
 - Quiet zone + private Home exit and the family envelope (cockpit only) are on. Discoverability and spending stay off.
 
 ---
@@ -66,7 +66,7 @@ Frozen look stays. Correct the model under it.
 
 | Surface | Role |
 |---------|------|
-| `/world` | **Primary lived island** — WASD / touch, chase cam, 15 landmarks, First Day sparkle journey, Quiet + Home |
+| `/world` | **Primary lived island** — WASD / touch, chase cam, 17 landmarks, First Day, Studio, Conservatory, Quiet + Home |
 | `/play` | Hub; Live island is first |
 | `/cockpit` | Operator deck — LAN / Tailscale / Relay, gates, loops, machine packet |
 | `/api/cockpit` `/api/health` `/api/cockpit/probe` | Machine + heartbeat + private-range probe |

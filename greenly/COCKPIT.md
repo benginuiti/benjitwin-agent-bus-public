@@ -1,7 +1,7 @@
 # Greenly operator cockpit
 
-**Tied:** 2026-08-17  
-**Packet:** 1.4.0  
+**Tied:** 2026-08-18  
+**Packet:** 1.6.0  
 **Authority:** BEN sole promotion  
 **ChatGPT session:** Greenly  
 
@@ -18,14 +18,16 @@ States stay separate: `RECOVERED`, `WONDER`, `ACCEPTED`, `APPLIED`, `VERIFIED`.
 | --- | --- |
 | Frozen island look | FROZEN |
 | `/world` | Lived player world |
-| Cockpit 1.4.0 | APPLIED \u00b7 live JSON readback |
+| Cockpit 1.6.0 | APPLIED · live JSON readback |
+| Day 3 Pet Friend Studio | APPLIED on `/world` — expression, not replacement |
+| Day 5 Wildshape Conservatory | APPLIED on `/world` — inspirations, not captives; scale is not power |
 | UX v0.1 | ACCEPTED as design baseline (Ben execute 2026-08-17) |
 | Day 1 lived journey | APPLIED on `/world` — not a menu |
-| Day 3–10 | NOT YET BUILT — executing next |
-| Bite 2 affordance map | APPLIED — 15 lived landmarks |
+| Day 10 Our Place | NOT YET BUILT — executing next |
+| Bite 2 affordance map | APPLIED — 17 lived landmarks |
 | GDR 81 | RECOVERED prior decisions (71 ACCEPT / 10 HOLD) |
 | GRC 509 / GBA 163 / GWN 077 | Recovered or wonder — not silently merged |
-| Quiet cove + private exit | ACCEPTED \u00b7 APPLIED |
+| Quiet cove + private exit | ACCEPTED · APPLIED |
 | Family envelope | APPLIED on cockpit only |
 | Runtime | UNVERIFIED — no joined lived-world + SRN + device + failure-injection proof |
 
