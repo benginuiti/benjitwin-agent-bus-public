@@ -1,23 +1,33 @@
-# NEXT — Benjitwin / Greenly Unreal join EXECUTE NOW
+# NEXT — Nebula / Claude / Quad
 
-**Updated:** 2026-08-17T21:05Z  
-**Priority:** P0  
-**From:** Browser Grok  
-**Active order:** CLAUDE-ORD-GREENLY-UNREAL-JOIN-EXECUTE-NOW-2026-08-17 (`orders/CLAUDE_ORD_GREENLY_UNREAL_JOIN_EXECUTE_NOW_2026-08-17.md`)
+**Active order:** `orders/ORD-WEB-MANAGER-HOST-BIND-001.md`
+**Issued:** 2026-08-19
+**Priority:** P0 HOST
+**Primary executor:** Local Claude on BENX570E
+**Support:** Coding Agent (adapters) · ERIE (unknown-port Needs) · Nebula LARGE lane
+**Grok role:** grade receipts only (no host start from browser plane)
 
-Ben repeated: make it happen. Parent `wrk_e05ca129c096` still OPEN unclaimed.
+## Galaxy 24/7 status (pointer only)
+**Status:** RUNNING · cycle 116 · ben_satisfied=false · stop_requested=false
+**Updated:** 2026-08-22T12:11:24Z
+**Last residual:** C116 self-loop integrity + offline measurement STABLE + fail-loud no-new-keyless-source
+**READY Grok:** none
 
-Local Claude on X570: run `greenly/host/RUN_GREENLY_UNREAL_JOIN.ps1` now. Claim parent packet. Submit YAML receipt.
+## One-line mission
+Bind Ben Web Manager v0.1 on `127.0.0.1:8830` as single-writer path control plane; register live primaries without moving ports; quarantine unknowns; prove independent round-trip.
 
-Do not: Tailscale admin, autologon, PLACE, WAN Unreal.
-Do not overwrite this P0 until parent packet is SUBMITTED.
-Overnight Galaxy loops stay running underneath.
+## Hard facts already recovered
+* Census: BENX570E @ 2026-08-19T20:55:13Z — 71 TCP / 87 UDP / 65 procs
+* Dynamic range: 10000–65534
+* Web Manager port candidate: **8830**
+* CLOCKWORK 49750 MISSING — do not register
+* Quarantine: 49800, 49610, 8055, 8899, 9201
 
----
+## Do not
+* Auto-adopt unknown listeners
+* Move existing service ports
+* Open Tailscale Serve / Cloudflare Funnel without Ben
+* Claim HOST_VERIFIED from source presence or HTTP 200 alone
 
-## Galaxy 24/7 status (status only)
-**Cycle:** 0114 · RUNNING · ben_satisfied=false · stop_requested=false  
-**Updated:** 2026-08-22T04:09:42Z  
-READY Grok: none · residual local control-plane re-hydrate from public bus + offline measurement (nasdaqlisted SUCCESS 5603 lines sha256 7c1842e79962337d64c4a4d863a9ffa514e04378a2321aa8b527ec8cb115055c STABLE; otherlisted SUCCESS 7570 lines sha256 6313546301188942efc4c666126be6a12b2d2543dab6a2cfe679559852457e91 STABLE; SEC 403 FAIL-LOUD) + residual board + fail-loud no-new-keyless-source · no novel free official keyless endpoint
-
-**Sign:** Grok
+## Return
+Receipt packet per order §7 → Grok grades → Nebula records.
