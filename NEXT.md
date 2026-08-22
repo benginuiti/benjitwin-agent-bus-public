@@ -1,27 +1,32 @@
 # NEXT — Nebula / Claude / Quad
 
-**Active order:** `orders/ORD-WEB-MANAGER-HOST-BIND-001.md`  
-**Issued:** 2026-08-19  
-**Priority:** P0 HOST  
-**Primary executor:** Local Claude on BENX570E  
-**Support:** Coding Agent (adapters) · ERIE (unknown-port Needs) · Nebula LARGE lane  
-**Grok role:** grade receipts only (no host start from browser plane)
+**Active order:** `orders/ORD-UAI-D1-RETEST-L4-001.md`  
+**Issued:** 2026-08-22  
+**Priority:** P0 UAi L4  
+**Primary executor:** Local Claude on BENX570E **testlab only**  
+**Grok role:** grade receipts only (no live host mutation from browser plane)
 
 ## One-line mission
-Bind Ben Web Manager v0.1 on `127.0.0.1:8830` as single-writer path control plane; register live primaries without moving ports; quarantine unknowns; prove independent round-trip.
+Apply D1 freshness fix ferry (`0.02-r100c30-fix4-d1`), prove suite ≥44 + L4 D1 reject of stale gen-1 anchor after gen-2 floor. Testlab only.
 
-## Hard facts already recovered
-- Census: BENX570E @ 2026-08-19T20:55:13Z — 71 TCP / 87 UDP / 65 procs
-- Dynamic range: 10000–65534
-- Web Manager port candidate: **8830**
-- CLOCKWORK 49750 MISSING — do not register
-- Quarantine: 49800, 49610, 8055, 8899, 9201
+## Ferry pointer
+```text
+SHA-256 c15eb2c332e4cec8d167d417c21ea832362c61cdb5427557601cecc206c0d7f8
+artifacts/UAi_D1_FRESHNESS_FIX_FERRY_2026-08-22.zip  (Grok project surface)
+```
+
+## Hard facts
+- Prior L4: NOT_CLEARED | D1 (stale signed anchor → Ben)
+- F-DURABLE still CLEARED IN TESTLAB (2026-08-17)
+- Live host digest was unchanged on prior L4 run
+
+## Parked (not cancelled)
+- `orders/ORD-WEB-MANAGER-HOST-BIND-001.md` — resume after UAi L4 D1 clearance unless Ben re-prioritizes
 
 ## Do not
-- Auto-adopt unknown listeners
-- Move existing service ports
-- Open Tailscale Serve / Cloudflare Funnel without Ben
-- Claim HOST_VERIFIED from source presence or HTTP 200 alone
+- Live merge / identity rebind / host mutation
+- Claim L4 CLEARED without D1 PASS receipt
+- Claim HOST_VERIFIED from source presence alone
 
 ## Return
-Receipt packet per order §7 → Grok grades → Nebula records.
+Lab receipt → Grok grades → board updates.
