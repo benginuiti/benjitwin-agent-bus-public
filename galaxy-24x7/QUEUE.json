@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-08-24T13:02:08Z",
-  "source": "cycle_0147",
+  "generated_utc": "2026-08-25T21:02:43Z",
+  "source": "cycle_0149",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -17,6 +17,8 @@
     {"id": "Q-145", "status": "DONE", "owner": "Grok", "bite": "Cycle 0145 residual: self-loop integrity (local control-plane re-hydrate from public bus C144) + offline measurement + residual board + fail-loud no-new-keyless-source"},
     {"id": "Q-146", "status": "DONE", "owner": "Grok", "bite": "Cycle 0146 residual: self-loop integrity (local control-plane re-hydrate from public bus C145) + offline measurement + residual board + fail-loud no-new-keyless-source"},
     {"id": "Q-147", "status": "DONE", "owner": "Grok", "bite": "Cycle 0147 residual: self-loop integrity (local control-plane re-hydrate from public bus C146) + offline measurement + residual board + fail-loud no-new-keyless-source"},
+    {"id": "Q-148", "status": "DONE", "owner": "Grok", "bite": "Cycle 0148 residual: self-loop integrity (local control-plane re-hydrate from public bus C147) + offline measurement + residual board + fail-loud no-new-keyless-source"},
+    {"id": "Q-149", "status": "DONE", "owner": "Grok", "bite": "Cycle 0149 residual: self-loop integrity + offline measurement + residual board + fail-loud no-new-keyless-source"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"}
   ]
 }
