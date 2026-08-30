@@ -28,6 +28,3 @@ Bind Ben Web Manager v0.1 on `127.0.0.1:8830` as single-writer path control plan
 * Move existing service ports
 * Open Tailscale Serve / Cloudflare Funnel without Ben
 * Claim HOST_VERIFIED from source presence or HTTP 200 alone
-
-## Return
-Receipt packet per order §7 → Grok grades → Nebula records.

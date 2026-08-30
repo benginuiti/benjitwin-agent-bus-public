@@ -6,5 +6,5 @@
   "ben_satisfied": false,
   "stop_requested": false,
   "last_cycle_utc": "2026-08-30T17:10:00Z",
-  "source": "cycle_0164_residual_rehydrate_offline"
+  "source": "rehydrate_from_public_C163"
 }
