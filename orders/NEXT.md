@@ -8,9 +8,9 @@
 **Grok role:** grade receipts only (no host start from browser plane)
 
 ## Galaxy 24/7 status (pointer only)
-**Status:** RUNNING · cycle 164 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-08-30T17:10:00Z
-**Last residual:** C164 residual self-loop integrity (local re-hydrate from public C163) + offline measurement + residual board + fail-loud no-new-keyless-source-integration
+**Status:** RUNNING · cycle 165 · ben_satisfied=false · stop_requested=false
+**Updated:** 2026-08-30T18:06:00Z
+**Last residual:** C165 residual self-loop integrity (local re-hydrate from public C164) + offline measurement + residual board + fail-loud no-new-keyless-source-integration
 **READY Grok:** none
 
 ## One-line mission
@@ -28,3 +28,6 @@ Bind Ben Web Manager v0.1 on `127.0.0.1:8830` as single-writer path control plan
 * Move existing service ports
 * Open Tailscale Serve / Cloudflare Funnel without Ben
 * Claim HOST_VERIFIED from source presence or HTTP 200 alone
+
+## Return
+Receipt packet per order §7 → Grok grades → Nebula records.
