@@ -1,10 +1,10 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_index": 163,
-  "last_receipt": "GALAXY-CYCLE-0163",
+  "cycle_index": 164,
+  "last_receipt": "GALAXY-CYCLE-0164",
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_cycle_utc": "2026-08-30T14:15:00Z",
-  "source": "rehydrate_from_public_C162"
+  "last_cycle_utc": "2026-08-30T17:10:00Z",
+  "source": "cycle_0164_residual_rehydrate_offline"
 }
