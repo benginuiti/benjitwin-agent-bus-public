@@ -1,0 +1,36 @@
+{
+  "receipt_id": "GALAXY-CYCLE-0176",
+  "cycle_index": 176,
+  "timestamp_utc": "2026-09-01T02:15:00Z",
+  "executor": "Grok",
+  "bite": "residual self-loop integrity + offline measurement + residual board (fail-loud no-new-keyless)",
+  "ben_satisfied": false,
+  "stop_requested": false,
+  "local_rehydrate": true,
+  "local_artifacts_were_empty": true,
+  "measurement": {
+    "keyless_sources_tested": [
+      "catfact.ninja/fact",
+      "openlibrary.org/search.json",
+      "restcountries.com/v3.1/name/united",
+      "api.usaspending.gov/api/v2/references/toptier_agencies/",
+      "www.federalregister.gov/api/v1/documents.json",
+      "api.fda.gov/drug/label.json",
+      "api.nhtsa.gov/products/vehicle/makes",
+      "eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+      "httpbin.org/get",
+      "jsonplaceholder.typicode.com/posts/1"
+    ],
+    "http_results": "all 10 returned 200",
+    "new_keyless_sources_attempted": 0,
+    "new_keyless_sources_found": 0,
+    "universe_expand": "FAIL-LOUD no-new-keyless (gated; residual only)"
+  },
+  "residuals": [
+    "Q-005 READY (push receipts) preferred next",
+    "no READY Grok package/lab items",
+    "Claude HOST Q-007",
+    "Ben gates Q-008 Q-010 + satisfaction"
+  ],
+  "hard_stops": "intact; no Windows tasks; no F-AUTH-1 live; no real money; no self-SATISFIED; no PRODUCTION promote"
+}
