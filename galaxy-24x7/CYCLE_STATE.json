@@ -8,5 +8,5 @@
   "last_cycle_utc": "2026-09-02T14:40:29Z",
   "source": "residual_C182_rehydrate_public_C181",
   "actor": "Grok",
-  "mode indention": "residual-first"
+  "mode": "residual-first"
 }
