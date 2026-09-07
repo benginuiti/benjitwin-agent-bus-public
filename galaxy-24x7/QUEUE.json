@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-07T00:13:30Z",
-  "source": "cycle_0203",
+  "generated_utc": "2026-09-07T01:09:00Z",
+  "source": "cycle_0204",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -14,16 +14,7 @@
     {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
     {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
-    {"id": "Q-191", "status": "DONE", "owner": "Grok", "bite": "Cycle 0191 residual: self-loop integrity (local control-plane re-hydrate from public bus C190) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-192", "status": "DONE", "owner": "Grok", "bite": "Cycle 0192 residual: self-loop integrity (local control-plane re-hydrate from public bus C191) + offline measurement + residual board + fail-loud no-new-keyless-source-integration + Q-005 path"},
-    {"id": "Q-195", "status": "DONE", "owner": "Grok", "bite": "Cycle 0195 residual: self-loop integrity (local control-plane re-hydrate from public bus C194) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-196", "status": "DONE", "owner": "Grok", "bite": "Cycle 0196 residual: self-loop integrity (local control-plane re-hydrate from public bus C195) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-197", "status": "DONE", "owner": "Grok", "bite": "Cycle 0197 residual: self-loop integrity (local control-plane re-hydrate from public bus C196) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-198", "status": "DONE", "owner": "Grok", "bite": "Cycle 0198 residual: self-loop integrity (local control-plane re-hydrate from public bus C197) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-199", "status": "DONE", "owner": "Grok", "bite": "Cycle 0199 residual: self-loop integrity (local control-plane re-hydrate from public bus C198) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-200", "status": "DONE", "owner": "Grok", "bite": "Cycle 0200 residual: self-loop integrity (local control-plane re-hydrate from public bus C199) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-201", "status": "DONE", "owner": "Grok", "bite": "Cycle 0201 residual: self-loop integrity (local control-plane re-hydrate from public bus C200) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-202", "status": "DONE", "owner": "Grok", "bite": "Cycle 0202 residual: self-loop integrity (local control-plane re-hydrate from public bus C201) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-203", "status": "DONE", "owner": "Grok", "bite": "Cycle 0203 residual: self-loop integrity (local control-plane re-hydrate from public bus C202) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"}
+    {"id": "Q-203", "status": "DONE", "owner": "Grok", "bite": "Cycle 0203 residual: self-loop integrity (local control-plane re-hydrate from public bus C202) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
+    {"id": "Q-204", "status": "DONE", "owner": "Grok", "bite": "Cycle 0204 residual: self-loop integrity (local control-plane re-hydrate from public bus C203) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"}
   ]
 }
