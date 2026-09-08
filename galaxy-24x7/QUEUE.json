@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-08T21:10:00Z",
-  "source": "cycle_0238",
+  "generated_utc": "2026-09-08T22:07:17Z",
+  "source": "cycle_0240",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -14,9 +14,7 @@
     {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
     {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
-    {"id": "Q-235", "status": "DONE", "owner": "Grok", "bite": "Cycle 0235 residual: self-loop integrity + offline measurement + residual board + fail-loud"},
-    {"id": "Q-236", "status": "DONE", "owner": "Grok", "bite": "Cycle 0236 residual: self-loop integrity (local control-plane re-hydrate from public bus C235) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-237", "status": "DONE", "owner": "Grok", "bite": "Cycle 0237 residual: self-loop integrity (local control-plane re-hydrate from public bus C236) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-238", "status": "DONE", "owner": "Grok", "bite": "Cycle 0238 residual: self-loop integrity (local control-plane re-hydrate from public bus C237) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"}
+    {"id": "Q-239", "status": "DONE", "owner": "Grok", "bite": "Cycle 0239 residual: self-loop integrity (local control-plane re-hydrate from public bus C238) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"},
+    {"id": "Q-240", "status": "DONE", "owner": "Grok", "bite": "Cycle 0240 residual: self-loop integrity (local control-plane re-hydrate from public bus C239) + offline measurement + residual board + fail-loud no-new-keyless-source-integration"}
   ]
 }
