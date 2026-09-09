@@ -1,9 +1,11 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_index": 176,
-  "last_receipt": "GALAXY-CYCLE-0176",
+  "cycle_index": 251,
+  "last_receipt": "GALAXY-CYCLE-0251",
   "ben_satisfied": false,
   "stop_requested": false,
-  "loop_mode": "CONTINUOUS_UNTIL_BEN_SATISFIED"
+  "loop_mode": "CONTINUOUS_UNTIL_BEN_SATISFIED",
+  "ready_grok_count": 0,
+  "updated_utc": "2026-09-09T16:59:00Z"
 }
