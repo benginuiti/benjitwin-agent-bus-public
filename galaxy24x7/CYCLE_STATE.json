@@ -1,9 +1,13 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_index": 52,
-  "last_receipt": "GALAXY-CYCLE-0052",
+  "cycle_id": "C287",
+  "cycle_index": 287,
+  "last_receipt": "CYCLE_C287_RECEIPT",
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_cycle_utc": "2026-08-18T22:06:52Z"
+  "last_cycle_utc": "2026-09-11T20:08:00Z",
+  "ready_grok": 0,
+  "rehydrated_from": "public-bus galaxy-24x7 CYCLE_C286_RECEIPT.md",
+  "local_plane_at_start": "empty"
 }
