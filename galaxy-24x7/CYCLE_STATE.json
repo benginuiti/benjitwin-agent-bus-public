@@ -5,9 +5,10 @@
   "last_receipt": "GALAXY-CYCLE-0304",
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_cycle_utc": "2026-09-12T13:07:00Z",
+  "last_cycle_utc": "2026-09-12T13:10:00Z",
   "source": "residual_C304_rehydrate_public_C303",
   "actor": "Grok",
   "mode": "residual-first",
-  "ready_grok_count": 0
+  "ready_grok_count": 0,
+  "measurement": "FAIL_LOUD_nasdaqtrader_timeout_sec_403"
 }
