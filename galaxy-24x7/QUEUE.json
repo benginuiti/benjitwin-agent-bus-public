@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-12T01:08:52Z",
-  "source": "cycle_0296",
+  "generated_utc": "2026-09-12T02:09:09Z",
+  "source": "cycle_0297",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -14,12 +14,7 @@
     {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
     {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
-    {"id": "Q-290", "status": "DONE", "owner": "Grok", "bite": "Cycle 0290 stub receipt already on public bus"},
-    {"id": "Q-291", "status": "DONE", "owner": "Grok", "bite": "Cycle 0291 residual: self-loop integrity + offline keyless measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-292", "status": "DONE", "owner": "Grok", "bite": "Cycle 0292 residual: self-loop integrity + offline keyless measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-293", "status": "DONE", "owner": "Grok", "bite": "Cycle 0293 residual: self-loop integrity + offline keyless measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-294", "status": "DONE", "owner": "Grok", "bite": "Cycle 0294 residual: self-loop integrity + offline keyless measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-295", "status": "DONE", "owner": "Grok", "bite": "Cycle 0295 residual: self-loop integrity + offline keyless measurement + residual board + fail-loud no-new-keyless-source-integration"},
-    {"id": "Q-296", "status": "DONE", "owner": "Grok", "bite": "Cycle 0296 residual: self-loop integrity + offline keyless measurement + residual board + fail-loud no-new-keyless-source-integration"}
+    {"id": "Q-296", "status": "DONE", "owner": "Grok", "bite": "Cycle 0296 residual"},
+    {"id": "Q-297", "status": "DONE", "owner": "Grok", "bite": "Cycle 0297 residual: self-loop integrity + offline keyless measurement + residual board + fail-loud no-new-keyless-source-integration"}
   ]
 }

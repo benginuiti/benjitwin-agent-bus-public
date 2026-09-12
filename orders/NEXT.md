@@ -8,26 +8,26 @@
 **Grok role:** grade receipts only (no host start from browser plane)
 
 ## Galaxy 24/7 status (pointer only)
-**Status:** RUNNING · cycle 295 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-12T01:02:00Z
-**Last residual:** C295 residual self-loop integrity (local re-hydrate from public bus C294; local empty) + offline keyless measurement + residual board
+**Status:** RUNNING · cycle 297 · ben_satisfied=false · stop_requested=false
+**Updated:** 2026-09-12T02:09:09Z
+**Last residual:** C297 residual self-loop integrity (local re-hydrate from public bus C296; local empty) + offline keyless measurement + residual board
 **READY Grok:** none
 
 ## One-line mission
 Bind Ben Web Manager v0.1 on `127.0.0.1:8830` as single-writer path control plane; register live primaries without moving ports; quarantine unknowns; prove independent round-trip.
 
 ## Hard facts already recovered
-* Census: BENX570E @ 2026-08-19T20:55:13Z — 71 TCP / 87 UDP / 65 procs
-* Dynamic range: 10000–65534
-* Web Manager port candidate: **8830**
-* CLOCKWORK 49750 MISSING — do not register
-* Quarantine: 49800, 49610, 8055, 8899, 9201
+- Census: BENX570E @ 2026-08-19T20:55:13Z — 71 TCP / 87 UDP / 65 procs
+- Dynamic range: 10000–65534
+- Web Manager port candidate: **8830**
+- CLOCKWORK 49750 MISSING — do not register
+- Quarantine: 49800, 49610, 8055, 8899, 9201
 
 ## Do not
-* Auto-adopt unknown listeners
-* Move existing service ports
-* Open Tailscale Serve / Cloudflare Funnel without Ben
-* Claim HOST_VERIFIED from source presence or HTTP 200 alone
+- Auto-adopt unknown listeners
+- Move existing service ports
+- Open Tailscale Serve / Cloudflare Funnel without Ben
+- Claim HOST_VERIFIED from source presence or HTTP 200 alone
 
 ## Return
 Receipt packet per order §7 → Grok grades → Nebula records.
