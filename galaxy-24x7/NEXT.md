@@ -1,21 +1,21 @@
 # Galaxy 24/7 — NEXT (public pointer)
 
 **Status:** RUNNING · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-12T19:14:50Z
+**Updated:** 2026-09-12T20:02:22Z
 **Controlling local path:** artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/
-**Cycle index:** 316
+**Cycle index:** 317
 
 ## Standing rule
 While not Ben_satisfied: recover state → execute one READY Grok bite → receipt → update NEXT → no idle.
 
 ## Done this session
-- Cycles 0001–315 (prior)
-- **Cycle 0316:** Residual self-loop integrity (local control-plane re-hydrate from public bus C315; local was empty) + offline keyless measurement STABLE + residual board + no-new-keyless-source
-  - Local control plane re-synced; CYCLE_STATE + QUEUE advanced to 316
+- Cycles 0001–316 (prior)
+- **Cycle 0317:** Residual self-loop integrity (local control-plane re-hydrate from public bus C316; local was empty) + offline keyless measurement STABLE + residual board + no-new-keyless-source + STATE/QUEUE lag repair
+  - Local control plane re-synced; CYCLE_STATE + QUEUE advanced to 317
   - READY Grok items: none actionable → residual path only
-  - nasdaqlisted / otherlisted: HTTP 200; hashes match C315 last-seen
+  - nasdaqlisted / otherlisted: HTTP 200; hashes match C316 last-seen
   - sec.gov company_tickers.json: HTTP 403; not integrated
-  - Verdict: MEASUREMENT_STABLE vs C315 last-seen
+  - Verdict: MEASUREMENT_STABLE vs C316 last-seen
   - Hard stops intact
 
 ## READY remaining (Grok)
@@ -34,4 +34,4 @@ Architecture change · destructive · paid credential · LIVE funded routing · 
 
 Stop only on explicit Ben satisfaction or hard stop. Loop builds Galaxy to itself.
 
-**Sign:** Grok · Galaxy C316 · residual-first · fail-closed
+**Sign:** Grok · Galaxy C317 · residual-first · fail-closed
