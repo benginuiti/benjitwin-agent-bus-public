@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-12T17:12:25Z",
-  "source": "cycle_0311",
+  "generated_utc": "2026-09-12T17:17:04Z",
+  "source": "cycle_0312",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -15,6 +15,7 @@
     {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
     {"id": "Q-310", "status": "DONE", "owner": "Grok", "bite": "Cycle 0310 residual"},
-    {"id": "Q-311", "status": "DONE", "owner": "Grok", "bite": "Cycle 0311 residual: self-loop rehydrate from public bus C310 + offline keyless measurement STABLE vs C310 + sec.gov 403 + residual board + no-new-keyless-source"}
+    {"id": "Q-311", "status": "DONE", "owner": "Grok", "bite": "Cycle 0311 residual"},
+    {"id": "Q-312", "status": "DONE", "owner": "Grok", "bite": "Cycle 0312 residual: self-loop rehydrate from public bus C311 + offline keyless measurement STABLE vs C311 + sec.gov 403 + residual board + no-new-keyless-source"}
   ]
 }
