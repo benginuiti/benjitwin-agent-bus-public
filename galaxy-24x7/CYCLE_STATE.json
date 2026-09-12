@@ -1,14 +1,14 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_index": 312,
-  "last_receipt": "GALAXY-CYCLE-0312",
+  "cycle_index": 313,
+  "last_receipt": "GALAXY-CYCLE-0313",
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_cycle_utc": "2026-09-12T17:17:04Z",
-  "source": "residual_C312_rehydrate_public_C311",
+  "last_cycle_utc": "2026-09-12T18:09:12Z",
+  "source": "residual_C313_rehydrate_public_C312",
   "actor": "Grok",
   "mode": "residual-first",
   "ready_grok_count": 0,
-  "measurement": "STABLE_nasdaqlisted_otherlisted_vs_C311_sec_403"
+  "measurement": "STABLE_nasdaqlisted_otherlisted_vs_C312_sec_403"
 }
