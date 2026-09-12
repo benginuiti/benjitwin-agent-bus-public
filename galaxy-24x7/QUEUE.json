@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-12T16:22:00Z",
-  "source": "cycle_0310",
+  "generated_utc": "2026-09-12T17:12:25Z",
+  "source": "cycle_0311",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -14,7 +14,7 @@
     {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
     {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
-    {"id": "Q-309", "status": "DONE", "owner": "Grok", "bite": "Cycle 0309 residual"},
-    {"id": "Q-310", "status": "DONE", "owner": "Grok", "bite": "Cycle 0310 residual: self-loop rehydrate from public bus C309 + offline keyless measurement STABLE vs C309 + sec.gov 403 + residual board + no-new-keyless-source"}
+    {"id": "Q-310", "status": "DONE", "owner": "Grok", "bite": "Cycle 0310 residual"},
+    {"id": "Q-311", "status": "DONE", "owner": "Grok", "bite": "Cycle 0311 residual: self-loop rehydrate from public bus C310 + offline keyless measurement STABLE vs C310 + sec.gov 403 + residual board + no-new-keyless-source"}
   ]
 }
