@@ -1,12 +1,12 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_index": 295,
-  "last_receipt": "GALAXY-CYCLE-0295",
+  "cycle_index": 296,
+  "last_receipt": "GALAXY-CYCLE-0296",
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_cycle_utc": "2026-09-12T01:02:00Z",
-  "source": "residual_C295_rehydrate_public_C294",
+  "last_cycle_utc": "2026-09-12T01:08:52Z",
+  "source": "residual_C296_rehydrate_public_C295",
   "actor": "Grok",
   "mode": "residual-first",
   "ready_grok_count": 0
