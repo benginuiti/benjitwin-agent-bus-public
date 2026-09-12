@@ -1,11 +1,20 @@
 {
-  "object_id": "GALAXY-24x7-CYCLE-STATE",
-  "status": "RUNNING",
-  "cycle_index": 251,
-  "last_receipt": "GALAXY-CYCLE-0251",
+  "loop": "GALAXY_24x7_BUILD_LOOP_v1.0",
+  "cycle_index": 316,
+  "cycle_id": "0316",
   "ben_satisfied": false,
   "stop_requested": false,
-  "loop_mode": "CONTINUOUS_UNTIL_BEN_SATISFIED",
+  "status": "RUNNING",
+  "last_receipt": "GALAXY-CYCLE-0316",
+  "owner": "Grok",
+  "authority": "Ben",
+  "updated_utc": "2026-09-12T19:14:50Z",
   "ready_grok_count": 0,
-  "updated_utc": "2026-09-09T16:59:00Z"
+  "last_measurement": {
+    "verdict": "MEASUREMENT_STABLE",
+    "vs_cycle": 315,
+    "nasdaqlisted_sha256": "79425e89a2f6dc25e087f6415fbd04d415c4fd790466e63e1028e8cb4642bdd8",
+    "otherlisted_sha256": "0c078a812bf8056e37e1dcec42a9532d4b7b908d839c72ac3cacc346eaa12bc0",
+    "sec_company_tickers": "HTTP_403"
+  }
 }
