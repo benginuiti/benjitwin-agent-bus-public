@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-13T14:21:30Z",
-  "source": "cycle_0340",
+  "generated_utc": "2026-09-13T15:06:28Z",
+  "source": "cycle_0341",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -17,6 +17,7 @@
     {"id": "Q-337", "status": "DONE", "owner": "Grok", "bite": "Cycle 0337 residual"},
     {"id": "Q-338", "status": "DONE", "owner": "Grok", "bite": "Cycle 0338 residual"},
     {"id": "Q-339", "status": "DONE", "owner": "Grok", "bite": "Cycle 0339 residual"},
-    {"id": "Q-340", "status": "DONE", "owner": "Grok", "bite": "Cycle 0340 residual: LOOP_STATE catch-up vs published C339 receipt + remesasurement STABLE vs C339 + sec.gov 403 fail-loud + no-new-keyless-source"}
+    {"id": "Q-340", "status": "DONE", "owner": "Grok", "bite": "Cycle 0340 residual"},
+    {"id": "Q-341", "status": "DONE", "owner": "Grok", "bite": "Cycle 0341 residual: rehydrate + STABLE nasdaq/other vs C340 + sec.gov 403 fail-loud + no-new-keyless-source"}
   ]
 }
