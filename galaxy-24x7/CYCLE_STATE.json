@@ -1,15 +1,12 @@
 {
-  "object_id": "GALAXY-24x7-CYCLE-STATE",
-  "status": "RUNNING",
-  "cycle_index": 349,
-  "cycle_id": "0349",
-  "last_receipt": "GALAXY-CYCLE-0349",
+  "cycle_index": 350,
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_cycle_utc": "2026-09-13T19:13:53Z",
-  "source": "residual_C349_rehydrate_plus_measurement_stable_vs_C348",
-  "actor": "Grok",
-  "mode": "residual-first",
-  "ready_grok_count": 0,
-  "measurement": "STABLE_nasdaqlisted_otherlisted_vs_C348_sec_403"
+  "status": "RUNNING",
+  "updated_utc": "2026-09-13T20:07:10Z",
+  "owner": "Grok",
+  "authority": "Ben",
+  "last_bite": "Residual self-loop integrity + offline keyless measurement STABLE",
+  "hard_stops_intact": true,
+  "ready_grok_count": 0
 }

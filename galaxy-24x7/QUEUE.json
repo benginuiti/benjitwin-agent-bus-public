@@ -1,23 +1,15 @@
 {
-  "generated_utc": "2026-09-13T19:13:53Z",
-  "source": "cycle_0349",
-  "items": [
-    {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
-    {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
-    {"id": "Q-003", "status": "DONE", "owner": "Grok", "bite": "P13-02 cost ranking"},
-    {"id": "Q-004", "status": "DONE", "owner": "Grok", "bite": "Harvester bind"},
-    {"id": "Q-005", "status": "DONE", "owner": "Grok", "bite": "Push cycle receipts to GitHub continuity"},
-    {"id": "Q-006", "status": "DONE", "owner": "Grok", "bite": "F-AUTH-1 scaffold"},
-    {"id": "Q-007", "status": "HOST", "owner": "Claude", "bite": "Host soak/watchdog"},
-    {"id": "Q-008", "status": "BEN_GATE", "owner": "Ben", "bite": "F-AUTH-1 live deploy"},
-    {"id": "Q-009", "status": "EXTERNAL", "owner": "External", "bite": "Testing Framework bytes"},
-    {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
-    {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
-    {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
-    {"id": "Q-345", "status": "DONE", "owner": "Grok", "bite": "Cycle 0345 residual: rehydrate + STABLE nasdaq/other vs C344 + sec.gov 403 fail-loud + no-new-keyless-source"},
-    {"id": "Q-346", "status": "DONE", "owner": "Grok", "bite": "Cycle 0346 residual: rehydrate + STABLE nasdaq/other vs C345 + sec.gov 403 fail-loud + no-new-keyless-source"},
-    {"id": "Q-347", "status": "DONE", "owner": "Grok", "bite": "Cycle 0347 residual: rehydrate + STABLE nasdaq/other vs C346 + sec.gov 403 fail-loud + no-new-keyless-source"},
-    {"id": "Q-348", "status": "DONE", "owner": "Grok", "bite": "Cycle 0348 residual: rehydrate + STABLE nasdaq/other vs C347 + sec.gov 403 fail-loud + no-new-keyless-source"},
-    {"id": "Q-349", "status": "DONE", "owner": "Grok", "bite": "Cycle 0349 residual: rehydrate + STABLE nasdaq/other vs C348 + sec.gov 403 fail-loud + no-new-keyless-source"}
-  ]
+  "updated_utc": "2026-09-13T20:07:10Z",
+  "cycle_index": 350,
+  "ready_grok": [],
+  "blocked_parked": [
+    {"id": "Q-007", "owner": "Claude", "state": "HOST", "item": "soak/watchdog"},
+    {"id": "Q-008", "owner": "BEN_GATE", "item": "F-AUTH-1 live deploy"},
+    {"id": "Q-010", "owner": "BEN_GATE", "item": "Stage-0 ratification"},
+    {"id": "Q-009", "owner": "EXTERNAL", "item": "Testing Framework bytes"},
+    {"id": "R-001", "state": "OPEN", "item": "Real NTX property + 758 HBL catalog"},
+    {"id": "LIVE-RT", "state": "BLOCKED_EXTERNAL", "item": "Live Galaxy round-trip"},
+    {"id": "SYMDIR", "state": "STABLE", "item": "Official keyless symbol-dir recovered; no new source"}
+  ],
+  "notes": "No READY Grok-owned finishable bites. Residual path only. Hard stops intact."
 }
