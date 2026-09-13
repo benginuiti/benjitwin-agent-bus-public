@@ -1,7 +1,7 @@
 # Galaxy 24/7 — NEXT (public pointer)
 
 **Status:** RUNNING · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-13T02:15:30Z
+**Updated:** 2026-09-13T02:16:39Z
 **Controlling local path:** artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/
 **Cycle index:** 329
 
@@ -14,7 +14,7 @@ While not Ben_satisfied: recover state → execute one READY Grok bite → recei
   - READY Grok items: none actionable → residual path only
   - nasdaqlisted / otherlisted: HTTP 200; hashes match C328 last-seen
   - ftp.nasdaqtrader.com SymbolDirectory: listing recovered this cycle (not integrated)
-  - sec.gov company_tickers.json: HTTP 429; not integrated
+  - sec.gov company_tickers.json: HTTP 403; not integrated
   - Verdict: MEASUREMENT_STABLE vs C328 last-seen
   - Hard stops intact
 

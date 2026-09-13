@@ -1,9 +1,9 @@
 # NEXT — Nebula / Claude / Quad
 
-**Active order:** `orders/ORD-UAI-D1-RETEST-L4-001.md`  
-**Issued:** 2026-08-22  
-**Priority:** P0 UAi L4  
-**Primary executor:** Local Claude on BENX570E **testlab only**  
+**Active order:** `orders/ORD-UAI-D1-RETEST-L4-001.md`
+**Issued:** 2026-08-22
+**Priority:** P0 UAi L4
+**Primary executor:** Local Claude on BENX570E **testlab only**
 **Grok role:** grade receipts only (no live host mutation from browser plane)
 
 ## One-line mission
@@ -25,12 +25,12 @@ Includes field_proof/L4_BATTERY_D_STANDALONE.py
 - Prior L4 on box: NOT_CLEARED | D1
 - F-DURABLE CLEARED IN TESTLAB (2026-08-17)
 
-## Galaxy 24/7 status (C328)
-- cycle_id: C328
+## Galaxy 24/7 status (C329)
+- cycle_id: C329
 - ben_satisfied: false
 - stop_requested: false
 - remaining READY owner=Grok: 0
-- last bite: residual self-loop rehydrate + offline keyless measurement STABLE (nasdaqlisted/otherlisted vs C327) + sec.gov 403 fail-loud + residual board
+- last bite: residual self-loop rehydrate + offline keyless measurement STABLE (nasdaqlisted/otherlisted vs C328) + sec.gov 403 fail-loud + residual board
 - hard stops intact
 
 ## Parked (not cancelled)

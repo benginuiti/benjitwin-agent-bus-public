@@ -6,10 +6,10 @@
   "last_receipt": "GALAXY-CYCLE-0329",
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_cycle_utc": "2026-09-13T02:15:30Z",
+  "last_cycle_utc": "2026-09-13T02:16:39Z",
   "source": "residual_C329_rehydrate_public_C328",
   "actor": "Grok",
   "mode": "residual-first",
   "ready_grok_count": 0,
-  "measurement": "STABLE_nasdaqlisted_otherlisted_vs_C328_sec_429"
+  "measurement": "STABLE_nasdaqlisted_otherlisted_vs_C328_sec_403"
 }
