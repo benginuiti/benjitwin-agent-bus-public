@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-13T12:04:56Z",
-  "source": "cycle_0335",
+  "generated_utc": "2026-09-13T12:33:39Z",
+  "source": "cycle_0336",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -19,7 +19,8 @@
     {"id": "Q-331", "status": "DONE", "owner": "Grok", "bite": "Cycle 0331 residual"},
     {"id": "Q-332", "status": "DONE", "owner": "Grok", "bite": "Cycle 0332 residual"},
     {"id": "Q-333", "status": "DONE", "owner": "Grok", "bite": "Cycle 0333 residual"},
-    {"id": "Q-334", "status": "DONE", "owner": "Grok", "bite": "Cycle 0334 residual: self-loop rehydrate from public bus C333 + offline keyless measurement STABLE vs C333 + sec.gov 403 fail-loud + residual board + no-new-keyless-source"},
-    {"id": "Q-335", "status": "DONE", "owner": "Grok", "bite": "Cycle 0335 residual: self-loop rehydrate from public bus C334 + offline keyless measurement STABLE vs C334 + sec.gov 403 fail-loud + residual board + no-new-keyless-source"}
+    {"id": "Q-334", "status": "DONE", "owner": "Grok", "bite": "Cycle 0334 residual"},
+    {"id": "Q-335", "status": "DONE", "owner": "Grok", "bite": "Cycle 0335 residual"},
+    {"id": "Q-336", "status": "DONE", "owner": "Grok", "bite": "Cycle 0336 residual: self-loop rehydrate from public bus C335 + offline keyless measurement STABLE vs C335 + sec.gov 403 fail-loud + residual board + no-new-keyless-source + LOOP_STATE catch-up"}
   ]
 }
