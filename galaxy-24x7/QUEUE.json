@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-13T19:12:59Z",
+  "generated_utc": "2026-09-13T19:13:53Z",
   "source": "cycle_0349",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
@@ -14,6 +14,10 @@
     {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
     {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
+    {"id": "Q-345", "status": "DONE", "owner": "Grok", "bite": "Cycle 0345 residual: rehydrate + STABLE nasdaq/other vs C344 + sec.gov 403 fail-loud + no-new-keyless-source"},
+    {"id": "Q-346", "status": "DONE", "owner": "Grok", "bite": "Cycle 0346 residual: rehydrate + STABLE nasdaq/other vs C345 + sec.gov 403 fail-loud + no-new-keyless-source"},
+    {"id": "Q-347", "status": "DONE", "owner": "Grok", "bite": "Cycle 0347 residual: rehydrate + STABLE nasdaq/other vs C346 + sec.gov 403 fail-loud + no-new-keyless-source"},
+    {"id": "Q-348", "status": "DONE", "owner": "Grok", "bite": "Cycle 0348 residual: rehydrate + STABLE nasdaq/other vs C347 + sec.gov 403 fail-loud + no-new-keyless-source"},
     {"id": "Q-349", "status": "DONE", "owner": "Grok", "bite": "Cycle 0349 residual: rehydrate + STABLE nasdaq/other vs C348 + sec.gov 403 fail-loud + no-new-keyless-source"}
   ]
 }
