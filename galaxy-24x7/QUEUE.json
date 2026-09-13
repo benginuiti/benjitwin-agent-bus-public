@@ -1,6 +1,6 @@
 {
-  "generated_utc": "2026-09-12T23:19:30Z",
-  "source": "cycle_0323",
+  "generated_utc": "2026-09-13T00:05:58Z",
+  "source": "cycle_0324",
   "items": [
     {"id": "Q-001", "status": "DONE", "owner": "Grok", "bite": "Universe Enumeration Pass 4"},
     {"id": "Q-002", "status": "DONE", "owner": "Grok", "bite": "Validator Mode FX-001"},
@@ -14,14 +14,8 @@
     {"id": "Q-010", "status": "BEN_GATE", "owner": "Ben", "bite": "Stage-0 ratification"},
     {"id": "Q-PACKAGE-LAB", "status": "DONE", "owner": "Grok", "bite": "Package/lab residual review"},
     {"id": "R-001", "status": "OPEN", "owner": "External", "bite": "Real NTX property + 758 HBL catalog"},
-    {"id": "Q-315", "status": "DONE", "owner": "Grok", "bite": "Cycle 0315 residual"},
-    {"id": "Q-316", "status": "DONE", "owner": "Grok", "bite": "Cycle 0316 residual"},
-    {"id": "Q-317", "status": "DONE", "owner": "Grok", "bite": "Cycle 0317 residual"},
-    {"id": "Q-318", "status": "DONE", "owner": "Grok", "bite": "Cycle 0318 residual"},
-    {"id": "Q-319", "status": "DONE", "owner": "Grok", "bite": "Cycle 0319 residual"},
-    {"id": "Q-320", "status": "DONE", "owner": "Grok", "bite": "Cycle 0320 residual"},
-    {"id": "Q-321", "status": "DONE", "owner": "Grok", "bite": "Cycle 0321 residual"},
     {"id": "Q-322", "status": "DONE", "owner": "Grok", "bite": "Cycle 0322 residual"},
-    {"id": "Q-323", "status": "DONE", "owner": "Grok", "bite": "Cycle 0323 residual: self-loop rehydrate from public bus C322 + offline keyless measurement STABLE vs C322 + ftp listing recovered + sec.gov 403 + residual board + no-new-keyless-source"}
+    {"id": "Q-323", "status": "DONE", "owner": "Grok", "bite": "Cycle 0323 residual"},
+    {"id": "Q-324", "status": "DONE", "owner": "Grok", "bite": "Cycle 0324 residual: self-loop rehydrate from public bus C323 + offline keyless measurement STABLE vs C323 + ftp listing recovered + sec.gov 403 + residual board + no-new-keyless-source"}
   ]
 }

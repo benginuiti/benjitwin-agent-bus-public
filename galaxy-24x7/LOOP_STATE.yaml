@@ -1,0 +1,13 @@
+object_id: GALAXY-24x7-LOOP-STATE
+status: RUNNING
+cycle_index: 324
+cycle_id: "0324"
+ben_satisfied: false
+stop_requested: false
+last_cycle_utc: "2026-09-13T00:05:58Z"
+actor: Grok
+mode: residual-first
+ready_grok_count: 0
+q005: DONE
+measurement: STABLE_nasdaqlisted_otherlisted_vs_C323_sec_403_ftp_listing_recovered
+hard_stops_intact: true
