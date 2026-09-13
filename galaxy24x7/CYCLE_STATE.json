@@ -1,9 +1,9 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_id": "C326",
-  "cycle_index": 326,
-  "last_receipt": "CYCLE_C326_RECEIPT",
+  "cycle_id": "C330",
+  "cycle_index": 330,
+  "last_receipt": "CYCLE_C330_RECEIPT",
   "ben_satisfied": false,
   "stop_requested": false
 }
