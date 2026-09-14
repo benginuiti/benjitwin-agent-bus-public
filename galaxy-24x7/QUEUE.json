@@ -1,15 +1,10 @@
 {
-  "updated_utc": "2026-09-14T12:22:30Z",
+  "object": "GALAXY_24x7_QUEUE",
   "cycle_index": 368,
+  "updated_utc": "2026-09-14T13:03:40Z",
+  "ben_satisfied": false,
+  "stop_requested": false,
   "ready_grok": [],
-  "blocked_parked": [
-    {"id": "Q-007", "owner": "Claude", "state": "HOST", "item": "soak/watchdog"},
-    {"id": "Q-008", "owner": "BEN_GATE", "item": "F-AUTH-1 live deploy"},
-    {"id": "Q-010", "owner": "BEN_GATE", "item": "Stage-0 ratification"},
-    {"id": "Q-009", "owner": "EXTERNAL", "item": "Testing Framework bytes"},
-    {"id": "R-001", "state": "OPEN", "item": "Real NTX property + 758 HBL catalog"},
-    {"id": "LIVE-RT", "state": "BLOCKED_EXTERNAL", "item": "Live Galaxy round-trip"},
-    {"id": "SYMDIR", "state": "CHANGED", "item": "Official keyless symbol-dir intra-Monday 08:16 refresh vs C367 last-seen; no new source integrated"}
-  ],
-  "notes": "No READY Grok-owned finishable bites. Residual path only. Hard stops intact. SymDir hashes changed vs C367 08:01 snapshot (same line counts; File Creation Time 0914202608:16)."
+  "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
+  "open_residuals": ["R-001", "LIVE-RT", "SYMDIR CHANGED vs C367"]
 }

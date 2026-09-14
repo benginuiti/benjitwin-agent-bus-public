@@ -1,12 +1,11 @@
 {
+  "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 368,
+  "cycle_id": "C368",
+  "updated_utc": "2026-09-14T13:03:40Z",
+  "loop_status": "RUNNING",
   "ben_satisfied": false,
   "stop_requested": false,
-  "status": "RUNNING",
-  "updated_utc": "2026-09-14T12:22:30Z",
-  "owner": "Grok",
-  "authority": "Ben",
-  "last_bite": "Residual self-loop integrity + offline keyless measurement CHANGED vs C367 (official SymDir intra-Monday 08:16 refresh) + residual board + no-new-keyless-source",
-  "hard_stops_intact": true,
-  "ready_grok_count": 0
+  "ready_grok": [],
+  "hard_stops_intact": true
 }
