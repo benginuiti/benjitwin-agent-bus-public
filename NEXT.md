@@ -25,12 +25,12 @@ Includes field_proof/L4_BATTERY_D_STANDALONE.py
 - Prior L4 on box: NOT_CLEARED | D1
 - F-DURABLE CLEARED IN TESTLAB (2026-08-17)
 
-## Galaxy 24/7 status (C349)
-- cycle_id: C349
+## Galaxy 24/7 status (C368)
+- cycle_id: C368
 - ben_satisfied: false
 - stop_requested: false
 - remaining READY owner=Grok: 0
-- last bite: LOOP_STATE catch-up vs published C348 receipt + offline keyless measurement STABLE (nasdaqlisted/otherlisted vs C348) + sec.gov 403 fail-loud + residual board
+- last bite: LOOP_STATE catch-up vs published C367 receipt + offline keyless measurement CHANGED (nasdaqlisted/otherlisted vs C367 08:01) + sec.gov 403 fail-loud + residual board
 - hard stops intact
 
 ## Parked (not cancelled)

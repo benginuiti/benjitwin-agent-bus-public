@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-09-14T12:12:20Z",
-  "cycle_index": 367,
+  "updated_utc": "2026-09-14T12:22:30Z",
+  "cycle_index": 368,
   "ready_grok": [],
   "blocked_parked": [
     {"id": "Q-007", "owner": "Claude", "state": "HOST", "item": "soak/watchdog"},
@@ -9,7 +9,7 @@
     {"id": "Q-009", "owner": "EXTERNAL", "item": "Testing Framework bytes"},
     {"id": "R-001", "state": "OPEN", "item": "Real NTX property + 758 HBL catalog"},
     {"id": "LIVE-RT", "state": "BLOCKED_EXTERNAL", "item": "Live Galaxy round-trip"},
-    {"id": "SYMDIR", "state": "CHANGED", "item": "Official keyless symbol-dir intra-Monday 08:01 refresh vs C366 last-seen; no new source integrated"}
+    {"id": "SYMDIR", "state": "CHANGED", "item": "Official keyless symbol-dir intra-Monday 08:16 refresh vs C367 last-seen; no new source integrated"}
   ],
-  "notes": "No READY Grok-owned finishable bites. Residual path only. Hard stops intact. SymDir hashes changed vs C366 07:00 snapshot (same line counts; File Creation Time 0914202608:01)."
+  "notes": "No READY Grok-owned finishable bites. Residual path only. Hard stops intact. SymDir hashes changed vs C367 08:01 snapshot (same line counts; File Creation Time 0914202608:16)."
 }
