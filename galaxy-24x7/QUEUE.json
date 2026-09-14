@@ -1,10 +1,10 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 380,
-  "updated_utc": "2026-09-14T19:10:28Z",
+  "cycle_index": 381,
+  "updated_utc": "2026-09-14T19:21:30Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
-  "open_residuals": ["R-001", "LIVE-RT", "SYMDIR UNCHANGED vs C379 (still 14:01)", "SEC 403 this cycle (prior C379 200 with UA; known source, not integrated)", "FTP client missing this sandbox"]
+  "open_residuals": ["R-001", "LIVE-RT", "SYMDIR UNCHANGED vs C380 (still 14:01)", "SEC 403 this cycle (known source, not integrated)", "FTP client missing this sandbox"]
 }
