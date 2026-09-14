@@ -1,10 +1,10 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 386,
-  "updated_utc": "2026-09-14T22:06:22Z",
+  "cycle_index": 388,
+  "updated_utc": "2026-09-14T23:05:31Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
-  "open_residuals": ["R-001", "LIVE-RT", "SYMDIR CHANGED vs C385 (18:01 official vs 17:01)", "SEC 403 this cycle (known source, not integrated)", "ftp.nasdaqtrader.com header probe ok this cycle", "FTP client missing this sandbox"]
+  "open_residuals": ["R-001", "LIVE-RT", "SYMDIR UNCHANGED vs C387 (still 18:01 official)", "SEC 403 this cycle (known source, not integrated)", "ftp.nasdaqtrader.com header probe ok this cycle", "FTP client missing this sandbox"]
 }
