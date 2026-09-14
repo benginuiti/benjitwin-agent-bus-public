@@ -1,12 +1,12 @@
 {
-  "cycle_index": 366,
+  "cycle_index": 367,
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "updated_utc": "2026-09-14T11:10:20Z",
+  "updated_utc": "2026-09-14T12:12:20Z",
   "owner": "Grok",
   "authority": "Ben",
-  "last_bite": "Residual self-loop integrity + offline keyless measurement CHANGED vs C365 (official SymDir Monday refresh) + residual board + no-new-keyless-source",
+  "last_bite": "Residual self-loop integrity + offline keyless measurement CHANGED vs C366 (official SymDir intra-Monday 08:01 refresh) + residual board + no-new-keyless-source",
   "hard_stops_intact": true,
   "ready_grok_count": 0
 }
