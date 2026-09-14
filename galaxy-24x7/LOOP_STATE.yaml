@@ -1,9 +1,11 @@
-object_id: GALAXY-24x7-LOOP-STATE
-status: RUNNING
-cycle_index: 372
-cycle_id: "0372"
+object: GALAXY_24x7_LOOP_STATE
+cycle_index: 378
+cycle_id: C378
+updated_utc: "2026-09-14T18:15:41Z"
+loop_status: RUNNING
 ben_satisfied: false
 stop_requested: false
-last_cycle_utc: "2026-09-14T15:12:00Z"
-ready_grok: 0
-mode: residual-first
+ready_grok: []
+last_bite: residual rehydrate C377 + SymDir 14:01 UNCHANGED vs C377
+hard_stops_intact: true
+authority: Ben
