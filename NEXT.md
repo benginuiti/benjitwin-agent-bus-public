@@ -9,28 +9,12 @@
 ## One-line mission
 Apply D1 freshness fix ferry (`0.02-r100c30-fix4-d1`), prove suite ≥44 + `python -m field_proof.L4_BATTERY_D_STANDALONE` 8/8 + L4 D1 reject of stale gen-1 anchor. Testlab only.
 
-## Ferry pointer (refreshed)
-```text
-SHA-256 1a306e5280b689f563a1dea4d77cc774fcb143bc6ff2c0e32e60788b99a69427
-artifacts/UAi_D1_FRESHNESS_FIX_FERRY_2026-08-22.zip  (Grok project surface)
-Includes field_proof/L4_BATTERY_D_STANDALONE.py
-```
-
-## Grok sandbox already proved (package plane)
-- tests.run_all 44/44 PASS
-- L4_BATTERY_D_STANDALONE 8/8 PASS
-- Does **not** replace X570 testlab clearance
-
-## Hard facts
-- Prior L4 on box: NOT_CLEARED | D1
-- F-DURABLE CLEARED IN TESTLAB (2026-08-17)
-
-## Galaxy 24/7 status (C401)
-- cycle_id: C401
+## Galaxy 24/7 status (C405)
+- cycle_id: C405
 - ben_satisfied: false
 - stop_requested: false
 - remaining READY owner=Grok: 0
-- last bite: LOOP_STATE catch-up 399→401 vs published C400 receipt + offline keyless measurement CHANGED (nasdaqlisted/otherlisted 08:01 vs C400 07:00) + sec.gov 403 fail-loud + nasdaqtraded observed NOT INTEGRATED + residual board
+- last bite: residual C405; local plane UNAVAILABLE; listings cache-split vs C404; SEC 200 observed NOT INTEGRATED; Q-005 already on bus
 - hard stops intact
 
 ## Parked (not cancelled)
