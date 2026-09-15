@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 401,
-  "updated_utc": "2026-09-15T12:08:00Z",
+  "cycle_index": 402,
+  "updated_utc": "2026-09-15T12:20:00Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -9,9 +9,12 @@
   "open_residuals": [
     "R-001",
     "LIVE-RT",
-    "SYMDIR CHANGED vs C400 (07:00 -> 08:01 official; nasdaqlisted 5606/new hash; otherlisted 7631/new hash)",
-    "SEC company_tickers.json HTTP 403 this cycle — NOT INTEGRATED",
-    "nasdaqtraded.txt official companion HTTP 200 observed (13235 lines, FCT 08:03) — NOT INTEGRATED, no silent promotion",
+    "local control plane DOWN this session (sandbox gateway unavailable); public bus is source of truth",
+    "nasdaqlisted.txt FCT cache-split: this fetch 0914202610:01 vs C401 last-seen 0915202608:01; lines 5606 STABLE; sha256 UNAVAILABLE",
+    "otherlisted.txt STABLE 7631 / FCT 0915202608:01",
+    "nasdaqtraded.txt official companion HTTP 200 observed (13235 lines, FCT 0915202608:03) — NOT INTEGRATED, no silent promotion",
+    "SEC company_tickers.json HTTP 200 this cycle (was 403 on C401) — NOT INTEGRATED",
+    "sha256 UNAVAILABLE this cycle (no local compute)",
     "ftp.nasdaqtrader.com client missing this sandbox",
     "no new official keyless source promoted this cycle"
   ]
