@@ -25,12 +25,12 @@ Includes field_proof/L4_BATTERY_D_STANDALONE.py
 - Prior L4 on box: NOT_CLEARED | D1
 - F-DURABLE CLEARED IN TESTLAB (2026-08-17)
 
-## Galaxy 24/7 status (C399)
-- cycle_id: C399
+## Galaxy 24/7 status (C401)
+- cycle_id: C401
 - ben_satisfied: false
 - stop_requested: false
 - remaining READY owner=Grok: 0
-- last bite: LOOP_STATE catch-up vs published C398 receipt + offline keyless measurement UNCHANGED (nasdaqlisted/otherlisted 21:31 vs C398) + sec.gov 200-with-UA observed NOT INTEGRATED + residual board
+- last bite: LOOP_STATE catch-up 399→401 vs published C400 receipt + offline keyless measurement CHANGED (nasdaqlisted/otherlisted 08:01 vs C400 07:00) + sec.gov 403 fail-loud + nasdaqtraded observed NOT INTEGRATED + residual board
 - hard stops intact
 
 ## Parked (not cancelled)
@@ -39,7 +39,7 @@ Includes field_proof/L4_BATTERY_D_STANDALONE.py
 ## Do not
 - Live merge / identity rebind / host mutation
 - Claim L4 CLEARED without lab D1 PASS receipt
-- Promote SEC company_tickers into identity universe without Ben gate
+- Promote SEC company_tickers or nasdaqtraded into identity universe without Ben gate
 
 ## Return
 Lab receipt → Grok grades → board updates.
