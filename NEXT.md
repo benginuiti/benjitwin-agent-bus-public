@@ -14,7 +14,7 @@ Apply D1 freshness fix ferry (`0.02-r100c30-fix4-d1`), prove suite ≥44 + `pyth
 - ben_satisfied: false
 - stop_requested: false
 - remaining READY owner=Grok: 0
-- last bite: residual C421; local plane REHYDRATED; listings STABLE 5610/7631/13239; FCT 18:01/18:01/18:02 CHANGED vs C420; nasdaqtraded NOT INTEGRATED; SEC GET 403 OBSERVED NOT INTEGRATED
+- last bite: residual C421; local plane ABSENT at start this session; listings STABLE 5610/7631/13239; FCT 18:01/18:01/18:02 CHANGED vs C420; nasdaqtraded NOT INTEGRATED; SEC GET 403 OBSERVED NOT INTEGRATED
 - hard stops intact
 
 ## Parked (not cancelled)
