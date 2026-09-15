@@ -9,12 +9,12 @@
 ## One-line mission
 Apply D1 freshness fix ferry (`0.02-r100c30-fix4-d1`), prove suite ≥44 + `python -m field_proof.L4_BATTERY_D_STANDALONE` 8/8 + L4 D1 reject of stale gen-1 anchor. Testlab only.
 
-## Galaxy 24/7 status (C409)
-- cycle_id: C409
+## Galaxy 24/7 status (C410)
+- cycle_id: C410
 - ben_satisfied: false
 - stop_requested: false
 - remaining READY owner=Grok: 0
-- last bite: residual C409; local plane DOWN (HADES_NO_CAPACITY); MIXED measurement (line counts STABLE 5610/7631; FCT this plane 09:16/08:01 vs C408 11:01; nasdaqtraded 13239/10:02 NOT INTEGRATED; SEC 200 NOT INTEGRATED)
+- last bite: residual C410; local plane DOWN at start; listings STABLE 5610/7631/13239; FCT 12:11/12:11/12:12 vs C409 09:16/08:01/10:02; nasdaqtraded NOT INTEGRATED; SEC 403 NOT INTEGRATED
 - hard stops intact
 
 ## Parked (not cancelled)
