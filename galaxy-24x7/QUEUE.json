@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 399,
-  "updated_utc": "2026-09-15T04:18:37Z",
+  "cycle_index": 400,
+  "updated_utc": "2026-09-15T11:14:20Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -9,9 +9,10 @@
   "open_residuals": [
     "R-001",
     "LIVE-RT",
-    "SYMDIR UNCHANGED vs C398 (21:31 official; line counts 5606/7618)",
-    "SEC company_tickers.json HTTP 200 this cycle with UA (10422 keys) — NOT INTEGRATED, no silent promotion",
-    "ftp.nasdaqtrader.com ftp client missing this sandbox",
+    "SYMDIR CHANGED vs C399 (21:31 -> 07:00 official; nasdaqlisted 5606/new hash; otherlisted 7618->7631)",
+    "SEC company_tickers.json HTTP 403 this cycle — NOT INTEGRATED",
+    "nasdaqtraded.txt official companion HTTP 200 observed (13235 lines, FCT 07:02) — NOT INTEGRATED, no silent promotion",
+    "ftp.nasdaqtrader.com timeout this sandbox",
     "no new official keyless source promoted this cycle"
   ]
 }
