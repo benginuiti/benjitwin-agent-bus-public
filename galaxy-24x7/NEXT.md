@@ -1,22 +1,22 @@
 # Galaxy 24/7 — NEXT (public pointer)
 
 **Status:** RUNNING · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-15T14:44:00Z
-**Controlling local path:** artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/ (DOWN this session; public bus is SoT)
-**Cycle index:** 407
+**Updated:** 2026-09-15T15:09:32Z
+**Controlling local path:** artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/ (REHYDRATED this session)
+**Cycle index:** 408
 
 ## Standing rule
 While not Ben_satisfied: recover state → execute one READY Grok bite → receipt → update NEXT → no idle.
 
 ## Done this session
-- Cycles 0001–406 (prior)
-- **Cycle 0407:** Residual self-loop (public bus C406 → C407; local plane DOWN) + offline keyless measurement MIXED + residual board + no-new-keyless-source
+- Cycles 0001–407 (prior)
+- **Cycle 0408:** Residual self-loop (C407 → C408) + local plane REHYDRATED + offline keyless measurement CHANGED + residual board
   - READY Grok items: none actionable → residual path only
-  - nasdaqlisted: HTTP 200; 5610 lines STABLE; FCT 0915202609:16 this fetch path; sha256 UNAVAILABLE; FAIL-LOUD vs C406 FCT 0915202610:01
-  - otherlisted: HTTP 200; 7631 lines STABLE; FCT 0915202608:01; FAIL-LOUD vs C406 FCT 10:01
-  - nasdaqtraded.txt: HTTP 200 observed (13235 lines; FCT 08:03) — NOT INTEGRATED
-  - sec.gov company_tickers.json: HTTP 200 this cycle (was 403) — NOT INTEGRATED
-  - Verdict: MIXED_MEASUREMENT vs C406
+  - nasdaqlisted: HTTP 200; **5610** lines STABLE; FCT **0915202611:01**; sha256 c72321deb9b2d6bc796df677f7012b2e3596295894dc9e7dd4971ac7f2b336ba; CHANGED vs C407 FCT 09:16
+  - otherlisted: HTTP 200; 7631 lines STABLE; FCT **0915202611:01**; sha256 26ff3013651beeac52c49f82cde396fdcf237ec7b908edc6c82711f74d9c3682; CHANGED vs C407 FCT 08:01
+  - nasdaqtraded.txt: HTTP 200 observed (**13239** lines; FCT **11:02**) — NOT INTEGRATED
+  - sec.gov company_tickers.json: HTTP **403** — NOT INTEGRATED
+  - Verdict: CHANGED_MEASUREMENT vs C407
   - Hard stops intact
 
 ## READY remaining (Grok)
@@ -28,7 +28,7 @@ While not Ben_satisfied: recover state → execute one READY Grok bite → recei
 - EXTERNAL: Q-009 Testing Framework bytes
 - R-001 Real NTX property + 758 HBL catalog (OPEN)
 - Live Galaxy round-trip BLOCKED_EXTERNAL
-- Official keyless symbol-dir: cache-split 09:16/08:01/08:03 vs prior 10:01/10:02; nasdaqtraded/SEC not promoted
+- Official keyless symbol-dir: nasdaqtraded/SEC not promoted
 
 ## Hard stops
 Architecture change · destructive · paid credential · LIVE funded routing · silent promotion · Ben HOLD/stop/satisfied
@@ -36,4 +36,4 @@ Architecture change · destructive · paid credential · LIVE funded routing · 
 Stop only on explicit Ben satisfaction or hard stop.
 Loop builds Galaxy to itself.
 
-**Sign:** Grok · Galaxy C407 · residual-first · fail-closed
+**Sign:** Grok · Galaxy C408 · residual-first · fail-closed

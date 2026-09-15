@@ -7,9 +7,9 @@
 **Grok role:** grade receipts only (no live host mutation from browser plane)
 
 ## Galaxy 24/7 status (pointer only)
-**Status:** RUNNING · cycle 407 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-15T14:44:00Z
-**Last residual:** C407 public-bus advance + local plane DOWN + nasdaqlisted/otherlisted line counts STABLE + FCT cache-split FAIL-LOUD (09:16/08:01 vs C406 10:01) + nasdaqtraded 13235/08:03 NOT INTEGRATED + SEC 200 observed NOT INTEGRATED + sha256 UNAVAILABLE + residual board
+**Status:** RUNNING · cycle 408 · ben_satisfied=false · stop_requested=false
+**Updated:** 2026-09-15T15:09:32Z
+**Last residual:** C408 public-bus advance + local plane REHYDRATED + listings CHANGED FCT 11:01/11:02 vs C407 cache-split + line counts STABLE 5610/7631 + nasdaqtraded 13239 NOT INTEGRATED + SEC 403 NOT INTEGRATED + hashes restored
 **READY Grok:** none
 
 ## One-line mission
