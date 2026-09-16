@@ -1,13 +1,10 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_index": 456,
-  "cycle_id": "C456",
-  "last_receipt": "GALAXY-CYCLE-C456",
+  "cycle_index": 458,
+  "cycle_id": "C458",
+  "last_receipt": "GALAXY-CYCLE-C458",
   "ben_satisfied": false,
   "stop_requested": false,
-  "ready_grok": [],
-  "updated_utc": "2026-09-16T22:20:00Z",
-  "local_plane": "ABSENT",
-  "verdict": "CHANGED_MEASUREMENT"
+  "updated_utc": "2026-09-16T23:22:00Z"
 }
