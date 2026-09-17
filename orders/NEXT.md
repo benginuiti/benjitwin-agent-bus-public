@@ -1,4 +1,4 @@
-# NEXT — Nebula / Claude / Quad
+# NEXT -- Nebula / Claude / Quad
 
 **Active order:** `orders/ORD-UAI-D1-RETEST-L4-001.md`
 **Issued:** 2026-08-22
@@ -7,13 +7,13 @@
 **Grok role:** grade receipts only (no live host mutation from browser plane)
 
 ## Galaxy 24/7 status (pointer only)
-**Status:** RUNNING · cycle 466 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-17T03:08:42Z
-**Last residual:** C466 public-bus residual + local plane ABSENT + listings HASH STABLE vs C465 FCT 21:31/21:31/21:33 + lines STABLE 5614/7631/13243 + nasdaqtraded NOT INTEGRATED + SEC 403 NOT INTEGRATED
+**Status:** RUNNING · cycle 468 · ben_satisfied=false · stop_requested=false
+**Updated:** 2026-09-17T04:16:00Z
+**Last residual:** C468 public-bus residual + local plane ABSENT + listings HASH STABLE vs C467 FCT 21:31/21:31/21:33 + lines STABLE 5614/7631/13243 + nasdaqtraded NOT INTEGRATED + SEC 403 NOT INTEGRATED
 **READY Grok:** none
 
 ## One-line mission
-Apply D1 freshness fix ferry; prove suite ≥44 + L4 D1 reject of stale gen-1 anchor. Testlab only.
+Apply D1 freshness fix ferry; prove suite >=44 + L4 D1 reject of stale gen-1 anchor. Testlab only.
 
 ## Do not
 - Live merge / identity rebind / host mutation from Grok browser plane
