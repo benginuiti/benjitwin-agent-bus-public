@@ -1,23 +1,23 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 504,
-  "updated_utc": "2026-09-18T12:16:40Z",
+  "cycle_index": 505,
+  "updated_utc": "2026-09-18T13:15:48Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
-  "closed_this_run": ["Q-504 residual"],
+  "closed_this_run": ["Q-505 residual"],
   "open_residuals": [
     "R-001",
     "LIVE-RT",
     "local plane ABSENT at start this session",
     "controlling path reconstructed this cycle only",
     "www.nasdaqtrader.com GET 200 this plane; measurement only",
-    "nasdaqlisted.txt HASH STABLE vs C503 lines 5620 FCT 0918202608:01 sha256 0e7aa74593d1b2781b3f31239fab2f9e6cca0cf284b6728adf408773bb8fdfe6",
-    "otherlisted.txt HASH STABLE vs C503 lines 7637 FCT 0918202608:01 sha256 6fc7faa86e355c54e34fad8679d704fea121538a6a831057e177824b8c64231e",
-    "nasdaqtraded.txt HASH STABLE vs C503 lines 13255 FCT 0918202608:03 sha256 28242495cfc9db726ae349af293895fb954d7f159c5e13972dea1598e7e48b3d -- NOT INTEGRATED",
-    "SEC company_tickers.json GET HTTP 403 this plane -- NOT INTEGRATED (no silent promotion)",
-    "listings HASH STABLE vs C503; not promoted into identity universe",
+    "nasdaqlisted.txt HASH CHANGED vs C504 lines 5625 FCT 0918202609:01 sha256 a08b01769acc8659925a8fefa21b3611ffc4b46c146e1133cbdb2bffdac2afef",
+    "otherlisted.txt HASH CHANGED vs C504 lines 7637 FCT 0918202609:01 sha256 949cc8ace1edd2c442a392b3b1bf69eb48c2b33164a4425e428499217f2b1bfb",
+    "nasdaqtraded.txt HASH CHANGED vs C504 lines 13260 FCT 0918202609:02 sha256 32e70e2fc52070f63eb4a88188e10fd7e71da111eb0d74c5f586bebd0466c5fc -- NOT INTEGRATED",
+    "SEC company_tickers.json GET HTTP 200 this plane bytes 797759 n=10422 sha256 82cd5fd9ccffda811b93ba76070460dd41429c02c00e726f83deb71f553c6cff -- NOT INTEGRATED (no silent promotion)",
+    "listings HASH CHANGED vs C504; not promoted into identity universe",
     "Q-005 already on public bus"
   ]
 }
