@@ -1,1 +1,1 @@
-C564 residual HASH_STABLE_VS_C563; local plane ABSENT; nasdaqtraded/SEC NOT INTEGRATED; no secrets
+C564 residual HASH_STABLE vs C563 nasdaqtrader 5625/7637/13260 FCT 21:31/21:31/21:33 SEC 403 NOT INTEGRATED no promotion
