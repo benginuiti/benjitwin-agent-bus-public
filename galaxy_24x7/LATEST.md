@@ -1,1 +1,1 @@
-C615 RUNNING ben_satisfied=false nasdaqtrader_HTTPS_200 READY Grok none
+C615 DONE residual rehydrate + nasdaqtrader HTTPS 200 STABLE 5625/7640/13263 FCT 18:01+ SEC 403 NOT INTEGRATED READY Grok none ben_satisfied=false
