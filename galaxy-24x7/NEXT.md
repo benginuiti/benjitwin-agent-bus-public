@@ -1,23 +1,7 @@
-# NEXT -- Nebula / Claude / Quad
-
-**Active order:** `orders/ORD-UAI-D1-RETEST-L4-001.md`
-**Issued:** 2026-08-22
-**Priority:** P0 UAi L4
-**Primary executor:** Local Claude on BENX570E **testlab only**
-**Grok role:** grade receipts only (no live host mutation from browser plane)
-
-## Galaxy 24/7 status (pointer only)
-**Status:** RUNNING · cycle 606 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-21T15:34:00Z
-**Last residual:** C606 public-bus residual + local plane ABSENT this sandbox + nasdaqtrader HTTPS re-verify STABLE vs C605 FCT 11:01/11:01/11:02 + lines 5625/7640/13263 + nasdaqtraded NOT INTEGRATED + SEC GET 403 this plane NOT INTEGRATED
+# Galaxy 24/7 status (pointer only)
+**Status:** RUNNING · cycle 607 · ben_satisfied=false · stop_requested=false
+**Updated:** 2026-09-21T17:23:30Z
+**Last residual:** C607 public-bus residual + local plane REHYDRATED this sandbox + nasdaqtrader HTTPS re-verify STABLE vs C606 FCT 12:11/12:11/12:12 + lines 5625/7640/13263 + nasdaqtraded NOT INTEGRATED + SEC 403 this plane NOT INTEGRATED
 **READY Grok:** none
-
-## One-line mission
-Apply D1 freshness fix ferry; prove suite >=44 + L4 D1 reject of stale gen-1 anchor. Testlab only.
-
-## Do not
-- Live merge / identity rebind / host mutation from Grok browser plane
-- Claim L4 CLEARED without lab D1 PASS receipt
-- Promote SEC company_tickers or nasdaqtraded into identity universe without Ben gate
 
 No secrets.
