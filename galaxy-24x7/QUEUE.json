@@ -1,12 +1,12 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 624,
-  "updated_utc": "2026-09-22T04:06:58Z",
+  "cycle_index": 625,
+  "updated_utc": "2026-09-22T04:14:20Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
-  "closed_this_run": ["Q-624 residual public-bus + local plane REHYDRATED + nasdaqtrader HTTPS 200 STABLE vs C623 lines 5625/7640/13263 FCT 21:31/21:31/21:32 + SEC 403 this plane NOT INTEGRATED + Q-005 status push"],
+  "closed_this_run": ["Q-625 residual public-bus + local plane REHYDRATED + nasdaqtrader HTTPS 200 STABLE vs C624 lines 5625/7640/13263 FCT 21:31/21:31/21:32 + SEC 403 this plane NOT INTEGRATED"],
   "open_residuals": [
     "R-001",
     "LIVE-RT",
@@ -15,6 +15,7 @@
     "nasdaqtraded.txt 13263 FCT 0921202621:32 STABLE NOT INTEGRATED",
     "SEC company_tickers.json GET 403 this plane NOT INTEGRATED",
     "no new official keyless source this cycle beyond already-measured NASDAQ Trader files",
-    "dual GALAXY folder names not merged (package residual)"
+    "dual GALAXY folder names not merged (package residual)",
+    "local controlling path absent at session start (sandbox rehydrate residual)"
   ]
 }
