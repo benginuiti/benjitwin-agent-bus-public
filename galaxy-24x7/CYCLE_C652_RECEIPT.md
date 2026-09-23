@@ -1,10 +1,10 @@
 # CYCLE_C652_RECEIPT — Galaxy 24/7
 
 **Cycle id:** 0652
-**UTC:** 2026-09-23T03:19:18Z
+**UTC:** 2026-09-23T03:19:33Z
 **Owner:** Grok
 **Authority:** Ben
-**Bite:** Residual-first independent nasdaqtrader HTTPS readback this plane (READY Grok empty)
+**Bite:** Residual-first independent nasdaqtrader HTTPS readback this plane (READY Grok empty; Q-005 continuity push to public bus)
 
 ## Stop flags
 - ben_satisfied: false (Ben did not declare SATISFIED)
@@ -19,6 +19,7 @@
 
 ## Queue
 - READY Grok: none (Q-007 HOST / Q-008 BEN_GATE / Q-009 EXTERNAL / Q-010 BEN_GATE remain blocked)
+- Q-005 (push receipts to github.com/benginuiti/benjitwin-agent-bus-public): standing continuity path; this cycle pushes C652 receipt + status only
 - Highest-value Grok action: residual-first independent keyless source readback (no invented sources)
 
 ## Independent readback (this plane)
@@ -29,8 +30,9 @@
 | otherlisted.txt | https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt | 200 | 7641 | 0922202621:31 | f9b032ae6bc2ac1bf45b1aac1125f794772cf9fa155a32463608375d0b66f6bc |
 | nasdaqtraded.txt | https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqtraded.txt | 200 | 13263 | 0922202621:32 | 1841de26c2685fcd4b6622298cb90fdb88eda6caa4c4d567af57ec28e094a7ba |
 | SEC company_tickers.json | https://www.sec.gov/files/company_tickers.json | 403 | n/a | n/a | FAIL-LOUD this plane (HTML error body 1925 bytes) |
-| ftp.nasdaqtrader.com HTTPS | https://ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt | curl 28 timeout 12s | n/a | n/a | FAIL-LOUD this plane |
-| ftp.nasdaqtrader.com FTP | ftp://ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt | 226 | n/a | n/a | measured-only NOT INTEGRATED |
+| ftp.nasdaqtrader.com HTTPS | https://ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt | curl 28 timeout 20s | n/a | n/a | FAIL-LOUD this plane |
+
+Last-Modified headers (nasdaqtrader.com): listed/other 2026-09-23T01:31:31Z; traded 2026-09-23T01:32:58Z.
 
 Vs C651: **lines STABLE** 5624/7641/13263; **FCT STABLE** 21:31/21:31/21:32; **SHA STABLE**. NOT INTEGRATED.
 SEC GET 403 this plane (C649 measured 200 count 10459 last-modified 2026-09-21T15:47:58Z). NOT INTEGRATED.
@@ -44,8 +46,7 @@ SEC GET 403 this plane (C649 measured 200 count 10459 last-modified 2026-09-21T1
 - R-001, LIVE-RT (HOST / BEN_GATE)
 - Listings measured but NOT INTEGRATED (STABLE vs C651)
 - SEC 403 this plane (prior 200 not reconfirmed)
-- https://ftp.nasdaqtrader.com timeout this plane
-- ftp:// 226 measured-only this plane
+- ftp.nasdaqtrader.com HTTPS timeout this plane
 - Dual GALAXY folder names not merged (package residual)
 - Local controlling path absent at session start; rehydrated this plane
 
