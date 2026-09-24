@@ -1,8 +1,7 @@
 object: GALAXY_24x7_LOOP_STATE
-cycle_id: 689
-status: RUNNING
+cycle_index: 689
+cycle_id: C689
+updated_utc: "2026-09-24T16:09:12Z"
+loop_status: RUNNING
 ben_satisfied: false
 stop_requested: false
-updated_utc: "2026-09-24T16:09:02Z"
-ready_grok: []
-last_residual: "C689 nasdaqtrader HTTPS 200 lines STABLE 5635/7652/13285 vs C688; FCT/SHA STABLE 11:01 NOT INTEGRATED; SEC 200 10461 observe-only NOT INTEGRATED"
