@@ -1,13 +1,12 @@
 {
-  "object_id": "GALAXY-24x7-CYCLE-STATE",
+  "object": "GALAXY_24x7_CYCLE_STATE",
+  "cycle_id": 689,
+  "cycle_label": "C689",
   "status": "RUNNING",
-  "cycle_index": 688,
-  "cycle_id": "C688",
-  "last_receipt": "GALAXY-CYCLE-0688",
   "ben_satisfied": false,
   "stop_requested": false,
-  "updated_utc": "2026-09-24T15:08:12Z",
-  "local_plane": "REHYDRATED_THIS_SANDBOX_FROM_PUBLIC_BUS",
-  "verdict": "RESIDUAL_REHYDRATE + NASDAQTRADER_HTTPS_200_LINES_STABLE_5635/7652/13285_VS_C687 + FCT_SHA_STABLE_11:01_VS_C687_NOT_INTEGRATED + SEC_403_THIS_PLANE_NOT_INTEGRATED",
-  "ready_grok": []
+  "updated_utc": "2026-09-24T16:09:02Z",
+  "last_bite": "residual rehydrate + nasdaqtrader measure STABLE vs C688 + SEC 200 observe-only NOT INTEGRATED",
+  "ready_grok": [],
+  "plane": "browser-grok-sandbox"
 }
