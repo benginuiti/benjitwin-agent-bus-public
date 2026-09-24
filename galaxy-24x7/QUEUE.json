@@ -1,23 +1,23 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 673,
-  "updated_utc": "2026-09-24T01:30:29Z",
+  "cycle_index": 674,
+  "updated_utc": "2026-09-24T02:06:26Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
-  "closed_this_run": ["Q-673 residual public-bus continuity + nasdaqtrader HTTPS 200 lines STABLE 5633/7648/13279 vs C672; FCT/SHA STABLE 18:02/18:02/18:03 NOT INTEGRATED + SEC 403 this plane NOT INTEGRATED + ftp 220 this plane + local path rehydrate"],
+  "closed_this_run": ["Q-674 residual public-bus continuity + nasdaqtrader HTTPS 200 lines STABLE 5633/7648/13279 vs C673; FCT/SHA CHANGED 21:32/21:32/21:33 NOT INTEGRATED + SEC 403 this plane NOT INTEGRATED + ftp 220 this plane + local path rehydrate"],
   "open_residuals": [
     "R-001",
     "LIVE-RT",
-    "nasdaqlisted.txt 5633 FCT 0923202618:02 SHA fb3833e8360f8b74a5856149c70d21b2339b87288fbeb2e3b9f01c056d9f6e38 lines STABLE vs C672; FCT/SHA STABLE NOT INTEGRATED",
-    "otherlisted.txt 7648 FCT 0923202618:02 SHA f619641e7a4f7f322066c104c3106f4d2c7aa801b78018632ab9af0d98559d42 lines STABLE vs C672; FCT/SHA STABLE NOT INTEGRATED",
-    "nasdaqtraded.txt 13279 FCT 0923202618:03 SHA f172e91ceade532ebf3b55a40f5e9f9ede444ddeb711d18d122e538d05ac2927 lines STABLE vs C672; FCT/SHA STABLE NOT INTEGRATED",
+    "nasdaqlisted.txt 5633 FCT 0923202621:32 SHA 501c80696480d34bc1096c64b54059326e48ef65c8e12b37b701d3cd27020be9 lines STABLE vs C673; FCT/SHA CHANGED NOT INTEGRATED",
+    "otherlisted.txt 7648 FCT 0923202621:32 SHA 7b8f0a589dddece8d65cda3316bd5fadffce0ff66166e41871f65702f8f8fad5 lines STABLE vs C673; FCT/SHA CHANGED NOT INTEGRATED",
+    "nasdaqtraded.txt 13279 FCT 0923202621:33 SHA ca3d6dc131dc2ad5a58964cf61a7f8305b96d84fcbff24aeeb17224d42cf9497 lines STABLE vs C673; FCT/SHA CHANGED NOT INTEGRATED",
     "SEC company_tickers.json GET 403 this plane (C663 200/10461 last-mod 2026-09-22) NOT INTEGRATED",
     "ftp.nasdaqtrader.com TCP21 220 Microsoft FTP Service this plane; not used as identity source",
     "no new official keyless source this cycle beyond already-measured NASDAQ Trader + SEC company_tickers files",
     "dual GALAXY folder names not merged (package residual)",
-    "QUEUE/CYCLE_STATE on public bus lagged receipts (C670 stamp vs C672 receipt) — this cycle writes 673",
+    "QUEUE/CYCLE_STATE on public bus lagged receipts historically — this cycle writes 674",
     "local controlling path was absent at session start; rehydrated this plane (sandbox residual)"
   ]
 }
