@@ -1,13 +1,11 @@
 {
-  "object_id": "GALAXY-24x7-CYCLE-STATE",
-  "status": "RUNNING",
+  "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 695,
-  "cycle_id": "C695",
-  "last_receipt": "GALAXY-CYCLE-0695",
+  "updated_utc": "2026-09-24T20:07:47Z",
   "ben_satisfied": false,
   "stop_requested": false,
-  "updated_utc": "2026-09-24T20:06:19Z",
-  "local_plane": "REHYDRATED_THIS_SANDBOX_FROM_PUBLIC_BUS",
-  "verdict": "NASDAQTRADER_HTTPS_200_LINES_STABLE_5635/7652/13285_SHA_FCT_UPDATED_15:41/15:41/15:42_VS_C694_14:01_NOT_INTEGRATED + SEC_403_THIS_PLANE_NOT_INTEGRATED",
-  "ready_grok": []
+  "status": "RUNNING",
+  "last_bite": "Q-695 residual public-bus continuity + nasdaqtrader HTTPS 200 lines STABLE 5635/7652/13285 FCT/SHA CHANGED 15:41/15:41/15:42 vs C694 14:01 NOT INTEGRATED + SEC 403 this plane NOT INTEGRATED + local path rehydrate",
+  "ready_grok": [],
+  "hard_stops_intact": true
 }
