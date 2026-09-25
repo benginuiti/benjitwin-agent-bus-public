@@ -1,11 +1,23 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 716,
-  "updated_utc": "2026-09-25T13:17:38Z",
+  "cycle_index": 717,
+  "updated_utc": "2026-09-25T13:23:07Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
-  "closed_this_run": ["Q-716 residual remasure nasdaqtrader FTP 226 STABLE vs C715; HTTPS SymDir 200 text MATCH listed (FAIL-LOUD HTML-wall did not reproduce); SEC 403; local rehydrate"],
-  "open_residuals": ["R-001", "LIVE-RT", "nasdaqlisted 5638 SHA bb017a607ea84036915c03a8f88f0bf51d8d5c98fbd23982fe83a1f0f8111a6a STABLE vs C715 FCT 0925202609:01 NOT INTEGRATED", "otherlisted 7654 SHA 973bd0e9d6fd5af52e3a4b4c943ea338159b432a8be270a80ba3fd29d1ef7c0e STABLE FCT 0925202609:01 NOT INTEGRATED", "nasdaqtraded 13290 SHA f6708f5cc3c4cf329226a6f93b62d13d5cda9d8afdaef073d2c13f9c10f06590 STABLE FCT 0925202609:02 NOT INTEGRATED", "SEC company_tickers.json GET 403 NOT INTEGRATED", "HTTPS nasdaqtrader SymDir this plane 200 text/plain MATCH listed SHA; prior cycle HTML-wall not reproduced; still NOT INTEGRATED", "no new official keyless source", "dual GALAXY folder names not merged", "mcp_wizbangers unused this plane", "local controlling path absent at start; rehydrated"]
+  "closed_this_run": ["Q-717 residual remasure nasdaqtrader FTP 226 SHA+FCT CHANGED vs C716 lines STABLE; HTTPS SymDir 200 text MATCH listed; SEC 403; local rehydrate"],
+  "open_residuals": [
+    "R-001",
+    "LIVE-RT",
+    "nasdaqlisted 5638 SHA 1de7edf690f2b6e53d3cc00e183fc948ecfb8be96afdb84de7a972d24fb4ab76 FCT 0925202609:16 CHANGED vs C716 NOT INTEGRATED",
+    "otherlisted 7654 SHA 9929f54409ebeddf6ea4f6086e901fc1fcb9214690094fa591dd790a0c275a6f FCT 0925202609:16 CHANGED vs C716 NOT INTEGRATED",
+    "nasdaqtraded 13290 SHA 70cb85cbc0774739697347766bfc076250a11375d130014bd226cd120bdf082f FCT 0925202609:17 CHANGED vs C716 NOT INTEGRATED",
+    "SEC company_tickers.json GET 403 NOT INTEGRATED",
+    "HTTPS nasdaqtrader SymDir this plane 200 text/plain MATCH listed SHA; still NOT INTEGRATED",
+    "no new official keyless source",
+    "dual GALAXY folder names not merged",
+    "mcp_wizbangers unused this plane",
+    "local controlling path absent at start; rehydrated"
+  ]
 }
