@@ -1,0 +1,12 @@
+{
+  "object_id": "GALAXY-24x7-QUEUE",
+  "updated_utc": "2026-09-25T22:06:18Z",
+  "ready_grok": [],
+  "blocked": [
+    "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
+    "SEC company_tickers 403 this plane",
+    "LIVE funded routing",
+    "architecture change"
+  ],
+  "preferred_next": "residual board refresh / offline measurement / self-loop integrity"
+}
