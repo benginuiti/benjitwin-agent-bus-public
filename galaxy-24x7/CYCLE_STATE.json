@@ -1,12 +1,10 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 714,
-  "updated_utc": "2026-09-25T12:17:23Z",
+  "updated_utc": "2026-09-25T12:17:15Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "last_bite": "C714 independent nasdaqtrader HTTPS 200 LINES STABLE 5633/7654/13285; LM+SHA MOVED vs C713 (LM 12:02/12:02/12:03) NOT INTEGRATED; SEC 403 this plane NOT INTEGRATED; no READY Grok; local path REHYDRATED",
-  "last_receipt": "CYCLE_C714_RECEIPT.md",
   "ready_grok": [],
-  "hard_stops_intact": true
+  "bite": "residual remasure nasdaqtrader HTTPS LINES STABLE vs C713; LM+SHA+FCT MOVED; SEC 403; no READY Grok"
 }
