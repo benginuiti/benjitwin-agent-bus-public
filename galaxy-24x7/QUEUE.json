@@ -1,23 +1,11 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 714,
-  "updated_utc": "2026-09-25T12:17:15Z",
+  "cycle_index": 715,
+  "updated_utc": "2026-09-25T13:04:32Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-009 EXTERNAL", "Q-010 BEN_GATE"],
-  "closed_this_run": ["Q-714 residual remasure nasdaqtrader HTTPS LINES STABLE 5633/7654/13285 vs C713; LM+SHA+FCT MOVED 12:02/08:02 vs C713 11:00/07:00; SEC 403; no READY Grok bite; local path rehydrate"],
-  "open_residuals": [
-    "R-001",
-    "LIVE-RT",
-    "nasdaqlisted.txt 5633 SHA b61626757bca87f2a439330fab9b7aa466f2b833d1aa2a41b8cc23f8e0e9a843 MOVED vs C713 39cb7b19; HTTP LM 2026-09-25T12:02:20Z MOVED vs 11:00:09Z; FCT 0925202608:02 NOT INTEGRATED",
-    "otherlisted.txt 7654 SHA f9d7a7b4ac1c3dd90526653e5d5b78499b413964f67ce0f950530077cb034b39 MOVED vs C713 04416fe3; HTTP LM 2026-09-25T12:02:20Z MOVED vs 11:00:10Z; FCT 0925202608:02 NOT INTEGRATED",
-    "nasdaqtraded.txt 13285 SHA 39cc85a1d6843d4817ee38e745fdcb52fc229be6849f094b1ac27578d2200666 MOVED vs C713 e1968b12; HTTP LM 2026-09-25T12:03:44Z MOVED vs 11:01:44Z; bytes 1002444 STABLE; FCT 0925202608:03 NOT INTEGRATED",
-    "SEC company_tickers.json GET 403 this plane NOT INTEGRATED (Ben gate)",
-    "no new official keyless source this cycle beyond already-measured NASDAQ Trader files",
-    "dual GALAXY folder names not merged (package residual)",
-    "mcp_wizbangers live work unused this plane",
-    "local controlling path was absent at session start; rehydrated this plane (sandbox residual)",
-    "Q-005 push-receipts not a READY queue item this cycle; receipts pushed as self-loop integrity"
-  ]
+  "closed_this_run": ["Q-715 residual remasure nasdaqtrader FTP 226; HTTPS HTML-wall FAIL-LOUD; lines 5638/7654/13290 vs C714 5633/7654/13285; SHA+FCT MOVED; SEC 403; no READY Grok; local rehydrate"],
+  "open_residuals": ["R-001", "LIVE-RT", "nasdaqlisted 5638 SHA bb017a607ea84036915c03a8f88f0bf51d8d5c98fbd23982fe83a1f0f8111a6a MOVED FCT 0925202609:01 NOT INTEGRATED", "otherlisted 7654 SHA 973bd0e9d6fd5af52e3a4b4c943ea338159b432a8be270a80ba3fd29d1ef7c0e lines STABLE FCT 0925202609:01 NOT INTEGRATED", "nasdaqtraded 13290 SHA f6708f5cc3c4cf329226a6f93b62d13d5cda9d8afdaef073d2c13f9c10f06590 MOVED FCT 0925202609:02 NOT INTEGRATED", "SEC company_tickers.json GET 403 NOT INTEGRATED", "HTTPS nasdaqtrader SymDir HTML interstitial this plane; FTP remasure only", "no new official keyless source", "dual GALAXY folder names not merged", "mcp_wizbangers unused this plane", "local controlling path absent at start; rehydrated"]
 }
