@@ -1,33 +1,29 @@
-# CYCLE_C724_RECEIPT — Galaxy 24/7
+# GALAXY-CYCLE-0724 Receipt
 
-**Cycle id:** 0724
-**UTC:** 2026-09-25T17:04:32Z
-**Owner:** Grok
+**UTC:** 2026-09-25T18:06:26Z
+**Agent:** Grok
 **Authority:** Ben
-**Bite:** Residual control-plane re-hydrate + keyless remasure vs C723 + residual board + fail-loud no-promotion
-**Status:** DONE
+**Mode:** Residual-first · fail-closed
 
-## Context at start
-- Local path GALAXY_24x7_BUILD_LOOP_v1.0/ absent (fresh sandbox).
-- Re-hydrated from public bus github.com/benginuiti/benjitwin-agent-bus-public.
-- Root NEXT.md Galaxy pointer: cycle 723 · ben_satisfied=false · stop_requested=false · READY Grok none.
-- No SATISFIED or STOP from Ben.
+## Preconditions
 
-## Work
-1. Hard stops held. No architecture change, no destructive, no paid, no LIVE funded routing, no silent promotion.
-2. No READY Grok-owned bite. Residual path only.
-3. ftp.nasdaqtrader.com HTTPS timed out this plane (fail-loud).
-4. HTTPS www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt 200 5638 lines sha256 d4607f8bf8dca72a48910eb5e78fe6ef1ba08f321109f67891f0f1003b395d6b LM 2026-09-25 16:11:11 GMT LINES STABLE vs C723 SHA CHANGED vs C723 bea92a61… NOT INTEGRATED.
-5. HTTPS otherlisted.txt 200 7654 lines sha256 b4336a3ac35d17f459da8a8ffd3674f225aa4ccc98ccc86dc1591d5b4fa24656 LM 2026-09-25 16:11:11 GMT LINES STABLE vs C723 SHA CHANGED vs C723 1badbbf7… NOT INTEGRATED.
-6. HTTPS nasdaqtraded.txt 200 13290 lines sha256 be714bdc4bf427435d7d81740d339015219db710df18438e74a4991f0729c83e LM 2026-09-25 16:12:41 GMT LINES STABLE vs C723 SHA CHANGED vs C723 0bb4471c… NOT INTEGRATED.
-7. SEC company_tickers.json 200 bytes=797091 records=10413 sha256 3749c0b4a6197feb35e91a6704b3836e45f245dbc2dec1ffa559d1c028852d23 LM Wed, 23 Sep 2026 21:05:17 GMT (prior C723 was 403). Sample public: NVDA / AAPL / GOOGL. NOT INTEGRATED.
+* Local control plane absent at session start (clean sandbox).
+* Public bus orders/NEXT.md cycle 723, ben_satisfied=false, stop_requested=false, READY Grok none.
+* Hard stops intact (no Windows tasks, no F-AUTH-1 live, no real money).
 
-## Residuals
-- R-001 OPEN
-- LIVE-RT blocked
-- Identity files measured, NOT INTEGRATED
-- ftp.nasdaqtrader.com TIMEOUT this plane; www.nasdaqtrader.com 200
-- SEC 200 this plane (was 403) — still not a Ben gate
-- No READY Grok items
+## Actions executed
 
-**Sign:** Grok · Galaxy C724 · residual-first · fail-closed
+1. Self-loop integrity rehydrate under GALAXY_24_7_BUILD_LOOP + GALAXY_24x7_BUILD_LOOP_v1.0 from public bus (github.com/benginuiti/benjitwin-agent-bus-public).
+2. No READY owner=Grok queue item (Q-005 already consumed in prior cycles). Residual path only.
+3. Offline measurement public keyless:
+   * HTTPS nasdaqlisted 200 lines=5638 sha256=c78222cacd994f2302face74052fc0992453c3d059b9748fdb024248e53c690c FCT=0925202614:01
+   * HTTPS otherlisted 200 lines=7654 sha256=f7e9ac6f8d5f560abbf146659aa612f4d2a1219e08dc39eb6e553d4252c009e4 FCT=0925202614:01
+   * HTTPS nasdaqtraded 200 lines=13290 sha256=6b2f27566213421ad7a6e976728048b5aa223c8e01d5902473f03d1617ee9697 FCT=0925202614:03
+   * FTP==HTTPS SHA for all three files (FTP 226)
+   * Line counts STABLE vs C723 5638/7654/13290
+   * SHA/FCT CHANGE vs C723 (12:11/12:11/12:12 → 14:01/14:01/14:03) NOT INTEGRATED
+   * HTTPS SymDir root 403 this plane
+   * SEC company_tickers.json HTTP 403 FAIL-LOUD (HTML, not JSON)
+4. NOT INTEGRATED. No identity promotion. No new keyless source found.
+
+Hard stops held. Only Ben declares satisfaction.
