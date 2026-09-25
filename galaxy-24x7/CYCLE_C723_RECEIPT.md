@@ -1,31 +1,29 @@
-# CYCLE_C723_RECEIPT — Galaxy 24/7
+# GALAXY-CYCLE-0723 Receipt
 
-**Cycle id:** 0723
-**UTC:** 2026-09-25T16:13:13Z
-**Owner:** Grok
+**UTC:** 2026-09-25T17:05:00Z
+**Agent:** Grok
 **Authority:** Ben
-**Bite:** Residual control-plane re-hydrate + keyless remasure vs C722 + residual board + fail-loud no-promotion
-**Status:** DONE
+**Mode:** Residual-first · fail-closed
 
-## Context at start
-- Local path GALAXY_24x7_BUILD_LOOP_v1.0/ absent (fresh sandbox).
-- Re-hydrated from public bus github.com/benginuiti/benjitwin-agent-bus-public.
-- Root NEXT.md Galaxy pointer: cycle 722 · ben_satisfied=false · stop_requested=false · READY Grok none.
-- No SATISFIED or STOP from Ben.
+## Preconditions
 
-## Work
-1. Hard stops held.
-2. No READY Grok-owned bite. Residual path only.
-3. HTTPS nasdaqlisted 200 5638 lines sha256 bea92a61e3bf53f71d31a5e2ff9314d2ae50baa6e977dc48ac201a3f8a99c4fe LM 2026-09-25 15:01:28 GMT LINES STABLE vs C722 NOT INTEGRATED.
-4. HTTPS otherlisted 200 7654 lines sha256 1badbbf7b6eb5e6c09483d64d317b5884bd262deafa9f47d84bd5c1bca411a3b LM 2026-09-25 15:01:28 GMT LINES STABLE vs C722 NOT INTEGRATED.
-5. HTTPS nasdaqtraded 200 13290 lines sha256 0bb4471c7e4bac78fbaf80215986eebabc6d60289b49d506749e4a76775e2144 LM 2026-09-25 15:02:50 GMT LINES STABLE vs C722 NOT INTEGRATED.
-6. SEC company_tickers.json FAIL-LOUD 403.
+* Local control plane absent at session start (clean sandbox).
+* Public bus orders/NEXT.md cycle 722, ben_satisfied=false, stop_requested=false, READY Grok none.
+* Hard stops intact (no Windows tasks, no F-AUTH-1 live, no real money).
 
-## Residuals
-- R-001 OPEN
-- LIVE-RT blocked
-- Identity files measured, NOT INTEGRATED
-- SEC 403 this plane
-- No READY Grok items
+## Actions executed
 
-**Sign:** Grok · Galaxy C723 · residual-first · fail-closed
+1. Self-loop integrity rehydrate under GALAXY_24_7_BUILD_LOOP + GALAXY_24x7_BUILD_LOOP_v1.0 from public bus (github.com/benginuiti/benjitwin-agent-bus-public).
+2. No READY owner=Grok queue item (Q-005 already consumed in prior cycles). Residual path only.
+3. Offline measurement public keyless:
+   * HTTPS nasdaqlisted 200 lines=5638 sha256=d4607f8bf8dca72a48910eb5e78fe6ef1ba08f321109f67891f0f1003b395d6b FCT=0925202612:11
+   * HTTPS otherlisted 200 lines=7654 sha256=b4336a3ac35d17f459da8a8ffd3674f225aa4ccc98ccc86dc1591d5b4fa24656 FCT=0925202612:11
+   * HTTPS nasdaqtraded 200 lines=13290 sha256=be714bdc4bf427435d7d81740d339015219db710df18438e74a4991f0729c83e FCT=0925202612:12
+   * FTP==HTTPS SHA for all three files
+   * Line counts STABLE vs C722 5638/7654/13290
+   * SHA/FCT CHANGE vs C722 (11:01/11:01/11:02 → 12:11/12:11/12:12) NOT INTEGRATED
+   * HTTPS SymDir root 403 this plane (C722 reported 200 held)
+   * SEC company_tickers.json HTTP/2 403 FAIL-LOUD (AkamaiGHost, 1924 bytes HTML, not JSON)
+4. NOT INTEGRATED. No identity promotion. No new keyless source found.
+
+Hard stops held. Only Ben declares satisfaction.
