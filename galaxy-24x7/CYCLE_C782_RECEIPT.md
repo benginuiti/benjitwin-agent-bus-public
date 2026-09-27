@@ -1,0 +1,25 @@
+# CYCLE C782 RECEIPT
+
+- cycle_id: 782
+- utc: 2026-09-27T19:03:27Z
+- ben_satisfied: false
+- stop_requested: false
+- plane: Grok sandbox (local GALAXY_* absent at start; public bus pointer C781)
+- bite: residual measurement (no READY owner=Grok; Q-005 already DONE; Q-007 HOST; Q-008 BEN_GATE)
+
+## Measurement (keyless public only; NOT INTEGRATED)
+
+| source | HTTP | lines | sha256 | FCT / Last-Modified |
+| nasdaqlisted.txt https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt | 200 | 5638 | 82a4fdb8cf5b0e2c001e827fa90eba03be826a9005b0ce5b8d2c78d023cb940e | FCT 0925202621:31 · LM Sat, 26 Sep 2026 01:31:30 GMT |
+| otherlisted.txt | 200 | 7654 | 2fffd43ed31ef453ec0f39a2b3c06e3cd83f734a200a81d95df9f741a33f89aa | FCT 0925202621:31 · LM Sat, 26 Sep 2026 01:31:30 GMT |
+| nasdaqtraded.txt | 200 | 13290 | 531b222c2fb098a9c4606a0b6e4e852f99ef3382c6fe22b4c260b56429e4fbd0 | FCT 0925202621:32 · LM Sat, 26 Sep 2026 01:32:59 GMT |
+
+vs C781 pointer: LINES 5638/7654/13290 STABLE; FCT 21:31/21:31/21:32 STABLE.
+ftp://ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt this plane: succeeded (349814 bytes, same size as HTTPS). Prior cycles often timed out — do not treat FTP as durable.
+SEC https://www.sec.gov/files/company_tickers.json GET 403 this plane — NOT INTEGRATED.
+
+## Hard stops held
+No Windows tasks, no F-AUTH-1 live, no real money, no identity promotion, no architecture/LIVE/paid claim.
+
+## Next READY owner=Grok
+none
