@@ -1,7 +1,7 @@
 # CYCLE C785 RECEIPT
 
 - cycle_id: 785
-- utc: 2026-09-27T20:08:09Z
+- utc: 2026-09-27T21:04:30Z
 - ben_satisfied: false
 - stop_requested: false
 - plane: Grok sandbox (local GALAXY_* absent at start; public bus pointer C784)
@@ -17,7 +17,6 @@
 vs C784 pointer: LINES 5638/7654/13290 STABLE; SHA STABLE; FCT 21:31/21:31/21:32 STABLE.
 ftp://ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt HEAD this plane: Content-Length 349814 size-match vs HTTPS. Do not treat FTP as durable.
 SEC https://www.sec.gov/files/company_tickers.json GET 403 this plane — NOT INTEGRATED.
-SEC https://www.sec.gov/include/ticker.txt GET 403 this plane — NOT INTEGRATED.
 
 ## Hard stops held
 No Windows tasks, no F-AUTH-1 live, no real money, no identity promotion, no architecture/LIVE/paid claim.

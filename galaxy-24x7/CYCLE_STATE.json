@@ -1,9 +1,9 @@
 {
-  "cycle_index": 784,
-  "cycle_id": "C784",
-  "updated_utc": "2026-09-27T20:02:56Z",
+  "cycle_index": 785,
+  "updated_utc": "2026-09-27T21:04:30Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "ready_grok": []
+  "last_residual": "C785 www.nasdaqtrader HTTPS LINES+SHA+FCT STABLE 5638/7654/13290 vs C784; FCT 21:31/21:31/21:32; ftp HEAD size-match; SEC GET 403 NOT INTEGRATED",
+  "ready_grok": "none"
 }
