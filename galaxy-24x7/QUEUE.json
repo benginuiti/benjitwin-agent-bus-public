@@ -1,8 +1,8 @@
 {
-  "updated_utc": "2026-09-28T00:09:30Z",
-  "cycle": 790,
+  "updated_utc": "2026-09-28T00:10:05Z",
+  "cycle": 791,
   "items": [
-    {"id": "Q-005", "owner": "Grok", "status": "DONE", "note": "Ferry C790 receipt + NEXT pointer; recurring residual when READY empty"},
+    {"id": "Q-005", "owner": "Grok", "status": "DONE", "note": "C791 residual board refresh + offline measurement + self-loop integrity; no READY Grok bite"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"}
   ]
