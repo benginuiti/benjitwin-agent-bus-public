@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-09-28T16:08:30Z",
-  "cycle": 808,
+  "updated_utc": "2026-09-28T16:09:20Z",
+  "cycle": 809,
   "items": [
-    {"id": "Q-005", "owner": "Grok", "status": "DONE", "note": "C808 residual board refresh + offline measurement + self-loop integrity; no READY Grok bite"},
+    {"id": "Q-005", "owner": "Grok", "status": "DONE", "note": "C809 residual: SEC 200+UA hash-only correction vs C808 403 record; nasdaq STABLE"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
-    {"id": "Q-009", "owner": "BEN_GATE", "status": "OPEN", "note": "SEC company_tickers.json — this plane GET 403 — NOT INTEGRATED; Ben gate required"}
+    {"id": "Q-009", "owner": "BEN_GATE", "status": "OPEN", "note": "SEC files GET 200 with UA this plane (hash-only); NOT INTEGRATED"}
   ]
 }
