@@ -1,44 +1,52 @@
-# GALAXY-CYCLE-0808 RECEIPT
+# GALAXY-CYCLE-0808 Receipt
 
-**UTC:** 2026-09-28T16:08:30Z
-**Actor:** Grok under Ben authority
-**Mode:** Residual-first · fail-closed · no hard-stop breach
+**UTC:** 2026-09-28T17:03:20Z
+**Agent:** Grok
+**Authority:** Ben
+**Mode:** Residual-first · fail-closed
 
 ## Preconditions
-- Local control plane absent at session start (`/home/workdir/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/` empty).
-- Public bus `benginuiti/benjitwin-agent-bus-public`: CYCLE_STATE cycle_index=807, QUEUE cycle=807; orders/NEXT.md lagged at cycle 806.
-- ben_satisfied=false · stop_requested=false · READY Grok: none.
-- Q-005 already DONE; remaining OPEN items are HOST / BEN_GATE.
-- Hard stops intact: no architecture change, no Windows tasks, no F-AUTH-1 live, no paid / LIVE funded routing, no silent promotion.
+
+* Local control plane absent at session start (empty `/home/workdir/artifacts`).
+* Public bus `orders/NEXT.md` showed **cycle 807**, `ben_satisfied=false`, `stop_requested=false`, **READY Grok: none**.
+* Hard stops intact: no Windows tasks, no F-AUTH-1 live, no money routing, no universe promotion.
 
 ## Bite executed
-Residual package/lab (no READY owner=Grok item existed). Q-005-style continuity: rehydrate local plane from public bus + offline keyless measurement. Did not invent a READY item. Did not start Windows tasks, deploy F-AUTH-1, or route real money.
 
-## Offline measurement (public free keyless only)
-www.nasdaqtrader.com/dynamic/SymDir/ HTTPS GET 200:
-- nasdaqlisted.txt: 5636 lines · 349721 bytes · sha256 ccb386bfa2fa00d5313256fef129e8188606f5f27e67ff867f37b1e8fe4d3239 · Last-Modified Mon, 28 Sep 2026 15:01:15 GMT
-- otherlisted.txt: 7650 lines · 542331 bytes · sha256 28e6b1a415dd09fc0e27c40f9dc69e41f0947efaaf0c9db8f220949db21374a9 · Last-Modified Mon, 28 Sep 2026 15:01:15 GMT
-- nasdaqtraded.txt: 13284 lines · 1002048 bytes · sha256 2ba72a8905726ee5fb2868c98fefff8b603b8e4f895458e08e45eaef94c852fe · Last-Modified Mon, 28 Sep 2026 15:02:36 GMT
+No READY owner=Grok item other than continuity of Q-005 (push this receipt). Package/lab residual: re-measure keyless nasdaqtrader + fail-loud SEC.
 
-ftp://ftp.nasdaqtrader.com/symboldirectory/ HEAD size-match:
-- 349721 / 542331 / 1002048 · Last-Modified 15:01:15 / 15:01:15 / 15:02:36 GMT
+## Measurements (keyless)
 
-vs C807: LINES 5636/7650/13284 · SHA+FCT 15:01/15:01/15:02 · same hashes · ftp sizes 349721/542331/1002048
+| source | transport | http | bytes | lines | sha256 | last-modified |
+|---|---|---|---|---|---|---|
+| nasdaqlisted.txt | HTTPS www.nasdaqtrader.com/dynamic/SymDir | 200 | 349721 | 5636 | 07fd244b7c4487c298fe33e74aa1e042dbe5e3eeea9b417393b46854826d61d6 | Mon, 28 Sep 2026 16:11:34 GMT |
+| otherlisted.txt | HTTPS | 200 | 542331 | 7650 | b51a5a6af73fa34aa2c624bb6c3a50e9df71fa7f6269e688430ee19a49b3dcb2 | Mon, 28 Sep 2026 16:11:35 GMT |
+| nasdaqtraded.txt | HTTPS | 200 | 1002048 | 13284 | 8f15c15e08c9a0bf666bebf3f033c1c5c18e121b88f89639489df4f8c2a6414f | Mon, 28 Sep 2026 16:12:58 GMT |
+| nasdaqlisted.txt | FTP HEAD ftp.nasdaqtrader.com/symboldirectory | — | 349721 | — | — | Mon, 28 Sep 2026 16:11:34 GMT |
+| otherlisted.txt | FTP HEAD | — | 542331 | — | — | Mon, 28 Sep 2026 16:11:35 GMT |
+| nasdaqtraded.txt | FTP HEAD | — | 1002048 | — | — | Mon, 28 Sep 2026 16:12:58 GMT |
+| SEC company_tickers.json | HTTPS www.sec.gov/files | **403** | 1925 | — | — | NOT INTEGRATED |
 
-Verdict:
-- LINES+SHA+FCT STABLE 5636/7650/13284 vs C807
-- FCT 15:01/15:01/15:02
-- ftp HEAD size-match HTTPS 349721/542331/1002048
-- SEC GET https://www.sec.gov/files/company_tickers.json → 403 NOT INTEGRATED (fail-loud; Ben gate)
-- SEC GET https://www.sec.gov/include/ticker.txt → 403 NOT INTEGRATED (fail-loud; Ben gate)
+## Delta vs C807
 
-No new official keyless universe source discovered this cycle. No promotion of nasdaqtraded or SEC tickers into identity universe.
+* LINES STABLE 5636/7650/13284
+* HTTPS SHA+FCT CHANGED (C807 FCT 15:01/15:01/15:02 → C808 16:11/16:11/16:12)
+* ftp HEAD size-match 349721/542331/1002048
+* SEC GET 403 FAIL-LOUD — not integrated, not promoted
 
-## Outcomes
-- Bites closed this run: 1 residual (Q-808 / Q-005 continuity)
-- Remaining READY Grok: none
-- ben_satisfied: false
-- stop_requested: false
-- Loop continues
+## Not done (by rule)
 
-**Sign:** Grok · Galaxy C808 · residual-first · fail-closed
+* No Windows tasks
+* No F-AUTH-1 live
+* No real-money routing
+* No identity-universe expansion from these files (Ben gate)
+
+## Residuals / Board
+
+* R-001: Real NTX property + 758 HBL catalog (OPEN)
+* HOST Q-007: Claude soak/watchdog
+* BEN_GATE Q-008 / Q-010: F-AUTH-1 live deploy, Stage-0 ratification
+* READY Grok: none
+
+ben_satisfied=false
+stop_requested=false

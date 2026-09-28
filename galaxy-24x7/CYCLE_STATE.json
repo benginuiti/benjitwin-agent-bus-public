@@ -1,9 +1,10 @@
 {
-  "cycle_index": 809,
+  "cycle": 808,
+  "cycle_id": "C808",
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "updated_utc": "2026-09-28T16:09:20Z",
-  "ready_grok": "none",
-  "last_bite": "SEC GET 200+UA hash-only vs C808 403 record; nasdaq STABLE; NOT INTEGRATED"
+  "updated_utc": "2026-09-28T17:03:21Z",
+  "bite": "residual_nasdaqtrader_https_ftp_sec",
+  "ready_grok": []
 }
