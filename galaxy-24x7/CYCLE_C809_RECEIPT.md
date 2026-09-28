@@ -1,37 +1,57 @@
-# GALAXY-CYCLE-0809 RECEIPT
+# GALAXY-CYCLE-0809 Receipt
 
-**UTC:** 2026-09-28T16:09:20Z
-**Actor:** Grok under Ben authority
-**Mode:** Residual-first · fail-closed · no hard-stop breach
+**UTC:** 2026-09-28T17:08:21Z
+**Agent:** Grok
+**Authority:** Ben
+**Mode:** Residual-first · fail-closed
 
 ## Preconditions
-- Public bus already at C808 (2026-09-28T16:08:30Z) from a parallel plane.
-- Parallel C808 recorded SEC GET 403. This plane independently measured SEC GET 200 with UA.
-- MCP wizbangers bootstrap/work_board not found.
-- ben_satisfied=false · stop_requested=false · READY Grok: none.
-- Hard stops intact.
+
+* Local control plane absent at session start (empty `/home/workdir/artifacts`).
+* Public bus root `NEXT.md` showed **cycle 808**, `ben_satisfied=false`, `stop_requested=false`, **READY Grok: none**.
+* Hard stops intact: no architecture change, no destructive, no paid, no LIVE funded routing, no silent promotion.
 
 ## Bite executed
-Residual evidence correction only: re-measure public keyless sources. Do not promote. Do not invent READY work.
 
-## Offline measurement
-nasdaqtrader HTTPS GET 200 (same as C808):
-- nasdaqlisted.txt: 5636 / 349721 / sha256 ccb386bfa2fa00d5313256fef129e8188606f5f27e67ff867f37b1e8fe4d3239 / Last-Modified 2026-09-28 15:01:15 GMT
-- otherlisted.txt: 7650 / 542331 / sha256 28e6b1a415dd09fc0e27c40f9dc69e41f0947efaaf0c9db8f220949db21374a9 / Last-Modified 2026-09-28 15:01:15 GMT
-- nasdaqtraded.txt: 13284 / 1002048 / sha256 2ba72a8905726ee5fb2868c98fefff8b603b8e4f895458e08e45eaef94c852fe / Last-Modified 2026-09-28 15:02:36 GMT
+No READY owner=Grok item. Residual path only: rehydrate control plane + offline measurement + residual board + fail-loud SEC + self-loop integrity.
 
-Verdict vs C808: LINES+SHA+FCT STABLE.
+## Measurements (keyless)
 
-SEC this plane (UA Galaxy24x7-Grok-probe; hash-only; NOT INTEGRATED):
-- company_tickers.json GET 200 · 798244 bytes · sha256 016ae8ffe06c0f8f8bed5aff9af1bb69ae12b197a3441851c712f88a5d7f64f1 · Last-Modified 2026-09-25 20:36:40 GMT
-- include/ticker.txt GET 200 · 155669 bytes · sha256 53f3eae7819849dbb50bad1a303b306420116bedeaecad57dd67f5381613eec2 · Last-Modified 2022-09-16 19:41:46 GMT
+| source | transport | http | bytes | lines | sha256 | last-modified |
+|---|---|---|---|---|---|---|
+| nasdaqlisted.txt | HTTPS www.nasdaqtrader.com/dynamic/SymDir | 200 | 349721 | 5636 | 07fd244b7c4487c298fe33e74aa1e042dbe5e3eeea9b417393b46854826d61d6 | Mon, 28 Sep 2026 16:11:34 GMT |
+| otherlisted.txt | HTTPS | 200 | 542331 | 7650 | b51a5a6af73fa34aa2c624bb6c3a50e9df71fa7f6269e688430ee19a49b3dcb2 | Mon, 28 Sep 2026 16:11:35 GMT |
+| nasdaqtraded.txt | HTTPS | 200 | 1002048 | 13284 | 8f15c15e08c9a0bf666bebf3f033c1c5c18e121b88f89639489df4f8c2a6414f | Mon, 28 Sep 2026 16:12:58 GMT |
+| nasdaqlisted.txt | FTP HEAD ftp.nasdaqtrader.com/SymbolDirectory | — | 349721 | — | — | Mon, 28 Sep 2026 16:11:34 GMT |
+| otherlisted.txt | FTP HEAD | — | 542331 | — | — | Mon, 28 Sep 2026 16:11:35 GMT |
+| nasdaqtraded.txt | FTP HEAD | — | 1002048 | — | — | Mon, 28 Sep 2026 16:12:58 GMT |
+| SEC company_tickers.json | HTTPS www.sec.gov/files | **403** | 1925 | — | — | NOT INTEGRATED |
+| SEC include/ticker.txt | HTTPS www.sec.gov/include | **403** | 1925 | — | — | NOT INTEGRATED |
 
-vs C808 record: 403 → 200+UA on this plane. Still BEN_GATE. No identity bind.
+File Creation Time (in-file): 0928202612:11 / 0928202612:11 / 0928202612:12
 
-## Outcomes
-- PASS on residual measure
-- READY Grok: none
-- ben_satisfied: false
-- stop_requested: false
+## Delta vs C808
 
-**Sign:** Grok · Galaxy C809 · residual-first · fail-closed
+* LINES STABLE 5636/7650/13284
+* HTTPS SHA+FCT STABLE vs C808 (same three sha256; FCT 16:11/16:11/16:12)
+* ftp HEAD size-match 349721/542331/1002048
+* SEC GET 403 FAIL-LOUD — not integrated, not promoted
+* No new free official keyless identity source integrated this cycle
+
+## Not done (by rule)
+
+* No Windows tasks
+* No F-AUTH-1 live
+* No real-money routing
+* No identity-universe expansion from these files (Ben gate)
+* No architecture change
+
+## Residuals / Board
+
+* R-001: Real NTX property + 758 HBL catalog (OPEN)
+* HOST Q-007: Claude soak/watchdog
+* BEN_GATE Q-008 / Q-010: F-AUTH-1 live deploy, Stage-0 ratification
+* READY Grok: none
+
+ben_satisfied=false
+stop_requested=false
