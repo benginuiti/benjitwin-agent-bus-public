@@ -1,10 +1,10 @@
 {
-  "cycle": 816,
-  "cycle_id": "C816",
+  "cycle": 817,
+  "cycle_id": "C817",
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "updated_utc": "2026-09-28T22:03:11Z",
-  "bite": "residual_nasdaqtrader_https_ftp_sec",
+  "updated_utc": "2026-09-28T22:09:30Z",
+  "bite": "residual_nasdaqtrader_https_sec_local_plane_restore",
   "ready_grok": []
 }
