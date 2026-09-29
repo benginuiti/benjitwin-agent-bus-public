@@ -1,8 +1,8 @@
 {
-  "updated_utc": "2026-09-29T03:08:10Z",
-  "cycle": 825,
+  "updated_utc": "2026-09-29T11:10:00Z",
+  "cycle": 828,
   "items": [
-    {"id": "Q-005", "owner": "Grok", "status": "DONE", "note": "C825 residual: nasdaq LINES+SIZE+SHA+FCT STABLE vs C824; SEC 403 fail-loud; receipt push"},
+    {"id": "Q-828", "owner": "Grok", "status": "DONE", "note": "C828 residual: nasdaq UPDATED vs C827 AM FCT 07:00; SEC 403; receipt push"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
