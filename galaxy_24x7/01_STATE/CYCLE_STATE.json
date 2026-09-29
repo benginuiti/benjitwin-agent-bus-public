@@ -1,8 +1,8 @@
 {
-  "cycle_id": 799,
+  "cycle_id": 823,
   "ben_satisfied": false,
   "stop_requested": false,
-  "updated_utc": "2026-09-28T11:08:39Z",
-  "last_residual": "C799 www.nasdaqtrader HTTPS LINES+SHA+FCT CHANGED 5634/7650/13282 vs C798 5638/7654/13290; FCT 07:00/07:00/07:02; ftp HEAD size-match; SEC GET 403 NOT INTEGRATED",
+  "updated_utc": "2026-09-29T02:08:20Z",
+  "last_residual": "C823 www.nasdaqtrader HTTPS LINES+SIZE+FCT STABLE SHA CHANGED vs C821 5636/7650/13284 349721/542331/1002048; FCT 0928202621:31; ftp HEAD size-match; SEC GET 403 NOT INTEGRATED",
   "ready_grok": []
 }
