@@ -1,10 +1,10 @@
 {
-  "cycle": 837,
-  "cycle_id": "C837",
+  "cycle": 839,
+  "cycle_id": "C839",
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "updated_utc": "2026-09-29T15:11:06Z",
-  "bite": "residual nasdaqtrader FTP GET LINES+SIZE+SHA+FCT STABLE vs C836; ftp HEAD Last-Modified 15:01; SEC 403; local rehydrate; NEXT pointer catch-up",
+  "updated_utc": "2026-09-29T16:09:30Z",
+  "bite": "residual nasdaqtrader HTTPS GET LINES+SIZE+SHA+FCT STABLE vs C838; HEAD size-match; SEC 403; local rehydrate; public bus pointer",
   "ready_grok": []
 }
