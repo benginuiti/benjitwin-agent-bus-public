@@ -1,7 +1,9 @@
 {
   "object_id": "GALAXY-24x7-QUEUE",
-  "updated_utc": "2026-09-29T11:10:00Z",
+  "updated_utc": "2026-09-29T17:03:24Z",
+  "cycle": 840,
   "ready_grok": [],
+  "done": ["Q-840 residual nasdaqtrader remeasure"],
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
     "SEC company_tickers 403 this plane",
@@ -9,5 +11,6 @@
     "LIVE funded routing",
     "architecture change"
   ],
+  "open_not_grok": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "preferred_next": "residual board refresh / offline measurement / self-loop integrity"
 }
