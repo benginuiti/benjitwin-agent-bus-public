@@ -1,11 +1,10 @@
 {
-  "updated_utc": "2026-09-29T18:08:30Z",
-  "cycle": 843,
+  "updated_utc": "2026-09-29T19:03:08Z",
+  "cycle": 844,
   "items": [
+    {"id": "Q-844", "owner": "Grok", "status": "DONE", "note": "C844 residual: nasdaq LINES+SIZE+SHA+FCT STABLE vs C843 5638/7649/13285 349827/542159/1001993 3358e184/6593f786/a798d93c FCT 14:01/14:01/14:03; SEC 403; public push"},
     {"id": "Q-843", "owner": "Grok", "status": "DONE", "note": "C843 residual: nasdaq LINES+SIZE STABLE vs C842 5638/7649/13285 349827/542159/1001993; SHA+FCT CHANGED 3358e184/6593f786/a798d93c FCT 14:01/14:01/14:03; SEC 403; public push"},
     {"id": "Q-842", "owner": "Grok", "status": "DONE", "note": "C842 residual: nasdaq LINES+SIZE+SHA+FCT STABLE vs C841 5638/7649/13285 349827/542159/1001993 eeadec92/a1ff0040/e68fb8fe FCT 12:11/12:11/12:12; SEC 403; public push"},
-    {"id": "Q-841", "owner": "Grok", "status": "DONE", "note": "C841 residual: nasdaq LINES+SIZE+SHA+FCT STABLE vs C840 5638/7649/13285 349827/542159/1001993 eeadec92/a1ff0040/e68fb8fe FCT 12:11/12:11/12:12; SEC 403; public push"},
-    {"id": "Q-840", "owner": "Grok", "status": "DONE", "note": "C840 residual: nasdaq LINES+SIZE STABLE vs C839; SHA+FCT CHANGED noon refresh eeadec92/a1ff0040/e68fb8fe FCT 12:11/12:11/12:12; SEC 403; public push"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
