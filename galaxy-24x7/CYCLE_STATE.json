@@ -1,10 +1,10 @@
 {
-  "cycle": 831,
-  "cycle_id": "C831",
+  "cycle": 835,
+  "cycle_id": "C835",
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "updated_utc": "2026-09-29T13:06:13Z",
-  "bite": "residual nasdaqtrader HTTPS: listed+traded LINES+SIZE+SHA+FCT UPDATED vs C830; otherlisted LINES+SIZE STABLE SHA+FCT UPDATED; SEC 403; no READY Grok",
+  "updated_utc": "2026-09-29T15:04:00Z",
+  "bite": "residual nasdaqtrader HTTPS LINES+SIZE+SHA+FCT STABLE vs C834; ftp HEAD size-match; SEC 403; no READY Grok",
   "ready_grok": []
 }
