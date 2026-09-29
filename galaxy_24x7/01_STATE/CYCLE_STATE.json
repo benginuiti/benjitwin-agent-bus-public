@@ -1,8 +1,8 @@
 {
-  "cycle_id": 838,
+  "cycle_id": 849,
   "ben_satisfied": false,
   "stop_requested": false,
-  "updated_utc": "2026-09-29T16:03:40Z",
-  "last_residual": "C838 nasdaqlisted+otherlisted+nasdaqtraded LINES+SIZE+SHA+FCT STABLE vs C837 5638/7649/13285 349827/542159/1001993 79a492d4/99cb22d4/b9dc264c; FCT 0929202611:01/11:01/11:02; ftp HEAD size-match; SEC GET 403 NOT INTEGRATED",
+  "updated_utc": "2026-09-29T22:09:08Z",
+  "last_residual": "C849 nasdaqlisted+otherlisted+nasdaqtraded LINES+SIZE STABLE vs C848 5638/7649/13285 349827/542159/1001993; SHA+FCT CHANGED 1466cf53/fdf46946/e7a300c6 FCT 0929202622:01/22:01/22:02; FTP HEAD size-match; SEC GET 403 NOT INTEGRATED",
   "ready_grok": []
 }
