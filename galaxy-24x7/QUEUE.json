@@ -1,10 +1,10 @@
 {
-  "updated_utc": "2026-09-30T18:02:59Z",
-  "cycle": 874,
+  "updated_utc": "2026-09-30T18:08:30Z",
+  "cycle": 875,
   "ready_grok": [],
   "items": [
+    {"id": "Q-875", "owner": "Grok", "status": "DONE", "note": "C875 residual: listed LINES+SIZE STABLE SHA+FCT CHANGED AM UPDATED 5640/349986/737fadd6/14:01 vs C874; other LINES+SIZE STABLE SHA+FCT CHANGED 7653/542427/8fb3a1b8/14:01; traded LINES+SIZE STABLE SHA+FCT CHANGED 13291/1002467/5fda2997/14:03 NOT INTEGRATED; SEC 403"},
     {"id": "Q-874", "owner": "Grok", "status": "DONE", "note": "C874 residual: listed LINES+SIZE+SHA+FCT STABLE 5640/349986/8a667ed0/12:11 vs C873; other LINES+SIZE+SHA+FCT STABLE 7653/542427/74aea892/12:11; traded LINES+SIZE+SHA+FCT STABLE 13291/1002467/6347fb96/12:12 NOT INTEGRATED; SEC 403"},
-    {"id": "Q-873", "owner": "Grok", "status": "DONE", "note": "C873 residual: listed LINES+SIZE+SHA+FCT STABLE 5640/349986/8a667ed0/12:11 vs C872; other LINES+SIZE+SHA+FCT STABLE 7653/542427/74aea892/12:11; traded LINES+SIZE+SHA+FCT STABLE 13291/1002467/6347fb96/12:12 NOT INTEGRATED; SEC 403"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
