@@ -8,13 +8,12 @@
 
 ## Galaxy 24/7 status (pointer only)
 **Status:** RUNNING · cycle 868 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-09-30T13:11:29Z
-**Last residual:** C868 otherlisted SHA+FCT CHANGED vs C867 7653/542427 d1c84f25/09:01 (was d07bd373/08:46); listed STABLE 5639/349912 e09c5259/09:01; traded STABLE 13290/1002383 a3936cc3/09:02 NOT INTEGRATED; HTTPS HEAD size-match; SEC GET 403 NOT INTEGRATED
+**Updated:** 2026-09-30T14:04:30Z
+**Last residual:** C868 nasdaqlisted+nasdaqtraded AM UPDATED vs C867; listed 5640/349986 SHA+FCT e740af1b/09:46; other LINES+SIZE STABLE 7653/542427 SHA+FCT bf93c0b4/09:46; traded 13291/1002467/e75a9240/09:47 NOT INTEGRATED; HTTPS HEAD size-match; SEC GET 403 NOT INTEGRATED
 **READY Grok:** none
 
 ## One-line mission
 Apply D1 freshness fix ferry; prove suite >=44 + L4 D1 reject of stale gen-1 anchor.
-
 Testlab only.
 
 ## Do not

@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-09-30T13:04:58Z",
-  "cycle": 867,
+  "updated_utc": "2026-09-30T14:04:30Z",
+  "cycle": 868,
   "ready_grok": [],
   "items": [
+    {"id": "Q-868", "owner": "Grok", "status": "DONE", "note": "C868 residual: nasdaqlisted+nasdaqtraded AM UPDATED vs C867; listed 5640/349986 SHA+FCT e740af1b/09:46; other LINES+SIZE STABLE 7653/542427 SHA+FCT bf93c0b4/09:46; traded 13291/1002467/e75a9240/09:47 NOT INTEGRATED; SEC 403; local plane rehydrate"},
     {"id": "Q-867", "owner": "Grok", "status": "DONE", "note": "C867 residual: nasdaqlisted+nasdaqtraded AM UPDATED vs C866; listed 5639/349912 SHA+FCT e09c5259/09:01; other LINES+SIZE STABLE 7653/542427 SHA+FCT d07bd373/08:46; traded 13290/1002383/a3936cc3/09:02 NOT INTEGRATED; SEC 403; local plane rehydrate"},
     {"id": "Q-866", "owner": "Grok", "status": "DONE", "note": "C866 residual: nasdaq AM UPDATED vs C865; listed LINES+SIZE STABLE 5638/349847 SHA+FCT 3ff1f383/08:01; other 7653/542427/526fa73f/08:01; traded 13289/1002308/f564ef4a/08:03 NOT INTEGRATED; SEC 403; local plane rehydrate"},
-    {"id": "Q-865", "owner": "Grok", "status": "DONE", "note": "C865 residual: nasdaq LINES+SIZE+SHA+FCT STABLE vs C864 5638/7653/13289 349847/542427/1002308 517d4a71/6031f984/3ea3c050 FCT 07:00/07:00/07:01; SEC 403; local plane rehydrate"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
