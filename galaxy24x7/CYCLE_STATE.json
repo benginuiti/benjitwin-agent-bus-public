@@ -1,13 +1,14 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
   "status": "RUNNING",
-  "cycle_index": 910,
-  "cycle_id": "C910",
-  "last_receipt": "GALAXY-CYCLE-0910",
+  "cycle_index": 914,
+  "cycle_id": "C914",
+  "last_receipt": "GALAXY-CYCLE-0914",
   "ben_satisfied": false,
   "stop_requested": false,
-  "updated_utc": "2026-10-01T19:04:23Z",
-  "local_plane": "REHYDRATED_THIS_SANDBOX_FROM_PUBLIC_BUS_C909",
-  "verdict": "RESIDUAL_REHYDRATE + NASDAQTRADER_LINES_SIZE_HASH_FCT_LM_ETAG_STABLE_VS_C909 + SEC_CONTACT_200_9058f1e0_NOT_INTEGRATED",
-  "ready_grok": []
+  "updated_utc": "2026-10-01T21:05:32Z",
+  "local_plane": "REHYDRATED_THIS_SANDBOX_FROM_PUBLIC_BUS_C913",
+  "verdict": "RESIDUAL_REHYDRATE + NASDAQTRADER_LINES_SIZE_STABLE_HASH_FCT_LM_ETAG_MOVED_VS_C913 + SEC_CONTACT_200_9058f1e0_NOT_INTEGRATED",
+  "ready_grok": [],
+  "note": "pointer only; authoritative queue is galaxy-24x7/QUEUE.json"
 }
