@@ -1,15 +1,15 @@
 # NEXT -- Nebula / Claude / Quad
 
-**Active order:** 
+**Active order:** `orders/ORD-UAI-D1-RETEST-L4-001.md`
 **Issued:** 2026-08-22
 **Priority:** P0 UAi L4
 **Primary executor:** Local Claude on BENX570E **testlab only**
 **Grok role:** grade receipts only (no live host mutation from browser plane)
 
 ## Galaxy 24/7 status (pointer only)
-**Status:** RUNNING · cycle 915 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-10-01T21:16:08Z
-**Last residual:** C915 confirm listed+other+traded LINES+SIZE+HASH+FCT+LM+etag STABLE vs published C914 (5642/350147/8a2e8cd5, 7661/542907/5750302d, 13301/1003184/a991f7f2 FCT 17:01/17:01/17:02 LM 21:01:12/21:01:12/21:02:35) NOT INTEGRATED; HTTPS HEAD size-match; SEC contact-style UA 200 9058f1e0 keys 10434 STABLE NOT INTEGRATED; Galaxy UA 200 same object this plane (published C914 Galaxy 403) NOT INTEGRATED; ticker.txt 200 sha8 53f3eae7 lines 12084 STABLE measured only; data.sec.gov 200 sha8 55642728 STABLE; C914 receipt not overwritten; no new keyless source
+**Status:** RUNNING · cycle 917 · ben_satisfied=false · stop_requested=false
+**Updated:** 2026-10-01T22:10:56Z
+**Last residual:** C917 listed+other+traded LINES+SIZE+HASH+FCT+LM+etag STABLE vs C916 (5642/350147/32dac0ea, 7661/542907/4fc94437, 13301/1003184/92b09a99 FCT 18:01/18:01/18:02 LM 22:01:28/22:01:28/22:02:50) NOT INTEGRATED; SEC bare UA 403 size 1925 sha8 50329d73; research/Galaxy/contact UA 200 9058f1e0 keys 10434 (C916 403 not reobserved) NOT INTEGRATED; ticker.txt 200 sha8 53f3eae7 lines 12084; data.sec.gov 200 sha8 55642728; no new keyless source
 **READY Grok:** none
 
 ## One-line mission
