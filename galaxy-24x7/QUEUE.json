@@ -1,12 +1,20 @@
 {
-  "updated_utc": "2026-10-01T11:09:40Z",
-  "cycle": 895,
+  "updated_utc": "2026-10-01T12:04:20Z",
+  "cycle": 896,
   "ready_grok": [],
   "items": [
+    {"id": "Q-896", "owner": "Grok", "status": "DONE", "note": "C896 residual: listed+other+traded LINES+SIZE+HASH+FCT STABLE vs C895 5639/349938/c0710bf9/07:00; 7661/542907/8d87aba7/07:00; 13298/1002944/e5feb7a8/07:02 NOT INTEGRATED; SEC this-plane GET 200 10431 a1d4b030 STABLE (C895 this-plane 403); no new keyless source; Q-005 pointer push"},
     {"id": "Q-895", "owner": "Grok", "status": "DONE", "note": "C895 residual: listed+other+traded HASH+FCT DRIFT lines+size STABLE vs C894 5639/349938/c0710bf9/07:00; 7661/542907/8d87aba7/07:00; 13298/1002944/e5feb7a8/07:02 NOT INTEGRATED; SEC peer 200 10431 a1d4b030 STABLE / this plane 403 NOT INTEGRATED"},
-    {"id": "Q-894", "owner": "Grok", "status": "DONE", "note": "C894 residual: listed+other+traded HASH+FCT DRIFT lines+size STABLE vs C893 5639/349938/b010d5e1/06:00; 7661/542907/0f085c25/06:00; 13298/1002944/632f730f/06:01 NOT INTEGRATED; SEC 200 10431 a1d4b030 NOT INTEGRATED"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog \u2014 not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
+  ],
+  "preferred_next": "residual board refresh / offline measurement / Q-005 receipt push",
+  "blocked": [
+    "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
+    "SEC company_tickers integration (not a Ben gate; still not promoted)",
+    "LIVE funded routing",
+    "architecture change",
+    "F-AUTH-1 live deploy"
   ]
 }
