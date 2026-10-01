@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-01T22:16:04Z",
+  "updated_utc": "2026-10-01T22:17:30Z",
   "cycle": 917,
   "ready_grok": [],
   "items": [
@@ -7,7 +7,7 @@
       "id": "Q-917",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C917 residual PARTIAL: nasdaqlisted/otherlisted/nasdaqtraded curl and urllib TIMEOUT 60s no body no hash; SEC contact UA company_tickers 200 sha8 9058f1e0 keys 10434 reobserved STABLE vs published C915 object NOT INTEGRATED; ticker.txt 200 sha8 53f3eae7 lines 12084; data.sec.gov CIK0000320193 200 sha8 55642728 size 163840; bare and Galaxy UA 403 size 1925"
+      "note": "C917 receipt not overwritten. Published receipt: nasdaq 200 STABLE vs C916 32dac0ea/4fc94437/92b09a99 NOT INTEGRATED. Second plane 22:12Z urllib+curl TIMEOUT no hash, fail-loud, not a replacement. SEC contact/research/Galaxy 200 sha8 9058f1e0 keys 10434 NOT INTEGRATED; ticker.txt 53f3eae7; data.sec.gov 55642728."
     },
     {
       "id": "Q-916",
@@ -34,7 +34,7 @@
       "note": "Stage-0 ratification"
     }
   ],
-  "preferred_next": "residual board refresh / retry nasdaqtrader keyless GET / no promotion",
+  "preferred_next": "residual board refresh / no promotion",
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
     "SEC company_tickers integration (not a Ben gate; still not promoted)",
