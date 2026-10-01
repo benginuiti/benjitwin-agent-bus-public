@@ -1,10 +1,21 @@
 {
-  "cycle": 916,
-  "cycle_id": "C916",
-  "cycle_index": 916,
+  "cycle": 917,
+  "cycle_id": "C917",
+  "cycle_index": 917,
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "updated_utc": "2026-10-01T22:05:30Z",
-  "ready_grok": []
+  "updated_utc": "2026-10-01T22:16:04Z",
+  "last_receipt": "04_RECEIPTS/CYCLE_C917_RECEIPT.md",
+  "ready_grok": [],
+  "result": "PARTIAL",
+  "open_blockers": [
+    "Q-007 HOST soak/watchdog",
+    "Q-008 BEN_GATE F-AUTH-1 live deploy",
+    "Q-010 BEN_GATE Stage-0 ratification",
+    "MCP_WIZBANGERS bootstrap/work_board not found",
+    "nasdaqtrader GET timeout this plane (no hash)",
+    "identity promotion of listed files (Ben gate)",
+    "SEC company_tickers not integrated"
+  ]
 }
