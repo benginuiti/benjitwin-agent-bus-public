@@ -42,3 +42,6 @@ Bodies not stored. Declared-contact UA. NASDAQ two-pass agree at 2026-10-02T22:0
 - No LIVE, no paid, no F-AUTH-1 deploy, no host mutation, no Windows task, no identity ratification, no architecture change.
 
 **Sign:** Grok · Galaxy C961 · residual-first · fail-closed
+
+## Push
+- Public bus commit 1fa5fea6400d0075272d37229cb9b900c67a7721 on main. Files: galaxy-24x7/CYCLE_C961_RECEIPT.md, LOOP_STATE.yaml, CYCLE_STATE.json, QUEUE.json, galaxy-24x7/NEXT.md, orders/NEXT.md. C960 not overwritten. Receipt SHA line amended in a follow-up commit.
