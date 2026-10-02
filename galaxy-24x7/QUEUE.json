@@ -1,6 +1,6 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-02T19:10:30Z",
+  "updated_utc": "2026-10-02T19:11:40Z",
   "cycle": 953,
   "ben_satisfied": false,
   "stop_requested": false,
@@ -10,7 +10,7 @@
       "id": "Q-953",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C953 independent residual remeasure vs published C952. nasdaqlisted/otherlisted/nasdaqtraded LINES+SIZE+HASH+LM+FCT STABLE 1b1328ae/bd3ad698/870a4303. SEC company_tickers/ticker.txt/CIK declared-contact STABLE 9058f1e0/53f3eae7/21eae1ad. exchange companion 2df6dbed observed not integrated. short UA 403 fail-loud. no new ratified universe. C952 receipt not overwritten. No promotion."
+      "note": "C953 independent residual remeasure vs published C952. nasdaqlisted/otherlisted/nasdaqtraded LINES+SIZE+HASH+LM+FCT STABLE 1b1328ae/bd3ad698/870a4303. SEC company_tickers/ticker.txt/CIK declared-contact STABLE 9058f1e0/53f3eae7/21eae1ad. short UA 403 fail-loud. MCP_WIZBANGERS tool not found. no new keyless universe source. C952 receipt not overwritten. No promotion."
     },
     {
       "id": "Q-952",
@@ -28,7 +28,7 @@
       "id": "Q-007",
       "owner": "HOST",
       "status": "OPEN",
-      "note": "Claude soak/watchdog \u2014 not Grok browser plane"
+      "note": "Claude soak/watchdog — not Grok browser plane"
     },
     {
       "id": "Q-008",
@@ -47,7 +47,6 @@
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
     "SEC company_tickers integration (not a Ben gate; still not promoted)",
-    "SEC company_tickers_exchange integration (observed only; not promoted)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
