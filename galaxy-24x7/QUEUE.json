@@ -1,14 +1,50 @@
 {
-  "updated_utc": "2026-10-02T09:09:10Z",
-  "cycle": 932,
+  "updated_utc": "2026-10-02T10:10:20Z",
+  "cycle": 933,
   "ready_grok": [],
   "items": [
-    {"id": "Q-932", "owner": "Grok", "status": "DONE", "note": "C932 residual re-hydrate + independent remeasure vs published C931. nasdaqlisted STABLE 29ecd8e4 size 349713 lines 5635 LM Fri, 02 Oct 2026 07:03:17 GMT NOT INTEGRATED. otherlisted STABLE 1dbec9bc size 542961 lines 7663 NOT INTEGRATED. nasdaqtraded STABLE 78f1af56 size 1002744 lines 13296 NOT INTEGRATED. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 STABLE 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. SEC no-contact 403 body hash aa2fd7d3 -> ab348b05 size 1925 not a source change. No promotion."},
-    {"id": "Q-931", "owner": "Grok", "status": "DONE", "note": "C931 receipt not overwritten"},
-    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C932 receipt push this cycle; full historical receipt archive not re-pushed"},
-    {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
-    {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
-    {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
+    {
+      "id": "Q-933",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "C933 residual re-hydrate + independent remeasure vs published C932. nasdaqlisted HASH MOVED 29ecd8e4 -> f329a302 size 349713 lines 5635 LM Fri, 02 Oct 2026 10:00:22 GMT NOT INTEGRATED. otherlisted HASH MOVED 1dbec9bc -> 36949d7c size 542961 lines 7663 LM Fri, 02 Oct 2026 10:00:22 GMT NOT INTEGRATED. nasdaqtraded HASH MOVED 78f1af56 -> a10b7c27 size 1002744 lines 13296 LM Fri, 02 Oct 2026 10:01:45 GMT NOT INTEGRATED. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 STABLE 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. SEC no-contact 403 body hash ab348b05 -> 69443ca2 size 1925 not a source change. No promotion."
+    },
+    {
+      "id": "Q-932",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "C932 residual re-hydrate + independent remeasure vs published C931. nasdaqlisted STABLE 29ecd8e4 size 349713 lines 5635 LM Fri, 02 Oct 2026 07:03:17 GMT NOT INTEGRATED. otherlisted STABLE 1dbec9bc size 542961 lines 7663 NOT INTEGRATED. nasdaqtraded STABLE 78f1af56 size 1002744 lines 13296 NOT INTEGRATED. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 STABLE 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. SEC no-contact 403 body hash aa2fd7d3 -> ab348b05 size 1925 not a source change. No promotion."
+    },
+    {
+      "id": "Q-931",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "C931 receipt not overwritten"
+    },
+    {
+      "id": "Q-005",
+      "owner": "Grok",
+      "status": "PARTIAL",
+      "note": "status pointer + C933 receipt push this cycle; full historical receipt archive not re-pushed"
+    },
+    {
+      "id": "Q-007",
+      "owner": "HOST",
+      "status": "OPEN",
+      "note": "Claude soak/watchdog — not Grok browser plane"
+    },
+    {
+      "id": "Q-008",
+      "owner": "BEN_GATE",
+      "status": "OPEN",
+      "note": "F-AUTH-1 live deploy"
+    },
+    {
+      "id": "Q-010",
+      "owner": "BEN_GATE",
+      "status": "OPEN",
+      "note": "Stage-0 ratification"
+    }
   ],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": [
