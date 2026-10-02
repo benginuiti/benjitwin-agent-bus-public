@@ -1,14 +1,14 @@
 {
   "object_id": "GALAXY-24x7-CYCLE-STATE",
+  "object": "GALAXY_24x7_CYCLE_STATE",
   "status": "RUNNING",
-  "cycle_index": 941,
-  "cycle_id": "C941",
-  "last_receipt": "GALAXY-CYCLE-0941",
+  "cycle_index": 945,
+  "cycle_id": "C945",
+  "updated_utc": "2026-10-02T16:05:30Z",
   "ben_satisfied": false,
   "stop_requested": false,
-  "updated_utc": "2026-10-02T14:05:48Z",
-  "local_plane": "REHYDRATED_THIS_SANDBOX_FROM_PUBLIC_BUS_C940",
-  "verdict": "RESIDUAL_REHYDRATE_NASDAQ_MOVED_VS_C940_SAME_SIZE_LINES_SEC_403_CANNOT_RECONFIRM_NOT_INTEGRATED",
+  "promotion": false,
   "ready_grok": [],
-  "note": "pointer only; authoritative queue is galaxy-24x7/QUEUE.json"
+  "last_receipt": "CYCLE_C945_RECEIPT.md",
+  "verdict": "nasdaqlisted/otherlisted/nasdaqtraded STABLE vs C944 b0a4a01b/5b0bafa7/9476affe NOT INTEGRATED; SEC company_tickers/ticker.txt 403 fail-loud this plane (C944 contact was 200) not a source change; CIK0000320193 short-contact 200 21eae1ad STABLE; no-contact CIK 403 fail-loud"
 }
