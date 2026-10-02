@@ -1,12 +1,12 @@
 {
-  "updated_utc": "2026-10-02T04:12:35Z",
-  "cycle": 929,
+  "updated_utc": "2026-10-02T06:20:00Z",
+  "cycle": 930,
   "ready_grok": [],
   "items": [
-    {"id": "Q-929", "owner": "Grok", "status": "DONE", "note": "C929 residual re-hydrate + independent remeasure. SEC contact-style STABLE vs published C928 (9058f1e0 keys 10434, ticker.txt 53f3eae7 size 155669, CIK0000320193 de0f0eeb Apple Inc.) NOT INTEGRATED. SEC no-contact UA 403 fail-loud. Nasdaq symbol files TIMEOUT x2 fail-loud, not a source change, not compared. No promotion."},
-    {"id": "Q-928", "owner": "Grok", "status": "DONE", "note": "C928 receipt not overwritten"},
-    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C929 receipt push this cycle; full historical receipt archive not re-pushed"},
-    {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog \u2014 not Grok browser plane"},
+    {"id": "Q-930", "owner": "Grok", "status": "DONE", "note": "C930 residual re-hydrate + independent remeasure vs published C929. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 hash moved de0f0eeb -> 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. Nasdaq symbol files 200 this plane (C929 was TIMEOUT, no prior body to diff) NOT INTEGRATED. SEC no-contact 403 fail-loud. No promotion."},
+    {"id": "Q-929", "owner": "Grok", "status": "DONE", "note": "C929 receipt not overwritten"},
+    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C930 receipt push this cycle; full historical receipt archive not re-pushed"},
+    {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
   ],
@@ -14,6 +14,7 @@
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
     "SEC company_tickers integration (not a Ben gate; still not promoted)",
+    "CIK0000320193 submissions integration (measured delta only)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
