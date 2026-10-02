@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "object_id": "GALAXY-24x7-CYCLE-STATE",
-  "cycle_index": 956,
-  "cycle_id": "C956",
-  "updated_utc": "2026-10-02T20:15:30Z",
+  "cycle_index": 957,
+  "cycle_id": "C957",
+  "updated_utc": "2026-10-02T21:05:15Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "status": "RUNNING",
-  "last_receipt": "CYCLE_C956_RECEIPT.md",
-  "last_bite": "C956 independent remeasure vs published C955. nasdaqlisted/otherlisted/nasdaqtraded STABLE 7506851d/2678bfda/b4ff7f4a. ftp listed MATCHES www. SEC company_tickers/ticker.txt STABLE 9058f1e0/53f3eae7. CIK0000320193 MOVED 08c2c5c0 size 164131 vs C952 21eae1ad size 163979 NOT INTEGRATED. exchange 2df6dbed reconfirmed. short UA 403. MCP_WIZBANGERS unavailable. no promotion",
+  "last_receipt": "CYCLE_C957_RECEIPT.md",
+  "last_bite": "C957 independent remeasure vs published C956. nasdaqlisted STABLE 7506851d. otherlisted HASH+LM+FCT MOVED 30758a85 size/lines stable. nasdaqtraded HASH+LM+FCT MOVED ee21d6c7 size/lines stable. ftp listed footer FCT diverges from www (17:01 vs 15:41) rows otherwise equal. SEC company_tickers/ticker.txt/exchange 403. CIK0000320193 MOVED 1fad9028 size 164283 vs C956 08c2c5c0 size 164131 NOT INTEGRATED. no promotion",
   "ready_grok": [],
   "promotion": false,
   "open_blockers": [
@@ -18,6 +18,7 @@
     "identity promotion Ben gate",
     "SEC company_tickers / CIK / exchange not integrated",
     "MCP_WIZBANGERS bootstrap/work_board unavailable this plane",
-    "LIVE funded routing"
+    "LIVE funded routing",
+    "Q-005 PARTIAL (pointer + this receipt only)"
   ]
 }
