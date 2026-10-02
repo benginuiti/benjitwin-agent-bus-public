@@ -1,14 +1,24 @@
 {
-  "object_id": "GALAXY-24x7-CYCLE-STATE",
   "object": "GALAXY_24x7_CYCLE_STATE",
-  "status": "RUNNING",
-  "cycle_index": 959,
-  "cycle_id": "C959",
-  "updated_utc": "2026-10-02T21:12:45Z",
+  "object_id": "GALAXY-24x7-CYCLE-STATE",
+  "cycle_index": 963,
+  "cycle_id": "C963",
+  "updated_utc": "2026-10-02T23:05:40Z",
   "ben_satisfied": false,
   "stop_requested": false,
-  "promotion": false,
+  "status": "RUNNING",
+  "last_receipt": "CYCLE_C963_RECEIPT.md",
+  "last_bite": "C963 independent confirm vs published C962. nasdaqlisted STABLE f9c875ff. otherlisted STABLE 532f896c. nasdaqtraded STABLE b5e25c2d. SEC company_tickers/ticker.txt/exchange 200 9058f1e0/53f3eae7/2df6dbed STABLE vs C961 (C962 plane 403). CIK 200 ad426e7e size 164435 STABLE vs C961. access difference not a source change. no promotion",
   "ready_grok": [],
-  "last_receipt": "CYCLE_C959_RECEIPT.md",
-  "verdict": "independent confirm vs published C958: nasdaqlisted STABLE 67d288b2; otherlisted STABLE 30758a85; nasdaqtraded STABLE ee21d6c7; SEC 403 this plane vs C958 200 other plane; CIK STABLE 1fad9028 NOT INTEGRATED; no promotion"
+  "promotion": false,
+  "open_blockers": [
+    "Q-007 HOST soak/watchdog",
+    "Q-008 BEN_GATE F-AUTH-1 live",
+    "Q-010 BEN_GATE Stage-0",
+    "identity promotion Ben gate",
+    "SEC company_tickers / CIK / exchange not integrated",
+    "MCP_WIZBANGERS bootstrap/work_board unavailable this plane",
+    "LIVE funded routing",
+    "Q-005 PARTIAL (pointer + this receipt only)"
+  ]
 }
