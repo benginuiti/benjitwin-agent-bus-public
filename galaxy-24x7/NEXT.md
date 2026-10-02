@@ -8,8 +8,8 @@
 
 ## Galaxy 24/7 status (pointer only)
 **Status:** RUNNING · cycle 956 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-10-02T20:14:53Z
-**Last residual:** C956 independent remeasure vs published C955. nasdaqlisted 200 7506851d size 349780 newlines 5636 HASH+SIZE+LINES+LM+FCT STABLE (LM 19:41:23 GMT FCT 1002202615:41); otherlisted 200 2678bfda size 542961 newlines 7663 HASH+SIZE+LINES+LM+FCT STABLE (LM 19:41:23 GMT FCT 1002202615:41); nasdaqtraded 200 b4ff7f4a size 1002821 newlines 13297 HASH+SIZE+LINES+LM+FCT STABLE (LM 19:42:52 GMT FCT 1002202615:42) via www.nasdaqtrader.com; ftp.nasdaqtrader.com timeout fail-loud not a source change; SEC company_tickers/ticker.txt/exchange 403 rate-threshold no new hash; CIK0000320193 submissions 200 hash MOVED 08c2c5c0 size 164131 vs last successful C954 21eae1ad NOT INTEGRATED; archives wrong-path 403 undeclared-tool; short UA 403; MCP_WIZBANGERS unavailable; local tree writable this plane; no new keyless universe source; no promotion
+**Updated:** 2026-10-02T20:15:30Z
+**Last residual:** C956 independent remeasure vs published C955. nasdaqlisted 200 7506851d size 349780 newlines 5636 HASH+SIZE+LINES+LM+FCT STABLE (LM 19:41:23 GMT FCT 1002202615:41); otherlisted 200 2678bfda size 542961 newlines 7663 HASH+SIZE+LINES+LM+FCT STABLE (LM 19:41:23 GMT FCT 1002202615:41); nasdaqtraded 200 b4ff7f4a size 1002821 newlines 13297 HASH+SIZE+LINES+LM+FCT STABLE (LM 19:42:52 GMT FCT 1002202615:42); ftp nasdaqlisted 226 MATCHES www 7506851d (C955 ftp timeout was path fail-loud); SEC company_tickers 200 9058f1e0 keys 10434 STABLE vs C952; ticker.txt 200 53f3eae7 STABLE vs C952; CIK0000320193 200 08c2c5c0 size 164131 MOVED vs C952 21eae1ad size 163979 NOT INTEGRATED; exchange 200 2df6dbed size 523512 reconfirmed NOT INTEGRATED; short UA 403 fail-loud; MCP_WIZBANGERS unavailable; no new keyless universe source; no promotion
 **READY Grok:** none
 
 ## One-line mission

@@ -1,6 +1,6 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-02T20:14:53Z",
+  "updated_utc": "2026-10-02T20:15:30Z",
   "cycle": 956,
   "ben_satisfied": false,
   "stop_requested": false,
@@ -10,13 +10,7 @@
       "id": "Q-956",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C956 residual remeasure vs published C955. nasdaqlisted/otherlisted/nasdaqtraded HASH+SIZE+LINES+LM+FCT STABLE 7506851d/2678bfda/b4ff7f4a via www.nasdaqtrader.com. ftp.nasdaqtrader.com timeout fail-loud. SEC company_tickers/ticker.txt/exchange 403 rate-threshold no new hash. CIK0000320193 submissions 200 hash MOVED 08c2c5c0 size 164131 vs last successful C954 21eae1ad NOT INTEGRATED. MCP_WIZBANGERS unavailable. local tree writable this plane. C955 receipt not overwritten. No promotion."
-    },
-    {
-      "id": "Q-955",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "C955 receipt not overwritten"
+      "note": "C956 independent residual remeasure vs published C955. nasdaqlisted/otherlisted/nasdaqtraded STABLE 7506851d/2678bfda/b4ff7f4a. ftp nasdaqlisted MATCHES www hash (C955 ftp timeout was path fail-loud). SEC company_tickers 9058f1e0 and ticker.txt 53f3eae7 STABLE vs last confirmed C952 (C955 403). CIK0000320193 MOVED 08c2c5c0 size 164131 vs C952 21eae1ad size 163979 NOT INTEGRATED. exchange 2df6dbed reconfirmed NOT INTEGRATED. short UA 403. C955 receipt not overwritten. No promotion."
     },
     {
       "id": "Q-005",
@@ -28,7 +22,7 @@
       "id": "Q-007",
       "owner": "HOST",
       "status": "OPEN",
-      "note": "Claude soak/watchdog \u2014 not Grok browser plane"
+      "note": "Claude soak/watchdog — not Grok browser plane"
     },
     {
       "id": "Q-008",
@@ -46,9 +40,7 @@
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
-    "SEC company_tickers integration (not a Ben gate; still not promoted)",
-    "SEC company_tickers_exchange integration (observed only; not promoted)",
-    "SEC CIK submissions hash move observed only; not integrated",
+    "SEC company_tickers / CIK / exchange integration (not promoted)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
