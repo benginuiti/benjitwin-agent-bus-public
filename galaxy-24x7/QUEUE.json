@@ -1,13 +1,19 @@
 {
-  "updated_utc": "2026-10-02T11:13:11Z",
-  "cycle": 934,
+  "updated_utc": "2026-10-02T12:08:00Z",
+  "cycle": 935,
   "ready_grok": [],
   "items": [
+    {
+      "id": "Q-935",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "C935 residual re-hydrate + independent remeasure vs published C934. nasdaqlisted HASH MOVED 5b11f8b7 -> bff7594c size 349713 newlines 5635 LM Fri, 02 Oct 2026 12:01:38 GMT FCT 1002202608:01 NOT INTEGRATED. otherlisted HASH MOVED 27fea2b6 -> ad6a49ce size 542961 newlines 7663 LM Fri, 02 Oct 2026 12:01:38 GMT FCT 1002202608:01 NOT INTEGRATED. nasdaqtraded HASH MOVED d2e317c5 -> 37c522b0 size 1002744 newlines 13296 LM Fri, 02 Oct 2026 12:03:00 GMT FCT 1002202608:03 NOT INTEGRATED. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 STABLE 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. SEC no-contact 403 body hash f99460a6 -> d8f46451 size 1925 not a source change. No promotion."
+    },
     {
       "id": "Q-934",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C934 residual re-hydrate + independent remeasure vs published C933. nasdaqlisted HASH MOVED f329a302 -> 5b11f8b7 size 349713 lines 5635 LM Fri, 02 Oct 2026 11:00:25 GMT FCT 1002202607:00 NOT INTEGRATED. otherlisted HASH MOVED 36949d7c -> 27fea2b6 size 542961 lines 7663 LM Fri, 02 Oct 2026 11:00:25 GMT FCT 1002202607:00 NOT INTEGRATED. nasdaqtraded HASH MOVED a10b7c27 -> d2e317c5 size 1002744 lines 13296 LM Fri, 02 Oct 2026 11:01:55 GMT FCT 1002202607:01 NOT INTEGRATED. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 STABLE 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. SEC no-contact 403 body hash 69443ca2 -> f99460a6 size 1925 not a source change. No promotion."
+      "note": "C934 receipt not overwritten"
     },
     {
       "id": "Q-933",
@@ -25,7 +31,7 @@
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C934 receipt push this cycle; full historical receipt archive not re-pushed"
+      "note": "status pointer + C935 receipt push this cycle; full historical receipt archive not re-pushed"
     },
     {
       "id": "Q-007",
