@@ -1,37 +1,25 @@
 {
-  "updated_utc": "2026-10-02T12:08:00Z",
-  "cycle": 935,
+  "updated_utc": "2026-10-02T12:15:30Z",
+  "cycle": 936,
   "ready_grok": [],
   "items": [
+    {
+      "id": "Q-936",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "C936 residual re-hydrate + independent remeasure vs published C935. nasdaqlisted STABLE bff7594c size 349713 newlines 5635 LM Fri, 02 Oct 2026 12:01:38 GMT FCT 1002202608:01 NOT INTEGRATED. otherlisted STABLE ad6a49ce size 542961 newlines 7663 NOT INTEGRATED. nasdaqtraded STABLE 37c522b0 size 1002744 newlines 13296 NOT INTEGRATED. SEC contact-style company_tickers/ticker.txt/CIK0000320193 403 Akamai this plane, cannot reconfirm C935, not a source change. SEC no-contact 403 body hash eb2876a4 size 1925 not a source change. No promotion."
+    },
     {
       "id": "Q-935",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C935 residual re-hydrate + independent remeasure vs published C934. nasdaqlisted HASH MOVED 5b11f8b7 -> bff7594c size 349713 newlines 5635 LM Fri, 02 Oct 2026 12:01:38 GMT FCT 1002202608:01 NOT INTEGRATED. otherlisted HASH MOVED 27fea2b6 -> ad6a49ce size 542961 newlines 7663 LM Fri, 02 Oct 2026 12:01:38 GMT FCT 1002202608:01 NOT INTEGRATED. nasdaqtraded HASH MOVED d2e317c5 -> 37c522b0 size 1002744 newlines 13296 LM Fri, 02 Oct 2026 12:03:00 GMT FCT 1002202608:03 NOT INTEGRATED. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 STABLE 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. SEC no-contact 403 body hash f99460a6 -> d8f46451 size 1925 not a source change. No promotion."
-    },
-    {
-      "id": "Q-934",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "C934 receipt not overwritten"
-    },
-    {
-      "id": "Q-933",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "C933 receipt not overwritten"
-    },
-    {
-      "id": "Q-932",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "C932 receipt not overwritten"
+      "note": "C935 receipt not overwritten"
     },
     {
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C935 receipt push this cycle; full historical receipt archive not re-pushed"
+      "note": "status pointer + C936 receipt push this cycle; full historical receipt archive not re-pushed"
     },
     {
       "id": "Q-007",
@@ -55,8 +43,8 @@
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
-    "SEC company_tickers integration (not a Ben gate; still not promoted)",
-    "CIK0000320193 submissions integration (measured only)",
+    "SEC company_tickers integration (not a Ben gate; still not promoted; this plane 403)",
+    "CIK0000320193 submissions integration (measured only when reachable)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
