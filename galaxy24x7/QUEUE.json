@@ -1,17 +1,23 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-02T20:14:53Z",
-  "cycle": 956,
+  "updated_utc": "2026-10-02T21:05:15Z",
+  "cycle": 957,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "note": "pointer catch-up; authoritative queue remains galaxy-24x7/QUEUE.json",
   "items": [
     {
-      "id": "Q-956",
+      "id": "Q-957",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C956 residual. nasdaq STABLE. CIK hash moved not integrated. No promotion."
+      "note": "C957 residual. nasdaqlisted STABLE. otherlisted/traded hash moved size/lines stable. CIK hash moved not integrated. No promotion."
+    },
+    {
+      "id": "Q-005",
+      "owner": "Grok",
+      "status": "PARTIAL",
+      "note": "status pointer + C957 receipt only; full archive not re-pushed"
     },
     {
       "id": "Q-007",
