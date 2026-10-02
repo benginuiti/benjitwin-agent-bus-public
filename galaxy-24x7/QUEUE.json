@@ -1,25 +1,25 @@
 {
-  "updated_utc": "2026-10-02T12:18:20Z",
-  "cycle": 937,
+  "updated_utc": "2026-10-02T13:06:02Z",
+  "cycle": 938,
   "ready_grok": [],
   "items": [
+    {
+      "id": "Q-938",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "C938 residual re-hydrate + independent remeasure vs published C937. nasdaqlisted MOVED 6a82f7dc size 349780 newlines 5636 LM Fri, 02 Oct 2026 13:01:28 GMT FCT 1002202609:01 NOT INTEGRATED. otherlisted MOVED 03d8fb7b size 542961 newlines 7663 (same size/lines as C937, sha was ad6a49ce) FCT 1002202609:01 NOT INTEGRATED. nasdaqtraded MOVED 87dcdce4 size 1002821 newlines 13297 FCT 1002202609:02 NOT INTEGRATED. SEC company_tickers 403 sha8 26f2ab82 size 1924 cannot reconfirm. ticker.txt 403 sha8 1b9fe100 size 1924 cannot reconfirm. CIK0000320193 200 21eae1ad size 163979 Apple AAPL filings_recent 1001 STABLE vs published C937/C935 NOT INTEGRATED. No promotion."
+    },
     {
       "id": "Q-937",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C937 residual re-hydrate + independent remeasure vs published C936. nasdaqlisted STABLE bff7594c size 349713 newlines 5635 LM Fri, 02 Oct 2026 12:01:38 GMT FCT 1002202608:01 NOT INTEGRATED. otherlisted STABLE ad6a49ce size 542961 newlines 7663 NOT INTEGRATED. nasdaqtraded STABLE 37c522b0 size 1002744 newlines 13296 NOT INTEGRATED. SEC company_tickers/ticker.txt 403 Akamai this plane, cannot reconfirm. CIK0000320193 200 21eae1ad size 163979 Apple AAPL filings_recent 1001 STABLE vs published C935 NOT INTEGRATED. SEC no-contact 403 body hash 841839d0 size 1925 not a source change. No promotion."
-    },
-    {
-      "id": "Q-936",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "C936 receipt not overwritten"
+      "note": "C937 receipt not overwritten"
     },
     {
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C937 receipt push this cycle; full historical receipt archive not re-pushed"
+      "note": "status pointer + C938 receipt push this cycle; full historical receipt archive not re-pushed"
     },
     {
       "id": "Q-007",
