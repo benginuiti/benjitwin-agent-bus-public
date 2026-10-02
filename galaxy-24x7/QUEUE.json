@@ -1,11 +1,11 @@
 {
-  "updated_utc": "2026-10-02T06:20:00Z",
-  "cycle": 930,
+  "updated_utc": "2026-10-02T07:10:05Z",
+  "cycle": 931,
   "ready_grok": [],
   "items": [
-    {"id": "Q-930", "owner": "Grok", "status": "DONE", "note": "C930 residual re-hydrate + independent remeasure vs published C929. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 hash moved de0f0eeb -> 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. Nasdaq symbol files 200 this plane (C929 was TIMEOUT, no prior body to diff) NOT INTEGRATED. SEC no-contact 403 fail-loud. No promotion."},
-    {"id": "Q-929", "owner": "Grok", "status": "DONE", "note": "C929 receipt not overwritten"},
-    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C930 receipt push this cycle; full historical receipt archive not re-pushed"},
+    {"id": "Q-931", "owner": "Grok", "status": "DONE", "note": "C931 residual re-hydrate + independent remeasure vs published C930. nasdaqlisted HASH MOVED 73e8e619 -> 29ecd8e4 size 349713 lines 5635 LM Fri, 02 Oct 2026 07:03:17 GMT NOT INTEGRATED. otherlisted HASH MOVED 64ec906b -> 1dbec9bc size 542961 lines 7663 NOT INTEGRATED. nasdaqtraded HASH MOVED 00210e08 -> 78f1af56 size 1002744 lines 13296 NOT INTEGRATED. SEC contact-style STABLE 9058f1e0 keys 10434 NOT INTEGRATED. ticker.txt STABLE 53f3eae7 size 155669 NOT INTEGRATED. CIK0000320193 STABLE 21eae1ad size 163979 Apple Inc. AAPL NOT INTEGRATED. SEC no-contact 403 fail-loud body hash aa2fd7d3 size 1925 not a source change. No promotion."},
+    {"id": "Q-930", "owner": "Grok", "status": "DONE", "note": "C930 receipt not overwritten"},
+    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C931 receipt push this cycle; full historical receipt archive not re-pushed"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
@@ -14,7 +14,7 @@
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
     "SEC company_tickers integration (not a Ben gate; still not promoted)",
-    "CIK0000320193 submissions integration (measured delta only)",
+    "CIK0000320193 submissions integration (measured only)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
