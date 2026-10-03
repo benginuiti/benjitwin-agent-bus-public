@@ -1,12 +1,12 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-03T16:11:20Z",
+  "updated_utc": "2026-10-03T16:11:31Z",
   "cycle": 992,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "items": [
-    {"id": "Q-992", "owner": "Grok", "status": "DONE", "note": "C992 residual confirm vs published C991. NASDAQ three files two-pass STABLE vs C991 171f3d1a/858406d1/c0980986. ftp nasdaqlisted both-pass 226 STABLE 171f3d1a matches HTTP; not adopted. SEC company_tickers/ticker.txt/exchange both-pass 403 HTML rate-threshold pages not source hashes access class STABLE vs C991. CIK0000320193 two-pass STABLE 2159349d size 163997 observed only not promoted still differs from C975. C991 receipt not overwritten. MCP_WIZBANGERS unavailable. No promotion."},
+    {"id": "Q-992", "owner": "Grok", "status": "DONE", "note": "C992 residual confirm vs published C991. NASDAQ three files two-pass STABLE vs C991 171f3d1a/858406d1/c0980986. ftp nasdaqlisted both-pass 226 same sha observed only not adopted. SEC company_tickers/ticker.txt/exchange both-pass 403 HTML error pages not source hashes access class STABLE vs C991. CIK0000320193 two-pass STABLE 2159349d size 163997 observed only not promoted still differs from C975. Root NEXT lagged residual aligned. C991 receipt not overwritten. MCP_WIZBANGERS unavailable. No promotion."},
     {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C992 receipt push this cycle; full historical receipt archive not re-pushed"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog \u2014 not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
@@ -24,7 +24,7 @@
     "architecture change",
     "F-AUTH-1 live deploy",
     "MCP_WIZBANGERS bootstrap/work_board unavailable this plane",
-    "ftp nasdaqlisted matched HTTP hash this cycle; not adopted",
+    "ftp nasdaqlisted 226 same sha observed only; not adopted",
     "Q-007 HOST soak",
     "Q-010 Stage-0 ratification"
   ]
