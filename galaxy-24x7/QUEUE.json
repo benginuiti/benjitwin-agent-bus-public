@@ -1,12 +1,12 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-03T19:09:20Z",
+  "updated_utc": "2026-10-03T19:09:32Z",
   "cycle": 998,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "items": [
-    {"id": "Q-998", "owner": "Grok", "status": "DONE", "note": "C998 residual confirm vs published C997. NASDAQ three files two-pass STABLE vs C997 171f3d1a/858406d1/c0980986. ftp nasdaqlisted 226 same sha observed only not adopted. SEC company_tickers/ticker.txt/exchange both-pass 200 hashes 9058f1e0/53f3eae7/2df6dbed access class changed vs C997 403 observed only not promoted. CIK undeclared-UA 403 size 4819 not source; declared-UA two-pass STABLE 2159349d size 163997 observed only not promoted still differs from C975. No new keyless source adopted. C997 receipt not overwritten. No promotion."},
+    {"id": "Q-998", "owner": "Grok", "status": "DONE", "note": "C998 residual confirm vs published C997. NASDAQ three files two-pass STABLE vs C997 171f3d1a/858406d1/c0980986. ftp nasdaqlisted both-pass same sha reply 226 observed only not adopted. SEC company_tickers/ticker.txt/exchange both-pass 403 size 1925 rate-threshold HTML pass-divergent hashes not source hashes; access class STABLE 403 vs C997 not promoted. CIK undeclared-UA this plane 200 size 163997 sha 2159349d (differs from C997 undeclared 403/4819) matches declared-UA two-pass STABLE 2159349d size 163997 observed only not promoted still differs from C975. No new keyless source. C997 receipt not overwritten. No promotion."},
     {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C998 receipt push this cycle; full historical receipt archive not re-pushed"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
@@ -16,10 +16,10 @@
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
     "NASDAQ file bodies STABLE vs C997; not integrated",
-    "SEC company_tickers integration (200 this plane; access class changed vs C997 403; not promoted)",
-    "SEC company_tickers_exchange integration (200 this plane; access class changed vs C997 403; not promoted)",
-    "SEC include/ticker.txt integration (200 this plane; access class changed vs C997 403; not promoted)",
-    "CIK submissions integration (declared-UA 200 STABLE vs C997; observed only; not promoted)",
+    "SEC company_tickers integration (403 this plane; not promoted)",
+    "SEC company_tickers_exchange integration (403 this plane; not promoted)",
+    "SEC include/ticker.txt integration (403 this plane; not promoted)",
+    "CIK submissions integration (declared-UA 200 STABLE vs C997; undeclared-UA 200 this plane same hash; observed only; not promoted)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
@@ -27,6 +27,6 @@
     "ftp nasdaqlisted 226 same sha observed only; not adopted",
     "Q-007 HOST soak",
     "Q-010 Stage-0 ratification",
-    "no new keyless universe source adopted (fail loud)"
+    "no new keyless universe source (fail loud)"
   ]
 }
