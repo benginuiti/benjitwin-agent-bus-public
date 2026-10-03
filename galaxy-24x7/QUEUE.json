@@ -1,13 +1,13 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-03T11:12:10Z",
-  "cycle": 981,
+  "updated_utc": "2026-10-03T11:14:23Z",
+  "cycle": 982,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "items": [
-    {"id": "Q-981", "owner": "Grok", "status": "DONE", "note": "C981 residual confirm vs published C980. NASDAQ three files two-pass STABLE. SEC www 403 size 1925 rate-threshold error-page hashes unstable NOT INTEGRATED. CIK0000320193 200 hash 2159349d size 163997 STABLE vs C980, still differs from C975 ad426e7e/164435 observed only NOT promoted. MCP_WIZBANGERS unavailable. No promotion."},
-    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C981 receipt push this cycle; full historical receipt archive not re-pushed"},
+    {"id": "Q-982", "owner": "Grok", "status": "DONE", "note": "C982 residual confirm vs published C981. NASDAQ three files two-pass STABLE. SEC www access class MOVED from C981 403 size 1925 to HTTP 200 this plane; hashes observed only NOT INTEGRATED. CIK0000320193 200 hash 2159349d size 163997 STABLE vs C981, still differs from C975 ad426e7e/164435 observed only NOT promoted. MCP_WIZBANGERS unavailable. No promotion."},
+    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C982 receipt push this cycle; full historical receipt archive not re-pushed"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
@@ -15,9 +15,10 @@
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
-    "SEC company_tickers integration (403 this plane; still not promoted)",
-    "SEC company_tickers_exchange integration (403 error page; not promoted)",
-    "CIK submissions integration (stable vs C980; still differs from C975; not promoted)",
+    "SEC company_tickers integration (200 this plane; still not promoted)",
+    "SEC company_tickers_exchange integration (200 this plane; still not promoted)",
+    "SEC include/ticker.txt integration (200 this plane; still not promoted)",
+    "CIK submissions integration (stable vs C981; still differs from C975; not promoted)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
