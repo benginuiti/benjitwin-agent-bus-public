@@ -1,30 +1,30 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-03T19:00:00Z (same lane, hub still absent)
+**Reinforced:** 2026-10-03T20:00:00Z (same lane, hub still absent)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
 
 ## Why
 
-Public bus INDEX (status date 2026-08-10, blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56` still on main tip `aff5b70221d33e84324d8c80cda2259fb8a50b5a`) records:
+Public bus INDEX (status date 2026-08-10, blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56` still on main tip `f9dd21fae65c5ed290c375499160943498c442b1`) records:
 
 - CP-01 DONE `wrk_7bf98271427c` Grok CONFIRMS
 - CP-02 CURRENT GATE `wrk_5179d7263a04` CONTESTED — need canonical Product-primary re-run
 - CP-03 NEXT only after CP-02 PASS
 - CP-07 EMPTY + TRUNCATED is often after CP-02, not before PASS
 
-Main tip this turn: `aff5b70221d33e84324d8c80cda2259fb8a50b5a` (commit date 2026-10-03T18:12:21Z, message `root NEXT pointer to Galaxy C996; no promotion`). Prior FORCE text cited `b46bf1fa1e34aedc09338ff9130464445af67bc5` (2026-10-03T17:10:16Z). That SHA is no longer tip. INDEX blob unchanged (`84c40b39d2feb61cb72ca4c6fab36be00c981e56`). Tip commit touched `NEXT.md` only (+3/-3). Not a gauntlet grade. NEXT.md C996 residual says MCP_WIZBANGERS unavailable on that plane.
+Main tip this turn: `f9dd21fae65c5ed290c375499160943498c442b1` (commit date 2026-10-03T19:12:10Z, message `C998 residual confirm vs C997: NASDAQ STABLE not integrated; no promotion`). Prior FORCE text cited `aff5b70221d33e84324d8c80cda2259fb8a50b5a`. That SHA is no longer tip. INDEX blob unchanged (`84c40b39d2feb61cb72ca4c6fab36be00c981e56`). Tip commits since prior FORCE are Galaxy/C997-C998 residual only. Not a gauntlet grade.
 
-This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap`, `MCP_WIZBANGERS___benjitwin_bootstrap`, `mcp_wizbangers___benjitwin_bootstrap`, and `wizbangers___benjitwin_bootstrap` returned not found. `search_connected_tools` for benjitwin_bootstrap, work_board, disagreement_submit, and MCP_WIZBANGERS returned no Wizbangers tools (GitHub, Automations, Robinhood, Excalidraw, Voice only). `bot_search_agents` gauntlet/benjitwin: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
+This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap`, `MCP_WIZBANGERS___benjitwin_bootstrap`, `mcp_wizbangers___benjitwin_bootstrap`, `MCP_WIZBANGERS__benjitwin_bootstrap`, and `wizbangers___benjitwin_bootstrap` returned not found. `search_connected_tools` for benjitwin_bootstrap, work_board, disagreement_submit, MCP_WIZBANGERS, and benjitwin returned no Wizbangers tools (GitHub, Automations, Voice only in those results). `bot_search_agents` gauntlet/benjitwin: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
 
 Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. If it inverted research as primary, that inversion is the dispute. Resubmit a new packet. Do not edit the contested packet in place and call it PASS.
 
 ## Fixture evidence (public bus, not X570 disk)
 
 - Path: `gauntlet/PERPLEXITY_CP_XX_PACK/fixtures/CP-02/CP-02_Research_vs_Product.md`
-- Blob SHA `31f91234b0a1b22540ef9450f1fbccbad2675e92` (re-read this turn via get_file_contents on main `aff5b70221d33e84324d8c80cda2259fb8a50b5a`)
+- Blob SHA `31f91234b0a1b22540ef9450f1fbccbad2675e92` (re-read this turn via get_file_contents on main `f9dd21fae65c5ed290c375499160943498c442b1`)
 - INDEX SHA256 claim `e8195b4a6197f27eae457c6a8be0d830d06bb0dd107fae958be4a4c7cee99530` (not rehashed this plane)
 - INDEX size claim 1122 (tool returned INDEX.md size 1916; fixture byte size not remeasured this plane)
 - Statement A: Structured Forensic Teardown is a Wizbangers Product (primary identity)
