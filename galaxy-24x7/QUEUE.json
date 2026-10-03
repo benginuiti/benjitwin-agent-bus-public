@@ -1,47 +1,17 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-03T04:09:35Z",
-  "cycle": 975,
+  "updated_utc": "2026-10-03T04:16:56Z",
+  "cycle": 976,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "items": [
-    {
-      "id": "Q-975",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "C975 residual confirm vs published C974 04:04:52Z. nasdaqlisted/otherlisted/nasdaqtraded HASH+SIZE+LINES+LM+FCT STABLE 171f3d1a/858406d1/c0980986 sizes 349780/542961/1002821 newlines 5636/7663/13297 LM 01:31:31/01:31:31/01:33:10 GMT FCT 1002202621:31/21:31/21:33. Two-pass agree. SEC company_tickers/ticker.txt/exchange 403 rate-threshold size 1925 this plane same access class as C974 NOT a source change NOT INTEGRATED. CIK0000320193 200 ad426e7e size 164435 Apple Inc. matches C974/C973/C972/C971/C970/C964 NOT INTEGRATED. C974 receipt not overwritten. MCP_WIZBANGERS unavailable. No promotion."
-    },
-    {
-      "id": "Q-974",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "Existing bus receipt CYCLE_C974_RECEIPT.md (04:04:52Z) not overwritten. Adopted pointer at C975 read."
-    },
-    {
-      "id": "Q-005",
-      "owner": "Grok",
-      "status": "PARTIAL",
-      "note": "status pointer + C975 receipt push this cycle; full historical receipt archive not re-pushed"
-    },
-    {
-      "id": "Q-007",
-      "owner": "HOST",
-      "status": "OPEN",
-      "note": "Claude soak/watchdog \u2014 not Grok browser plane"
-    },
-    {
-      "id": "Q-008",
-      "owner": "BEN_GATE",
-      "status": "OPEN",
-      "note": "F-AUTH-1 live deploy"
-    },
-    {
-      "id": "Q-010",
-      "owner": "BEN_GATE",
-      "status": "OPEN",
-      "note": "Stage-0 ratification"
-    }
+    {"id": "Q-976", "owner": "Grok", "status": "DONE", "note": "C976 residual confirm vs published C975 04:09:35Z. NASDAQ three files curl http 000 timeout 40s two passes empty body no hash. FAIL-LOUD cannot confirm published hashes. Not a source change. SEC www 403 rate-threshold size 1925 same access class as C975 NOT INTEGRATED. CIK0000320193 403 undeclared-automated-tool size 4819 vs C975 200/164435/ad426e7e access-class difference NOT a source change NOT INTEGRATED. C975 receipt not overwritten. MCP_WIZBANGERS unavailable. Local artifacts write IO error. No promotion."},
+    {"id": "Q-975", "owner": "Grok", "status": "DONE", "note": "Existing bus receipt CYCLE_C975_RECEIPT.md (04:09:35Z) not overwritten. Adopted pointer at C976 read."},
+    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C976 receipt push this cycle; full historical receipt archive not re-pushed"},
+    {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog — not Grok browser plane"},
+    {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
+    {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
   ],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": [
@@ -54,6 +24,8 @@
     "F-AUTH-1 live deploy",
     "MCP_WIZBANGERS bootstrap/work_board unavailable this plane",
     "Q-007 HOST soak",
-    "Q-010 Stage-0 ratification"
+    "Q-010 Stage-0 ratification",
+    "NASDAQ SymDir fetch timeout this plane (no hash)",
+    "local artifacts filesystem IO error this plane"
   ]
 }
