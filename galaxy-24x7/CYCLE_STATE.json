@@ -1,25 +1,14 @@
 {
-  "object": "GALAXY_24x7_CYCLE_STATE",
   "object_id": "GALAXY-24x7-CYCLE-STATE",
-  "cycle_index": 969,
-  "cycle_id": "C969",
-  "updated_utc": "2026-10-03T01:11:20Z",
+  "object": "GALAXY_24x7_CYCLE_STATE",
+  "status": "RUNNING",
+  "cycle_index": 967,
+  "cycle_id": "C967",
+  "updated_utc": "2026-10-03T02:04:04Z",
   "ben_satisfied": false,
   "stop_requested": false,
-  "status": "RUNNING",
-  "last_receipt": "CYCLE_C969_RECEIPT.md",
-  "last_bite": "C969 independent confirm vs published C968. nasdaqlisted STABLE f9c875ff. otherlisted STABLE 532f896c. nasdaqtraded STABLE b5e25c2d. SEC company_tickers/ticker.txt/exchange 403 rate-threshold. CIK 200 ad426e7e size 164435 matches published C964 access recovery vs C968 403 NOT INTEGRATED. no new keyless source. no promotion",
-  "ready_grok": [],
   "promotion": false,
-  "open_blockers": [
-    "Q-007 HOST soak/watchdog",
-    "Q-008 BEN_GATE F-AUTH-1 live",
-    "Q-010 BEN_GATE Stage-0",
-    "identity promotion Ben gate",
-    "SEC company_tickers / ticker.txt / exchange not integrated",
-    "CIK confirm not integrated",
-    "MCP_WIZBANGERS bootstrap/work_board unavailable this plane",
-    "LIVE funded routing",
-    "Q-005 PARTIAL (pointer + this receipt only)"
-  ]
+  "ready_grok": [],
+  "last_receipt": "CYCLE_C967_RECEIPT.md",
+  "verdict": "independent remeasure vs published C966: nasdaqlisted/otherlisted/nasdaqtraded SIZE+LINES STABLE 349780/542961/1002821 newlines 5636/7663/13297; HASH+LM+FCT MOVED 171f3d1a/858406d1/c0980986 LM 01:31:31/01:31:31/01:33:10 GMT FCT 1002202621:31/21:31/21:33 via www.nasdaqtrader.com two-pass agree; SEC company_tickers/ticker.txt/exchange 403 rate-threshold size 1925 no new hash; CIK0000320193 403 undeclared-tool size 4818 vs C964 200 ad426e7e not a source change; MCP_WIZBANGERS unavailable; pointer lag QUEUE/CYCLE_STATE C955 and LOOP_STATE C922 closed for status only; no new keyless source; no promotion"
 }

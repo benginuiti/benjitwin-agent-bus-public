@@ -1,22 +1,28 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-03T01:11:20Z",
-  "cycle": 969,
+  "updated_utc": "2026-10-03T02:04:04Z",
+  "cycle": 967,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "items": [
     {
-      "id": "Q-969",
+      "id": "Q-967",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C969 independent confirm vs published C968. NASDAQ three files STABLE. SEC company_tickers/ticker.txt/exchange 403 this plane. CIK 200 ad426e7e size 164435 matches published C964; access recovery vs C968 403, not a source change, NOT INTEGRATED. No new keyless source. No promotion."
+      "note": "C967 residual remeasure vs published C966. nasdaqlisted/otherlisted/nasdaqtraded SIZE+LINES STABLE 349780/542961/1002821 and 5636/7663/13297; HASH+LM+FCT MOVED 171f3d1a/858406d1/c0980986 LM 01:31:31/01:31:31/01:33:10 GMT FCT 1002202621:31/21:31/21:33 via www.nasdaqtrader.com. Two-pass agree. SEC company_tickers/ticker.txt/exchange 403 rate-threshold size 1925; CIK0000320193 403 undeclared-tool size 4818. No new hash. MCP_WIZBANGERS unavailable. C966 receipt not overwritten. No promotion."
+    },
+    {
+      "id": "Q-966",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "C966 receipt not overwritten"
     },
     {
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C969 receipt push this cycle; full historical receipt archive not re-pushed"
+      "note": "status pointer + C967 receipt push this cycle; full historical receipt archive not re-pushed"
     },
     {
       "id": "Q-007",
@@ -40,7 +46,8 @@
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": [
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
-    "SEC company_tickers / CIK / exchange integration (not promoted)",
+    "SEC company_tickers integration (not a Ben gate; still not promoted)",
+    "SEC company_tickers_exchange integration (observed only; not promoted)",
     "LIVE funded routing",
     "architecture change",
     "F-AUTH-1 live deploy",
