@@ -20,7 +20,7 @@
 | nasdaqlisted HTTPS | 200/200 | 171f3d1a/171f3d1a | 349780 | 5636 | STABLE agrees; FCT 1002202621:31; Last-Modified Sat, 03 Oct 2026 01:31:31 GMT; NOT INTEGRATED |
 | otherlisted HTTPS | 200/200 | 858406d1/858406d1 | 542961 | 7663 | STABLE agrees; FCT 1002202621:31; Last-Modified Sat, 03 Oct 2026 01:31:31 GMT; NOT INTEGRATED |
 | nasdaqtraded HTTPS | 200/200 | c0980986/c0980986 | 1002821 | 13297 | STABLE agrees; FCT 1002202621:33; Last-Modified Sat, 03 Oct 2026 01:33:10 GMT; NOT INTEGRATED |
-| ftp nasdaqlisted | 226/226 | 171f3d1a/171f3d1a | 349780 | 5636 | two-pass same sha as HTTPS and as C1012; observed only, not adopted |
+| ftp nasdaqlisted | curl exit 0/0; reply code not logged | 171f3d1a/171f3d1a | 349780 | 5636 | two-pass same sha as HTTPS and as C1012; observed only, not adopted |
 | SEC company_tickers | 403/403 | 5372909f/9e9e12ad | 1925 | 33 | access class MOVED vs C1012 403 edgesuite Access Denied size 403; this plane rate-threshold HTML size 1925 (same class as published C1011); hashes are error bodies not source hashes; NOT INTEGRATED |
 | SEC include/ticker.txt | 403/403 | af3cabc5/7f0c791b | 1925 | 33 | access class MOVED vs C1012 size 391; rate-threshold HTML; not source hashes; NOT INTEGRATED |
 | SEC company_tickers_exchange | 403/403 | 533abcc3/2930f852 | 1925 | 33 | access class MOVED vs C1012 size 416; rate-threshold HTML; not source hashes; NOT INTEGRATED |
