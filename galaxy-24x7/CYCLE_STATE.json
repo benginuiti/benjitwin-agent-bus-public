@@ -4,13 +4,13 @@
   "status": "RUNNING",
   "cycle_index": 1018,
   "cycle_id": "C1018",
-  "updated_utc": "2026-10-04T04:10:20Z",
+  "updated_utc": "2026-10-04T05:09:30Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "promotion": false,
   "ready_grok": [],
   "last_receipt": "galaxy-24x7/CYCLE_C1018_RECEIPT.md",
+  "verdict": "independent confirm vs intact C1017 receipt 2026-10-04T04:05:30Z. HEAD at read 67c8f912ef76 CAP-PROOF not a Galaxy rollback. nasdaqlisted/otherlisted/nasdaqtraded two-pass STABLE 171f3d1a/858406d1/c0980986 size 349780/542961/1002821 lines 5636/7663/13297 FCT 1002202621:31/31/33 NOT INTEGRATED; ftp nasdaqlisted two-pass 226 same sha 171f3d1a size 349780 observed only not adopted; SEC 403 rate-threshold size 1925 class AGREES NOT INTEGRATED; CIK/submissions.zip 403 undeclared-tool size 4819 class AGREES not promoted; data.sec.gov 403 undeclared-tool size 4819 class AGREES with C1017 not a source; federalregister 200 9db383b3 size 33366 STABLE not new; mfundslist no-follow 302 size 949 sha 948d4b67 differs from C1017 916; followed 200 STABLE sha 492e2e6c size 42894 disagrees with C1017 42995/212 FAIL LOUD not adopted; C1017 not overwritten; no promotion",
   "local_plane": "REHYDRATED_THIS_SANDBOX_FROM_PUBLIC_BUS",
-  "hard_stops_intact": true,
-  "verdict": "residual confirm vs intact C1017; NASDAQ HTTPS+ftp STABLE 171f3d1a/858406d1/c0980986 NOT INTEGRATED; SEC company_tickers/ticker.txt/exchange 200 JSON/text class DISAGREES with C1017 403 not promoted; CIK 200 size 40236577 class DISAGREES not promoted; submissions.zip HEAD 200 content-length 1567247172 not downloaded; data.sec.gov 404 NoSuchKey agrees C1016 disagrees C1017 not a source; federalregister STABLE not new; mfundslist no-follow 302 9a3e7218 agrees C1016; followed FAIL LOUD not adopted; no promotion"
+  "hard_stops_intact": true
 }
