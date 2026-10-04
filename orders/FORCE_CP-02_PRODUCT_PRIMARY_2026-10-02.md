@@ -1,32 +1,33 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-04T09:00:00Z (same lane, hub still absent)
+**Reinforced:** 2026-10-04T10:00:00Z (same lane, hub still absent)
+**Prior reinforce:** 2026-10-04T09:02:09Z commit `f969ac4dc80d86a6b4f9f61d43db81f7b3855edb` (still on history; not a PASS)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
 
 ## Why
 
-Public bus INDEX (status date 2026-08-10, blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56` still on the tree this tool read, resource URI sha `835c398c9c56951a0adce430d4d3087b744a9110`) records:
+Public bus INDEX (status date 2026-08-10, blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`, re-read this turn, resource URI sha `e91749fe4bba75e0d8a0c84f2012f462c46a46ae`) records:
 
 - CP-01 DONE `wrk_7bf98271427c` Grok CONFIRMS
 - CP-02 CURRENT GATE `wrk_5179d7263a04` CONTESTED — need canonical Product-primary re-run
 - CP-03 NEXT only after CP-02 PASS
 - CP-07 EMPTY + TRUNCATED is often after CP-02, not before PASS
 
-This turn's main tip at read is `835c398c9c56951a0adce430d4d3087b744a9110`. INDEX blob unchanged (`84c40b39d2feb61cb72ca4c6fab36be00c981e56`). Not a gauntlet grade. Not a promotion.
+This turn's main tip at read is `e91749fe4bba75e0d8a0c84f2012f462c46a46ae` (SAND_ATTEMPT_20261004_0906, 2026-10-04T09:08:53Z). INDEX blob unchanged. Not a gauntlet grade. Not a promotion.
 
-`orders/NEXT.md` on that tip: Galaxy RUNNING cycle 1019, updated 2026-10-04T05:13:00Z, ben_satisfied=false, READY Grok none.
+`NEXT.md` on that tip: Galaxy RUNNING cycle 1019, updated 2026-10-04T07:12:30Z, ben_satisfied=false, READY Grok none.
 
-This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap` and `MCP_WIZBANGERS___benjitwin_bootstrap` returned not found. `search_connected_tools` for benjitwin_bootstrap, MCP_WIZBANGERS, disagreement_submit, and work_read returned empty or GitHub only. `bot_search_agents` gauntlet/benjitwin: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
+This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap`, `benjitwin_work_board`, `MCP_WIZBANGERS___benjitwin_bootstrap`, `mcp_wizbangers___benjitwin_bootstrap`, and `mcp_wizbangers___benjitwin_work_board` returned not found. `search_connected_tools` for benjitwin_bootstrap, MCP_WIZBANGERS, disagreement_submit, work_read, and wizbangers returned empty or non-Wizbangers tools. `bot_search_agents` gauntlet/benjitwin: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
 
 Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. If it inverted research as primary, that inversion is the dispute. Resubmit a new packet. Do not edit the contested packet in place and call it PASS.
 
 ## Fixture evidence (public bus, not X570 disk)
 
 - Path: `gauntlet/PERPLEXITY_CP_XX_PACK/fixtures/CP-02/CP-02_Research_vs_Product.md`
-- Blob SHA `31f91234b0a1b22540ef9450f1fbccbad2675e92` (re-read this turn via get_file_contents; resource URI sha `835c398c9c56951a0adce430d4d3087b744a9110`)
+- Blob SHA `31f91234b0a1b22540ef9450f1fbccbad2675e92` (re-read this turn via get_file_contents; resource URI sha `e91749fe4bba75e0d8a0c84f2012f462c46a46ae`)
 - INDEX SHA256 claim `e8195b4a6197f27eae457c6a8be0d830d06bb0dd107fae958be4a4c7cee99530` (not rehashed this plane)
 - INDEX size claim 1122 (fixture byte size not remeasured this plane)
 - Statement A: Structured Forensic Teardown is a Wizbangers Product (primary identity)
