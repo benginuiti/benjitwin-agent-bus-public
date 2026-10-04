@@ -1,6 +1,6 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-04T23:11:19Z",
+  "updated_utc": "2026-10-04T23:12:42Z",
   "cycle": 1050,
   "ben_satisfied": false,
   "stop_requested": false,
@@ -12,10 +12,10 @@
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
-    "SEC company_tickers MOVED this plane sha 9058f1e0 size 798634 keys 10434 vs C1049 31a807ba/799085/10440; not integrated",
+    "SEC company_tickers NOT STABLE this plane: p1 agrees C1049 31a807ba size 799085 keys 10440; p2/p3/p4 sha 9058f1e0 size 798634 keys 10434; not integrated",
     "NASDAQ HTTPS STABLE vs C1049; FTP 226 content matches HTTPS this plane; not integrated",
     "mfundslist 302 http404 agrees C1049; not adopted",
-    "data.sec.gov 404 NoSuchKey hash unstable size pair 297/317; not a source",
+    "data.sec.gov 404 NoSuchKey hash unstable size pair 297/297; not a source",
     "LIVE funded routing",
     "no new keyless universe source adopted"
   ],
@@ -24,7 +24,7 @@
       "id": "Q-1050",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C1050 residual confirm vs intact C1049. NASDAQ HTTPS STABLE agrees not integrated. FTP 226 sha matches HTTPS agrees C1049 not integrated. SEC company_tickers 200 STABLE this plane 9058f1e0 size 798634 keys 10434 MOVED vs C1049 31a807ba/799085/10440 not integrated. ticker.txt same sha; newline count 12083 / splitlines 12084. exchange STABLE. CIK/submissions HEAD 200 same cl bodies not downloaded. data.sec.gov 404 size 297/317 hash unstable class agrees not a source. mfundslist 302 http404 agrees not adopted. No promotion."
+      "note": "C1050 residual confirm vs intact C1049. NASDAQ HTTPS STABLE agrees not integrated. FTP 226 sha matches HTTPS agrees C1049 not integrated. SEC company_tickers p1 agrees C1049 then p2/p3/p4 disagree; NOT STABLE; not integrated. ticker.txt and exchange STABLE. CIK/submissions HEAD 200 same cl bodies not downloaded. data.sec.gov 404 size 297/297 hash unstable class agrees not a source. mfundslist 302 http404 agrees not adopted. No promotion."
     },
     {
       "id": "Q-005",
