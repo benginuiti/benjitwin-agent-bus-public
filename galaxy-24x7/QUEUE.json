@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-04T21:17:20Z",
-  "cycle": 1045,
+  "updated_utc": "2026-10-04T22:05:43Z",
+  "cycle": 1046,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -12,24 +12,25 @@
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
-    "SEC company_tickers MOVED vs C1044 within 200 class back to C1043 hash; not integrated",
-    "NASDAQ HTTPS STABLE vs C1044; FTP 226 content matches HTTPS this plane; not integrated",
-    "mfundslist 302 http404 agrees C1044; not adopted",
+    "SEC company_tickers STABLE vs C1045 9058f1e0 size 798634; not integrated",
+    "NASDAQ HTTPS STABLE vs C1045; FTP 226 content matches HTTPS this plane; not integrated",
+    "mfundslist 302 http404 agrees C1045; not adopted",
+    "data.sec.gov 404 NoSuchKey hash unstable size pair 297/317; not a source",
     "LIVE funded routing",
     "no new keyless universe source adopted"
   ],
   "items": [
     {
-      "id": "Q-1045",
+      "id": "Q-1046",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C1045 residual confirm vs intact C1044. NASDAQ HTTPS STABLE agrees not integrated. FTP 226 sha matches HTTPS agrees C1044 not integrated. SEC company_tickers 200 MOVED 9058f1e0 size 798634 vs C1044 31a807ba size 799085 agrees C1043 not integrated. ticker.txt and exchange STABLE. CIK/submissions HEAD 200 same cl bodies not downloaded. data.sec.gov 404 size 317/317 hash unstable class agrees not a source. mfundslist 302 http404 agrees not adopted. No promotion."
+      "note": "C1046 residual confirm vs intact C1045. NASDAQ HTTPS STABLE agrees not integrated. FTP 226 sha matches HTTPS agrees C1045 not integrated. SEC company_tickers 200 STABLE 9058f1e0 size 798634 keys 10434 agrees C1045 not integrated. ticker.txt same sha; newline count 12083 / splitlines 12084. exchange STABLE. CIK/submissions HEAD 200 same cl bodies not downloaded. data.sec.gov 404 size 297/317 hash unstable class agrees not a source. mfundslist 302 http404 agrees not adopted. No promotion."
     },
     {
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C1045 receipt only; full historical archive not re-pushed"
+      "note": "status pointer + C1046 receipt only; full historical archive not re-pushed"
     },
     {
       "id": "Q-007",
