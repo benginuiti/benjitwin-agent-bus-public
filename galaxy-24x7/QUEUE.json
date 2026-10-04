@@ -1,26 +1,22 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-04T12:16:15Z",
+  "updated_utc": "2026-10-04T12:16:10Z",
   "cycle": 1024,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": [
+    "MCP_WIZBANGERS benjitwin_bootstrap and work_board not surfaced",
+    "Q-007 HOST soak",
+    "Q-008 F-AUTH-1 live deploy BEN_GATE",
+    "Q-010 Stage-0 ratification BEN_GATE",
     "identity promotion of nasdaqtraded/listed/otherlisted (Ben gate)",
     "NASDAQ HTTPS+ftp STABLE vs C1023; not integrated",
-    "SEC company_tickers/exchange/ticker.txt 403 HTML size 1925; class agrees with C1023; not promoted",
-    "CIK HEAD 403 content-length 4819; class agrees with C1023; not downloaded; not promoted",
-    "submissions.zip HEAD 403 content-length 4819; agrees with C1023; not downloaded; not adopted",
-    "data.sec.gov 404 NoSuchKey size 317/297; class agrees with C1023; not a source",
-    "mfundslist no-follow 302 size 916 sha 9a3e7218 agrees; followed size 42996 hashes disagree with each other and with C1023 size 42993; not adopted",
+    "SEC 403 class agrees with C1023; not promoted",
+    "mfundslist followed FAIL LOUD not adopted",
     "LIVE funded routing",
-    "architecture change",
-    "F-AUTH-1 live deploy",
-    "Q-007 HOST soak",
-    "Q-010 Stage-0 ratification",
-    "MCP_WIZBANGERS benjitwin_bootstrap and work_board not surfaced",
-    "no new keyless universe source adopted (fail loud)"
+    "no new keyless universe source adopted"
   ],
   "items": [
     {
@@ -39,7 +35,7 @@
       "id": "Q-007",
       "owner": "HOST",
       "status": "OPEN",
-      "note": "Claude soak/watchdog — not Grok browser plane"
+      "note": "Claude soak/watchdog \u2014 not Grok browser plane"
     },
     {
       "id": "Q-008",
