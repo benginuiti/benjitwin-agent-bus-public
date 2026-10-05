@@ -1,6 +1,6 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-05T14:14:30Z",
+  "updated_utc": "2026-10-05T14:15:00Z",
   "cycle": 1076,
   "ben_satisfied": false,
   "stop_requested": false,
@@ -11,9 +11,9 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ settled p1=p2=FTP STABLE vs C1075 b48b9133/5e7a7df1/1cba587e size 349956/542387/1002389 lines 5638/7655/13291 FCT 1005202610:01/10:01/10:02; not integrated",
-    "SEC company_tickers this plane both 403 deny-page sha unstable d8473f6f/ad1481a1 (C1075 was both-pass 200 sha 31a807ba); not promoted (BEN_GATE)",
-    "data.sec.gov this plane 403 size 4819 sha 6277552c Reference 0.d60c0317.1791209627.68e94617 (C1075 was 404/8720f37b); not a source",
+    "NASDAQ settled p1=p2=FTP SHA STABLE vs C1075 b48b9133/5e7a7df1/1cba587e size 349956/542387/1002389 lines 5638/7655/13291 FCT 1005202610:01/10:01/10:02; not integrated",
+    "SEC company_tickers this plane both-pass 403 size 1925 (C1075 was 200 sha 31a807ba keys 10440); not promoted (BEN_GATE)",
+    "data.sec.gov this plane 404 size 317 sha 848e3f52 RequestId YWA1EFFFWN1606M2 (C1075 was 297/8720f37b); not a source",
     "mfundslist no-follow 302 size 916 sha 9a3e7218 object-moved http404 STABLE vs C1075; not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing"
@@ -23,7 +23,7 @@
       "id": "Q-1076",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C1076 residual confirm vs intact C1075. NASDAQ settled STABLE, not integrated. SEC both 403 not promoted. data.sec.gov 403 not a source. mfundslist 302 STABLE not adopted. Q-005 pointer+receipt only. No promotion."
+      "note": "C1076 residual confirm vs intact C1075. NASDAQ settled p1=p2=FTP SHA/FCT STABLE, not integrated. SEC both-pass 403 not promoted. data.sec.gov 404 not a source. mfundslist 302 STABLE not adopted. Q-005 pointer+receipt only. No promotion."
     },
     {
       "id": "Q-005",
