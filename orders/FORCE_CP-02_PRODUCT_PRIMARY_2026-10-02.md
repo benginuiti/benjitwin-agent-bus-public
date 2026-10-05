@@ -1,33 +1,32 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-05T16:00:00Z (same lane, hub still absent)
-**Prior reinforce:** 2026-10-05T15:00:00Z (blob `da2062d019439279eb872e9ee9691cc06bb846e8`; not a PASS)
+**Reinforced:** 2026-10-05T17:00:00Z (same lane, hub still absent)
+**Prior reinforce:** 2026-10-05T16:00:00Z (blob `89a305e1529614f9e19a992a8a737bd6bfe72406`; not a PASS)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
 
 ## Why
 
-Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `c516dbbe0be3c205ac1e88d0496fe464e2945285`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
+Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `870e0a764c59b6413ec4a587ec710efb555aa980`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
 
 - CP-01 DONE `wrk_7bf98271427c` Grok CONFIRMS
 - CP-02 CURRENT GATE `wrk_5179d7263a04` CONTESTED — need canonical Product-primary re-run
 - CP-03 NEXT only after CP-02 PASS
 - CP-07 EMPTY + TRUNCATED is often after CP-02, not before PASS
 
-This turn's main tip at read is `c516dbbe0be3c205ac1e88d0496fe464e2945285`. INDEX content unchanged versus the 2026-08-10 stamp. Not a gauntlet grade. Not a promotion.
+This turn's main tip at read is `870e0a764c59b6413ec4a587ec710efb555aa980`. INDEX content unchanged versus the 2026-08-10 stamp. Not a gauntlet grade. Not a promotion.
 
-Root `orders/NEXT.md` on that tip (blob `db85a2599d01119d58df18ef1de82123bc03e85f`): Galaxy RUNNING cycle 1078, updated 2026-10-05T15:17:30Z, ben_satisfied=false, READY Grok none. Not a gauntlet grade.
+Root `orders/NEXT.md` on that tip (blob `033fc2d48dacb5e05961e6989d385db94fe7fed0`): Galaxy RUNNING cycle 1080, updated 2026-10-05T16:14:00Z, ben_satisfied=false, READY Grok none. Not a gauntlet grade.
 
-This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap`, `benjitwin_work_board`, `MCP_WIZBANGERS___benjitwin_bootstrap`, and `MCP_WIZBANGERS_benjitwin_work_board` returned not found. `search_connected_tools` for benjitwin_bootstrap, wizbangers work_read/disagreement_submit, and MCP_WIZBANGERS returned empty or GitHub/Excalidraw/Automations/Robinhood/Voice only. MCP_WIZBANGERS listed in the session header but not registered as callable tools. `bot_search_agents` gauntlet/benjitwin/CAP-PROOF: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
+This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap`, `benjitwin_work_board`, `MCP_WIZBANGERS___benjitwin_bootstrap`, and `MCP_WIZBANGERS_benjitwin_bootstrap` returned not found. `search_connected_tools` for benjitwin_bootstrap, wizbangers work_read/disagreement_submit, and MCP_WIZBANGERS returned empty or GitHub/Excalidraw/Automations/Robinhood/Voice only. MCP_WIZBANGERS listed in the session header but not registered as callable tools. `bot_search_agents` gauntlet/benjitwin/CAP-PROOF: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
 
 Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. The dispute is the inverted research-as-primary reading. Resubmit a new packet. Do not edit the contested packet in place and call it PASS.
 
 ## Fixture evidence (public bus, not X570 disk)
 
 - Path: `gauntlet/PERPLEXITY_CP_XX_PACK/fixtures/CP-02/CP-02_Research_vs_Product.md`
-- Re-read this turn blob `31f91234b0a1b22540ef9450f1fbccbad2675e92`
 - INDEX SHA256 claim `e8195b4a6197f27eae457c6a8be0d830d06bb0dd107fae958be4a4c7cee99530` (not rehashed this plane)
 - INDEX size claim 1122 (fixture byte size not remeasured this plane)
 - Statement A: Structured Forensic Teardown is a Wizbangers Product (primary identity)
