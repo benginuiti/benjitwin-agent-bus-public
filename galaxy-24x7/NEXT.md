@@ -1,4 +1,7 @@
-# Galaxy 24x7 NEXT (status only)
-RUNNING · C1065 · ben_satisfied=false · stop_requested=false · 2026-10-05T07:11:23Z
+# Galaxy 24/7 pointer
+
+RUNNING · cycle 1066 · ben_satisfied=false · stop_requested=false
+Updated: 2026-10-05T08:11:17Z
+Last receipt: galaxy-24x7/CYCLE_C1066_RECEIPT.md
 READY Grok: none
-No promotion. C1060, C1061, C1062, C1063, and C1064 intact. nasdaqlisted/otherlisted/nasdaqtraded HTTPS sha 2eb21546/3c19acea/4e8f4dd8 size 349569/542387/1001949 lines 5633/7655/13286 MOVED vs C1064 171f3d1a/858406d1/c0980986; not integrated. SEC company_tickers this plane 9058f1e0 size 798634 keys 10434 agrees C1063 measured body and does not agree C1064 measured 31a807ba; not integrated. data.sec.gov 404 size pair 297/317 hashes unstable vs each other; not a source. mfundslist and options not re-fetched.
+No promotion. C1065 intact (blob 091471d4). NASDAQ HTTPS+ftp three files STABLE vs C1065 sha 2eb21546/3c19acea/4e8f4dd8 size 349569/542387/1001949 lines 5633/7655/13286. SEC company_tickers p1 9058f1e0 size 798634 keys 10434 agrees C1065; p2 403 rate-threshold. Not integrated. data.sec.gov 404 size 317/297 hash unstable. mfundslist no-follow 302 916/9a3e7218 not adopted.

@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-05T07:11:23Z",
-  "cycle": 1065,
+  "updated_utc": "2026-10-05T08:11:17Z",
+  "cycle": 1066,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -11,26 +11,25 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS nasdaqlisted/otherlisted/nasdaqtraded MOVED vs C1064; this plane 2eb21546/3c19acea/4e8f4dd8 size 349569/542387/1001949 lines 5633/7655/13286; not integrated",
-    "SEC company_tickers this plane 9058f1e0 size 798634 keys 10434 agrees C1063 measured body; does not agree C1064 measured 31a807ba size 799085 keys 10440; not integrated",
-    "data.sec.gov 404 size 297/317 hashes unstable and do not match each other; not a source",
-    "mfundslist.txt not re-fetched this cycle; prior 302 size 949 not adopted",
-    "options.txt not re-fetched this cycle; prior 200 size 91542865 not adopted",
+    "NASDAQ HTTPS+ftp nasdaqlisted/otherlisted/nasdaqtraded STABLE vs C1065 sha 2eb21546/3c19acea/4e8f4dd8 size 349569/542387/1001949 lines 5633/7655/13286; MOVED vs C1064; not integrated",
+    "SEC company_tickers p1 200 sha 9058f1e0 size 798634 keys 10434 agrees C1065 measured body; p2 403 size 1925 rate-threshold; not integrated",
+    "data.sec.gov 404 size pair 317/297 hashes unstable; not a source",
+    "mfundslist no-follow 302 size 916 sha 9a3e7218 location /Trader.aspx?id=http404; not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing"
   ],
   "items": [
     {
-      "id": "Q-1065",
+      "id": "Q-1066",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C1065 residual confirm vs intact C1064. C1060-C1064 not overwritten. NASDAQ HTTPS three files MOVED vs C1064; not integrated. SEC company_tickers 9058f1e0 size 798634 keys 10434 agrees C1063 measured body and does not agree C1064 measured 31a807ba; not integrated. data.sec.gov 404 size 297/317 hashes unstable; not a source. mfundslist and options not re-fetched. No promotion."
+      "note": "C1066 residual confirm vs intact C1065. C1065 not overwritten. NASDAQ HTTPS+ftp three files STABLE vs C1065; not integrated. SEC company_tickers p1 agrees C1065 measured body; p2 403 rate-threshold; not integrated. data.sec.gov 404 hashes unstable; not a source. mfundslist 302 not adopted. No promotion."
     },
     {
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C1065 receipt only; full historical archive not re-pushed"
+      "note": "status pointer + C1066 receipt only; full historical archive not re-pushed"
     },
     {
       "id": "Q-007",
