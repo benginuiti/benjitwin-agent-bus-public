@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-05T18:04:30Z",
-  "cycle": 1083,
+  "updated_utc": "2026-10-05T18:11:00Z",
+  "cycle": 1084,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -11,31 +11,31 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS p1=p2=FTP HASH/FCT/LM/size/lines STABLE vs C1082 574b5b97/840dc4c1/ad12802e size 349956/542387/1002389 lines 5638/7655/13291 FCT 1005202612:11/12:11/12:13; not integrated",
+    "NASDAQ HTTPS p1=p2=FTP SHA/FCT/LM MOVED vs C1083 a84d1d76/9bce8382/d22eb547 size 349956/542387/1002389 lines 5638/7655/13291 FCT 1005202614:01/14:01/14:03; not integrated",
     "SEC company_tickers this plane both passes no-UA and UA 403 HTML size 1925 body-hash unstable; C1081 UA 200 JSON eb943bdc not reproduced; not promoted",
-    "data.sec.gov p1+p2 403 HTML size 4819 body-hash unstable; C1082 p1 404 XML not reproduced; not a source",
-    "mfundslist no-follow p1=p2 302 size 916 sha 9a3e7218 STABLE vs C1082 p1; location /Trader.aspx?id=http404; not adopted",
+    "data.sec.gov p1+p2 404 XML NoSuchKey size 297/297 hashes unstable; C1083 403 HTML not reproduced; not a source",
+    "mfundslist no-follow p1=p2 302 size 916 sha 9a3e7218 STABLE vs C1083; location /Trader.aspx?id=http404; not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing"
   ],
   "items": [
     {
-      "id": "Q-1083",
+      "id": "Q-1084",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C1083 residual confirm vs intact C1082. NASDAQ settled HASH STABLE not integrated. SEC both classes 403 not promoted. data.sec.gov both 403 not a source. mfundslist p1=p2 still http404 not adopted. Q-005 pointer+receipt only. No promotion."
+      "note": "C1084 residual confirm vs intact C1083. NASDAQ settled SHA/FCT/LM MOVED size/lines STABLE not integrated. SEC both classes 403 not promoted. data.sec.gov both 404 NoSuchKey not a source. mfundslist p1=p2 still http404 not adopted. Q-005 pointer+receipt only. No promotion."
     },
     {
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C1083 receipt only; full historical archive not re-pushed"
+      "note": "status pointer + C1084 receipt only; full historical archive not re-pushed"
     },
     {
       "id": "Q-007",
       "owner": "HOST",
       "status": "OPEN",
-      "note": "Claude soak/watchdog — not Grok browser plane"
+      "note": "Claude soak/watchdog \u2014 not Grok browser plane"
     },
     {
       "id": "Q-008",
