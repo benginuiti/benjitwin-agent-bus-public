@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-05T12:21:12Z",
-  "cycle": 1072,
+  "updated_utc": "2026-10-05T13:08:20Z",
+  "cycle": 1073,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -11,25 +11,25 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS pass1+FTP sha MOVED vs C1071 0a18f3ae/e7f90f7a/658d7524 size 349569/542387/1001949 lines 5633/7655/13286 FCT 1005202608:16/16/17; later HTTPS Incapsula not adopted; not integrated",
-    "SEC company_tickers pass1 200 size 799085 sha 31a807ba last-modified 2026-10-02T20:42:25Z keys 10440; later 403; not integrated (BEN_GATE)",
-    "data.sec.gov this plane 404 size 297 sha 59da317e (C1071 was 17376af3 size 297; RequestId differs); not a source",
-    "mfundslist no-follow later Incapsula 212 sha d0203228 disagrees C1071 302 9a3e7218; followed HTML not a symbol file; not adopted",
+    "NASDAQ HTTPS pass1+pass2+FTP sha MOVED vs C1072 7c97c9bc/2a4cdd36/17f8cd81 size 349956/542387/1002389 lines 5638/7655/13291 FCT 1005202609:01/09:01/09:02; not integrated",
+    "SEC company_tickers this plane both-pass 403 size 1925 not a source (C1072 pass1 was 200 sha 31a807ba); not integrated (BEN_GATE)",
+    "data.sec.gov this plane 404 size 297 sha ee922563 (C1072 was 59da317e size 297; RequestId differs); not a source",
+    "mfundslist no-follow 302 size 916 sha 9a3e7218 object-moved http404; not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing"
   ],
   "items": [
     {
-      "id": "Q-1072",
+      "id": "Q-1073",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C1072 residual confirm vs intact C1071. NASDAQ SHA/FCT moved, FTP matches HTTPS pass1, not integrated. SEC company_tickers pass1 stable not integrated. data.sec.gov 404 not a source. mfundslist not adopted. Q-005 pointer+receipt only. No promotion."
+      "note": "C1073 residual confirm vs intact C1072. NASDAQ SHA/FCT moved, FTP matches HTTPS, not integrated. SEC company_tickers 403 not a source. data.sec.gov 404 not a source. mfundslist 302 not adopted. Q-005 pointer+receipt only. No promotion."
     },
     {
       "id": "Q-005",
       "owner": "Grok",
       "status": "PARTIAL",
-      "note": "status pointer + C1072 receipt only; full historical archive not re-pushed"
+      "note": "status pointer + C1073 receipt only; full historical archive not re-pushed"
     },
     {
       "id": "Q-007",
