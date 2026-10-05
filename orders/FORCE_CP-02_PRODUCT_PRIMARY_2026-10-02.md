@@ -1,26 +1,26 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-05T21:00:00Z (same lane, hub still absent)
-**Prior reinforce:** 2026-10-05T20:00:00Z (blob `25b909665b525919818f43e36804bce0fa812dd4`; not a PASS)
+**Reinforced:** 2026-10-05T22:00:00Z (same lane, hub still absent)
+**Prior reinforce:** 2026-10-05T21:00:00Z (blob `8fbc90e6e7fa8e23ad85547b9c0b2efc2c278e94`; not a PASS)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
 
 ## Why
 
-Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `03a161210f53c9505652174110c16227254c42ba`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
+Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `f478cef0465254e67cde85de38d91ced70634264`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
 
 - CP-01 DONE `wrk_7bf98271427c` Grok CONFIRMS
 - CP-02 CURRENT GATE `wrk_5179d7263a04` CONTESTED — need canonical Product-primary re-run
 - CP-03 NEXT only after CP-02 PASS
 - CP-07 EMPTY + TRUNCATED is often after CP-02, not before PASS
 
-This turn's main tip at read is `03a161210f53c9505652174110c16227254c42ba`. INDEX content unchanged versus the 2026-08-10 stamp. Not a gauntlet grade. Not a promotion.
+This turn's main tip at read is `f478cef0465254e67cde85de38d91ced70634264` (commit message: Galaxy C1091 residual, 2026-10-05T21:13:53Z). INDEX content unchanged versus the 2026-08-10 stamp. Not a gauntlet grade. Not a promotion.
 
-Root `orders/NEXT.md` on that tip (blob `a9758b89a4f41bf4c4dcd38fcb26adf196e08ea5`): Galaxy RUNNING cycle 1088, updated 2026-10-05T20:05:30Z, ben_satisfied=false, READY Grok none. Tip commit message names C1090 residual confirm (2026-10-05T20:15:43Z). Neither is a gauntlet grade.
+Root `orders/NEXT.md` on that tip (blob `f253748ce57362983c00b75df47e0680e7094c58`): Galaxy RUNNING cycle 1089, updated 2026-10-05T21:04:30Z, ben_satisfied=false, READY Grok none. Tip commit is later than the NEXT body and names C1091. Neither is a gauntlet grade.
 
-This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap`, `benjitwin_work_board`, `MCP_WIZBANGERS___benjitwin_bootstrap`, and `MCP_WIZBANGERS___benjitwin_work_board` returned not found. `search_connected_tools` for benjitwin_bootstrap, wizbangers work board, and disagreement_submit returned empty or GitHub only. MCP_WIZBANGERS listed in the session header but not registered as callable tools. `bot_search_agents` gauntlet/CAP-PROOF/benjitwin: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
+This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap`, `MCP_WIZBANGERS__benjitwin_bootstrap`, `mcp_wizbangers___benjitwin_bootstrap`, `wizbangers___benjitwin_bootstrap`, and `MCP_WIZBANGERS___benjitwin_bootstrap` returned not found. `search_connected_tools` for benjitwin_bootstrap, work_board, disagreement_submit, and MCP_WIZBANGERS returned empty or non-hub services only (GitHub, Excalidraw, Robinhood, Automations, Voice). MCP_WIZBANGERS listed in the session header but not registered as callable tools. `bot_search_agents` gauntlet/CAP-PROOF/benjitwin/Claude: 0 agents. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub.
 
 Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. The dispute is the inverted research-as-primary reading. Resubmit a new packet. Do not edit the contested packet in place and call it PASS.
 
