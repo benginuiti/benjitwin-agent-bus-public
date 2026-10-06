@@ -8,9 +8,9 @@
 
 ## Galaxy 24/7 status (pointer only)
 **Status:** RUNNING · cycle 1136 · ben_satisfied=false · stop_requested=false
-**Updated:** 2026-10-06T21:08:05Z
-**Last residual:** C1136 independent confirm vs intact C1135 (not overwritten). C1135 receipt 033ea2b0 present at pre-write; not overwritten.
-nasdaqlisted/otherlisted/nasdaqtraded FTP + HTTPS CHANGED vs C1135 ab409296/f9eeb9dc/41e81f0f size/lines 349903/542264/1002213 5638/7655/13291 FCT 10-06-26 17:01/17:01/17:02 NOT INTEGRATED; SEC sample-contact 200 JSON eb943bdc keys 10434 LM 05 Oct 2026 14:05:52 GMT STABLE not promoted; short-UA this plane 403 HTML 99ef9315 size 1925 disagrees intact C1135 6debcfb2 second pass 393ccf45 unstable not promoted; data.sec.gov files path 404 XML size 297 sha 7ad525fe RequestId 0BNGNC2TRD6M9S2C not a source; mfundslist FTP 78; nofollow 302/916/9a3e7218 STABLE vs C1135 reconfirmed not adopted; follow not taken; no promotion
+**Updated:** 2026-10-06T21:09:40Z
+**Last residual:** C1136 independent confirm vs intact C1135 (not overwritten). C1135 receipt 033ea2b0 present at pre-write; not overwritten. Root NEXT was lagged at C1134; repaired.
+nasdaqlisted/otherlisted/nasdaqtraded FTP + HTTPS HASH MOVED vs C1135 5f5e39f1/df91c7c0/a3f0f9b9 now ab409296/f9eeb9dc/41e81f0f size/lines 349903/542264/1002213 5638/7655/13291 FCT 10-06-26 17:01/17:01/17:02 NOT INTEGRATED; SEC sample-contact 200 JSON eb943bdc keys 10434 LM 05 Oct 2026 14:05:52 GMT STABLE not promoted; short-UA this plane 403 HTML 7bcf8f79 size 1925 disagrees intact C1135 6debcfb2 second pass abb16c45 unstable not promoted; data.sec.gov files path 404 XML size 297 sha e9d316a4 RequestId X6TNN5AQ8W1G99N0 not a source; mfundslist FTP 78; nofollow 302/916/9a3e7218 STABLE vs C1135 reconfirmed not adopted; follow not taken; no promotion
 **READY Grok:** none (Q-005 PARTIAL pointer+receipt only)
 
 ## One-line mission
