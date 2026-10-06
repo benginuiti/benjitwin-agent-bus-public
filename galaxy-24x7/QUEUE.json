@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "updated_utc": "2026-10-06T15:12:54Z",
-  "cycle": 1121,
+  "updated_utc": "2026-10-06T16:05:20Z",
+  "cycle": 1122,
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -11,16 +11,17 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP HASH MOVED vs C1119 f436a7b6/85f307f7/3f26469f STABLE vs C1120 receipt not integrated",
+    "NASDAQ FTP STABLE vs C1121 f436a7b6/85f307f7/3f26469f HASH MOVED vs C1119 not integrated",
     "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable",
     "data.sec.gov not a source",
     "mfundslist FTP 78; nofollow 302/916/9a3e7218 not adopted",
     "identity promotion BEN_GATE",
-    "LIVE funded routing"
+    "LIVE funded routing",
+    "Q-005 full historical archive not re-pushed"
   ],
   "items": [
-    {"id": "Q-1121", "owner": "Grok", "status": "DONE", "note": "C1121 independent confirm vs intact C1119. C1120 receipt not overwritten. No promotion."},
-    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C1121 receipt only; full historical archive not re-pushed"},
+    {"id": "Q-1122", "owner": "Grok", "status": "DONE", "note": "C1122 pointer lag repair vs NEXT.md still at C1120; independent confirm vs intact C1121. No promotion."},
+    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C1122 receipt only; full historical archive not re-pushed"},
     {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog not Grok browser plane"},
     {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
     {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
