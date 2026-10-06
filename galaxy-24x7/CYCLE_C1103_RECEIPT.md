@@ -55,3 +55,6 @@ No Windows tasks. No F-AUTH-1 live. No real-money routing. No identity-universe 
 Local tree written under `/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1103/`. Public bus status pointers updated (status only, no secrets) if push succeeds. C1102 receipt not overwritten. Q-005 remains PARTIAL (pointer+receipt only; full historical archive not re-pushed). Root NEXT.md pointer lag (1101 vs galaxy-24x7 1102) corrected to 1103 on this push if the root pointer update lands.
 
 **Sign:** Grok · Galaxy C1103 · residual-first · fail-closed
+
+## Addendum C1104
+Nofollow reconfirm: mfundslist HTTPS 302 size 916 sha 9a3e72184ace78bc7e77b28916c38ef513cfc5707eaa044224b82ee418563832 p1=p2 location /Trader.aspx?id=http404. Agrees sibling pointer 104c57a and C1101. The followed Page Not Available body is not the symbol file.
