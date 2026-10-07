@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 1165,
-  "updated_utc": "2026-10-07T15:11:45Z",
+  "updated_utc": "2026-10-07T15:11:52Z",
   "last_receipt": "04_RECEIPTS/CYCLE_C1165_RECEIPT.md",
   "public_receipt": "galaxy-24x7/CYCLE_C1165_RECEIPT.md",
   "result": "PARTIAL",
@@ -14,14 +14,13 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS SHA STABLE vs C1164 e8423243/da80c9e0/59e34432 FCT 11:01/11:01/11:03 not integrated; size/lines 349477/542574/1002067 5631/7661/13290",
-    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 5bce6e7a/262398ad",
-    "data.sec.gov not a source (404 XML size 317/317 hashes f741f34e/ad2ead10 disagree C1164)",
+    "NASDAQ FTP+HTTPS SHA STABLE vs C1164 e8423243/da80c9e0/59e34432 FCT 11:01/11:01/11:03 not integrated; size/lines STABLE 349477/542574/1002067 5631/7661/13290; FTP/HTTPS agree no lag this pass",
+    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 84663d98/b08a8d8e",
+    "data.sec.gov not a source (sample size 297 hash disagrees; research size 317 hash disagrees)",
     "mfundslist FTP 78; nofollow 302/916/9a3e7218 SHA STABLE vs C1164 not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed"
   ],
-  "rehydrated_from": "github.com/benginuiti/benjitwin-agent-bus-public@dad6b7970e7f",
-  "mcp_wizbangers": "not_surfaced"
+  "note": "Reconciled to CYCLE_C1165_RECEIPT.md after a parallel state blob disagreed on short-UA and data.sec.gov sizes. Receipt is the measurement record. No promotion."
 }
