@@ -1,8 +1,8 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 1174,
-  "updated_utc": "2026-10-07T19:07:18Z",
-  "last_receipt": "04_RECEIPTS/CYCLE_C1174_RECEIPT.md",
+  "updated_utc": "2026-10-07T19:09:10Z",
+  "last_receipt": "03_RECEIPTS/CYCLE_C1174_RECEIPT.md",
   "public_receipt": "galaxy-24x7/CYCLE_C1174_RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
@@ -14,15 +14,14 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS SHA STABLE vs C1173 ec31951d/b1fb4fa3/7c08a30a size/lines STABLE 349477/542574/1002067 5631/7661/13290 FCT 14:01/14:01/14:02 NOT INTEGRATED; FTP/HTTPS agree; LM+etag STABLE",
-    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 420dffae/bda0ac81",
+    "NASDAQ FTP+HTTPS SHA STABLE vs C1173 ec31951d/b1fb4fa3/7c08a30a size/lines STABLE 349477/542574/1002067 5631/7661/13290 FCT 14:01/14:01/14:02 NOT INTEGRATED; FTP/HTTPS agree; otherlisted HTTPS LM/etag MOVED 18:01:28->19:05:13 GMT etag 89e018e0->acc26bc8 body unchanged",
+    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 0e53c0ac/29423512",
     "data.sec.gov not a source",
-    "mfundslist FTP 78; nofollow 302/200/c3a59705 MOVED vs C1173 916/9a3e7218 SHA not adopted",
+    "mfundslist FTP 78; nofollow 302/916/9a3e7218 SHA STABLE not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
-    "root orders/NEXT.md lagged at cycle 1170 at read",
     "C1169 index collision: sibling receipt 9232991a left intact"
   ],
-  "note": "Independent remasure vs intact C1173. Symbol-file bodies STABLE; LM/etag STABLE. mfundslist nofollow body MOVED, not adopted. Not integrated. No promotion."
+  "note": "Independent remasure vs intact C1173. Symbol-file bodies STABLE; otherlisted HTTPS LM/etag MOVED body unchanged. Not integrated. No promotion."
 }
