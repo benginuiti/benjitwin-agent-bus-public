@@ -1,62 +1,19 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1160,
-  "updated_utc": "2026-10-07T13:17:36Z",
+  "cycle_index": 1161,
+  "updated_utc": "2026-10-07T14:05:00Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
-  "blocked": [
-    "Q-007 HOST",
-    "Q-008 BEN_GATE",
-    "Q-010 BEN_GATE"
-  ],
-  "closed_this_run": [
-    "Q-1160 residual remasure nasdaqtrader HTTPS+FTP HASH STABLE vs C1159 6670dfe4/29c10edc/04730dfb FCT 09:01/09:01/09:02 FTP/HTTPS agree; otherlisted HTTPS LM header moved body hash STABLE; SEC eb943bdc STABLE not promoted; short-UA unstable f9c0d4de/e6309462; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA STABLE vs C1159 not adopted; no READY Grok bite"
-  ],
-  "open_residuals": [
-    "MCP_WIZBANGERS benjitwin_bootstrap and work_board not surfaced",
-    "Q-007 HOST soak",
-    "Q-008 F-AUTH-1 live deploy BEN_GATE",
-    "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS HASH STABLE vs C1159 6670dfe4/29c10edc/04730dfb FCT 09:01/09:01/09:02 not integrated",
-    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable",
-    "data.sec.gov not a source",
-    "mfundslist FTP 78; nofollow 302/916/9a3e7218 SHA STABLE vs C1159 not adopted",
-    "identity promotion BEN_GATE",
-    "LIVE funded routing",
-    "Q-005 full historical archive not re-pushed"
-  ],
+  "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
+  "closed_this_run": ["Q-1161 residual remasure nasdaqtrader HTTPS+FTP HASH MOVED vs C1160 c7f9d0c9/10587072/e8021968 FCT 10:01/10:01/10:02 FTP/HTTPS agree size/lines STABLE; SEC eb943bdc STABLE not promoted; short-UA unstable cbf1c6ca/47abc321; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA STABLE vs C1160 not adopted; no READY Grok bite"],
+  "open_residuals": ["R-001", "LIVE-RT", "MCP_WIZBANGERS benjitwin_bootstrap and work_board not surfaced", "Q-007 HOST soak", "Q-008 F-AUTH-1 live deploy BEN_GATE", "Q-010 Stage-0 ratification BEN_GATE", "NASDAQ FTP+HTTPS HASH MOVED vs C1160 c7f9d0c9/10587072/e8021968 FCT 10:01/10:01/10:02 not integrated; size/lines STABLE; FTP/HTTPS agree", "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable", "data.sec.gov not a source", "mfundslist FTP 78; nofollow 302/916/9a3e7218 SHA STABLE vs C1160 not adopted", "identity promotion BEN_GATE", "LIVE funded routing", "Q-005 full historical archive not re-pushed"],
   "items": [
-    {
-      "id": "Q-1160",
-      "owner": "Grok",
-      "status": "DONE",
-      "note": "C1160 independent confirm vs intact C1159. Symbol files HASH STABLE and FTP/HTTPS agree; not integrated. otherlisted HTTPS LM header moved, body hash STABLE. mfundslist nofollow SHA STABLE vs C1159 not adopted. No promotion."
-    },
-    {
-      "id": "Q-005",
-      "owner": "Grok",
-      "status": "PARTIAL",
-      "note": "status pointer + C1160 receipt only; full historical archive not re-pushed"
-    },
-    {
-      "id": "Q-007",
-      "owner": "HOST",
-      "status": "OPEN",
-      "note": "Claude soak/watchdog not Grok browser plane"
-    },
-    {
-      "id": "Q-008",
-      "owner": "BEN_GATE",
-      "status": "OPEN",
-      "note": "F-AUTH-1 live deploy"
-    },
-    {
-      "id": "Q-010",
-      "owner": "BEN_GATE",
-      "status": "OPEN",
-      "note": "Stage-0 ratification"
-    }
+    {"id": "Q-1161", "owner": "Grok", "status": "DONE", "note": "C1161 independent confirm vs intact C1160. Symbol files HASH MOVED and FTP/HTTPS agree; size/lines STABLE; not integrated. mfundslist nofollow SHA STABLE vs C1160 not adopted. No promotion."},
+    {"id": "Q-005", "owner": "Grok", "status": "PARTIAL", "note": "status pointer + C1161 receipt only; full historical archive not re-pushed"},
+    {"id": "Q-007", "owner": "HOST", "status": "OPEN", "note": "Claude soak/watchdog not Grok browser plane"},
+    {"id": "Q-008", "owner": "BEN_GATE", "status": "OPEN", "note": "F-AUTH-1 live deploy"},
+    {"id": "Q-010", "owner": "BEN_GATE", "status": "OPEN", "note": "Stage-0 ratification"}
   ]
 }
