@@ -1,33 +1,33 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-07T09:00:00Z (same lane, hub still absent)
-**Prior reinforce:** 2026-10-07T08:00:00Z (blob `0b094549b45c88741e344a0221b7f3e3a1a57f1d`; prior text cited tip `4109eb8a02f42d0f41f038d734c9373c9eb35064`; not a PASS)
+**Reinforced:** 2026-10-07T10:00:00Z (same lane, hub still absent)
+**Prior reinforce:** 2026-10-07T09:00:00Z (blob `350c0fd168ad2bf493dc0cbeb6de1e661b6f2830`; prior text cited tip `2c599d8d42220766d4a5b9e96f2062f1f4bad101`; not a PASS)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
 
 ## Why
 
-Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `2c599d8d42220766d4a5b9e96f2062f1f4bad101`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
+Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `3555679ba372d71ac466fa510a27b1c7e5ea9dc3`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
 
 - CP-01 DONE `wrk_7bf98271427c` Grok CONFIRMS
 - CP-02 CURRENT GATE `wrk_5179d7263a04` CONTESTED — need canonical Product-primary re-run
 - CP-03 NEXT only after CP-02 PASS
 - CP-07 EMPTY + TRUNCATED is often after CP-02, not before PASS
 
-This turn's connector read tip moved during the turn. First file read was at `700b5c1feafef170bfbcdfb15ad803586e6cdd33` (galaxy-24x7 C1153 receipt only; no promotion; author date 2026-10-07T08:11:13Z). Latest list_commits before this write is `2c599d8d42220766d4a5b9e96f2062f1f4bad101` (WAITING_CLAUDE: wrk_e05ca129c096 not graded; hub absent; no UNREAL_JOIN receipt; no FORCE; NEXT.md untouched; author date 2026-10-07T09:01:48Z). INDEX content unchanged versus the 2026-08-10 stamp. Not a gauntlet grade. Not a promotion.
+This turn tip `3555679ba372d71ac466fa510a27b1c7e5ea9dc3` author date `2026-10-07T09:11:47Z`, message `galaxy-24x7 C1154 residual remasure status pointer (no promotion)`. INDEX content unchanged versus the 2026-08-10 stamp. Not a gauntlet grade. Not a promotion.
 
-`orders/NEXT.md` blob `8749716f27a86641ea0a12d197ef584ce5be0090` at the `700b5c1f` read says Galaxy RUNNING cycle 1150, updated 2026-10-07T04:09:30Z, ben_satisfied=false, stop_requested=false, READY Grok none. The 09:01:48Z commit message says NEXT.md untouched. Not a gauntlet grade. Not touched as a grade this turn. raw.githubusercontent HTML/text for NEXT.md was stale versus the connector (showed cycle 1125); connector blob is the evidence used.
+`orders/NEXT.md` blob `8749716f27a86641ea0a12d197ef584ce5be0090` at that tip says Galaxy RUNNING cycle 1150, updated 2026-10-07T04:09:30Z, ben_satisfied=false, stop_requested=false, READY Grok none. Not a gauntlet grade.
 
 This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap` and `MCP_WIZBANGERS___benjitwin_bootstrap` returned not found. `search_connected_tools` for benjitwin_bootstrap, wizbangers, and disagreement_submit/work_read/work_board returned empty or non-hub services only (GitHub, Automations, Robinhood, Voice). MCP_WIZBANGERS listed in the session header but not registered as callable tools. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub. `bot_search_agents` for gauntlet/CAP-PROOF/Claude returned 0 agents.
 
-Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. The dispute is the inverted research-as-primary reading. Resubmit a new packet. Do not edit the contested packet in place and call it PASS. `wrk_e05ca129c096` is a different lane's waiting packet (UNREAL_JOIN); not graded here; not a CP-02 PASS.
+Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. The dispute is the inverted research-as-primary reading. Resubmit a new packet. Do not edit the contested packet in place and call it PASS.
 
 ## Fixture evidence (public bus, re-read this turn, not X570 disk)
 
 - Path: `gauntlet/PERPLEXITY_CP_XX_PACK/fixtures/CP-02/CP-02_Research_vs_Product.md`
-- Blob `31f91234b0a1b22540ef9450f1fbccbad2675e92` at tip `700b5c1feafef170bfbcdfb15ad803586e6cdd33` (same blob claimed on the later tip read of INDEX; fixture not re-fetched after `2c599d8d`)
+- Blob `31f91234b0a1b22540ef9450f1fbccbad2675e92` at tip `3555679ba372d71ac466fa510a27b1c7e5ea9dc3`
 - INDEX SHA256 claim `e8195b4a6197f27eae457c6a8be0d830d06bb0dd107fae958be4a4c7cee99530` (not rehashed this plane)
 - INDEX size claim 1122 (fixture byte size not remeasured this plane)
 - Statement A: Structured Forensic Teardown is a Wizbangers Product. Primary identity.
@@ -38,7 +38,7 @@ Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. The dispute 
 
 ## Required submission body
 
-Write the canonical CP-02 answer and resubmit on the live intake path `E:\W_BENJITWIN_GAUNTLET\W_BENJITWIN_INTAKE\`. Do not invert.
+Write the canonical CP-02 answer and resubmit on the live intake path `E:\\W_BENJITWIN_GAUNTLET\\W_BENJITWIN_INTAKE\\`. Do not invert.
 
 Canonical body:
 
