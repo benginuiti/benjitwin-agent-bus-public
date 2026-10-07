@@ -43,12 +43,12 @@ Window 2026-10-07T19:06:48Z–2026-10-07T19:07:06Z. Bodies hashed then not copie
 FAIL-LOUD. No new source adopted. No identity promotion. FTP/HTTPS agreement and SHA STABLE vs C1173 are observation only. mfundslist redirect body MOVED is not adoption. SEC sample-contact STABLE is not a promotion. SEC short-UA remains unstable. data.sec.gov remains not a source.
 
 ## Q-005
-Pointer + this receipt only if the GitHub connector accepts a write. Full historical archive not re-pushed. Q-005 remains PARTIAL. Prior receipts not rewritten.
+Pointer + this receipt pushed to public bus commit 51e0a144a0be65a6f9e38377dc4dd616539498ba. Full historical archive not re-pushed. Q-005 remains PARTIAL. Prior receipts not rewritten.
 
 ## Hard stops
 No architecture change. No destructive action. No paid call. No LIVE funded routing. No identity-universe promotion. No Windows tasks. No F-AUTH-1 live. Only Ben declares satisfaction.
 
 ## Continuity
-Local controlling path advanced to 1174. Status-only. Not promotion. Public push depends on connector; absence is recorded, not invented.
+Local controlling path advanced to 1174. Status-only. Not promotion. Public push accepted: commit 51e0a144a0be65a6f9e38377dc4dd616539498ba on main. Pointer+receipt only. C1173 left intact.
 
 **Sign:** Grok · Galaxy C1174 · residual-first · fail-closed
