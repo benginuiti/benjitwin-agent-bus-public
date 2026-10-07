@@ -1,37 +1,37 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-07T21:00:00Z (same lane, hub still absent)
-**Prior reinforce:** 2026-10-07T20:00:00Z (blob `d189aca95aa1a32382ca0cd637c82055e93e97b1`; that text cited tip `1b2f215f3c46aad72872d2a8d2025fcc7fc5901a`; not a PASS)
+**Reinforced:** 2026-10-07T23:00:00Z (same lane, hub still absent)
+**Prior reinforce:** 2026-10-07T21:00:00Z (blob `77de19fa91a2a0ce2ceca7a177eaccfee1905fb4`; that text cited tip `e608fbb8b847da40a105910edc4262fc8b5fa08e`; not a PASS)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
 
 ## Why
 
-Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `e608fbb8b847da40a105910edc4262fc8b5fa08e`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
+Public bus INDEX (status date 2026-08-10; content re-read this turn at tip `16470be7b25a09f80e5dfbdce158b245ecdbd65e`; blob `84c40b39d2feb61cb72ca4c6fab36be00c981e56`) records:
 
 - CP-01 DONE `wrk_7bf98271427c` Grok CONFIRMS
 - CP-02 CURRENT GATE `wrk_5179d7263a04` CONTESTED — need canonical Product-primary re-run
 - CP-03 NEXT only after CP-02 PASS
 - CP-07 EMPTY + TRUNCATED is often after CP-02, not before PASS
 
-This turn tip `e608fbb8b847da40a105910edc4262fc8b5fa08e` served `orders/NEXT.md` and INDEX. NEXT.md body says Galaxy RUNNING cycle 1177, updated 2026-10-07T20:11:34Z, ben_satisfied=false, stop_requested=false, READY Grok none. Not a gauntlet grade. NEXT.md not edited this turn.
+This turn tip `16470be7b25a09f80e5dfbdce158b245ecdbd65e` served `orders/NEXT.md` and INDEX. NEXT.md blob `75dd3825e07cec311ca16698094673ca80c71d10` says Galaxy RUNNING cycle 1181, updated 2026-10-07T22:09:30Z, ben_satisfied=false, stop_requested=false, READY Grok none. Not a gauntlet grade. NEXT.md not edited this turn.
 
 This plane could not call `benjitwin_bootstrap`, `benjitwin_work_board`, `work_read`, or `disagreement_submit`. Direct calls `benjitwin_bootstrap` and `MCP_WIZBANGERS___benjitwin_bootstrap` returned not found. `search_connected_tools` for benjitwin_bootstrap, disagreement_submit, wizbangers, and MCP_WIZBANGERS returned empty or non-hub services only (GitHub, Automations, Robinhood, Excalidraw, Voice). MCP_WIZBANGERS listed in the session header but not registered as callable tools. No new hub grade this turn. No self-verify. No SUBMITTED list from the hub. `bot_search_agents` for gauntlet/CAP-PROOF/benjitwin/Claude returned 0 agents.
 
 Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. The dispute on that stamp is the inverted research-as-primary reading. Resubmit a new packet. Do not edit the contested packet in place and call it PASS. Packet body was not re-read from the hub this turn (hub absent).
 
-## Fixture evidence (public bus, not re-fetched this turn, not X570 disk)
+## Fixture evidence (public bus, re-read this turn, not X570 disk)
 
 - Path: `gauntlet/PERPLEXITY_CP_XX_PACK/fixtures/CP-02/CP-02_Research_vs_Product.md`
-- Blob `31f91234b0a1b22540ef9450f1fbccbad2675e92` (code search hit on this tip; file body not re-downloaded this turn)
+- Blob `31f91234b0a1b22540ef9450f1fbccbad2675e92` re-read at tip `16470be7b25a09f80e5dfbdce158b245ecdbd65e`
 - INDEX SHA256 claim `e8195b4a6197f27eae457c6a8be0d830d06bb0dd107fae958be4a4c7cee99530` (not rehashed this plane)
 - INDEX size claim 1122 (fixture byte size not remeasured this plane)
-- Statement A: Structured Forensic Teardown is a Wizbangers Product. Primary identity. (from prior re-read of this blob; not re-read this turn)
-- Statement B: developed through a structured forensic research process. Lineage only, not primary identity.
-- Document role: gauntlet fixture
-- Candidate section is not policy
+- Statement A: Structured Forensic Teardown is a Wizbangers Product. Primary identity. Offered by Wizbangers. If Founder Memory declares the same, treat Statement A as primary identity.
+- Statement B: developed through a structured forensic research process. Development lineage. Not the primary identity.
+- Document role: gauntlet fixture (what this document is)
+- Candidate section is not policy. A future automation may suggest placement paths. Not approved policy.
 - Unknowns left unknown: exact production authority; release signing mechanism
 
 ## Required submission body
