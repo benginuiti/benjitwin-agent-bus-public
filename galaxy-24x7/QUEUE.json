@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
   "cycle_index": 1155,
-  "updated_utc": "2026-10-07T11:12:56Z",
+  "updated_utc": "2026-10-07T11:14:21Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -12,14 +12,14 @@
     "Q-010 BEN_GATE"
   ],
   "closed_this_run": [
-    "Q-1155 residual remeasure nasdaqtrader HTTPS+FTP HASH CHANGED vs C1154 fd6f7e1c/dfcfb40d/8df6ea16 FCT 07:00/07:00/07:01 size/lines unchanged FTP/HTTPS agree; SEC eb943bdc STABLE not promoted; short-UA unstable cecfe342/b0a71612; data.sec.gov 404 size 317 not a source; mfundslist nofollow 9a3e7218 SHA STABLE vs C1154 not adopted; no READY Grok bite"
+    "Q-1155 residual remasure nasdaqtrader HTTPS+FTP HASH MOVED vs C1154 fd6f7e1c/dfcfb40d/8df6ea16 FCT 07:00/07:00/07:01 FTP/HTTPS agree; SEC eb943bdc STABLE not promoted; short-UA unstable 06c6c67b/0c8d2e8c; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA STABLE vs C1154 not adopted; no READY Grok bite"
   ],
   "open_residuals": [
     "MCP_WIZBANGERS benjitwin_bootstrap and work_board not surfaced",
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS HASH CHANGED vs C1154 fd6f7e1c/dfcfb40d/8df6ea16 FCT 07:00/07:00/07:01 size/lines unchanged not integrated",
+    "NASDAQ FTP+HTTPS HASH MOVED vs C1154 fd6f7e1c/dfcfb40d/8df6ea16 FCT 07:00/07:00/07:01 not integrated",
     "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable",
     "data.sec.gov not a source",
     "mfundslist FTP 78; nofollow 302/916/9a3e7218 SHA STABLE vs C1154 not adopted",
@@ -32,7 +32,7 @@
       "id": "Q-1155",
       "owner": "Grok",
       "status": "DONE",
-      "note": "C1155 independent confirm vs intact C1154. Symbol files HASH CHANGED, size/lines unchanged, FTP/HTTPS agree; not integrated. mfundslist nofollow SHA STABLE vs C1154 not adopted. No promotion."
+      "note": "C1155 independent confirm vs intact C1154. Symbol files HASH MOVED and FTP/HTTPS agree; not integrated. mfundslist nofollow SHA STABLE vs C1154 not adopted. No promotion."
     },
     {
       "id": "Q-005",
