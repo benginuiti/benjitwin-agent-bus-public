@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
   "cycle_index": 1187,
-  "updated_utc": "2026-10-08T01:08:39Z",
+  "updated_utc": "2026-10-08T01:09:02Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -12,7 +12,7 @@
     "Q-010 BEN_GATE"
   ],
   "closed_this_run": [
-    "Q-1187 residual remasure vs intact C1186: symbol body SHA STABLE e4891a34/7fc0eccd/87d92b83; FTP/HTTPS agree; size/lines STABLE 349477/542574/1002067 5631/7661/13290; FCT STABLE 18:01/18:01/18:02; otherlisted HTTPS LM/etag MOVED vs C1186 and intra-plane agree 01:00:36/bea5796d vs C1186 00:05:13/44eb21b1 then 22:01:20/54198562; SEC eb943bdc STABLE not promoted; short-UA 241bfdbf disagrees C1186 60f3687a; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA STABLE not adopted; C1186 receipt not overwritten"
+    "Q-1187 residual remasure vs intact C1186: symbol body SHA STABLE e4891a34/7fc0eccd/87d92b83; FTP/HTTPS agree; size/lines STABLE 349477/542574/1002067 5631/7661/13290; FCT STABLE 18:01/18:01/18:02; otherlisted HTTPS LM/etag both passes 22:01:20/54198562 matches C1186 second pass; C1186 first-pass 00:05:13/44eb21b1 not reproduced; SEC eb943bdc STABLE not promoted; short-UA 4e9c8cdd disagrees C1186 60f3687a; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA STABLE not adopted; C1186 receipt not overwritten"
   ],
   "open_residuals": [
     "R-001",
@@ -21,8 +21,8 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS body SHA STABLE vs C1186 e4891a34/7fc0eccd/87d92b83 size/lines STABLE FCT 18:01/18:01/18:02 NOT INTEGRATED; FTP/HTTPS agree; otherlisted HTTPS LM/etag MOVED vs C1186 intra-plane agree this cycle",
-    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 241bfdbf disagrees C1186 60f3687a",
+    "NASDAQ FTP+HTTPS body SHA STABLE vs C1186 e4891a34/7fc0eccd/87d92b83 size/lines STABLE FCT 18:01/18:01/18:02 NOT INTEGRATED; FTP/HTTPS agree; otherlisted HTTPS LM/etag matches C1186 second pass; C1186 first-pass move not reproduced",
+    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 4e9c8cdd disagrees C1186 60f3687a",
     "data.sec.gov not a source",
     "mfundslist FTP 78/550; nofollow 302/916/9a3e7218 SHA STABLE not adopted",
     "identity promotion BEN_GATE",
