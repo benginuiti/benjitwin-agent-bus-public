@@ -28,6 +28,7 @@
     "C1176 sibling receipt 9061e56d left intact",
     "C1193 index collision: sibling receipt a596be59 left intact",
     "C1209 receipt path 404 at tip 85c94e51; not fabricated",
+    "C1210 index collision: sibling receipt c00bff20 left intact as CYCLE_C1210_RECEIPT_c00bff20.md",
     "controlling path /home/workdir ABSENT; contract written under /workspace/artifacts"
   ],
   "note": "Independent remasure vs intact C1209. Symbol-file body SHA/FCT AGREE C1209; size/lines STABLE; FTP/HTTPS body agree. otherlisted HTTPS LM/etag MOVED, body SHA agree. SEC sample-contact AGREE C1209. Not promoted."

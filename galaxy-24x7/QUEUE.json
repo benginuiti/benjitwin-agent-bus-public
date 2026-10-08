@@ -31,7 +31,8 @@
     "C1169 index collision: sibling receipt 9232991a left intact",
     "C1176 sibling receipt 9061e56d left intact",
     "C1193 index collision: sibling receipt a596be59 left intact",
-    "C1209 receipt path 404 at prior tip; not fabricated"
+    "C1209 receipt path 404 at prior tip; not fabricated",
+    "C1210 index collision: sibling receipt c00bff20 left intact"
   ],
   "items": []
 }
