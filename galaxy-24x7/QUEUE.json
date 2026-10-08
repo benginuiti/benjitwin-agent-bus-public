@@ -1,19 +1,13 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1194,
-  "updated_utc": "2026-10-08T04:11:46Z",
+  "cycle_index": 1196,
+  "updated_utc": "2026-10-08T06:14:40Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
-  "blocked": [
-    "Q-007 HOST",
-    "Q-008 BEN_GATE",
-    "Q-010 BEN_GATE"
-  ],
-  "closed_this_run": [
-    "Q-1194 residual remasure vs intact sibling C1193 plus collision repair: sibling receipt a596be59 restored; symbol body SHA STABLE 047ae090/dd7f595f/b41988fd; FTP/HTTPS agree; size/lines STABLE 349477/542574/1002067 5631/7661/13290; FCT STABLE 21:31/21:31/21:33; otherlisted HTTPS LM/etag intra-plane DISAGREE pass1 04:03:07/7a73b8ec vs pass2 01:31:40/fd67adc4 body SHA agree; pass2 matches sibling C1193; SEC eb943bdc STABLE not promoted; short-UA 46062fbd/2960121c disagrees sibling C1193 b8bc00c0/4fd84ac1; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA STABLE not adopted"
-  ],
+  "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
+  "closed_this_run": ["C1196 residual remasure PARTIAL no promotion"],
   "open_residuals": [
     "R-001",
     "LIVE-RT",
@@ -21,8 +15,8 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS body SHA STABLE vs sibling C1193 047ae090/dd7f595f/b41988fd size/lines STABLE FCT 21:31/21:31/21:33 NOT INTEGRATED; FTP/HTTPS agree; otherlisted HTTPS LM/etag intra-plane DISAGREE this cycle body SHA agree; pass2 matches sibling C1193",
-    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 46062fbd/2960121c disagrees sibling C1193 b8bc00c0/4fd84ac1",
+    "NASDAQ FTP+HTTPS body SHA STABLE vs sibling C1195 047ae090/dd7f595f/b41988fd size/lines STABLE 349477/542574/1002067 5631/7661/13290 FCT 21:31/21:31/21:33 NOT INTEGRATED; FTP/HTTPS agree; otherlisted HTTPS LM/etag intra-plane AGREE both passes 01:31:40/fd67adc4 (C1195 pass1 DISAGREE not repeated)",
+    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 4c3b4d3a disagrees sibling C1195 3c15af2d/82da89fc",
     "data.sec.gov not a source",
     "mfundslist FTP 78/550; nofollow 302/916/9a3e7218 SHA STABLE not adopted",
     "identity promotion BEN_GATE",
@@ -30,7 +24,7 @@
     "Q-005 full historical archive not re-pushed",
     "C1169 index collision: sibling receipt 9232991a left intact",
     "C1176 sibling receipt 9061e56d left intact",
-    "C1193 index collision: sibling receipt a596be59 restored; this plane published as C1194"
+    "C1193 index collision: sibling receipt a596be59 left intact"
   ],
   "items": []
 }
