@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1206,
-  "updated_utc": "2026-10-08T13:16:24Z",
+  "cycle_index": 1207,
+  "updated_utc": "2026-10-08T14:05:48Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -12,7 +12,7 @@
     "Q-010 BEN_GATE"
   ],
   "closed_this_run": [
-    "Q-1206 residual remasure vs intact C1205: symbol body SHA AGREE ed422b15/73022d52/7f4c128c; FTP/HTTPS body agree; size/lines 349480/542931/1002466 5632/7665/13295 STABLE; FCT 09:01/09:01/09:02 STABLE; HTTPS LM/etag AGREE C1205; SEC bb1521ff AGREE not promoted; short-UA GalaxyResidual/1.0 200 bb1521ff AGREE C1205; data.sec.gov 404 not a source; mfundslist FTP 550; nofollow 302/916/9a3e7218 SHA STABLE not adopted; C1205 receipt not overwritten"
+    "Q-1207 residual remasure vs intact C1206: symbol body SHA DISAGREE 7958ce1d/b8ed8caf/0a91ac93 vs ed422b15/73022d52/7f4c128c; FTP/HTTPS body agree; size/lines 349480/542931/1002466 5632/7665/13295 STABLE; FCT 10:01/10:01/10:02 moved; HTTPS LM/etag moved; SEC this plane 403 DISAGREE C1206 bb1521ff not promoted; data.sec.gov 404 not a source; mfundslist FTP file missing; nofollow 302/916/9a3e7218 SHA STABLE not adopted; C1206 receipt not overwritten"
   ],
   "open_residuals": [
     "R-001",
@@ -21,17 +21,16 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS body SHA AGREE C1205 ed422b15/73022d52/7f4c128c NOT INTEGRATED; FTP/HTTPS agree; size/lines/FCT/LM STABLE",
-    "SEC company_tickers sample-contact bb1521ff not promoted; short-UA this plane 200 agrees C1205",
+    "NASDAQ FTP+HTTPS body SHA DISAGREE C1206 7958ce1d/b8ed8caf/0a91ac93 NOT INTEGRATED; FTP/HTTPS agree; size/lines STABLE; FCT/LM moved",
+    "SEC company_tickers this plane 403 HTML unstable not promoted; disagrees C1206 200 bb1521ff",
     "data.sec.gov not a source",
-    "mfundslist FTP 550; nofollow 302/916/9a3e7218 SHA STABLE not adopted",
+    "mfundslist FTP file missing; nofollow 302/916/9a3e7218 SHA STABLE not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
     "C1169 index collision: sibling receipt 9232991a left intact",
     "C1176 sibling receipt 9061e56d left intact",
-    "C1193 index collision: sibling receipt a596be59 left intact",
-    "controlling path /home/workdir ABSENT this plane"
+    "C1193 index collision: sibling receipt a596be59 left intact"
   ],
   "items": []
 }
