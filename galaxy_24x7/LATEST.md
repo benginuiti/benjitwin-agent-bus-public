@@ -1,2 +1,2 @@
-C1189 RUNNING ben_satisfied=false stop_requested=false READY Grok none PARTIAL updated 2026-10-08T02:08:34Z
-NASDAQ HTTPS+FTP body SHA STABLE vs C1188 047ae090/dd7f595f/b41988fd FCT 21:31/21:31/21:33 size/lines STABLE; otherlisted HTTPS LM/etag intra-plane DISAGREE 02:05:15/d610a475 then 01:31:40/fd67adc4 NOT INTEGRATED. SEC eb943bdc NOT PROMOTED. short-UA 27c8dc33 disagrees C1188 7ebe3b53. mfundslist nofollow 9a3e7218 SHA STABLE vs C1188 not adopted. No secrets.
+C1221 RUNNING ben_satisfied=false stop_requested=false READY Grok none PARTIAL updated 2026-10-08T20:05:12Z
+NASDAQ HTTPS+FTP body SHA MOVED vs C1220 4b92c022/c4c89a53/d6368fa7 FCT 15:41/15:41/15:42 size/lines STABLE 349480/542931/1002466 5632/7665/13295; LM/etag MOVED 19:41:26/d49f415d 20:01:47/3fa18ad9 19:42:55/3a447375 NOT INTEGRATED. SEC bb1521ff NOT PROMOTED. short-UA 403 unstable f35a4be4/555d880e. mfundslist nofollow 9a3e7218 SHA AGREE not adopted. No secrets.

@@ -1,7 +1,7 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1220,
-  "updated_utc": "2026-10-08T19:09:10Z",
+  "cycle_index": 1221,
+  "updated_utc": "2026-10-08T20:05:12Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
@@ -12,7 +12,7 @@
     "Q-010 BEN_GATE"
   ],
   "closed_this_run": [
-    "Q-1220 residual remasure vs intact C1219: symbol body SHA AGREE e0ea064e/04076f83/80850b24; FTP/HTTPS agree; size/lines STABLE 349480/542931/1002466 5632/7665/13295; FCT STABLE 14:01/14:01/14:03; LM/etag AGREE; SEC bb1521ff AGREE not promoted; short-UA 403 cbe4eb65/0c6d5cc9 disagrees C1219 200/e0ea064e; python-requests 403 1fa60428 disagrees C1219; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA AGREE not adopted; C1219 receipt not overwritten"
+    "Q-1221 residual remasure vs intact C1220: symbol body SHA MOVED 4b92c022/c4c89a53/d6368fa7 vs e0ea064e/04076f83/80850b24; FTP/HTTPS agree; size/lines STABLE 349480/542931/1002466 5632/7665/13295; FCT MOVED 15:41/15:41/15:42; LM/etag MOVED; SEC bb1521ff AGREE not promoted; short-UA 403 unstable f35a4be4/555d880e; python-requests 403 118cb0be; data.sec.gov 404 not a source; mfundslist nofollow 9a3e7218 SHA AGREE not adopted; C1220 receipt not overwritten"
   ],
   "open_residuals": [
     "R-001",
@@ -21,8 +21,8 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS body SHA AGREE vs C1219 e0ea064e/04076f83/80850b24 size/lines STABLE FCT 14:01/14:01/14:03 NOT INTEGRATED; FTP/HTTPS agree; LM/etag AGREE",
-    "SEC company_tickers sample-contact bb1521ff not promoted; short-UA 403 unstable cbe4eb65/0c6d5cc9 disagrees C1219 200/e0ea064e; python-requests 403 disagrees C1219",
+    "NASDAQ FTP+HTTPS body SHA MOVED vs C1220 4b92c022/c4c89a53/d6368fa7 size/lines STABLE FCT 15:41/15:41/15:42 NOT INTEGRATED; FTP/HTTPS agree; LM/etag MOVED",
+    "SEC company_tickers sample-contact bb1521ff not promoted; short-UA 403 unstable f35a4be4/555d880e disagrees C1220; python-requests 403 118cb0be disagrees C1220",
     "data.sec.gov not a source",
     "mfundslist FTP 78; nofollow 302/916/9a3e7218 SHA AGREE not adopted",
     "identity promotion BEN_GATE",
