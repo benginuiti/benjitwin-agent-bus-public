@@ -1,9 +1,9 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
-  "cycle_index": 1193,
-  "updated_utc": "2026-10-08T04:09:36Z",
-  "last_receipt": "galaxy-24x7/CYCLE_C1193_RECEIPT.md",
-  "public_receipt": "galaxy-24x7/CYCLE_C1193_RECEIPT.md",
+  "cycle_index": 1194,
+  "updated_utc": "2026-10-08T04:11:46Z",
+  "last_receipt": "galaxy-24x7/CYCLE_C1194_RECEIPT.md",
+  "public_receipt": "galaxy-24x7/CYCLE_C1194_RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
@@ -16,15 +16,16 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS body SHA STABLE vs C1192 047ae090/dd7f595f/b41988fd size/lines STABLE 349477/542574/1002067 5631/7661/13290 FCT 21:31/21:31/21:33 NOT INTEGRATED; FTP/HTTPS agree; otherlisted HTTPS LM/etag intra-plane DISAGREE pass1 04:03:07/7a73b8ec vs pass2 01:31:40/fd67adc4 body SHA agree; pass order inverted vs C1192",
-    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 46062fbd/2960121c disagrees C1192 96349816/1de16281",
+    "NASDAQ FTP+HTTPS body SHA STABLE vs sibling C1193 047ae090/dd7f595f/b41988fd size/lines STABLE 349477/542574/1002067 5631/7661/13290 FCT 21:31/21:31/21:33 NOT INTEGRATED; FTP/HTTPS agree; otherlisted HTTPS LM/etag intra-plane DISAGREE pass1 04:03:07/7a73b8ec vs pass2 01:31:40/fd67adc4 body SHA agree; pass2 matches sibling C1193",
+    "SEC company_tickers sample-contact eb943bdc not promoted; short-UA 403 unstable 46062fbd/2960121c disagrees sibling C1193 b8bc00c0/4fd84ac1",
     "data.sec.gov not a source",
     "mfundslist FTP 78/550; nofollow 302/916/9a3e7218 SHA STABLE not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
     "C1169 index collision: sibling receipt 9232991a left intact",
-    "C1176 sibling receipt 9061e56d left intact"
+    "C1176 sibling receipt 9061e56d left intact",
+    "C1193 index collision: sibling receipt a596be59 restored; this plane published as C1194"
   ],
-  "note": "Independent remasure vs intact C1192. Symbol-file body SHA and FCT STABLE; size/lines STABLE; FTP/HTTPS body agree. otherlisted HTTPS LM/etag intra-plane DISAGREE this cycle; body SHA agree; pass order inverted vs C1192. No promotion."
+  "note": "Index collision repaired. Sibling C1193 receipt restored. Independent remasure vs intact sibling C1193. Symbol-file body SHA and FCT STABLE; size/lines STABLE; FTP/HTTPS body agree. otherlisted HTTPS LM/etag intra-plane DISAGREE this cycle; pass2 matches sibling C1193. No promotion."
 }
