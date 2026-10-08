@@ -1,9 +1,9 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
-  "cycle_index": 1227,
-  "updated_utc": "2026-10-08T23:04:10Z",
-  "last_receipt": "galaxy-24x7/CYCLE_C1227_RECEIPT.md",
-  "public_receipt": "galaxy-24x7/CYCLE_C1227_RECEIPT.md",
+  "cycle_index": 1228,
+  "updated_utc": "2026-10-08T23:09:49Z",
+  "last_receipt": "galaxy-24x7/CYCLE_C1228_RECEIPT.md",
+  "public_receipt": "galaxy-24x7/CYCLE_C1228_RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
@@ -17,9 +17,9 @@
     "Q-005 PARTIAL full historical archive not re-pushed",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
-    "CP-02 wrk_5179d7263a04 CONTESTED on bus stamp; hub absent so not graded",
-    "symbol-file FTP/HTTPS body SHA AGREE C1226 30237885/618458c2/fc9997cf; otherlisted HTTPS LM/etag MOVED not monotonic; not integrated",
-    "SEC sample-contact AGREE bb1521ff keys 10435 not promoted"
+    "symbol-file FTP/HTTPS body SHA AGREE C1227 30237885/618458c2/fc9997cf; LM/etag AGREE C1227 including otherlisted; not integrated",
+    "SEC sample-contact AGREE bb1521ff keys 10435 not promoted",
+    "SEC short-UA 403 1925 fbd05803 disagrees C1227 bbd4ed2c"
   ],
-  "note": "Independent remasure vs intact C1226. FTP/HTTPS body SHA AGREE. otherlisted LM/etag MOVED not monotonic. Not promoted."
+  "note": "Independent remasure vs intact C1227. FTP/HTTPS body SHA AGREE. otherlisted LM/etag AGREE C1227 (prior non-monotonic move did not move again). Not promoted."
 }
