@@ -1,10 +1,10 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 1220,
-  "updated_utc": "2026-10-08T19:09:40Z",
+  "updated_utc": "2026-10-08T19:09:10Z",
   "last_receipt": "galaxy-24x7/CYCLE_C1220_RECEIPT.md",
   "public_receipt": "galaxy-24x7/CYCLE_C1220_RECEIPT.md",
-  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/04_RECEIPTS/CYCLE_C1220_RECEIPT.md",
+  "local_receipt": "/home/workdir/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1220/RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
@@ -13,26 +13,23 @@
   "open_blockers": [
     "R-001",
     "LIVE-RT",
-    "MCP_WIZBANGERS benjitwin_bootstrap and work_board not surfaced",
+    "MCP_WIZBANGERS benjitwin_bootstrap and work_board tool-not-found",
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP/HTTPS body SHA AGREE e0ea064e/04076f83/80850b24 size/lines 349480/542931/1002466 5632/7665/13295 STABLE FCT 14:01/14:01/14:03 AGREE C1219 NOT INTEGRATED; HTTPS LM/etag AGREE C1219 18:01:32/9cbd1dd4, 18:01:32/a77131d4, 18:03:01/84e5f441",
-    "SEC sample-contact AGREE C1219 bb1521ff keys 10435 not promoted; short-UA GalaxyResidual/1.0 200 stable e0ea064e AGREE C1219",
+    "controlling path /home/workdir ABSENT at start; contract written under /home/workdir/artifacts and /workspace/artifacts this plane",
+    "NASDAQ FTP+HTTPS body SHA AGREE vs C1219 e0ea064e/04076f83/80850b24 size/lines STABLE 349480/542931/1002466 5632/7665/13295 FCT 14:01/14:01/14:03 NOT INTEGRATED; FTP/HTTPS body agree; LM/etag AGREE",
+    "SEC company_tickers sample-contact intra-plane STABLE bb1521ff keys 10435 LM 07 Oct 2026 20:38:50 GMT AGREE C1219 not promoted; short-UA 403 unstable cbe4eb65/0c6d5cc9 disagrees C1219 200/e0ea064e; python-requests 403 1fa60428 disagrees C1219 200",
     "data.sec.gov 404 NoSuchKey RequestId-unstable not a source",
-    "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1219 not adopted",
+    "mfundslist FTP 78/550; nofollow 302/916/9a3e7218 SHA AGREE C1219 not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
     "C1169 index collision: sibling receipt 9232991a left intact",
     "C1176 sibling receipt 9061e56d left intact",
     "C1193 index collision: sibling receipt a596be59 left intact",
-    "C1209 receipt path 404 at prior tip; not fabricated",
-    "C1210 index collision: sibling receipt c00bff20 left intact",
-    "C1212 sibling receipt dadc236f left intact",
-    "C1215 sibling receipt 30d96525 left intact",
-    "controlling path /home/workdir ABSENT; contract written under /workspace/artifacts",
-    "galaxy-24x7/NEXT.md lagged at C1218 text at read (blob 07c8b6b5)"
+    "C1210/C1212/C1215 sibling receipts left intact",
+    "public pointers lagged vs receipt tip at fetch (NEXT C1182, CYCLE_STATE C1201, root NEXT C1192); C1219 left intact"
   ],
-  "note": "Independent remasure vs intact C1219. FTP/HTTPS body SHA AGREE e0ea064e/04076f83/80850b24 and AGREE C1219; size/lines STABLE; FCT 14:01/14:01/14:03 AGREE C1219; HTTPS LM/etag AGREE C1219. SEC sample-contact AGREE C1219. short-UA 200 stable e0ea064e. data.sec.gov 404 RequestId moved. Not promoted."
+  "note": "Independent remasure vs intact C1219. Symbol-file body SHA/size/lines/FCT/LM/etag AGREE C1219; FTP/HTTPS body agree. SEC sample-contact AGREE C1219. short-UA 403 disagrees C1219 200. Not promoted."
 }
