@@ -1,22 +1,30 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 1246,
-  "updated_utc": "2026-10-09T11:12:14Z",
+  "updated_utc": "2026-10-09T11:14:33Z",
+  "last_receipt": "galaxy-24x7/CYCLE_C1246_RECEIPT.md",
+  "public_receipt": "galaxy-24x7/CYCLE_C1246_RECEIPT.md",
+  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1246/RECEIPT.md",
+  "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
-  "last_receipt": "galaxy-24x7/CYCLE_C1246_RECEIPT.md",
-  "result": "PARTIAL",
+  "promotion": false,
   "ready_grok": [],
   "open_blockers": [
-    "Q-007 HOST",
-    "Q-008 BEN_GATE",
-    "Q-010 BEN_GATE",
+    "R-001",
+    "LIVE-RT",
     "MCP_WIZBANGERS benjitwin_bootstrap and work_board not surfaced",
-    "NASDAQ FTP+HTTPS body SHA DISAGREE C1245 NOT INTEGRATED",
+    "Q-007 HOST soak",
+    "Q-008 F-AUTH-1 live deploy BEN_GATE",
+    "Q-010 Stage-0 ratification BEN_GATE",
+    "NASDAQ FTP/HTTPS body SHA AGREE this plane 08275cdc/1472a67e/53a6524f size/lines 349313/543175/1002540 5629/7669/13296 AGREE C1245 size/lines SHA DISAGREE C1245 27a157c2/519e1653/93405ba9 FCT 07:00/07:00/07:01 MOVED vs C1245 06:00/06:00/06:01 NOT INTEGRATED",
+    "SEC sample-contact AGREE C1245 bb1521ff keys 10435 not promoted; short-UA 403 1924 c8815c38 disagrees C1245 74189631",
+    "data.sec.gov 404 NoSuchKey RequestId 5YJ57GRV5PQEE8ES size 297 not a source",
+    "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1245 not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
-    "Q-005 full historical archive not re-pushed"
+    "Q-005 full historical archive not re-pushed",
+    "controlling path /home/workdir ABSENT at start; contract written under /workspace/artifacts and mirrored after mkdir"
   ],
-  "compare_tip": "C1245",
-  "promotion": false
+  "note": "Independent remasure vs intact C1245. FTP/HTTPS body SHA AGREE this plane 08275cdc/1472a67e/53a6524f and DISAGREE C1245; size/lines AGREE C1245; FCT MOVED to 07:00/07:00/07:01. SEC sample-contact AGREE. short-UA 403 size 1924 SHA moved. data.sec.gov 404 RequestId moved size 297 SHA not C1245. Not promoted."
 }
