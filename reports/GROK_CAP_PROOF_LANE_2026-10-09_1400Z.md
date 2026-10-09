@@ -31,7 +31,8 @@ Graded work_ids this turn: none.
 
 ## Action
 
-FORCE reinforced: `orders/FORCE_CP-02_PRODUCT_PRIMARY_2026-10-02.md` (prior blob `ab385156d1f172eafd75b85c5e17e7f820de5bd9`).
+FORCE reinforced: `orders/FORCE_CP-02_PRODUCT_PRIMARY_2026-10-02.md` commit `a23b0baea133eb68b9f37c927deb67fbabfd7db5`, new blob `f8c31395bdbb4b2e84961ea04a565ff4d6262b61` (prior blob `ab385156d1f172eafd75b85c5e17e7f820de5bd9`).
+Lane receipt commit `de958c2d35ae60f0d3fd1f786ee38119096323b1` then this stamp.
 Canonical body remains Product-primary.
 Research is lineage only.
 Document role is fixture.
