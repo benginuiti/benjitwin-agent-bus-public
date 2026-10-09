@@ -1,10 +1,10 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
-  "cycle_index": 1254,
-  "updated_utc": "2026-10-09T15:12:17Z",
-  "last_receipt": "galaxy-24x7/CYCLE_C1254_RECEIPT.md",
-  "public_receipt": "galaxy-24x7/CYCLE_C1254_RECEIPT.md",
-  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/04_RECEIPTS/CYCLE_C1254_RECEIPT.md",
+  "cycle_index": 1255,
+  "updated_utc": "2026-10-09T15:15:20Z",
+  "last_receipt": "galaxy-24x7/CYCLE_C1255_RECEIPT.md",
+  "public_receipt": "galaxy-24x7/CYCLE_C1255_RECEIPT.md",
+  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1255/CYCLE_C1255_RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
@@ -17,15 +17,15 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP/HTTPS body SHA AGREE this plane and AGREE intact C1253 fb5b656c/0464c118/08435b37 size/lines 349479/543175/1002736 5632/7669/13299 FCT 11:01/11:01/11:02 NOT INTEGRATED",
-    "HTTPS LM/etag AGREE C1253 15:01:07 / 965f8d3ff57dd1, 15:05:13 / 64a51f96ff57dd1, 15:02:32 / 6119fa35ff57dd1 not integrated",
-    "SEC sample-contact AGREE C1253 bb1521ff keys 10435 not promoted; short-UA 403 1925 fb7b0d7f disagrees C1253 26a6913b",
-    "data.sec.gov 404 NoSuchKey RequestId S5D2RTPX53HPSM3V size 317 SHA 57bd33ee disagrees C1253 7e37a72b not a source",
-    "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1253 not adopted",
+    "NASDAQ FTP/HTTPS body SHA AGREE this plane and AGREE intact C1254 fb5b656c/0464c118/08435b37 size/lines 349479/543175/1002736 5632/7669/13299 FCT 11:01/11:01/11:02 NOT INTEGRATED",
+    "HTTPS nasdaqlisted and nasdaqtraded LM/etag AGREE C1254; otherlisted LM/etag DISAGREE published C1254 15:01:08 / 2b0a13ff57dd1 vs 15:05:13 / 64a51f96ff57dd1 body SHA AGREE not integrated",
+    "SEC sample-contact AGREE C1254 bb1521ff keys 10435 not promoted; short-UA 403 1925 1c4f5753 disagrees C1254 fb7b0d7f",
+    "data.sec.gov 404 NoSuchKey RequestId FRPMJDGW2740HK3A size 317 SHA d96f52d4 disagrees C1254 57bd33ee not a source",
+    "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1254 not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
-    "controlling path /home/workdir ABSENT at start; contract written under /workspace/artifacts"
+    "controlling path /home/workdir ABSENT at start; contract written under /workspace/artifacts and mirrored after mkdir"
   ],
-  "note": "Independent remasure vs intact C1253. FTP/HTTPS body SHA AGREE this plane and AGREE C1253 on all three symbol files. size/lines/FCT/LM/etag AGREE C1253. SEC sample-contact AGREE. short-UA 403 size 1925 SHA moved. data.sec.gov 404 RequestId moved size 317. Not promoted."
+  "note": "Independent remasure vs intact C1254. FTP/HTTPS body SHA AGREE this plane and AGREE C1254. size/lines/FCT AGREE. otherlisted LM/etag DISAGREE published C1254 with body SHA AGREE. SEC sample-contact AGREE. short-UA 403 size 1925 SHA moved. data.sec.gov 404 RequestId moved size 317. Not promoted."
 }
