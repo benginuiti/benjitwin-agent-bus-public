@@ -1,10 +1,10 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 1259,
-  "updated_utc": "2026-10-09T17:09:11Z",
+  "updated_utc": "2026-10-09T17:11:20Z",
   "last_receipt": "galaxy-24x7/CYCLE_C1259_RECEIPT.md",
   "public_receipt": "galaxy-24x7/CYCLE_C1259_RECEIPT.md",
-  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/04_RECEIPTS/CYCLE_C1259_RECEIPT.md",
+  "local_receipt": "/home/workdir/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1259/CYCLE_C1259_RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
@@ -17,15 +17,15 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP/HTTPS body SHA AGREE this plane and DISAGREE intact C1258 9088ad40/4027256e/89968d14 vs fb5b656c/0464c118/08435b37 size/lines 349479/543175/1002736 5632/7669/13299 AGREE FCT 12:11/12:11/12:12 DISAGREE C1258 11:01/11:01/11:02 NOT INTEGRATED",
-    "HTTPS LM/etag DISAGREE C1258 all three not integrated",
-    "SEC sample-contact AGREE C1258 bb1521ff keys 10435 not promoted; short-UA 403 1925 cfb4a8b5 disagrees C1258 f605a219",
-    "data.sec.gov 404 NoSuchKey RequestId E86QW1H5KSSH1KY9 size 317 SHA a2316f54 disagrees C1258 977d9637 not a source",
+    "NASDAQ FTP/HTTPS body SHA AGREE this plane DISAGREE intact C1258 (9088ad40/4027256e/89968d14 vs fb5b656c/0464c118/08435b37) size/lines 349479/543175/1002736 5632/7669/13299 AGREE FCT 12:11/12:11/12:12 DISAGREE C1258 11:01/11:01/11:02 NOT INTEGRATED",
+    "HTTPS LM/etag DISAGREE C1258 all three 16:11:06 / 561fbc9858dd1, 16:11:06 / dd78fca858dd1, 16:12:37 / d62a2a0958dd1 not integrated",
+    "SEC sample-contact AGREE C1258 bb1521ff keys 10435 not promoted; short-UA 403 1924 297e14be disagrees C1258 1925 f605a219",
+    "data.sec.gov 404 NoSuchKey RequestId QBVAW86HPF60AHTW size 297 SHA 290f173e disagrees C1258 317 977d9637 not a source",
     "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1258 not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
     "published C1258 left intact; this plane advanced to C1259"
   ],
-  "note": "Independent remasure vs intact C1258. FTP/HTTPS body SHA AGREE this plane and DISAGREE C1258. size/lines AGREE. FCT and HTTPS LM/etag moved. SEC sample-contact AGREE. short-UA 403 size 1925 SHA moved. data.sec.gov 404 RequestId moved size 317. Not promoted."
+  "note": "Independent remasure vs intact C1258. FTP/HTTPS body SHA AGREE this plane and DISAGREE C1258. size/lines AGREE. FCT and HTTPS LM/etag DISAGREE. SEC sample-contact AGREE. short-UA 403 size 1924 SHA moved. data.sec.gov 404 RequestId moved size 297. Not promoted."
 }
