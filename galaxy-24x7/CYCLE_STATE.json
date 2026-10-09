@@ -1,10 +1,10 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
-  "cycle_index": 1260,
-  "updated_utc": "2026-10-09T17:13:10Z",
-  "last_receipt": "galaxy-24x7/CYCLE_C1260_RECEIPT.md",
-  "public_receipt": "galaxy-24x7/CYCLE_C1260_RECEIPT.md",
-  "local_receipt": "/home/workdir/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1260/CYCLE_C1260_RECEIPT.md",
+  "cycle_index": 1261,
+  "updated_utc": "2026-10-09T17:16:26Z",
+  "last_receipt": "galaxy-24x7/CYCLE_C1261_RECEIPT.md",
+  "public_receipt": "galaxy-24x7/CYCLE_C1261_RECEIPT.md",
+  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1261/CYCLE_C1261_RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
@@ -17,15 +17,15 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP/HTTPS body SHA AGREE this plane and AGREE intact C1259 9088ad40/4027256e/89968d14 size/lines 349479/543175/1002736 5632/7669/13299 AGREE FCT 12:11/12:11/12:12 AGREE DISAGREE C1258 NOT INTEGRATED",
-    "HTTPS LM/etag AGREE C1259 all three not integrated",
-    "SEC sample-contact AGREE C1259 bb1521ff keys 10435 not promoted; short-UA 403 1924 297e14be disagrees C1259 1925 cfb4a8b5",
-    "data.sec.gov 404 NoSuchKey RequestId QBVAW86HPF60AHTW size 297 SHA 290f173e disagrees C1259 317 a2316f54 not a source",
-    "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1259 not adopted",
+    "NASDAQ FTP/HTTPS body SHA AGREE this plane and AGREE intact C1260 9088ad40/4027256e/89968d14 size/lines 349479/543175/1002736 5632/7669/13299 FCT 12:11/12:11/12:12 NOT INTEGRATED",
+    "HTTPS LM/etag AGREE C1260 all three 16:11:06 / 561fbc9858dd1, 16:11:06 / dd78fca858dd1, 16:12:37 / d62a2a0958dd1 not integrated",
+    "SEC sample-contact AGREE C1260 bb1521ff keys 10435 not promoted; short-UA 403 1925 e6b0e681 disagrees C1260 1924 297e14be",
+    "data.sec.gov 404 NoSuchKey RequestId VJC6WV3MSEW802XW size 317 SHA b3363d13 disagrees C1260 297 290f173e not a source",
+    "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1260 not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
-    "C1259 overwrite from 23479c54 reverted; C1259 restored from 872f329d; this plane advanced to C1260"
+    "published C1260 left intact; this plane advanced to C1261"
   ],
-  "note": "Independent remasure vs intact C1259 after restoring the parallel-plane C1259 receipt overwritten by 23479c54. FTP/HTTPS body SHA AGREE this plane and AGREE C1259. size/lines/FCT/LM/etag AGREE. SEC sample-contact AGREE. short-UA 403 size 1924 SHA moved. data.sec.gov 404 RequestId moved size 297. Not promoted."
+  "note": "Independent remasure vs intact C1260. FTP/HTTPS body SHA AGREE this plane and AGREE C1260. size/lines/FCT/LM/etag AGREE. SEC sample-contact AGREE. short-UA 403 size 1925 SHA moved. data.sec.gov 404 RequestId moved size 317. Not promoted."
 }
