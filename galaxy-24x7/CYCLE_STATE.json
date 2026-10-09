@@ -1,10 +1,10 @@
 {
   "object": "GALAXY_24x7_CYCLE_STATE",
   "cycle_index": 1250,
-  "updated_utc": "2026-10-09T13:16:20Z",
+  "updated_utc": "2026-10-09T13:17:25Z",
   "last_receipt": "galaxy-24x7/CYCLE_C1250_RECEIPT.md",
   "public_receipt": "galaxy-24x7/CYCLE_C1250_RECEIPT.md",
-  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/04_RECEIPTS/CYCLE_C1250_RECEIPT.md",
+  "local_receipt": "/workspace/artifacts/GALAXY_24x7_BUILD_LOOP_v1.0/03_CYCLES/GALAXY-CYCLE-1250/CYCLE_C1250_RECEIPT.md",
   "result": "PARTIAL",
   "ben_satisfied": false,
   "stop_requested": false,
@@ -17,14 +17,15 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP/HTTPS body SHA AGREE C1249 59d09252/273e5a80/82daaea0 size/lines 349479/543175/1002736 5632/7669/13299 FCT 09:01/09:01/09:02 NOT INTEGRATED",
-    "SEC sample-contact AGREE C1249 bb1521ff keys 10435 not promoted; short-UA 403 1924 dadf2c28 disagrees C1249 1925 3bd7f0e3",
-    "data.sec.gov 404 NoSuchKey RequestId EXHP36K6R8GKQJY7 size 317 not a source",
+    "NASDAQ FTP/HTTPS body SHA AGREE this plane and AGREE C1249 59d09252/273e5a80/82daaea0 size/lines 349479/543175/1002736 5632/7669/13299 FCT 09:01/09:01/09:02 NOT INTEGRATED",
+    "otherlisted HTTPS LM/etag MOVED vs C1249 13:15:44 / ddd9984af057dd1 while body SHA AGREE not integrated",
+    "SEC sample-contact AGREE C1249 bb1521ff keys 10435 not promoted; short-UA 403 1925 115433e8 disagrees C1249 3bd7f0e3",
+    "data.sec.gov 404 NoSuchKey RequestId BPPEYS8CVVWRXYZH size 317 not a source",
     "mfundslist FTP file missing curl 78; nofollow 302/916/9a3e7218 SHA AGREE C1249 not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
-    "controlling path absent at start; contract written under /workspace/artifacts"
+    "controlling path /home/workdir ABSENT at start; contract written under /workspace/artifacts and mirrored after mkdir"
   ],
-  "note": "Independent remasure vs intact C1249. FTP/HTTPS body SHA AGREE C1249 on all three symbol files. SEC sample-contact AGREE. short-UA 403 size 1924 SHA moved. data.sec.gov 404 RequestId moved size 317. Not promoted."
+  "note": "Independent remasure vs intact C1249. FTP/HTTPS body SHA AGREE this plane and AGREE C1249 on all three symbol files. otherlisted HTTPS LM/etag MOVED while body SHA AGREE. SEC sample-contact AGREE. short-UA 403 size 1925 SHA moved. data.sec.gov 404 RequestId moved size 317. Not promoted."
 }
