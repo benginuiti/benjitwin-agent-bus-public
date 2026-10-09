@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1240,
-  "updated_utc": "2026-10-09T03:12:10Z",
+  "cycle_index": 1241,
+  "updated_utc": "2026-10-09T04:04:54Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "closed_this_run": [
-    "Q-1240 residual remasure vs intact C1239: FTP/HTTPS body SHA AGREE 9fd8af1f/32fda6e3/0ac85646; size/lines 349480/542931/1002466 5632/7665/13295 STABLE; FCT 21:31/21:31/21:33 AGREE; nasdaqlisted and nasdaqtraded LM/etag AGREE; otherlisted LM/etag AGREE C1239 moved stamp 03:05:14 / a7268819b57dd1 body SHA AGREE not integrated; SEC sample-contact bb1521ff keys 10435 AGREE not promoted; short-UA 403 1925 32f35787 disagrees C1239 1924/d9613ba5; python-requests 403 1925 c9c464db disagrees C1239 505017f1 not a source; data.sec.gov 404 317 RequestId 938F64S8E9MZQXJW SHA MOVED vs C1239 297/e8704008 not a source; mfundslist FTP 550/curl 78 file missing; nofollow 302/916/9a3e7218 SHA AGREE not adopted; C1239 receipt not overwritten"
+    "Q-1241 residual remasure vs intact C1240: FTP/HTTPS body SHA AGREE 9fd8af1f/32fda6e3/0ac85646; size/lines 349480/542931/1002466 5632/7665/13295 STABLE; FCT 21:31/21:31/21:33 AGREE; nasdaqlisted and nasdaqtraded LM/etag AGREE; otherlisted body SHA AGREE but LM/etag MOVED 04:00:34 / 283172bca257dd1 not integrated; SEC sample-contact bb1521ff keys 10435 AGREE not promoted; short-UA 403 1925 b8bf36a6 disagrees C1240 32f35787; python-requests 403 1925 64d25288 disagrees C1240 c9c464db not a source; data.sec.gov 404 297 RequestId 968B8ENMQWQA8T5P SHA ac63342e disagrees C1240 e98bb813 and C1239 e8704008 not a source; mfundslist FTP 550/curl 78 file missing; nofollow 302/916/9a3e7218 SHA AGREE not adopted; C1240 receipt not overwritten"
   ],
   "open_residuals": [
     "R-001",
@@ -17,15 +17,14 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS body SHA AGREE C1239 9fd8af1f/32fda6e3/0ac85646 NOT INTEGRATED; otherlisted LM/etag still on C1239 moved stamp",
+    "NASDAQ FTP+HTTPS body SHA AGREE C1240 9fd8af1f/32fda6e3/0ac85646 NOT INTEGRATED; otherlisted LM/etag MOVED 04:00:34/283172bca257dd1 body SHA unchanged",
     "SEC company_tickers sample-contact bb1521ff keys 10435 not promoted; short-UA 403 unstable",
     "data.sec.gov not a source",
     "mfundslist FTP file missing; nofollow 302/916/9a3e7218 SHA AGREE not adopted",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
-    "C1239 receipt left intact",
-    "pointer drift at start: galaxy NEXT C1237, root NEXT C1237, orders NEXT C1238, CYCLE_STATE 1219, LOOP_STATE 1205"
+    "C1240 receipt left intact"
   ],
   "items": []
 }
