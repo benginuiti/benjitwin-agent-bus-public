@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1296,
-  "updated_utc": "2026-10-10T20:12:00Z",
+  "cycle_index": 1297,
+  "updated_utc": "2026-10-10T21:11:30Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "closed_this_run": [
-    "Q-1296 residual remasure vs intact published C1295: C1295 receipt not overwritten; NASDAQ HTTPS TIMEOUT this plane (curl 28 after 60s/20s); SEC sample-contact bb1521ff keys 10435 AGREE not promoted; short-UA 403 1922 not a source"
+    "Q-1297 residual remasure vs intact published C1296: C1296 receipt not overwritten; NASDAQ HTTPS TIMEOUT this plane (curl 28); SEC sample-contact bb1521ff keys 10435 AGREE not promoted; data.sec.gov sample reachable; mfundslist 403 not a source"
   ],
   "open_residuals": [
     "R-001",
@@ -17,14 +17,14 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS TIMEOUT this plane — prior C1295 SHA 59e7857c/364bcfd1/6253cd52 not reconfirmed; not integrated",
-    "SEC company_tickers sample-contact bb1521ff keys 10435 not promoted; short-UA 403 1922 not a source",
-    "data.sec.gov not rechecked",
-    "mfundslist not rechecked",
+    "NASDAQ HTTPS TIMEOUT this plane — prior SHA not reconfirmed; not integrated",
+    "SEC company_tickers sample-contact bb1521ff keys 10435 not promoted",
+    "data.sec.gov sample reachable not promoted",
+    "mfundslist 403 not a source",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
-    "C1295 receipt left intact"
+    "C1296 receipt left intact"
   ],
   "items": []
 }
