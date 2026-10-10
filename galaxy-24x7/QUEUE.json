@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1279,
-  "updated_utc": "2026-10-10T03:03:00Z",
+  "cycle_index": 1280,
+  "updated_utc": "2026-10-10T03:09:00Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "closed_this_run": [
-    "Q-1279 residual remasure vs intact published C1278: C1278 receipt not overwritten; FTP/HTTPS body SHA AGREE this plane and AGREE C1278 59e7857c/364bcfd1/6253cd52; size/lines 349479/543175/1002736 5632/7669/13299 AGREE; FCT AGREE; SEC sample-contact bb1521ff keys 10435 AGREE not promoted; short-UA 403 1925 not a source"
+    "Q-1280 residual remasure vs intact published C1279: C1279 receipt not overwritten; FTP/HTTPS body SHA AGREE this plane and AGREE C1279 59e7857c/364bcfd1/6253cd52; size/lines 349479/543175/1002736 5632/7669/13299 AGREE; otherlisted LM/etag MOVED but body SHA AGREE; SEC sample-contact bb1521ff keys 10435 AGREE not promoted; short-UA 403 1925 not a source"
   ],
   "open_residuals": [
     "R-001",
@@ -17,14 +17,14 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ FTP+HTTPS body SHA AGREE C1278 59e7857c/364bcfd1/6253cd52 NOT INTEGRATED; size/lines AGREE",
+    "NASDAQ FTP+HTTPS body SHA AGREE C1279 59e7857c/364bcfd1/6253cd52 NOT INTEGRATED; size/lines AGREE; otherlisted LM MOVED",
     "SEC company_tickers sample-contact bb1521ff keys 10435 not promoted; short-UA 403 unstable",
     "data.sec.gov not a source",
     "mfundslist not rechecked",
     "identity promotion BEN_GATE",
     "LIVE funded routing",
     "Q-005 full historical archive not re-pushed",
-    "C1278 receipt left intact"
+    "C1279 receipt left intact"
   ],
   "items": []
 }
