@@ -1,24 +1,21 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1313,
-  "updated_utc": "2026-10-11T13:15:00Z",
-  "ben_satisfied": false,
-  "stop_requested": false,
-  "ready_grok": [],
-  "preferred_next": "residual board refresh / offline measurement / no promotion",
-  "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
-  "closed_this_run": [
-    "Q-1313 residual remasure vs intact published C1312: C1312 receipt not overwritten; NASDAQ HTTPS body SHA AGREE 59e7857c/364bcfd1/6253cd52 size/lines STABLE not integrated; otherlisted LM Sat content AGREE; SEC sample-contact bb1521ff keys 10435 AGREE not promoted; short-UA 403 1924 not a source; mfundslist 200 this plane sha c8dc4873 not integrated; data.sec.gov sample 200 not a source"
+  "updated_utc": "2026-10-11T14:06:00Z",
+  "items": [
+    {
+      "id": "Q-005",
+      "title": "Push receipts to public bus",
+      "owner": "Grok",
+      "status": "PARTIAL",
+      "note": "pointer+receipt only; full historical archive not re-pushed"
+    },
+    {
+      "id": "Q-1314",
+      "title": "Residual remasure vs C1313",
+      "owner": "Grok",
+      "status": "DONE",
+      "note": "NASDAQ SHA AGREE; SEC 403 this plane; no promotion"
+    }
   ],
-  "open_residuals": [
-    "R-001",
-    "LIVE-RT",
-    "MCP_WIZBANGERS not called this plane",
-    "Q-007 HOST soak",
-    "Q-008 F-AUTH-1 live deploy BEN_GATE",
-    "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS body SHA AGREE published priors NOT INTEGRATED",
-    "SEC sample-contact not promoted",
-    "Q-005 full historical archive not re-pushed"
-  ]
+  "ready_grok": []
 }
