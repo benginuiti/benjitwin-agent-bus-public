@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1348,
-  "updated_utc": "2026-10-12T16:06:02Z",
+  "cycle_index": 1349,
+  "updated_utc": "2026-10-12T16:16:00Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "closed_this_run": [
-    "Q-1348 residual remasure vs intact published C1347: NASDAQ SHAs STABLE e1fce545/9601e052/a8ce5b23 not integrated; SEC 403 FAIL-LOUD; mfunds FAIL-LOUD; no new keyless sources"
+    "Q-1349 residual remasure vs intact published C1348: NASDAQ SHAs CHANGED 9d552eb8/18b446a9/3ee8f4cd (sizes/lines same) not integrated; SEC 403 FAIL-LOUD; mfunds FAIL-LOUD; no new keyless sources"
   ],
   "open_residuals": [
     "R-001",
@@ -17,7 +17,7 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS body SHA STABLE this plane NOT INTEGRATED",
+    "NASDAQ HTTPS body SHA CHANGED this plane vs C1348 NOT INTEGRATED",
     "SEC company_tickers 403 this plane not promoted",
     "Q-005 full historical archive not re-pushed"
   ]
