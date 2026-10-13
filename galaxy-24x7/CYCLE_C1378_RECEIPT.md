@@ -1,7 +1,7 @@
 # CYCLE_C1378_RECEIPT — Galaxy 24/7
 
 **Cycle id:** C1378
-**UTC:** 2026-10-13T18:10:25Z
+**UTC:** 2026-10-13T19:06:00Z
 **Owner:** Grok
 **Authority:** Ben
 **Bite:** Independent residual remasure vs public bus C1377. Local control-plane rehydrate (absent at start). Offline keyless measurement showing SHA CHANGED. No promotion.
@@ -17,11 +17,11 @@
 
 ## Actions executed
 1. Confirmed no READY Grok; residual path only. Q-005 partial continuity preferred.
-2. Keyless offline measurement (research UA, this plane 2026-10-13T18:10Z):
-   - nasdaqlisted.txt: HTTP 200, content-length 349212, Last-Modified Tue, 13 Oct 2026 18:01:36 GMT, 5628 lines, SHA256 bf70c646961a235f860330c25f974f2c413cde11128b7e63c0d995b1b9dbfc92 CHANGED vs C1377 (d045962d) not integrated.
-   - otherlisted.txt: HTTP 200, content-length 542753, Last-Modified Tue, 13 Oct 2026 18:01:36 GMT, 7661 lines, SHA256 327b4f1a0812b9febdcf6e5958ab4251cfea8dc01cacc8b5e7441b07fb88d04f CHANGED vs C1377 (73cd5c28) not integrated.
-   - nasdaqtraded.txt: HTTP 200, content-length 1001949, Last-Modified Tue, 13 Oct 2026 18:03:03 GMT, 13287 lines, SHA256 85afc9c54e9b2c78a1ad7a73e4630f9cc0e0732d89f5696e410579ba7d027607 CHANGED vs C1377 (010c18dd) not integrated.
-   - SEC company_tickers.json: HTTP 403 FAIL-LOUD (not promoted).
+2. Keyless offline measurement (research UA, this plane 2026-10-13T19:05Z):
+   - nasdaqlisted.txt: HTTP 200, content-length 349212, Last-Modified Tue, 13 Oct 2026 18:01:36 GMT, 5628 lines, SHA256 bf70c646961a235f860330c25f974f2c413cde11128b7e63c0d995b1b9dbfc92 CHANGED vs C1377 d045962d not integrated.
+   - otherlisted.txt: HTTP 200, content-length 542753, Last-Modified Tue, 13 Oct 2026 18:01:36 GMT, 7661 lines, SHA256 327b4f1a0812b9febdcf6e5958ab4251cfea8dc01cacc8b5e7441b07fb88d04f CHANGED vs C1377 73cd5c28 not integrated.
+   - nasdaqtraded.txt: HTTP 200, content-length 1001949, Last-Modified Tue, 13 Oct 2026 18:03:03 GMT, 13287 lines, SHA256 85afc9c54e9b2c78a1ad7a73e4630f9cc0e0732d89f5696e410579ba7d027607 CHANGED vs C1377 010c18dd not integrated.
+   - SEC company_tickers.json: HTTP 200, content-length 799583, Last-Modified Fri, 09 Oct 2026 20:52:47 GMT, SHA256 a9595d33a34615553ee706c95458fff0bb9fec9642a9d61710f3e5dbd45ca23e (previously 403 FAIL-LOUD) not promoted.
 3. No new keyless sources discovered. Universe expand fail-loud.
 4. Wrote local receipt under 03_RECEIPTS/ and updated local QUEUE + CYCLE_STATE (status only).
 5. Continuity pointer updated on public bus (Q-005 partial this cycle). Prior C1377 left intact.
@@ -34,7 +34,7 @@
 - Q-008 F-AUTH-1 live deploy BEN_GATE
 - Q-010 Stage-0 ratification BEN_GATE
 - NASDAQ HTTPS body SHA bf70c646/327b4f1a/85afc9c5 this plane CHANGED not integrated
-- SEC company_tickers 403 this plane not promoted FAIL-LOUD
+- SEC company_tickers 200 a9595d33 this plane not promoted
 - Q-005 full historical archive not re-pushed
 - C1377 receipt left intact
 
