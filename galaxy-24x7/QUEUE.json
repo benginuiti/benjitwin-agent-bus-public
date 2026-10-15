@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1427,
-  "updated_utc": "2026-10-15T20:11:07Z",
+  "cycle_index": 1428,
+  "updated_utc": "2026-10-15T21:04:30Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "closed_this_run": [
-    "Q-1427 residual remasure vs public bus C1426: NASDAQ HTTPS body SHAs STABLE this plane (nasdaqlisted 0fc99157280edaed99fb078036c6520931c30fc88bc234823f273c8eedeb437b 349593B/5634L LM 19:41:22 GMT; otherlisted 4fca7f677d47b3328738451259a906957831f13da9458f142bb61ac0600cb143 542251B/7662L LM 19:41:22; nasdaqtraded f29e4c7cb6caee867b3888c5d436746255701d3859f5affff3437f270e2e4982 1001892B/13294L LM 19:42:58) not integrated; SEC company_tickers 403 this plane FAIL-LOUD not promoted; no new keyless sources"
+    "Q-1428 residual remasure vs public bus C1427: NASDAQ HTTPS body SHAs nasdaqlisted/otherlisted STABLE this plane (0fc99157/4fca7f67) not integrated; nasdaqtraded CHANGED 69309eb0612b5f0b4af3174bc322f39037e1e8279bd34bdd4c701d4d81244a87 1001892B/13294L LM 19:42:58 GMT not integrated; SEC company_tickers 403 this plane FAIL-LOUD not promoted; no new keyless sources"
   ],
   "open_residuals": [
     "R-001",
@@ -17,7 +17,7 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS body SHAs STABLE this plane vs C1426 NOT INTEGRATED",
+    "NASDAQ HTTPS body SHAs: listed/otherlisted STABLE, nasdaqtraded CHANGED this plane NOT INTEGRATED",
     "SEC company_tickers 403 this plane not promoted",
     "Q-005 full historical archive not re-pushed"
   ]
