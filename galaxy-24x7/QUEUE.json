@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_QUEUE",
   "cycle_index": 1412,
-  "updated_utc": "2026-10-15T01:10:00Z",
+  "updated_utc": "2026-10-15T02:03:43Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "closed_this_run": [
-    "Q-1412 residual remasure vs public bus C1411: NASDAQ HTTPS body SHAs STABLE this plane (nasdaqlisted bd77a1a3aaf89f5ce9c9f84685f87706d77e974ed5061f420eb0740523bbaf48 349417B/5631L; otherlisted 48bf151b5d9e1e6221c489e3ff42e78daa8cecc500f95861b32ceefde0b46c8a 542379B/7660L; nasdaqtraded 9042e0361c0c798a90d61b5e6c74d1743a60ee6aa361eebe6099ca2a9174f681 1001801B/13289L) not integrated; SEC company_tickers 403 this plane FAIL-LOUD not promoted; no new keyless sources"
+    "Q-1412 residual remasure vs public bus C1411: NASDAQ HTTPS body SHAs CHANGED this plane (nasdaqlisted 80bd745be55e06b1585f6bf1c08bd19bd7a6985dc06f385e6fb04402f972f921 349417B/5631L; otherlisted 59a8f48a536dbe173ff3e712c8fbb5c6f55ad99bfb4f5b6b53a5bc40ee6174b0 542379B/7660L; nasdaqtraded 68ccac0c7b9de4e183fcb2f326410d0e75df1451a2de38b3d080bffafd1e692e 1001801B/13289L) not integrated; SEC company_tickers 403 this plane FAIL-LOUD not promoted; no new keyless sources"
   ],
   "open_residuals": [
     "R-001",
@@ -17,7 +17,7 @@
     "Q-007 HOST soak",
     "Q-008 F-AUTH-1 live deploy BEN_GATE",
     "Q-010 Stage-0 ratification BEN_GATE",
-    "NASDAQ HTTPS body SHAs STABLE this plane vs C1411 NOT INTEGRATED",
+    "NASDAQ HTTPS body SHAs CHANGED this plane vs C1411 NOT INTEGRATED",
     "SEC company_tickers 403 this plane not promoted",
     "Q-005 full historical archive not re-pushed"
   ]
