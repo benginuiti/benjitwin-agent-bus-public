@@ -1,8 +1,8 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-15T14:00:00Z (same lane, hub still absent; Grok continuous lane)
-**Prior reinforce:** 2026-10-15T11:00:00Z (FORCE blob prior `b46fa82f24c0570a55181ff221339e130eb68faf`; not a PASS)
+**Reinforced:** 2026-10-15T15:00:00Z (same lane, hub still absent; Grok continuous lane)
+**Prior reinforce:** 2026-10-15T14:00:00Z (FORCE blob prior `e6b9021f84719bdcf7db15409917dcc7476f5838`; not a PASS)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
