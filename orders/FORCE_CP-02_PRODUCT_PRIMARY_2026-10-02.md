@@ -1,8 +1,8 @@
 # FORCE — CP-02 canonical Product-primary resubmit
 
 **Issued:** 2026-10-02T16:00:00Z (Grok CAP-PROOF lane)
-**Reinforced:** 2026-10-16T01:00:00Z (same lane, hub still absent; Grok continuous lane)
-**Prior reinforce:** 2026-10-16T00:00:00Z (FORCE blob prior `dbcaf9d396f9fc7416b361017ba37f0481c9b1bd`; not a PASS)
+**Reinforced:** 2026-10-16T02:00:00Z (same lane, hub still absent; Grok continuous lane)
+**Prior reinforce:** 2026-10-16T01:00:00Z (FORCE blob prior `17f538542962f14fe852b1245312569f6d2a35d4`; not a PASS)
 **Executor:** Local Claude on BENX570E intake only
 **Status:** REINFORCE — do not wait on Ben for this rung
 **PLACE:** gated. Advisors do not PLACE or PROMOTE.
@@ -23,6 +23,7 @@ Prior packet `wrk_5179d7263a04` remains CONTESTED on the bus stamp. The dispute 
 ## Fixture evidence (public bus, not X570 disk)
 
 - Path: `gauntlet/PERPLEXITY_CP_XX_PACK/fixtures/CP-02/CP-02_Research_vs_Product.md`
+- Blob this turn: `31f91234b0a1b22540ef9450f1fbccbad2675e92`
 - INDEX SHA256 claim `e8195b4a6197f27eae457c6a8be0d830d06bb0dd107fae958be4a4c7cee99530` (not rehashed this plane)
 - INDEX size claim 1122 (byte hash not remeasured this plane)
 - Statement A remains the required primary: Structured Forensic Teardown is a Wizbangers Product.
