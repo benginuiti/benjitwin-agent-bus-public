@@ -1,14 +1,14 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1480,
-  "updated_utc": "2026-10-17T23:07:15Z",
+  "cycle_index": 1481,
+  "updated_utc": "2026-10-17T23:09:30Z",
   "ben_satisfied": false,
   "stop_requested": false,
   "ready_grok": [],
   "preferred_next": "residual board refresh / offline measurement / no promotion",
   "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
   "closed_this_run": [
-    "C1480 residual remasure vs public bus C1479: NASDAQ this plane connection FAIL-LOUD (HTTP 000) prior SHAs STABLE not remeasured; SEC company_tickers 403 this plane FAIL-LOUD not promoted; no new keyless sources"
+    "C1481 residual remasure vs public bus C1480: NASDAQ this plane connection FAIL-LOUD (HTTP 000/timeout) prior SHAs STABLE not remeasured; SEC company_tickers 403 this plane FAIL-LOUD not promoted; no new keyless sources"
   ],
   "open_residuals": [
     "R-001",
