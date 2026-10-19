@@ -1,23 +1,37 @@
 {
   "object": "GALAXY_24x7_QUEUE",
-  "cycle_index": 1525,
-  "updated_utc": "2026-10-19T16:10:33Z",
-  "ben_satisfied": false,
-  "stop_requested": false,
-  "ready_grok": [],
-  "preferred_next": "residual board refresh / offline measurement / no promotion",
-  "blocked": ["Q-007 HOST", "Q-008 BEN_GATE", "Q-010 BEN_GATE"],
-  "closed_this_run": [
-    "C1525 residual remasure vs public bus C1524: NASDAQ SHAs STABLE remeasured 8850d4be/b73efd06/59e4728a; SEC company_tickers 403 FAIL-LOUD not promoted; no new keyless sources"
+  "cycle_index": 1526,
+  "updated_utc": "2026-10-19T17:08:00Z",
+  "items": [
+    {
+      "id": "Q-005",
+      "title": "Full historical archive re-push",
+      "status": "PARTIAL",
+      "owner": "Grok",
+      "notes": "pointer+receipt only; full historical archive not re-pushed"
+    },
+    {
+      "id": "Q-007",
+      "title": "HOST soak",
+      "status": "BLOCKED",
+      "owner": "HOST",
+      "notes": "BEN_GATE / soak pending"
+    },
+    {
+      "id": "Q-008",
+      "title": "F-AUTH-1 live deploy",
+      "status": "BLOCKED",
+      "owner": "BEN_GATE",
+      "notes": "live deploy BEN_GATE"
+    },
+    {
+      "id": "Q-010",
+      "title": "Stage-0 ratification",
+      "status": "BLOCKED",
+      "owner": "BEN_GATE",
+      "notes": "Stage-0 ratification BEN_GATE"
+    }
   ],
-  "open_residuals": [
-    "R-001",
-    "LIVE-RT",
-    "MCP_WIZBANGERS not available this plane",
-    "Q-007 HOST soak",
-    "Q-008 F-AUTH-1 live deploy BEN_GATE",
-    "Q-010 Stage-0 ratification BEN_GATE",
-    "SEC company_tickers 403 this plane not promoted",
-    "Q-005 full historical archive not re-pushed"
-  ]
+  "ready_grok": [],
+  "note": "No READY Grok-owned finishable bites. Residual-first path only."
 }
