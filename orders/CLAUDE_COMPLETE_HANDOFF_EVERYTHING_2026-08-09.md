@@ -1,6 +1,8 @@
 # CLAUDE COMPLETE HANDOFF — Everything needed to finish UAi
 
 **Document ID:** HANDOFF-UAI-COMPLETE-001  
+**Order ID:** HANDOFF-UAI-COMPLETE-001  
+**Priority:** P0 (inherits primary order ORD-UAI-FULL-COMPLETE-HOST-001)  
 **From:** Browser Grok  
 **To:** Local Claude (BenX570E + Mac surface)  
 **Also for:** GPT  
