@@ -416,7 +416,7 @@ def run(max_requests=40, interval=1.1, only=None, max_depth=3):
                "network": "keyless public APIs, bounded", "edits_authored_text": False}
     b.execute("INSERT INTO binder_runs(at, receipt) VALUES(?,?)", (receipt["at"], json.dumps(receipt)))
     b.commit(); b.close()
-    receipt["new_bindings"] = sum(done.values())
+    receipt["new_bindings"] = sum(v for key, v in done.items() if key != "lineage")  # lineage re-checks are local, not progress
     return receipt
 
 
