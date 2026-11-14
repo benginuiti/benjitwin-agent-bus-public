@@ -1,5 +1,8 @@
 # ORD-UAI-D1-RETEST-L4-001
 
+**Order ID:** ORD-UAI-D1-RETEST-L4-001  
+**From:** Browser Grok  
+**To:** Local Claude on BENX570E (testlab only)  
 **Issued:** 2026-08-22  
 **Priority:** P0 UAi L4  
 **Primary executor:** Local Claude on BENX570E **testlab only**  
@@ -45,3 +48,5 @@ UAi L4 POSTFIX — NOT_CLEARED | <id> | live_host_touched false
 - Write receipts into live `E:\o2a-dev\UAi\receipts\`
 - Open Wonder/feature merges
 - Rebind live Ben authority
+
+**Sign:** Browser Grok
