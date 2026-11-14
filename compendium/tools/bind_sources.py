@@ -151,7 +151,8 @@ def openlibrary(http, title, authors, want_year):
         return "NOT_FOUND", None
     doc = best[1]
     fy = doc.get("first_publish_year")
-    st = "MATCHED" if (not want_year or not fy or abs(int(fy) - int(want_year)) <= 3) else "YEAR_CONFLICT"
+    # A catalog whose earliest edition is LATER than the authored first edition is a catalog gap, not a conflict.
+    st = "MATCHED" if (not want_year or not fy or int(fy) >= int(want_year) - 3) else "YEAR_CONFLICT"
     return st, {"id": doc.get("key"), "label": doc.get("title"), "year": fy, "score": round(best[0], 3),
                 "detail": {"authors": doc.get("author_name"), "edition_count": doc.get("edition_count"), "authored_year": want_year}}
 
@@ -176,7 +177,7 @@ def openalex(http, title, authors, want_year):
         return "NOT_FOUND", None
     w = best[1]
     yr = w.get("publication_year")
-    st = "MATCHED" if (not want_year or not yr or abs(yr - int(want_year)) <= 3) else "YEAR_CONFLICT"
+    st = "MATCHED" if (not want_year or not yr or yr >= int(want_year) - 3) else "YEAR_CONFLICT"
     return st, {"id": w.get("id"), "label": w.get("display_name"), "year": yr, "score": round(best[0], 3),
                 "detail": {"doi": w.get("doi"), "cited_by_count": w.get("cited_by_count"), "type": w.get("type"), "authored_year": want_year}}
 
@@ -219,7 +220,7 @@ def fetch_entities(http, b, qids):
         b.commit()
 
 
-def record_genealogy(b, qid):
+def record_genealogy(b, qid, ancestors_only=False):
     r = b.execute("SELECT claims,label FROM entity_claims WHERE qid=?", (qid,)).fetchone()
     if not r:
         return []
@@ -229,7 +230,8 @@ def record_genealogy(b, qid):
         for o in claims.get(prop, []):
             adv, stu = (o, qid) if me == "student" else (qid, o)
             b.execute("INSERT OR IGNORE INTO genealogy VALUES(?,?,?,?,?)", (adv, stu, None, None, prop))
-            related.append(o)
+            if not (ancestors_only and adv != o):  # beyond depth 1 climb only toward advisors
+                related.append(o)
     b.commit()
     return related
 
@@ -315,7 +317,7 @@ def fetch_editions(http, b, work_key):
     return n
 
 
-def run(max_requests=40, interval=1.1, only=None, max_depth=3):
+def run(max_requests=40, interval=1.1, only=None, max_depth=5):
     CACHE.mkdir(exist_ok=True)
     b = sqlite3.connect(str(BDB)); b.execute("PRAGMA journal_mode=WAL"); b.executescript(DDL)
     k = sqlite3.connect("file:" + KDB.as_posix() + "?mode=ro", uri=True)
@@ -397,7 +399,7 @@ def run(max_requests=40, interval=1.1, only=None, max_depth=3):
             for q, d in batch:
                 if not b.execute("SELECT 1 FROM entity_claims WHERE qid=?", (q,)).fetchone():
                     continue
-                for o in record_genealogy(b, q):
+                for o in record_genealogy(b, q, ancestors_only=d >= 1):
                     b.execute("INSERT OR IGNORE INTO expand_queue VALUES(?,?,0)", (o, d + 1))
                 b.execute("UPDATE expand_queue SET done=1 WHERE qid=?", (q,)); b.commit()
                 done["genealogy"] += 1
