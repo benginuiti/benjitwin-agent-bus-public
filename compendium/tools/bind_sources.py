@@ -335,11 +335,18 @@ def run(max_requests=40, interval=1.1, only=None, max_depth=5):
         if only in (None, "people"):
             # People from key_people plus every name in a teaching chain (needed for lineage verification);
             # chain-linked names go first because each binding can verify a teacher->student link.
-            lanes.append(("people", iter(k.execute(f"""SELECT person_id, MAX(name), MAX(life) FROM (
-                    SELECT teacher_id person_id, teacher name, NULL life, 0 pri FROM dk_lineage
-                    UNION ALL SELECT student_id, student, NULL, 0 FROM dk_lineage
-                    UNION ALL SELECT person_id, name, life, 1 + {conf} FROM dk_person)
-                GROUP BY person_id ORDER BY MIN(pri), person_id""").fetchall())))
+            # Bind both ends of each link back-to-back (teacher, then student) so every pair verifies a link at once.
+            life = dict(k.execute("SELECT person_id, MAX(life) FROM dk_person GROUP BY person_id").fetchall())
+            seq, seen = [], set()
+            for t, tn, s, sn in k.execute(f"""SELECT teacher_id, teacher, student_id, student FROM dk_lineage
+                                              ORDER BY {conf}, original_id, chain_no, pos""").fetchall():
+                for pid, nm in ((t, tn), (s, sn)):
+                    if pid not in seen:
+                        seen.add(pid); seq.append((pid, nm, life.get(pid)))
+            for pid, nm, lf in k.execute(f"SELECT person_id, MAX(name), MAX(life) FROM dk_person GROUP BY person_id ORDER BY MIN({conf}), person_id").fetchall():
+                if pid not in seen:
+                    seen.add(pid); seq.append((pid, nm, lf))
+            lanes.append(("people", iter(seq)))
         if only in (None, "textbooks"):
             lanes.append(("textbooks", iter(k.execute(f"""SELECT work_id, title, authors, first_ed_year FROM dk_textbook
                                                         GROUP BY work_id ORDER BY MIN({conf}), work_id""").fetchall())))
