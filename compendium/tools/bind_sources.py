@@ -333,8 +333,13 @@ def run(max_requests=40, interval=1.1, only=None, max_depth=5):
         # Round-robin across target kinds so every kind advances every cycle.
         lanes = []
         if only in (None, "people"):
-            lanes.append(("people", iter(k.execute(f"""SELECT person_id, name, life FROM dk_person GROUP BY person_id
-                                                     ORDER BY MIN({conf}), person_id""").fetchall())))
+            # People from key_people plus every name in a teaching chain (needed for lineage verification);
+            # chain-linked names go first because each binding can verify a teacher->student link.
+            lanes.append(("people", iter(k.execute(f"""SELECT person_id, MAX(name), MAX(life) FROM (
+                    SELECT teacher_id person_id, teacher name, NULL life, 0 pri FROM dk_lineage
+                    UNION ALL SELECT student_id, student, NULL, 0 FROM dk_lineage
+                    UNION ALL SELECT person_id, name, life, 1 + {conf} FROM dk_person)
+                GROUP BY person_id ORDER BY MIN(pri), person_id""").fetchall())))
         if only in (None, "textbooks"):
             lanes.append(("textbooks", iter(k.execute(f"""SELECT work_id, title, authors, first_ed_year FROM dk_textbook
                                                         GROUP BY work_id ORDER BY MIN({conf}), work_id""").fetchall())))
