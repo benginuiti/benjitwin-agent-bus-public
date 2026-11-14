@@ -222,7 +222,7 @@ def binding_map(c):
     if not BINDINGS_DB.exists():
         return {}
     try:
-        c.execute("ATTACH DATABASE ? AS b", ("file:" + BINDINGS_DB.as_posix() + "?mode=ro",))
+        c.execute("ATTACH DATABASE ? AS b", (str(BINDINGS_DB),))  # plain path: this connection is not URI-enabled
     except sqlite3.OperationalError:
         return {}
     try:

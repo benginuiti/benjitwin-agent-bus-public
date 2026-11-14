@@ -339,8 +339,13 @@ def run(max_requests=40, interval=1.1, only=None, max_depth=3):
         if only in (None, "works"):
             lanes.append(("works", iter(k.execute(f"""SELECT work_id, title, authors, year, kind FROM dk_work
                                                     GROUP BY work_id ORDER BY MIN({conf}), work_id""").fetchall())))
+        # Budget phases: 60% catalog lanes, 20% edition histories, 20% genealogy expansion (unused budget rolls forward).
+        total = http.left
+        http.left = int(total * 0.6) or total
+        reserve = total - http.left
         active = list(lanes)
-        while active:
+        try:
+          while active:
             for lane in list(active):
                 name, it = lane
                 row = None
@@ -364,6 +369,11 @@ def run(max_requests=40, interval=1.1, only=None, max_depth=3):
                         st, m = openalex(http, row[1], authors, row[3]); prov = "openalex"
                     bind(b, "work", row[0], prov, row[1], st, *(m and (m["id"], m["label"], m["year"], m["score"], m["detail"]) or ()))
                 done[name] += 1
+        except Budget:
+            pass
+        http.left += reserve
+        reserve = http.left // 2
+        http.left -= reserve
         # Lineage checks are free (local joins) once both people are bound.
         if only in (None, "lineage", "people"):
             for t, s in k.execute("SELECT DISTINCT teacher_id, student_id FROM dk_lineage").fetchall():
@@ -371,15 +381,22 @@ def run(max_requests=40, interval=1.1, only=None, max_depth=3):
                     done["lineage"] += 1
         # Edition histories for matched textbooks (sourced "history of the textbook").
         if only in (None, "textbooks"):
+          try:
             for (wk,) in b.execute("""SELECT match_id FROM source_binding WHERE target_type='textbook' AND provider='openlibrary'
                                       AND status IN ('MATCHED','YEAR_CONFLICT') AND match_id NOT IN (SELECT work_key FROM editions_done)
                                       LIMIT 20""").fetchall():
                 fetch_editions(http, b, wk)
                 done["editions"] = done.get("editions", 0) + 1
+          except Budget:
+            pass
+        http.left += reserve
         # Genealogy expansion: breadth-first over advisor/student QIDs.
         if only in (None, "genealogy"):
-            for q, d in b.execute("SELECT qid, depth FROM expand_queue WHERE done=0 AND depth<=? ORDER BY depth, qid LIMIT 40", (max_depth,)).fetchall():
-                fetch_entities(http, b, [q])
+            batch = b.execute("SELECT qid, depth FROM expand_queue WHERE done=0 AND depth<=? ORDER BY depth, qid LIMIT 120", (max_depth,)).fetchall()
+            fetch_entities(http, b, [q for q, _ in batch])  # 40 entities per request
+            for q, d in batch:
+                if not b.execute("SELECT 1 FROM entity_claims WHERE qid=?", (q,)).fetchone():
+                    continue
                 for o in record_genealogy(b, q):
                     b.execute("INSERT OR IGNORE INTO expand_queue VALUES(?,?,0)", (o, d + 1))
                 b.execute("UPDATE expand_queue SET done=1 WHERE qid=?", (q,)); b.commit()
