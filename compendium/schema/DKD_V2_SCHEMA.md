@@ -37,7 +37,7 @@ from first course to research frontier, teacher->student lineage, landmark works
 | pedagogy* | obj | `learning_path:[{stage,topics:[str],typical_texts:[str]}]`, with stages in order from `secondary`/`lower_undergrad`/`upper_undergrad`/`masters`/`phd`/`research`/`practitioner`; also `misconceptions:[str]`, `mastery_signals:[str]`, `classic_exercises:[str]` |
 | lineage* | obj | `teaching_chains:[{chain:[name,...],institution_era,transmitted,confidence}]` (teacher first); `schools:[{name,place,era,founders:[str],signature}]` |
 | key_people* | [obj] | `{name,life:str,era,contribution,confidence}` |
-| landmark_works* | [obj] | `{year:int,authors:[str],title,venue,kind,why,confidence}`; kind is one of `paper`,`book`,`report`,`standard`,`thesis`,`lecture_notes`,`software`,`dataset` |
+| landmark_works* | [obj] | `{year:int,authors:[str],title,venue,kind,why,confidence}`; kind is one of `paper`,`book`,`report`,`standard`,`thesis`,`lecture_notes`,`software`,`dataset`,`artwork`,`film`,`recording`,`patent` |
 | frontier* | obj | `open_problems:[str]`, `active_directions:[str]`, `venues:[str]` (journals/conferences where the frontier is published) |
 | history_timeline* | [obj] | `{year:str,event}` in chronological order |
 | cross_links | [obj] | `{to:id,relation}`; relation is one of `uses`,`applies_to`,`generalizes`,`specializes`,`analogy`,`historical_root`,`tooling_for` |

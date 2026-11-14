@@ -6,7 +6,8 @@ Exit 0 when the set passes. Prints the errors, depth warnings and a per-dossier 
 import json, sys
 
 LEVELS = {"intro", "undergrad", "grad", "reference", "monograph", "practitioner", "popular", "historical"}
-KINDS = {"paper", "book", "report", "standard", "thesis", "lecture_notes", "software", "dataset"}
+KINDS = {"paper", "book", "report", "standard", "thesis", "lecture_notes", "software", "dataset",
+         "artwork", "film", "recording", "patent"}
 CONF = {"high", "medium", "low"}
 LISTS = ["keywords", "prereqs", "first_principles", "facts", "mechanisms", "logic", "equations", "methods",
          "applications", "falsifiers", "failures", "simulations", "sources_to_bind"]
