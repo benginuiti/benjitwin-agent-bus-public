@@ -106,32 +106,37 @@ def history(c, oid):
 
 
 def path(c, oid, limit=60):
-    # Transitive prerequisites over the edge graph, then a deterministic topological order (Kahn, ties by id).
-    pre = {}
-    frontier, seen = [oid], {oid}
+    # Transitive prerequisites from one edge scan, then Kahn's topological sort (ties by id); O(V+E).
+    allpre = {}
+    for src, dst in c.execute("SELECT src, dst FROM edges WHERE relation='prerequisite_of' AND src LIKE 'curriculum:vertical:%'"):
+        allpre.setdefault(dst.rsplit(":", 1)[1], set()).add(src.rsplit(":", 1)[1])
+    seen, frontier = {oid}, [oid]
     while frontier and len(seen) < limit:
         nxt = []
         for x in frontier:
-            ps = [r[0].rsplit(":", 1)[1] for r in c.execute(
-                "SELECT src FROM edges WHERE relation='prerequisite_of' AND dst=?", ("curriculum:vertical:" + x,))]
-            pre[x] = sorted(set(ps))
-            for p in ps:
+            for p in allpre.get(x, ()):
                 if p not in seen:
                     seen.add(p); nxt.append(p)
         frontier = nxt
-    nodes = sorted(seen)
-    indeg = {n: len([p for p in pre.get(n, []) if p in seen]) for n in nodes}
-    order, ready = [], sorted(n for n in nodes if indeg[n] == 0)
+    pre = {n: allpre.get(n, set()) & seen for n in seen}
+    kids = {}
+    for n, ps in pre.items():
+        for p in ps:
+            kids.setdefault(p, []).append(n)
+    indeg = {n: len(ps) for n, ps in pre.items()}
+    import heapq
+    ready = [n for n in seen if indeg[n] == 0]; heapq.heapify(ready)
+    order = []
     while ready:
-        n = ready.pop(0); order.append(n)
-        for m in nodes:
-            if n in pre.get(m, []):
-                indeg[m] -= 1
-                if indeg[m] == 0:
-                    ready.append(m); ready.sort()
-    order += [n for n in nodes if n not in order]  # cycles, if any, appended rather than dropped
-    titles = dict(c.execute("SELECT original_id,title FROM machine_card_cache"))
-    has = {r[0] for r in c.execute("SELECT original_id FROM dk_current")}
+        n = heapq.heappop(ready); order.append(n)
+        for m in kids.get(n, ()):
+            indeg[m] -= 1
+            if indeg[m] == 0:
+                heapq.heappush(ready, m)
+    order += sorted(n for n in seen if n not in set(order))  # cycles, if any, appended rather than dropped
+    ph = ",".join("?" * len(order))
+    titles = dict(c.execute(f"SELECT original_id,title FROM machine_card_cache WHERE original_id IN ({ph})", order))
+    has = {r[0] for r in c.execute(f"SELECT original_id FROM dk_current WHERE original_id IN ({ph})", order)}
     return {"target": oid, "prerequisite_order": [{"id": n, "title": titles.get(n), "has_dossier": n in has} for n in order],
             "stages": rows(c, "SELECT ord,stage,topics,typical_texts FROM dk_path WHERE original_id=? ORDER BY ord", (oid,))}
 

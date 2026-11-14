@@ -37,6 +37,8 @@ V2_FIELDS = ["summary", "first_principles", "facts", "mechanisms", "logic", "equ
 DDL = """
 CREATE TABLE IF NOT EXISTS dk_current(original_id TEXT PRIMARY KEY, dossier_id TEXT NOT NULL, set_id TEXT NOT NULL,
   sha256 TEXT NOT NULL, depth REAL NOT NULL, ingested_utc TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS ix_edges_rel_dst ON edges(relation, dst);
+CREATE INDEX IF NOT EXISTS ix_edges_dst ON edges(dst);
 """
 DERIVED = """
 DROP TABLE IF EXISTS dk_textbook; DROP TABLE IF EXISTS dk_work; DROP TABLE IF EXISTS dk_person;
