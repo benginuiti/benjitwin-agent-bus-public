@@ -5,7 +5,7 @@ Inserted after the hunt part, inside the existing CYCLE.lock and before BEEP:
 ```python
    try:
     from bind_sources import cycle as bind_cycle
-    bv=bind_cycle(max_requests=30)
+    bv=bind_cycle(max_requests=60)
     result["parts"]["binder"]=bv["outcome"]
     result["new_bindings"]=bv.get("new",0)
     if bv.get("new"):
@@ -16,4 +16,4 @@ Inserted after the hunt part, inside the existing CYCLE.lock and before BEEP:
    except Exception as e:
     result["parts"]["binder"]="BLOCKED:"+type(e).__name__
 ```
-The binder never blocks the cycle, and cycle PASS still depends only on wave and recursive. At about 1.1 s per request, the binder adds roughly 35 s to each 5-minute cycle.
+The binder never blocks the cycle, and cycle PASS still depends only on wave and recursive. At about 1.1 s per request, the binder adds roughly 70 s to each 5-minute cycle (budget raised 30 -> 60 on 2026-11-14 after two clean cycles).
